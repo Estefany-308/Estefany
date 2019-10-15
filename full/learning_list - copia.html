@@ -23,22 +23,15 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
 	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/learning.js"></script>
 	<!-- /theme JS files -->
 
 </head>
 
-<body>
+<body class="sidebar-xs">
 
 	<!-- Main navbar -->
 	<div class="navbar navbar-expand-md navbar-dark">
@@ -55,6 +48,9 @@
 			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
 				<i class="icon-paragraph-justify3"></i>
 			</button>
+			<button class="navbar-toggler sidebar-mobile-component-toggle" type="button">
+				<i class="icon-unfold"></i>
+			</button>
 		</div>
 
 		<div class="collapse navbar-collapse" id="navbar-mobile">
@@ -62,6 +58,12 @@
 				<li class="nav-item">
 					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
 						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-component-toggle d-none d-md-block">
+						<i class="icon-drag-right"></i>
 					</a>
 				</li>
 
@@ -487,7 +489,7 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
@@ -495,7 +497,7 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -1125,7 +1127,7 @@
 								<li class="nav-item"><a href="user_pages_profile_cover.html" class="nav-link">Profile with cover</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-cube3"></i> <span>Application pages</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Application pages">
 								<li class="nav-item nav-item-submenu">
@@ -1166,10 +1168,10 @@
 										<li class="nav-item"><a href="job_apply.html" class="nav-link">Apply</a></li>
 									</ul>
 								</li>
-								<li class="nav-item nav-item-submenu">
+								<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 									<a href="#" class="nav-link">Learning</a>
 									<ul class="nav nav-group-sub">
-										<li class="nav-item"><a href="learning_list.html" class="nav-link">List view</a></li>
+										<li class="nav-item"><a href="learning_list.html" class="nav-link active">List view</a></li>
 										<li class="nav-item"><a href="learning_grid.html" class="nav-link">Grid view</a></li>
 										<li class="nav-item"><a href="learning_detailed.html" class="nav-link">Detailed course</a></li>
 									</ul>
@@ -1211,14 +1213,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Learning</span> - List Layout</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1234,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="learning_list.html" class="breadcrumb-item">Learning</a>
+							<span class="breadcrumb-item active">List layout</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,622 +1272,1461 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+				<!-- Inner container -->
+				<div class="d-flex align-items-start flex-column flex-md-row">
 
-					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
+					<!-- Left content -->
+					<div class="w-100 overflow-auto order-2 order-md-1">
 
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
-						</div>
-
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
-							</a>
-
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
-								</a>
-
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /page header -->
-
-
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
+						<!-- Horizontal cards -->
 						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
-								</div>
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
+										</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">Data Governance</a>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
+												<span class="text-success ml-auto">$49.99</span>
+											</h5>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
-								</div>
-							</div>
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">Eugene Kopyov</a></li>
+												<li class="list-inline-item">Nov 1st, 2016</li>
+											</ul>
+										</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
-								</div>
+										<p>When suspiciously goodness labrador understood rethought yawned grew piously endearingly inarticulate oh goodness jeez trout distinct hence cobra despite.</p>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /typeahead -->
-
-
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
+										One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed <a href="#">[...]</a>
 									</div>
 
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
-							</div>
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 382</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 60 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(49)</span>
+											</li>
+										</ul>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /elastic textarea -->
-
-
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /masked inputs -->
-
-
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
-
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /input formatter -->
-
-
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
 										</div>
 									</div>
-
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
 								</div>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
 										</div>
+
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">Java language</a>
+
+												<span class="text-success ml-auto">$54.90</span>
+											</h5>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">Malcolm Davis</a></li>
+												<li class="list-inline-item">Oct 25th, 2016</li>
+											</ul>
+										</div>
+
+										<p>"How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something.</p>
+
+										However hard he threw himself onto his right, he always rolled back to where he was. He must <a href="#">[...]</a>
 									</div>
 
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
-								</div>
-							</div>
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 544</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 90 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-half font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(53)</span>
+											</li>
+										</ul>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
-
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
 										</div>
 									</div>
-
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<!-- /password generator -->
 
-
-				<!-- Bootstrap maxlength -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
 						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
-								</div>
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
+										</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">Python language</a>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
+												<span class="text-success ml-auto">$99.90</span>
+											</h5>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">Mark Staters</a></li>
+												<li class="list-inline-item">Oct 26th, 2016</li>
+											</ul>
+										</div>
+
+										<p>Anyone or become friendly with them. It can all go to Hell!" He felt a slight itch up on his belly.</p>
+
+										Headboard so that he could lift his head better; found where the itch was, and saw that it <a href="#">[...]</a>
+									</div>
+
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 64</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 60 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(654)</span>
+											</li>
+										</ul>
+
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
+										</div>
+									</div>
 								</div>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
-								</div>
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
+										</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
-								</div>
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">LESS language</a>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
+												<span class="text-danger-400 ml-auto">Free</span>
+											</h5>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">James Alexander</a></li>
+												<li class="list-inline-item"> Nov 3rd, 2016</li>
+											</ul>
+										</div>
+
+										<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring.</p>
+
+										I am alone, and feel the charm of existence in this spot, which was created for the bliss <a href="#">[...]</a>
+									</div>
+
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 272</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 15 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-half font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(12)</span>
+											</li>
+										</ul>
+
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
+										</div>
+
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">Data Management</a>
+
+												<span class="text-success ml-auto">$79.99</span>
+											</h5>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">Jeremy Victorino</a></li>
+												<li class="list-inline-item">Nov 4th, 2016</li>
+											</ul>
+										</div>
+
+										<p>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was.</p>
+
+										When, while the lovely valley teems with vapour around me, and the meridian sun strikes upper <a href="#">[...]</a>
+									</div>
+
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 34</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 80 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-empty3 font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(8)</span>
+											</li>
+										</ul>
+
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
+										</div>
+
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">Web Development</a>
+
+												<span class="text-success ml-auto">$39.99</span>
+											</h5>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">Margo Baker</a></li>
+												<li class="list-inline-item">Nov 5th, 2016</li>
+											</ul>
+										</div>
+
+										<p>I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth.</p>
+
+										Thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks <a href="#">[...]</a>
+									</div>
+
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 84</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 60 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-half font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(36)</span>
+											</li>
+										</ul>
+
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
+										</div>
+
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">SASS language</a>
+
+												<span class="text-success ml-auto">$44.90</span>
+											</h5>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">Monica Smith</a></li>
+												<li class="list-inline-item">Nov 6th, 2016</li>
+											</ul>
+										</div>
+
+										<p>Who formed us in his own image, and the breath of that universal love which bears and sustains us.</p>
+
+										When darkness overspreads my eyes, and heaven and earth seem to dwell in my soul and absorb its <a href="#">[...]</a>
+									</div>
+
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 183</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 30 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(96)</span>
+											</li>
+										</ul>
+
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
+										</div>
+
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">Office Management</a>
+
+												<span class="text-danger-400 ml-auto">Free</span>
+											</h5>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">Bastian Miller</a></li>
+												<li class="list-inline-item">Nov 7th, 2016</li>
+											</ul>
+										</div>
+
+										<p>Oh, would I could describe these conceptions, could impress upon paper all that is living so full and.</p>
+
+										Oh my friend -- but it is too much for my strength -- I sink under the weight of the splendour <a href="#">[...]</a>
+									</div>
+
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 93</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 40 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-half font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(57)</span>
+											</li>
+										</ul>
+
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
+										</div>
+
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">PHP language</a>
+
+												<span class="text-danger-400 ml-auto">Free</span>
+											</h5>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">Jordana Mills</a></li>
+												<li class="list-inline-item">Nov 8th, 2016</li>
+											</ul>
+										</div>
+
+										<p>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was.</p>
+
+										When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper <a href="#">[...]</a>
+									</div>
+
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 301</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 20 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-half font-size-base text-warning-300"></i>
+												<i class="icon-star-empty3 font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(19)</span>
+											</li>
+										</ul>
+
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
+										</div>
+
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">Software testing</a>
+
+												<span class="text-danger-400 ml-auto">Free</span>
+											</h5>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">Buzz Brenson</a></li>
+												<li class="list-inline-item">Nov 9th, 2016</li>
+											</ul>
+										</div>
+
+										<p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs thin.</p>
+
+										"What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although <a href="#">[...]</a>
+									</div>
+
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 48</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 90 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(4)</span>
+											</li>
+										</ul>
+
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
+										</div>
+
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">Server management</a>
+
+												<span class="text-success ml-auto">$84.90</span>
+											</h5>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">Zachary Willson</a></li>
+												<li class="list-inline-item">Nov 10th, 2016</li>
+											</ul>
+										</div>
+
+										<p>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman.</p>
+
+										And above it there hung a picture that he had recently cut out of an illustrated magazine and <a href="#">[...]</a>
+									</div>
+
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 43</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 100 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-half font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(64)</span>
+											</li>
+										</ul>
+
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
+										</div>
+
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">Database management</a>
+
+												<span class="text-success ml-auto">$112.50</span>
+											</h5>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">William Miles</a></li>
+												<li class="list-inline-item">Nov 11th, 2016</li>
+											</ul>
+										</div>
+
+										<p>However hard he threw himself onto his right, he always rolled back to where he was fully right.</p>
+
+										Travelling day in and day out. Doing business like this takes much more effort than doing <a href="#">[...]</a>
+									</div>
+
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 293</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 120 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-half font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(86)</span>
+											</li>
+										</ul>
+
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
+										</div>
+
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">Graphic design</a>
+
+												<span class="text-success ml-auto">$76.00</span>
+											</h5>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">Freddy Walden</a></li>
+												<li class="list-inline-item">Nov 12th, 2016</li>
+											</ul>
+										</div>
+
+										<p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting.</p>
+
+										"How about if I sleep a little bit longer and forget all this nonsense", he thought, but that <a href="#">[...]</a>
+									</div>
+
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 419</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 160 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(38)</span>
+											</li>
+										</ul>
+
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
+										</div>
+
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">User experience</a>
+
+												<span class="text-danger-400 ml-auto">Free</span>
+											</h5>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">Dori Laperriere</a></li>
+												<li class="list-inline-item">Nov 13th, 2016</li>
+											</ul>
+										</div>
+
+										<p>He felt a slight itch up on his belly; pushed himself slowly up on his back towards the headboard.</p>
+
+										So that he could lift his head better; found where the itch was, and saw that it was covered <a href="#">[...]</a>
+									</div>
+
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 190</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 200 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-half font-size-base text-warning-300"></i>
+												<i class="icon-star-empty3 font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(193)</span>
+											</li>
+										</ul>
+
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
+										</div>
+
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">Human relationships</a>
+
+												<span class="text-danger-400 ml-auto">Free</span>
+											</h5>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">Vanessa Aurelius</a></li>
+												<li class="list-inline-item">Nov 14th, 2016</li>
+											</ul>
+										</div>
+
+										<p>Which he didn't know what to make of; and when he tried to feel the place with one of his legs he drew.</p>
+
+										It quickly back because as soon as he touched it he was overcome by a cold shudder. He slid <a href="#">[...]</a>
+									</div>
+
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 205</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 80 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-half font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(128)</span>
+											</li>
+										</ul>
+
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
+										</div>
+
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">Leadership</a>
+
+												<span class="text-success ml-auto">$55.00</span>
+											</h5>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">Nathan Jacobson</a></li>
+												<li class="list-inline-item">Nov 15, 2016</li>
+											</ul>
+										</div>
+
+										<p>"Getting up early all the time", he thought, "it makes you very stupid. You've got to get enough sleep.</p>
+
+										For instance, whenever I go back to the guest house during the morning to copy out the contract <a href="#">[...]</a>
+									</div>
+
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 82</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 90 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(27)</span>
+											</li>
+										</ul>
+
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
+										</div>
+
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">Business development</a>
+
+												<span class="text-success ml-auto">$95.90</span>
+											</h5>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">Barbara Walden</a></li>
+												<li class="list-inline-item">Nov 16th, 2016</li>
+											</ul>
+										</div>
+
+										<p>But who knows, maybe that would be the best thing for me. If I didn't have my parents to think about.</p>
+
+										I'd have gone up to the boss and told him just what I think, tell him everything I would let <a href="#">[...]</a>
+									</div>
+
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 67</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 80 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-half font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(59)</span>
+											</li>
+										</ul>
+
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="card blog-horizontal">
+									<div class="card-body">
+										<div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+											<a href="#course_preview" data-toggle="modal">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid card-img" alt="">
+												<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+											</a>
+										</div>
+
+										<div class="mb-3">
+											<h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+												<a href="#" class="text-default mr-2">Business operations</a>
+
+												<span class="text-success ml-auto">$89.90</span>
+											</h5>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-0">
+												<li class="list-inline-item">By <a href="#" class="text-muted">Craig Johnson</a></li>
+												<li class="list-inline-item">Nov 17th, 2016</li>
+											</ul>
+										</div>
+
+										<p>And it's a funny sort of business to be sitting up there at your desk, talking down at your subordinates.</p>
+
+										Well, there's still some hope; once I've got the money together to pay off my parents' debt <a href="#">[...]</a>
+									</div>
+
+									<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+										<ul class="list-inline list-inline-dotted mb-0">
+											<li class="list-inline-item"><i class="icon-users mr-2"></i> 42</li>
+											<li class="list-inline-item"><i class="icon-alarm mr-2"></i> 90 hours</li>
+											<li class="list-inline-item">
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<i class="icon-star-full2 font-size-base text-warning-300"></i>
+												<span class="text-muted ml-1">(432)</span>
+											</li>
+										</ul>
+
+										<div class="mt-2 mt-sm-0">
+											<a href="#"><i class="icon-checkmark3 font-size-base mr-2"></i> Take course</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /horizontal cards -->
+
+
+						<!-- Pagination -->
+						<div class="d-flex justify-content-center mt-3 mb-3">
+							<ul class="pagination">
+								<li class="page-item"><a href="#" class="page-link"><i class="icon-arrow-small-right"></i></a></li>
+								<li class="page-item active"><a href="#" class="page-link">1</a></li>
+								<li class="page-item"><a href="#" class="page-link">2</a></li>
+								<li class="page-item"><a href="#" class="page-link">3</a></li>
+								<li class="page-item"><a href="#" class="page-link">4</a></li>
+								<li class="page-item"><a href="#" class="page-link">5</a></li>
+								<li class="page-item"><a href="#" class="page-link"><i class="icon-arrow-small-left"></i></a></li>
+							</ul>
+						</div>
+						<!-- /pagination -->
+
 					</div>
+					<!-- /left content -->
+
+
+					<!-- Right sidebar component -->
+					<div class="sidebar sidebar-light bg-transparent sidebar-component sidebar-component-right border-0 shadow-0 order-1 order-md-2 sidebar-expand-md">
+
+						<!-- Sidebar content -->
+						<div class="sidebar-content">
+
+							<!-- Find course -->
+							<div class="card">
+								<div class="card-header bg-transparent header-elements-inline">
+									<span class="text-uppercase font-size-sm font-weight-semibold">Find course</span>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+				                		</div>
+			                		</div>
+								</div>
+
+								<div class="card-body">
+									<form class="mb-3" action="#">
+										<div class="form-group form-group-feedback form-group-feedback-right">
+											<input type="search" class="form-control" placeholder="Type and hit Enter">
+											<div class="form-control-feedback">
+												<i class="icon-search4 font-size-base text-muted"></i>
+											</div>
+										</div>
+									</form>
+
+									<form action="#">
+										<div class="form-group">
+											<div class="font-size-xs text-uppercase text-muted mb-3">Categories</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Development
+													<span class="text-muted ml-1">(83)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Design
+													<span class="text-muted ml-1">(92)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Management
+													<span class="text-muted ml-1">(36)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Finances
+													<span class="text-muted ml-1">(50)</span>
+												</label>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="font-size-xs text-uppercase text-muted mb-3">Price</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" class="form-input-styled" checked data-fouc>
+													All courses
+												</label>	
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" class="form-input-styled" data-fouc>
+													Free courses
+												</label>	
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" class="form-input-styled" data-fouc>
+													Paid courses
+												</label>	
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="font-size-xs text-uppercase text-muted mb-3">Status</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Registration
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Progress
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Completed
+												</label>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="font-size-xs text-uppercase text-muted mb-3">Duration</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													0 - 50 hours
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													51 - 100 hours
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													101+ hours
+												</label>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="font-size-xs text-uppercase text-muted mb-3">Trainer</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Eugene Kopyov
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													James Alexander
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Jeremy Victorino
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Bastian Miller
+												</label>
+											</div>
+										</div>
+
+										<button type="submit" class="btn bg-blue btn-block">
+											<i class="icon-filter4 mr-2"></i>
+											Filter
+										</button>
+									</form>
+								</div>
+							</div>
+							<!-- /find course -->
+
+
+							<!-- Categories -->
+							<div class="card">
+								<div class="card-header bg-transparent header-elements-inline">
+									<span class="text-uppercase font-size-sm font-weight-semibold">Categories</span>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+				                		</div>
+			                		</div>
+								</div>
+
+								<div class="card-body p-0">
+									<div class="nav nav-sidebar mb-2">
+										<li class="nav-item-header font-size-xs text-uppercase">Development</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link">
+												Frontend development
+												<span class="badge badge-secondary badge-pill ml-auto">37</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link">
+												Backend development
+												<span class="badge badge-secondary badge-pill ml-auto">58</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link">
+												Engineering
+												<span class="badge badge-secondary badge-pill ml-auto">39</span>
+											</a>
+										</li>
+
+										<li class="nav-item-header font-size-xs text-uppercase">Design</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link">
+												Interface design
+												<span class="badge badge-secondary badge-pill ml-auto">21</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link">
+												User experience
+												<span class="badge badge-secondary badge-pill ml-auto">10</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link">
+												Web design
+												<span class="badge badge-secondary badge-pill ml-auto">26</span>
+											</a>
+										</li>
+									</div>
+								</div>
+							</div>
+							<!-- /categories -->
+
+
+							<!-- Assigned users -->
+							<div class="card">
+								<div class="card-header bg-transparent header-elements-inline">
+									<span class="text-uppercase font-size-sm font-weight-semibold">Assigned users</span>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+				                		</div>
+			                		</div>
+								</div>
+
+								<div class="card-body">
+									<ul class="media-list">
+										<li class="media">
+											<a href="#" class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+											</a>
+
+											<div class="media-body">
+												<div class="font-weight-semibold">Rebecca Jameson</div>
+												<span class="font-size-sm text-muted">Web developer</span>
+											</div>
+
+											<div class="ml-3 align-self-center">
+												<div class="dropdown">
+													<a href="#" class="text-default dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-more2"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Start chat</a>
+														<a href="#" class="dropdown-item"><i class="icon-phone2"></i> Make a call</a>
+														<a href="#" class="dropdown-item"><i class="icon-mail5"></i> Send mail</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="icon-stars"></i> Rate trainer</a>
+													</div>
+												</div>
+											</div>
+										</li>
+
+										<li class="media">
+											<a href="#" class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+											</a>
+
+											<div class="media-body">
+												<div class="font-weight-semibold">Walter Sommers</div>
+												<span class="font-size-sm text-muted">Lead developer</span>
+											</div>
+
+											<div class="ml-3 align-self-center">
+												<div class="dropdown">
+													<a href="#" class="text-default dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-more2"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Start chat</a>
+														<a href="#" class="dropdown-item"><i class="icon-phone2"></i> Make a call</a>
+														<a href="#" class="dropdown-item"><i class="icon-mail5"></i> Send mail</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="icon-stars"></i> Rate trainer</a>
+													</div>
+												</div>
+											</div>
+										</li>
+
+										<li class="media">
+											<a href="#" class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+											</a>
+
+											<div class="media-body">
+												<div class="font-weight-semibold">Otto Gerwald</div>
+												<span class="font-size-sm text-muted">Front end developer</span>
+											</div>
+
+											<div class="ml-3 align-self-center">
+												<div class="dropdown">
+													<a href="#" class="text-default dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-more2"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Start chat</a>
+														<a href="#" class="dropdown-item"><i class="icon-phone2"></i> Make a call</a>
+														<a href="#" class="dropdown-item"><i class="icon-mail5"></i> Send mail</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="icon-stars"></i> Rate trainer</a>
+													</div>
+												</div>
+											</div>
+										</li>
+
+										<li class="media">
+											<a href="#" class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+											</a>
+
+											<div class="media-body">
+												<div class="font-weight-semibold">Vince Satmann</div>
+												<span class="font-size-sm text-muted">UX expert</span>
+											</div>
+
+											<div class="ml-3 align-self-center">
+												<div class="dropdown">
+													<a href="#" class="text-default dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-more2"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Start chat</a>
+														<a href="#" class="dropdown-item"><i class="icon-phone2"></i> Make a call</a>
+														<a href="#" class="dropdown-item"><i class="icon-mail5"></i> Send mail</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="icon-stars"></i> Rate trainer</a>
+													</div>
+												</div>
+											</div>
+										</li>
+
+										<li class="media">
+											<a href="#" class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+											</a>
+
+											<div class="media-body">
+												<div class="font-weight-semibold">Jason Leroy</div>
+												<span class="font-size-sm text-muted">SEO specialist</span>
+											</div>
+
+											<div class="ml-3 align-self-center">
+												<div class="dropdown">
+													<a href="#" class="text-default dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-more2"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Start chat</a>
+														<a href="#" class="dropdown-item"><i class="icon-phone2"></i> Make a call</a>
+														<a href="#" class="dropdown-item"><i class="icon-mail5"></i> Send mail</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="icon-stars"></i> Rate trainer</a>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- /assigned users -->
+
+
+							<!-- Upcoming courses -->
+							<div class="card">
+								<div class="card-header bg-transparent header-elements-inline">
+									<span class="text-uppercase font-size-sm font-weight-semibold">Upcoming courses</span>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+				                		</div>
+			                		</div>
+								</div>
+
+								<div class="card-body">
+									<ul class="media-list">
+										<li class="media">
+											<div class="mr-3">
+												<h5 class="text-center text-success mb-0">02</h5>
+												<div class="font-size-sm text-muted line-height-1">Nov</div>												
+											</div>
+
+											<div class="media-body">
+												<span class="font-weight-semibold">Web development strategy</span> course by <a href="#">James Franko</a>
+												<ul class="list-inline list-inline-dotted mt-1 mb-0">
+													<li class="list-inline-item"><span class="text-muted">120 hours</span></li>
+													<li class="list-inline-item">
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-half font-size-base text-warning-300"></i>
+													</li>
+												</ul>
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<h5 class="text-center text-success mb-0">15</h5>
+												<div class="font-size-sm text-muted line-height-1">Nov</div>												
+											</div>
+
+											<div class="media-body">
+												<span class="font-weight-semibold">Business development</span> course by <a href="#">Jeremy Victorino</a>
+												<ul class="list-inline list-inline-dotted mt-1 mb-0">
+													<li class="list-inline-item"><span class="text-muted">40 hours</span></li>
+													<li class="list-inline-item">
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-half font-size-base text-warning-300"></i>
+													</li>
+												</ul>
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<h5 class="text-center text-success mb-0">01</h5>
+												<div class="font-size-sm text-muted line-height-1">Dec</div>												
+											</div>
+
+											<div class="media-body">
+												<span class="font-weight-semibold">Digital marketing</span> course by <a href="#">Monica Smith</a>
+												<ul class="list-inline list-inline-dotted mt-1 mb-0">
+													<li class="list-inline-item"><span class="text-muted">100 hours</span></li>
+													<li class="list-inline-item">
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+													</li>
+												</ul>
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<h5 class="text-center text-success mb-0">15</h5>
+												<div class="font-size-sm text-muted line-height-1">Dec</div>												
+											</div>
+
+											<div class="media-body">
+												<span class="font-weight-semibold">User experience design</span> course by <a href="#">Buzz Brenson</a>
+												<ul class="list-inline list-inline-dotted mt-1 mb-0">
+													<li class="list-inline-item"><span class="text-muted">90 hours</span></li>
+													<li class="list-inline-item">
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-empty3 font-size-base text-warning-300"></i>
+														<i class="icon-star-half font-size-base text-warning-300"></i>
+													</li>
+												</ul>
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<h5 class="text-center text-success mb-0">20</h5>
+												<div class="font-size-sm text-muted line-height-1">Dec</div>												
+											</div>
+
+											<div class="media-body">
+												<span class="font-weight-semibold">Digital painting</span> course by <a href="#">Zachary Willson</a>
+												<ul class="list-inline list-inline-dotted mt-1 mb-0">
+													<li class="list-inline-item"><span class="text-muted">120 hours</span></li>
+													<li class="list-inline-item">
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+													</li>
+												</ul>
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<h5 class="text-center text-success mb-0">04</h5>
+												<div class="font-size-sm text-muted line-height-1">Jan</div>												
+											</div>
+
+											<div class="media-body">
+												<span class="font-weight-semibold">Financial analysis</span> course by <a href="#">Dori Laperriere</a>
+												<ul class="list-inline list-inline-dotted mt-1 mb-0">
+													<li class="list-inline-item"><span class="text-muted">60 hours</span></li>
+													<li class="list-inline-item">
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+														<i class="icon-star-full2 font-size-base text-warning-300"></i>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- /upcoming courses -->
+
+						</div>
+						<!-- /sidebar content -->
+
+					</div>
+					<!-- /right sidebar component -->
+
 				</div>
-				<!-- /bootstrap maxlength -->
+				<!-- /inner container -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,10 +2756,35 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->
+
+
+	<!-- Course preview modal -->
+	<div class="modal fade" id="course_preview" tabindex="-1">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h6 class="modal-title">Course preview</h6>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Take this course</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /course preview modal -->
 
 </body>
 </html>

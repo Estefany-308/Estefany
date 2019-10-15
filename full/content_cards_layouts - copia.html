@@ -23,17 +23,7 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
-
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -487,7 +477,7 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
@@ -495,7 +485,7 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -564,7 +554,7 @@
 								<li class="nav-item"><a href="components_scrollspy.html" class="nav-link">Scrollspy</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>Content styling</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
 								<li class="nav-item"><a href="content_page_header.html" class="nav-link">Page header</a></li>
@@ -572,7 +562,7 @@
 								<li class="nav-item-divider"></li>
 								<li class="nav-item"><a href="content_cards.html" class="nav-link">Cards</a></li>
 								<li class="nav-item"><a href="content_cards_content.html" class="nav-link">Card content</a></li>
-								<li class="nav-item"><a href="content_cards_layouts.html" class="nav-link">Card layouts</a></li>
+								<li class="nav-item"><a href="content_cards_layouts.html" class="nav-link active">Card layouts</a></li>
 								<li class="nav-item"><a href="content_cards_header.html" class="nav-link">Card header elements</a></li>
 								<li class="nav-item"><a href="content_cards_footer.html" class="nav-link">Card footer elements</a></li>
 								<li class="nav-item"><a href="content_cards_draggable.html" class="nav-link">Draggable cards</a></li>
@@ -1211,14 +1201,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Content</span> - Card Layouts</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1222,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="content_cards_layouts.html" class="breadcrumb-item">Content</a>
+							<span class="breadcrumb-item active">Card layouts</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,622 +1260,493 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+				<!-- Cards in grid columns -->
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Card grid
+					</h6>
+					<span class="text-muted d-block">Render cards in grid columns</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card">
+							<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">It prepare is ye nothing blushes up brought. Or as gravity pasture limited evening on. Wicket around beauty say she. Frankness resembled say not new smallness.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-half font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(12)</span>
+								</span>
+							</div>
+						</div>
 					</div>
 
-					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
+					<div class="col-md-4">
+						<div class="card">
+							<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
 
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Conveying or northward offending admitting perfectly my. Colonel gravity get thought fat smiling add but. Wonder twenty hunted and put income set desire expect.</p>
+							</div>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Last updated 12 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(24)</span>
+								</span>
+							</div>
+						</div>
 					</div>
 
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
+					<div class="col-md-4">
+						<div class="card">
+							<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Or kind rest bred with am shed then. In raptures building an bringing be. Elderly is detract tedious assured private so to visited. Do travelling companions contrasted.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Last updated 5 hours ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-empty3 font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(63)</span>
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>
+				<!-- /cards in grid columns -->
 
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
+
+				<!-- Card group -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card group
+					</h6>
+					<span class="text-muted d-block">Single element with equal size columns</span>
+				</div>
+
+				<div class="card-group mb-sm-3">
+					<div class="card">
+						<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 						</div>
 
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-half font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(12)</span>
+							</span>
+						</div>
 					</div>
 
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
+					<div class="card">
+						<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+						</div>
+
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(24)</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="card">
+						<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+						</div>
+
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-empty3 font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(63)</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- /card group -->
+
+
+				<!-- Seamless card group -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Seamless card group
+					</h6>
+					<span class="text-muted d-block">Card group without borders</span>
+				</div>
+
+				<div class="card-group mb-sm-3">
+					<div class="card border-right-0 shadow-0">
+						<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-half font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(12)</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="card border-right-0 shadow-0">
+						<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+						</div>
+
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(24)</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="card shadow-0">
+						<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+						</div>
+
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-empty3 font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(63)</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- /seamless card group -->
+
+
+				<!-- Card deck -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card deck
+					</h6>
+					<span class="text-muted d-block">Cards with equal width and height</span>
+				</div>
+
+				<div class="card-deck mb-sm-3">
+					<div class="card">
+						<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-half font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(12)</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="card">
+						<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+						</div>
+
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(24)</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="card">
+						<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+						</div>
+
+						<div class="card-footer d-flex justify-content-between">
+							<span class="text-muted">Last updated 3 mins ago</span>
+							<span>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-full2 font-size-base text-warning-300"></i>
+								<i class="icon-star-empty3 font-size-base text-warning-300"></i>
+								<span class="text-muted ml-2">(63)</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- /card deck -->
+
+
+				<!-- Card columns -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card columns
+					</h6>
+					<span class="text-muted d-block">Cards in Masonry-like layout</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body bg-blue text-center" style="background-image: url(../../../../global_assets/images/backgrounds/panel_bg.png); background-size: contain;">
+							<div class="mb-3">
+								<h5 class="font-weight-semibold mb-0 mt-1">
+									Victoria Davidson
+								</h5>
+
+								<span class="d-block">Head of UX</span>
+							</div>
+
+							<a href="#" class="d-inline-block mb-3">
+								<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-round" width="110" height="110" alt="">
 							</a>
 
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
+							<ul class="list-inline mb-0">
+								<li class="list-inline-item"><a href="#" class="btn btn-outline btn-icon text-white btn-lg border-white rounded-round">
+									<i class="icon-phone"></i></a>
+								</li>
+								<li class="list-inline-item"><a href="#" class="btn btn-outline btn-icon text-white btn-lg border-white rounded-round">
+									<i class="icon-bubbles4"></i></a>
+								</li>
+								<li class="list-inline-item"><a href="#" class="btn btn-outline btn-icon text-white btn-lg border-white rounded-round">
+									<i class="icon-envelop4"></i></a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="card">
+							<div class="card-body">
+								<div class="d-flex flex-wrap justify-content-between mb-2">
+									<span class="font-size-xs line-height-xs text-uppercase text-muted font-weight-semibold">Nov 12, 11:25am</span>
+									<span class="font-size-xs line-height-xs text-uppercase text-success font-weight-semibold">Due in 12 days</span>
+								</div>
+
+								<h6 class="pt-1">
+									<a href="#">Ticket #462 - Application design and development</a>
+								</h6>
+
+								<p class="mb-3">Contrasted unreserved as mr particular collecting it everything as indulgence. Seems ask meant merry could put. Age old begin had boy noisy.</p>
+
+								<div class="d-flex flex-wrap align-items-center">
+									<a href="#" class="mr-1"><img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-round" width="36" height="36" alt=""></a>
+									<a href="#" class="mr-1"><img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-round" width="36" height="36" alt=""></a>
+									<a href="#" class="mr-1"><img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-round" width="36" height="36" alt=""></a>
+									<a href="#" class="btn btn-outline bg-grey border-grey text-grey-600 btn-icon rounded-round border-2"><i class="icon-plus2"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<a href="#" class="font-weight-semibold text-default d-block">Eugene Kopyov</a>
+										<span class="text-muted">Amsterdam, Netherlands</span>
+									</div>
+								</div>
+							</div>
+
+							<img class="card-img" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="Card image cap">
+
+							<div class="card-body">
+								<h5 class="card-title">Card title that wraps to a new line</h5>
+								<p class="card-text">By impossible of in difficulty discovered celebrated ye. Justice joy manners boy met resolve produce. Bed head loud next plan.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between bg-transparent border-top-0 pt-0">
+								<span class="text-muted">Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-half font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(12)</span>
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card">
+							<img class="card-img" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="Card image cap">
+						</div>
+
+						<div class="card bg-pink-400 text-white text-center p-3" style="background-image: url(../../../../global_assets/images/backgrounds/panel_bg.png); background-size: contain;">
+							<div>
+								<a href="#" class="btn btn-lg btn-icon mb-3 mt-1 btn-outline text-white border-white bg-white rounded-round border-2">
+									<i class="icon-quotes-right"></i>
 								</a>
+							</div>
 
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+							<blockquote class="blockquote mb-0">
+								<p>"Delivered is to ye belonging enjoyment preferred. Astonished and acceptance men two discretion"</p>
+								<footer class="blockquote-footer text-white">
+									<span>
+										Someone famous in <cite title="Source Title">Source Title</cite>
+									</span>
+								</footer>
+							</blockquote>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body">
+							<div class="media mb-3">
+								<div class="media-body">
+									<h6 class="mb-0 font-weight-semibold">Server maintenance</h6>
+									<span class="text-muted">Until 1st of June</span>
+								</div>
+
+								<div class="ml-3 align-self-center">
+									<i class="icon-cog3 icon-2x text-success"></i>
+								</div>
+							</div>
+
+							<div class="progress mb-2" style="height: 0.125rem;">
+								<div class="progress-bar bg-success" style="width: 67%">
+									<span class="sr-only">67% Complete</span>
+								</div>
+							</div>
+							<div>
+				                <span class="float-right">67%</span>
+				                Re-indexing
+			                </div>
+						</div>
+
+						<div class="card">
+							<img class="card-img-top" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="Card image cap">
+
+							<div class="card-footer d-flex justify-content-between border-0 pb-0 bg-transparent">
+								<ul class="list-inline mb-0 mr-2">
+									<li class="list-inline-item">
+										<a href="#" class="text-pink-400"><i class="icon-heart5"></i></a>
+									</li>
+									<li class="list-inline-item">
+										<a href="#" class="text-default"><i class="icon-bubble2"></i></a>
+									</li>
+								</ul>
+
+								<span class="text-muted">2 hours ago</span>
+							</div>
+
+							<div class="card-body">
+								<p class="card-text">Debating all she mistaken indulged believed provided declared. He many kept on draw lain song as same. Whether at dearest certain spirits is entered in to. Rich fine bred real use.</p>
+								<p class="card-text">
+									<a href="#" class="mr-1">#limitless</a>
+									<a href="#" class="mr-1">#template</a>
+									<a href="#" class="mr-1">#is</a>
+									<a href="#" class="mr-1">#awesome</a>
+								</p>
+							</div>
+
+							<div class="card-footer">
+								<div class="input-group">
+									<input type="text" class="form-control border-right-0" placeholder="Add comment...">
+
+									<span class="input-group-append">
+										<button class="btn bg-blue" type="button"><i class="icon-paperplane"></i></button>
+									</span>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- /page header -->
-
-
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /typeahead -->
-
-
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /elastic textarea -->
-
-
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /masked inputs -->
-
-
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
-
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /input formatter -->
-
-
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
-
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /password generator -->
-
-
-				<!-- Bootstrap maxlength -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /bootstrap maxlength -->
+				<!-- /card columns -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +1776,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->

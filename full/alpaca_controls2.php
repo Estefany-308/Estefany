@@ -23,17 +23,17 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
 	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/alpaca/alpaca.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/widgets.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/ui/prism.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/tags/tokenfield.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/alpaca_controls.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -487,7 +487,7 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
@@ -495,7 +495,7 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -505,12 +505,12 @@
 								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>JSON forms</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
 								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">Basic inputs</a></li>
 								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link">Advanced inputs</a></li>
-								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link">Controls</a></li>
+								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link active">Controls</a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -1211,14 +1211,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Alpaca</span> - Controls</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1232,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="alpaca_controls.html" class="breadcrumb-item">Alpaca</a>
+							<span class="breadcrumb-item active">Controls</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,622 +1270,670 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
-
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-						</div>
-					</div>
+				<!-- Checkboxes -->
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Checkbox inputs
+					</h6>
+					<span class="text-muted d-block">Checkbox inputs variations</span>
 				</div>
 
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Basic checkbox</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates checkbox input type with both field label and right label. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-checkbox-label"></div>
+								<a href="#alpaca-checkbox-label-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-checkbox-label-source">
+									<pre class="language-javascript"><code>// Checkbox with label
+$('#alpaca-checkbox-label').alpaca({
+    data: true,
+    options: {
+        label: 'Question:',
+        rightLabel: 'Do you like Alpaca?'
+    }
+});</code></pre>
+								</div>
+							</div>
 						</div>
-
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
-							</a>
-
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
-								</a>
-
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Display only mode</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates checkbox input type in display-only mode. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-checkbox-static"></div>
+								<a href="#alpaca-checkbox-static-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-checkbox-static-source">
+									<pre class="language-javascript"><code>// Display only mode
+$('#alpaca-checkbox-static').alpaca({
+    data: false,
+    view: 'bootstrap-display',
+    options: {
+        label: 'Registered?'
+    }
+});</code></pre>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- /page header -->
 
 
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Styled checkbox</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates checkbox input type with custom style added by Uniform plugin. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-checkbox-styled"></div>
+								<a href="#alpaca-checkbox-styled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-checkbox-styled-source">
+									<pre class="language-javascript"><code>// Styled checkbox
+$('#alpaca-checkbox-styled').alpaca({
+    data: true,
+    options: {
+        label: 'Question:',
+        rightLabel: 'Do you like Alpaca?',
+        fieldClass: 'checkbox-styled'
+    },
+    postRender: function(control) {
+        $('.checkbox-styled').find('input[type=checkbox]').uniform();
+    }
+});</code></pre>
 								</div>
 							</div>
+						</div>
+					</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Disabled mode</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates styled checkbox input in disabled mode. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-checkbox-styled-disabled"></div>
+								<a href="#alpaca-checkbox-styled-disabled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-checkbox-styled-disabled-source">
+									<pre class="language-javascript"><code>// Disabled checkbox
+$('#alpaca-checkbox-styled-disabled').alpaca({
+    data: true,
+    options: {
+        label: 'Question:',
+        rightLabel: 'Do you like Alpaca?',
+        fieldClass: 'checkbox-styled-disabled',
+        disabled: true
+    },
+    postRender: function(control) {
+        $('.checkbox-styled-disabled').find('input[type=checkbox]').uniform();
+    }
+});</code></pre>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /typeahead -->
 
 
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Switchery toggles</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates checkbox input type displayed as a toggle. Both Uniform and Switchery are custom additions, Alpaca doesn't support these components by default and requires custom configuraiton.</p>
+								<div id="alpaca-switchery"></div>
+								<a href="#alpaca-switchery-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-switchery-source">
+									<pre class="language-javascript"><code>// Switchery toggle
+$('#alpaca-switchery').alpaca({
+    data: true,
+    options: {
+        label: 'Question:',
+        rightLabel: 'Do you like Alpaca?',
+        fieldClass: 'switchery-demo'
+    },
+    postRender: function() {
+
+        // Init Switchery
+        var elems = Array.prototype.slice.call(document.querySelectorAll('.switchery-demo input[type=checkbox]'));
+        elems.forEach(function(html) {
+          var switchery = new Switchery(html);
+        });
+
+        // Add proper spacing
+        $('.switchery-demo').find('.form-check').addClass('form-check-switchery');
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
 					</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Disabled mode</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates checkbox input type displayed as a toggle, in disabled mode. Both Uniform and Switchery are custom additions, Alpaca doesn't support these components by default and requires custom configuraiton.</p>
+								<div id="alpaca-switchery-disabled"></div>
+								<a href="#alpaca-switchery-disabled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-switchery-disabled-source">
+									<pre class="language-javascript"><code>// Switchery toggle
+$('#alpaca-switchery-disabled').alpaca({
+    data: true,
+    options: {
+        label: 'Question:',
+        rightLabel: 'Do you like Alpaca?',
+        fieldClass: 'switchery-disabled-demo',
+        disabled: true
+    },
+    postRender: function(control) {
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
+        // Init Switchery
+        var elems = Array.prototype.slice.call(document.querySelectorAll('.switchery-disabled-demo input[type=checkbox]'));
+        elems.forEach(function(html) {
+          var switchery = new Switchery(html);
+        });
 
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
+        // Add proper spacing
+        $('.switchery-disabled-demo').find('.form-check').addClass('form-check-switchery');
+    }
+});</code></pre>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /elastic textarea -->
 
 
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /masked inputs -->
-
-
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
-
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /input formatter -->
-
-
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Basic checkbox list</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates checkbox list used for multiple values provided as an array. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-checkbox-list"></div>
+								<a href="#alpaca-checkbox-list-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-checkbox-list-source">
+									<pre class="language-javascript"><code>// Basic checkbox list
+$('#alpaca-checkbox-list').alpaca({
+    data: ['sandwich', 'cookie', 'drink'],
+    schema: {
+        type: 'array',
+        enum: ['sandwich', 'chips', 'cookie', 'drink']
+    },
+    options: {
+        type: 'checkbox',
+        label: 'What would you like with your order?',
+        optionLabels: ['A Sandwich', 'Potato Chips', 'A Cookie', 'Soft Drink']
+    }
+});</code></pre>
 								</div>
 							</div>
+						</div>
+					</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
-								</div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Styled checkbox list</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
-
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates multiple checkbox list with custom style added by Uniform plugin. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-checkbox-list-styled"></div>
+								<a href="#alpaca-checkbox-list-styled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-checkbox-list-styled-source">
+									<pre class="language-javascript"><code>// Styled checkbox list
+$('#alpaca-checkbox-list-styled').alpaca({
+    data: ['sandwich', 'cookie', 'drink'],
+    schema: {
+        type: 'array',
+        enum: ['sandwich', 'chips', 'cookie', 'drink']
+    },
+    options: {
+        type: 'checkbox',
+        label: 'What would you like with your order?',
+        optionLabels: ['A Sandwich', 'Potato Chips', 'A Cookie', 'Soft Drink'],
+        fieldClass: 'checkbox-styled-list'
+    },
+    postRender: function(control) {
+        $('.checkbox-styled-list').find('input[type=checkbox]').uniform();
+    }
+});</code></pre>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /password generator -->
+				<!-- /checkboxes -->
 
 
-				<!-- Bootstrap maxlength -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+				<!-- Radio -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Radio buttons
+					</h6>
+					<span class="text-muted d-block">Radio button variations</span>
+				</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Basic radios</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>radio</code> button field with more than 3 options and custom option labels. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-radio-basic"></div>
+								<a href="#alpaca-radio-basic-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-radio-basic-source">
+									<pre class="language-javascript"><code>// Basic radios
+$('#alpaca-radio-basic').alpaca({
+    data: 'green',
+    options: {
+        type: 'radio',
+        label: 'Favorite Color',
+        helper: 'Pick your favorite color',
+        optionLabels: {
+            red: 'Red',
+            green: 'Green',
+            blue: 'Blue',
+            white: 'White',
+            black: 'Black'
+        }
+    },
+    schema: {
+        required: true,
+        enum: ['red', 'green', 'blue', 'white', 'black']
+    }
+});</code></pre>
 								</div>
 							</div>
+						</div>
+					</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Disabled mode</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>radio</code> button field with set of options in disabled mode. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-radio-basic-disabled"></div>
+								<a href="#alpaca-radio-basic-disabled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-radio-basic-disabled-source">
+									<pre class="language-javascript"><code>// Disabled mode
+$('#alpaca-radio-basic-disabled').alpaca({
+    data: 'Jimi Hendrix',
+    schema: {
+        enum: ['Jimi Hendrix', 'Mark Knopfler', 'Joe Satriani', 'Eddie Van Halen', 'Orianthi']
+    },
+    options: {
+        type: 'radio',
+        label: 'Who is your favorite guitarist?',
+        vertical: true,
+        disabled: true
+    }
+});</code></pre>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /bootstrap maxlength -->
+
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Styled radios</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates radio button field with custom style added by Uniform plugin. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-radio-styled"></div>
+								<a href="#alpaca-radio-styled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-radio-styled-source">
+									<pre class="language-javascript"><code>// Styled radios
+$('#alpaca-radio-styled').alpaca({
+    data: 'Jimi Hendrix',
+    schema: {
+        enum: ['Jimi Hendrix', 'Mark Knopfler', 'Joe Satriani', 'Eddie Van Halen', 'Orianthi']
+    },
+    options: {
+        type: 'radio',
+        label: 'Who is your favorite guitarist?',
+        fieldClass: 'radio-styled-demo',
+        vertical: true
+    },
+    postRender: function(control) {
+        $('.radio-styled-demo').find('input[type=radio]').uniform({
+            radioClass: 'choice'
+        });
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Disabled mode</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates styled radio button in disabled mode. Validation is enabled by default and requires proper options added to checkbox configuration. Supports all available input-specific options.</p>
+								<div id="alpaca-radio-styled-disabled"></div>
+								<a href="#alpaca-radio-styled-disabled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-radio-styled-disabled-source">
+									<pre class="language-javascript"><code>// Disabled mode
+$('#alpaca-radio-styled-disabled').alpaca({
+    data: 'Jimi Hendrix',
+    schema: {
+        enum: ['Jimi Hendrix', 'Mark Knopfler', 'Joe Satriani', 'Eddie Van Halen', 'Orianthi']
+    },
+    options: {
+        type: 'radio',
+        label: 'Who is your favorite guitarist?',
+        vertical: true,
+        fieldClass: 'radio-styled-disabled-demo',
+        disabled: true
+    },
+    postRender: function(control) {
+        $('.radio-styled-disabled-demo').find('input[type=radio]').uniform({
+            radioClass: 'choice'
+        });
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Required radios</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates radio button with validation options and requirements. Validation engine automatically displays multiple notifications. To use, simply set <code>required</code> option to <code>true</code> in configuration.</p>
+								<div id="alpaca-radio-required"></div>
+								<a href="#alpaca-radio-required-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-radio-required-source">
+									<pre class="language-javascript"><code>// Required radios
+$('#alpaca-radio-required').alpaca({
+    data: 'Coffee2',
+    options: {
+        label: 'Ice cream',
+        helper: 'Guess my favorite ice cream?',
+        optionLabels: ['Vanilla Flavor', 'Chocolate Flavor', 'Coffee Flavor']
+    },
+    schema: {
+        required: true,
+        enum: ['Vanilla', 'Chocolate', 'Coffee']
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Options</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">A radio field that uses the <code>removeDefaultNone</code> option to remove the option for the end user to select <code>None</code> from the list of available options. In addition, the <code>vertical</code> option is specified to inform the field to render vertically.</p>
+								<div id="alpaca-radio-options"></div>
+								<a href="#alpaca-radio-options-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-radio-options-source">
+									<pre class="language-javascript"><code>// Options
+$('#alpaca-radio-options').alpaca({
+    data: 'Jimi Hendrix',
+    schema: {
+        enum: ['Jimi Hendrix', 'Mark Knopfler', 'Joe Satriani', 'Eddie Van Halen', 'Orianthi']
+    },
+    options: {
+        type: 'radio',
+        label: 'Who is your favorite guitarist?',
+        removeDefaultNone: true,
+        vertical: true
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /radios -->
+
+
+				<!-- Tokenfield -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Bootstrap Tokenfield
+					</h6>
+					<span class="text-muted d-block">Display tagged elements</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Tokenfield</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The <code>token</code> field. This provides an implementation of the Bootstrap TokenField plugin on top of a text field to allow for autocomplete and typeahead tokens in a comma (or alternative separator) delimited string.</p>
+								<div id="alpaca-tokenfield"></div>
+								<a href="#alpaca-tokenfield-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-tokenfield-source">
+									<pre class="language-javascript"><code>// Basic setup
+$('#alpaca-tokenfield').alpaca({
+    schema: {
+        title: 'Character Names',
+        type: 'string'
+    },
+    options: {
+        type: 'token',
+        focus: false,
+        tokenfield: {
+            autocomplete: {
+                source: ['marty', 'doc', 'george', 'biff', 'lorraine', 'mr. strickland'],
+                delay: 100
+            },
+            showAutocompleteOnFocus: true
+        }
+    },
+    data: 'marty,doc,george,biff'
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Display only mode</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">Here is a token field that lets you pick character first names from the movie Back to the Future, displayed in display-only mode. Tokenfield also supports jQuery UI's <code>autocomplete</code> extension as seen in previous demo.</p>
+								<div id="alpaca-tokenfield-static"></div>
+								<a href="#alpaca-tokenfield-static-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-tokenfield-static-source">
+									<pre class="language-javascript"><code>// Display only mode
+$('#alpaca-tokenfield-static').alpaca({
+    schema: {
+        title: 'Character Names',
+        type: 'string'
+    },
+    options: {
+        type: 'token',
+        focus: false,
+        tokenfield: {
+            autocomplete: {
+                source: ['marty', 'doc', 'george', 'biff', 'lorraine', 'mr. strickland'],
+                delay: 100
+            },
+            showAutocompleteOnFocus: true
+        }
+    },
+    data: 'marty,doc,george,biff',
+    view: 'bootstrap-display'
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /tokenfield -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +1963,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->

@@ -23,17 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/widgets_stats.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -487,7 +481,7 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
@@ -495,7 +489,7 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -1186,11 +1180,11 @@
 								</li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-atom2"></i> <span>Widgets</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Widgets">
 								<li class="nav-item"><a href="widgets_content.html" class="nav-link">Content widgets</a></li>
-								<li class="nav-item"><a href="widgets_stats.html" class="nav-link">Statistics widgets</a></li>
+								<li class="nav-item"><a href="widgets_stats.html" class="nav-link active">Statistics widgets</a></li>
 								<li class="nav-item"><a href="widgets_menu.html" class="nav-link disabled">Menu widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item"><a href="widgets_form.html" class="nav-link disabled">Form widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
@@ -1211,14 +1205,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Widgets</span> - Statistics</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1226,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="widgets_stats.html" class="breadcrumb-item">Widgets</a>
+							<span class="breadcrumb-item active">Statistics</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,622 +1264,944 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
-
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-						</div>
-					</div>
+				<!-- Simple statistics -->
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Simple stats
+					</h6>
+					<span class="text-muted d-block">Boxes with icons</span>
 				</div>
 
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
-						</div>
+				<div class="row">
+					<div class="col-sm-6 col-xl-3">
+						<div class="card card-body">
+							<div class="media">
+								<div class="mr-3 align-self-center">
+									<i class="icon-pointer icon-3x text-success-400"></i>
+								</div>
 
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+								<div class="media-body text-right">
+									<h3 class="font-weight-semibold mb-0">652,549</h3>
+									<span class="text-uppercase font-size-sm text-muted">total clicks</span>
+								</div>
+							</div>
+						</div>
 					</div>
 
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
-							</a>
+					<div class="col-sm-6 col-xl-3">
+						<div class="card card-body">
+							<div class="media">
+								<div class="mr-3 align-self-center">
+									<i class="icon-enter6 icon-3x text-indigo-400"></i>
+								</div>
 
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
-								</a>
+								<div class="media-body text-right">
+									<h3 class="font-weight-semibold mb-0">245,382</h3>
+									<span class="text-uppercase font-size-sm text-muted">total visits</span>
+								</div>
+							</div>
+						</div>
+					</div>
 
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+					<div class="col-sm-6 col-xl-3">
+						<div class="card card-body">
+							<div class="media">
+								<div class="media-body">
+									<h3 class="font-weight-semibold mb-0">54,390</h3>
+									<span class="text-uppercase font-size-sm text-muted">total comments</span>
+								</div>
+
+								<div class="ml-3 align-self-center">
+									<i class="icon-bubbles4 icon-3x text-blue-400"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+						<div class="card card-body">
+							<div class="media">
+								<div class="media-body">
+									<h3 class="font-weight-semibold mb-0">389,438</h3>
+									<span class="text-uppercase font-size-sm text-muted">total orders</span>
+								</div>
+
+								<div class="ml-3 align-self-center">
+									<i class="icon-bag icon-3x text-danger-400"></i>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- /page header -->
 
-
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
+				<div class="row">
+					<div class="col-sm-6 col-xl-3">
+						<div class="card card-body bg-blue-400 has-bg-image">
+							<div class="media">
+								<div class="media-body">
+									<h3 class="mb-0">54,390</h3>
+									<span class="text-uppercase font-size-xs">total comments</span>
 								</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
+								<div class="ml-3 align-self-center">
+									<i class="icon-bubbles4 icon-3x opacity-75"></i>
 								</div>
 							</div>
+						</div>
+					</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
+					<div class="col-sm-6 col-xl-3">
+						<div class="card card-body bg-danger-400 has-bg-image">
+							<div class="media">
+								<div class="media-body">
+									<h3 class="mb-0">389,438</h3>
+									<span class="text-uppercase font-size-xs">total orders</span>
 								</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
+								<div class="ml-3 align-self-center">
+									<i class="icon-bag icon-3x opacity-75"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+						<div class="card card-body bg-success-400 has-bg-image">
+							<div class="media">
+								<div class="mr-3 align-self-center">
+									<i class="icon-pointer icon-3x opacity-75"></i>
 								</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
-									</div>
+								<div class="media-body text-right">
+									<h3 class="mb-0">652,549</h3>
+									<span class="text-uppercase font-size-xs">total clicks</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+						<div class="card card-body bg-indigo-400 has-bg-image">
+							<div class="media">
+								<div class="mr-3 align-self-center">
+									<i class="icon-enter6 icon-3x opacity-75"></i>
 								</div>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
+								<div class="media-body text-right">
+									<h3 class="mb-0">245,382</h3>
+									<span class="text-uppercase font-size-xs">total visits</span>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /typeahead -->
+				<!-- /simple statistics -->
 
 
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+				<!-- Statistics with progress bar -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Progress stats
+					</h6>
+					<span class="text-muted d-block">Boxes with progress bars</span>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6 col-xl-3">
+						<div class="card card-body">
+							<div class="media mb-3">
+								<div class="media-body">
+									<h6 class="font-weight-semibold mb-0">Server maintenance</h6>
+									<span class="text-muted">Until 1st of June</span>
+								</div>
+
+								<div class="ml-3 align-self-center">
+									<i class="icon-cog3 icon-2x text-indigo-400 opacity-75"></i>
+								</div>
+							</div>
+
+							<div class="progress mb-2" style="height: 0.125rem;">
+								<div class="progress-bar bg-indigo-400" style="width: 67%">
+									<span class="sr-only">67% Complete</span>
+								</div>
+							</div>
+
+							<div>
+				                <span class="float-right">67%</span>
+				                Re-indexing
+			                </div>
+						</div>
 					</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
+					<div class="col-sm-6 col-xl-3">
+						<div class="card card-body">
+							<div class="media mb-3">
+								<div class="media-body">
+									<h6 class="font-weight-semibold mb-0">Services status</h6>
+									<span class="text-muted">April, 19th</span>
+								</div>
 
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
+								<div class="ml-3 align-self-center">
+									<i class="icon-pulse2 icon-2x text-danger-400 opacity-75"></i>
 								</div>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
+							<div class="progress mb-2" style="height: 0.125rem;">
+								<div class="progress-bar bg-danger-400" style="width: 80%">
+									<span class="sr-only">80% Complete</span>
+								</div>
+							</div>
+			                
+			                <div>
+			                	<span class="float-right">80%</span>
+			                	Partly operational
+			                </div>
+						</div>
+					</div>
 
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
+					<div class="col-sm-6 col-xl-3">
+						<div class="card card-body">
+							<div class="media mb-3">
+								<div class="mr-3 align-self-center">
+									<i class="icon-cog3 icon-2x text-blue-400 opacity-75"></i>
+								</div>
 
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
+								<div class="media-body">
+									<h6 class="font-weight-semibold mb-0">Server maintenance</h6>
+									<span class="text-muted">Until 1st of June</span>
 								</div>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
+							<div class="progress mb-2" style="height: 0.125rem;">
+								<div class="progress-bar bg-blue" style="width: 67%">
+									<span class="sr-only">67% Complete</span>
 								</div>
+							</div>
+			                
+			                <div>
+			                	<span class="float-right">67%</span>
+			                	Re-indexing
+			                </div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+						<div class="card card-body">
+							<div class="media mb-3">
+								<div class="mr-3 align-self-center">
+									<i class="icon-pulse2 icon-2x text-success-400 opacity-75"></i>
+								</div>
+
+								<div class="media-body">
+									<h6 class="font-weight-semibold mb-0">Services status</h6>
+									<span class="text-muted">April, 19th</span>
+								</div>
+							</div>
+
+							<div class="progress mb-2" style="height: 0.125rem;">
+								<div class="progress-bar bg-success-400" style="width: 80%">
+									<span class="sr-only">80% Complete</span>
+								</div>
+							</div>
+			                
+			                <div>
+			                	<span class="float-right">80%</span>
+			                	Partly operational
+			                </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6 col-xl-3">
+						<div class="card card-body bg-blue-400 has-bg-image">
+							<div class="media mb-3">
+								<div class="media-body">
+									<h6 class="font-weight-semibold mb-0">Server maintenance</h6>
+									<span class="opacity-75">Until 1st of June</span>
+								</div>
+
+								<div class="ml-3 align-self-center">
+									<i class="icon-cog3 icon-2x"></i>
+								</div>
+							</div>
+
+							<div class="progress bg-blue mb-2" style="height: 0.125rem;">
+								<div class="progress-bar bg-white" style="width: 67%">
+									<span class="sr-only">67% Complete</span>
+								</div>
+							</div>
+			                
+			                <div>
+			                	<span class="float-right">67%</span>
+			                	Re-indexing
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+						<div class="card card-body bg-danger-400 has-bg-image">
+							<div class="media mb-3">
+								<div class="media-body">
+									<h6 class="font-weight-semibold mb-0">Services status</h6>
+									<span class="opacity-75">April, 19th</span>
+								</div>
+
+								<div class="ml-3 align-self-center">
+									<i class="icon-pulse2 icon-2x"></i>
+								</div>
+							</div>
+
+							<div class="progress bg-danger-600 mb-2" style="height: 0.125rem;">
+								<div class="progress-bar bg-white" style="width: 80%">
+									<span class="sr-only">80% Complete</span>
+								</div>
+							</div>
+			                
+			                <div>
+			                	<span class="float-right">80%</span>
+			                	Partly operational
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+						<div class="card card-body bg-success-400 has-bg-image">
+							<div class="media mb-3">
+								<div class="mr-3 align-self-center">
+									<i class="icon-cog3 icon-2x"></i>
+								</div>
+
+								<div class="media-body">
+									<h6 class="font-weight-semibold mb-0">Server maintenance</h6>
+									<span class="opacity-75">Until 1st of June</span>
+								</div>
+							</div>
+
+							<div class="progress bg-success mb-2" style="height: 0.125rem;">
+								<div class="progress-bar bg-white" style="width: 67%">
+									<span class="sr-only">67% Complete</span>
+								</div>
+							</div>
+			                
+			                <div>
+			                	<span class="float-right">67%</span>
+			                	Re-indexing
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+						<div class="card card-body bg-indigo-400 has-bg-image">
+							<div class="media mb-3">
+								<div class="mr-3 align-self-center">
+									<i class="icon-pulse2 icon-2x"></i>
+								</div>
+
+								<div class="media-body">
+									<h6 class="font-weight-semibold mb-0">Services status</h6>
+									<span class="opacity-75">April, 19th</span>
+								</div>
+							</div>
+
+							<div class="progress bg-indigo mb-2" style="height: 0.125rem;">
+								<div class="progress-bar bg-white" style="width: 80%">
+									<span class="sr-only">80% Complete</span>
+								</div>
+							</div>
+			                
+			                <div>
+			                	<span class="float-right">80%</span>
+			                	Partly operational
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /elastic textarea -->
+				<!-- /statistics with progress bar -->
 
 
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+				<!-- Widgets with charts -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Stats with charts
+					</h6>
+					<span class="text-muted d-block">Boxes with charts</span>
+				</div>
 
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
+				<div class="row">
+					<div class="col-sm-6 col-xl-3">
 
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
-								</div>
+						<!-- Basic area chart -->
+						<div class="card">
+							<div class="card-body">
+								<div class="d-flex">
+									<h3 class="font-weight-semibold mb-0">$18,390</h3>
+									<div class="list-icons ml-auto">
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                	</div>
+			                	</div>
 
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /masked inputs -->
-
-
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
-
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /input formatter -->
-
-
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
+			                	<div>
+									Today's revenue
+									<div class="text-muted font-size-sm">$37,578 avg</div>
 								</div>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
+							<div id="chart_area_basic"></div>
+						</div>
+						<!-- /basic area chart -->
 
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
-										</div>
-									</div>
+					</div>
 
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Basic bar chart -->
+						<div class="card">
+							<div class="card-body">
+								<div class="d-flex">
+									<h3 class="font-weight-semibold mb-0">3,450</h3>
+									<span class="badge bg-success-400 badge-pill align-self-center ml-auto">+53,6%</span>
+			                	</div>
+			                	
+			                	<div>
+									Members online
+									<div class="text-muted font-size-sm">489 avg</div>
 								</div>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
+							<div class="container-fluid">
+								<div id="chart_bar_basic"></div>
+							</div>
+						</div>
+						<!-- /basic bar chart -->
 
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
-										</div>
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Basic line chart -->
+						<div class="card">
+							<div class="card-body">
+								<div class="d-flex">
+									<h3 class="font-weight-semibold mb-0">4,389</h3>
+									<div class="list-icons ml-auto">
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                	</div>
+			                	</div>
+			                	
+			                	<div>
+									Orders weekly
+									<div class="text-muted font-size-sm">4,728 avg</div>
+								</div>
+							</div>
+
+							<div id="line_chart_simple"></div>
+						</div>
+						<!-- /basic line chart -->
+
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Basic sparklines -->
+						<div class="card">
+							<div class="card-body">
+								<div class="d-flex">
+									<h3 class="font-weight-semibold mb-0">49.4%</h3>
+									<div class="list-icons ml-auto">
+				                		<div class="list-icons-item dropdown">
+				                			<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-cog3"></i></a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-sync"></i> Update data</a>
+												<a href="#" class="dropdown-item"><i class="icon-list-unordered"></i> Detailed log</a>
+												<a href="#" class="dropdown-item"><i class="icon-pie5"></i> Statistics</a>
+												<a href="#" class="dropdown-item"><i class="icon-cross3"></i> Clear list</a>
+											</div>
+				                		</div>
+			                		</div>
+			                	</div>
+			                	
+			                	<div>
+									Current server load
+									<div class="text-muted font-size-sm">34.6% avg</div>
+								</div>
+							</div>
+
+							<div id="sparklines_basic"></div>
+						</div>
+						<!-- /basic sparklines -->
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Area chart in colored card -->
+						<div class="card bg-indigo-400 has-bg-image">
+							<div class="card-body">
+								<div class="d-flex">
+									<h3 class="font-weight-semibold mb-0">$18,390</h3>
+									<div class="list-icons ml-auto">
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                	</div>
+			                	</div>
+
+			                	<div>
+									Today's revenue
+									<div class="font-size-sm opacity-75">$37,578 avg</div>
+								</div>
+							</div>
+
+							<div id="chart_area_color"></div>
+						</div>
+						<!-- /area chart in colored card -->
+
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Bar chart in colored card -->
+						<div class="card bg-danger-400 has-bg-image">
+							<div class="card-body">
+								<div class="d-flex">
+									<h3 class="font-weight-semibold mb-0">3,450</h3>
+									<span class="badge bg-danger-800 badge-pill align-self-center ml-auto">+53,6%</span>
+			                	</div>
+			                	
+			                	<div>
+									Members online
+									<div class="font-size-sm opacity-75">489 avg</div>
+								</div>
+							</div>
+
+							<div class="container-fluid">
+								<div id="chart_bar_color"></div>
+							</div>
+						</div>
+						<!-- /bar chart in colored card -->
+
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Line chart in colored card -->
+						<div class="card bg-blue-400 has-bg-image">
+							<div class="card-body">
+								<div class="d-flex">
+									<h3 class="font-weight-semibold mb-0">4,389</h3>
+									<div class="list-icons ml-auto">
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                	</div>
+			                	</div>
+			                	
+			                	<div>
+									Orders weekly
+									<div class="font-size-sm opacity-75">4,728 avg</div>
+								</div>
+							</div>
+
+							<div id="line_chart_color"></div>
+						</div>
+						<!-- /line chart in colored card -->
+
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Sparklines in colored card -->
+						<div class="card bg-success-400 has-bg-image">
+							<div class="card-body">
+								<div class="d-flex">
+									<h3 class="font-weight-semibold mb-0">49.4%</h3>
+									<div class="list-icons ml-auto">
+				                		<div class="list-icons-item dropdown">
+				                			<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-cog3"></i></a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-sync"></i> Update data</a>
+												<a href="#" class="dropdown-item"><i class="icon-list-unordered"></i> Detailed log</a>
+												<a href="#" class="dropdown-item"><i class="icon-pie5"></i> Statistics</a>
+												<a href="#" class="dropdown-item"><i class="icon-cross3"></i> Clear list</a>
+											</div>
+				                		</div>
+			                		</div>
+			                	</div>
+			                	
+			                	<div>
+									Current server load
+									<div class="font-size-sm opacity-75">34.6% avg</div>
+								</div>
+							</div>
+
+							<div id="sparklines_color"></div>
+						</div>
+						<!-- /sparklines in colored card -->
+
+					</div>
+				</div>
+				<!-- /widgets with charts -->
+
+
+				<!-- Stats with progress -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Stats with progress
+					</h6>
+					<span class="text-muted d-block">Rounded progress bars</span>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Satisfaction rate -->
+						<div class="card card-body text-center">
+							<div class="svg-center position-relative" id="progress_icon_one"></div>
+							<h2 class="progress-percentage mt-2 mb-1 font-weight-semibold">0%</h2>
+
+							Satisfaction rate
+							<div class="font-size-sm text-muted">54% average</div>
+						</div>
+						<!-- /satisfaction rate -->
+
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Productivity goal  -->
+						<div class="card card-body text-center">
+							<div class="svg-center position-relative" id="progress_icon_two"></div>
+							<h2 class="progress-percentage mt-2 mb-1 font-weight-semibold">0%</h2>
+
+							Productivity goal
+							<div class="font-size-sm text-muted">87% average</div>
+						</div>
+						<!-- /productivity goal -->
+
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Orders processed -->
+						<div class="card card-body text-center bg-teal-400 has-bg-image">
+							<div class="svg-center position-relative" id="progress_icon_three"></div>
+							<h2 class="progress-percentage mt-2 mb-1 font-weight-semibold">0%</h2>
+
+							Orders processed
+							<div class="font-size-sm opacity-75">83 orders pending</div>
+						</div>
+						<!-- /orders processed -->
+
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Order shipped -->
+						<div class="card card-body text-center bg-purple-400 has-bg-image">
+							<div class="svg-center position-relative" id="progress_icon_four"></div>
+							<h2 class="progress-percentage mt-2 mb-1 font-weight-semibold">0%</h2>
+
+							Orders shipped
+							<div class="font-size-sm opacity-75">92 orders pending</div>
+						</div>
+						<!-- /orders shipped -->
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Invitation stats white -->
+						<div class="card text-center">
+							<div class="card-body">
+								<h6 class="font-weight-semibold mb-0 mt-1">Invitation statistics</h6>
+								<div class="text-muted mb-3">539 invites sent</div>
+								<div class="svg-center position-relative mb-1" id="progress_percentage_one"></div>
+							</div>
+
+							<div class="card-body border-top-0 pt-0">
+								<div class="row">
+									<div class="col-4">
+										<div class="text-uppercase font-size-xs text-muted">Accepted</div>
+										<h5 class="font-weight-semibold line-height-1 mt-1 mb-0">2,483</h5>
 									</div>
 
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
+									<div class="col-4">
+										<div class="text-uppercase font-size-xs text-muted">Declined</div>
+										<h5 class="font-weight-semibold line-height-1 mt-1 mb-0">1,257</h5>
+									</div>
+
+									<div class="col-4">
+										<div class="text-uppercase font-size-xs text-muted">Pending</div>
+										<h5 class="font-weight-semibold line-height-1 mt-1 mb-0">8,472</h5>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<!-- /password generator -->
+						<!-- /invitation stats white -->
 
-
-				<!-- Bootstrap maxlength -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
 					</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
-								</div>
+					<div class="col-sm-6 col-xl-3">
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
-								</div>
+						<!-- Tickets stats white -->
+						<div class="card text-center">
+							<div class="card-body">
+								<h6 class="font-weight-semibold mb-0 mt-1">Tickets statistics</h6>
+								<div class="text-muted mb-3">893 tickets in total</div>
+								<div class="svg-center position-relative mb-1" id="progress_percentage_two"></div>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
-								</div>
+							<div class="card-body border-top-0 pt-0">
+								<div class="row">
+									<div class="col-4">
+										<div class="text-uppercase font-size-xs text-muted">Raised</div>
+										<h5 class="font-weight-semibold line-height-1 mt-1 mb-0">5,328</h5>
+									</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
-								</div>
+									<div class="col-4">
+										<div class="text-uppercase font-size-xs text-muted">Pending</div>
+										<h5 class="font-weight-semibold line-height-1 mt-1 mb-0">2,348</h5>
+									</div>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
+									<div class="col-4">
+										<div class="text-uppercase font-size-xs text-muted">Closed</div>
+										<h5 class="font-weight-semibold line-height-1 mt-1 mb-0">4,357</h5>
+									</div>
 								</div>
 							</div>
 						</div>
+						<!-- /tickets stats white -->
+
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Invitation stats colored -->
+						<div class="card text-center bg-blue-400 has-bg-image">
+							<div class="card-body">
+								<h6 class="font-weight-semibold mb-0 mt-1">Invitation statistics</h6>
+								<div class="opacity-75 mb-3">539 invites sent</div>
+								<div class="svg-center position-relative mb-1" id="progress_percentage_three"></div>
+							</div>
+
+							<div class="card-body border-top-0 pt-0">
+								<div class="row">
+									<div class="col-4">
+										<div class="text-uppercase font-size-xs">Accepted</div>
+										<h5 class="font-weight-semibold line-height-1 mt-1 mb-0">2,483</h5>
+									</div>
+
+									<div class="col-4">
+										<div class="text-uppercase font-size-xs">Declined</div>
+										<h5 class="font-weight-semibold line-height-1 mt-1 mb-0">1,257</h5>
+									</div>
+
+									<div class="col-4">
+										<div class="text-uppercase font-size-xs">Pending</div>
+										<h5 class="font-weight-semibold line-height-1 mt-1 mb-0">8,472</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /invitation stats colored -->
+
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Tickets stats colored -->
+						<div class="card text-center bg-danger-400 has-bg-image">
+							<div class="card-body">
+								<h6 class="font-weight-semibold mb-0 mt-1">Tickets statistics</h6>
+								<div class="opacity-75 mb-3">893 tickets in total</div>
+								<div class="svg-center position-relative mb-1" id="progress_percentage_four"></div>
+							</div>
+
+							<div class="card-body border-top-0 pt-0">
+								<div class="row">
+									<div class="col-4">
+										<div class="text-uppercase font-size-xs">Raised</div>
+										<h5 class="font-weight-semibold line-height-1 mt-1 mb-0">5,328</h5>
+									</div>
+
+									<div class="col-4">
+										<div class="text-uppercase font-size-xs">Pending</div>
+										<h5 class="font-weight-semibold line-height-1 mt-1 mb-0">2,348</h5>
+									</div>
+
+									<div class="col-4">
+										<div class="text-uppercase font-size-xs">Closed</div>
+										<h5 class="font-weight-semibold line-height-1 mt-1 mb-0">4,357</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /tickets stats colored -->
+
 					</div>
 				</div>
-				<!-- /bootstrap maxlength -->
+				<!-- /stats with progress -->
+
+
+				<!-- Other chart types -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Other chart types
+					</h6>
+					<span class="text-muted d-block">Donuts, pies, gauges</span>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Pie with progress -->
+						<div class="card card-body text-center">
+							<h6 class="font-weight-semibold mb-0 mt-1">Order statistics</h6>
+							<div class="font-size-sm text-muted mb-3">April 23rd, 2017</div>
+
+							<div class="svg-center" id="pie_progress_bar"></div>
+						</div>
+						<!-- /pie with progress -->
+
+
+						<!-- Progress arc - multiple colors -->
+						<div class="card card-body text-center">
+							<h6 class="font-weight-semibold mb-0 mt-1">Current CPU usage</h6>
+							<div class="font-size-sm text-muted mb-3">37% average</div>
+
+							<div class="svg-center" id="arc_multi"></div>
+						</div>
+						<!-- /progress arc - multiple colors -->
+
+
+						<!-- Simple donut -->
+						<div class="card card-body text-center">
+							<h6 class="font-weight-semibold mb-0 mt-1">Orders in April</h6>
+							<div class="font-size-sm text-muted mb-3">+24% since 2016</div>
+
+							<div class="svg-center" id="donut_basic_stats"></div>
+
+							<div class="row text-center">
+								<div class="col-6">
+									<div class="mt-3">
+										<h5 class="font-weight-semibold mb-0">23,568</h5>
+										<span class="text-muted font-size-sm">this month</span>
+									</div>
+								</div>
+
+								<div class="col-6">
+									<div class="mt-3">
+										<h5 class="font-weight-semibold mb-0">$9,464</h5>
+										<span class="text-muted font-size-sm">revenue</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /simple donut -->
+
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Rounded progress - multiple -->
+						<div class="card card-body text-center">
+							<h6 class="font-weight-semibold mb-0 mt-1">Server usage</h6>
+							<div class="font-size-sm text-muted mb-3">April 25th, 2017</div>
+
+							<div class="svg-center" id="rounded_progress_multiple"></div>
+						</div>
+						<!-- /rounded progress - multiple -->
+
+
+						<!-- Pie arc with legend -->
+						<div class="card card-body text-center">
+							<h6 class="font-weight-semibold mb-0 mt-1">Orders in August</h6>
+							<div class="font-size-sm text-muted mb-3">+53% since 2016</div>
+
+							<div class="svg-center" id="pie_arc_legend"></div>
+						</div>
+						<!-- /pie arc with legend -->
+
+
+						<!-- Basic donut with legend -->
+						<div class="card card-body text-center">
+							<h6 class="font-weight-semibold mb-0 mt-1">Orders in May</h6>
+							<div class="font-size-sm text-muted mb-3">+19% since 2016</div>
+
+							<div class="svg-center" id="donut_basic_legend"></div>
+						</div>
+						<!-- /basic donut with legend -->
+
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Segmented gauge -->
+						<div class="card card-body text-center">
+							<h6 class="font-weight-semibold mb-0 mt-1">Current RAM usage</h6>
+							<div class="font-size-sm text-muted mb-3">49% average</div>
+
+							<div class="svg-center" id="segmented_gauge"></div>
+						</div>
+						<!-- /segmented gauge -->
+
+
+						<!-- Donut with details -->
+						<div class="card card-body text-center">
+							<h6 class="font-weight-semibold mb-0 mt-1">Support tickets</h6>
+							<div class="font-size-sm text-muted mb-3">April 21st, 2017</div>
+
+							<div class="svg-center" id="donut_basic_details"></div>
+						</div>
+						<!-- /donut with details -->
+
+
+						<!-- Basic animated pie -->
+						<div class="card card-body text-center">
+							<div class="svg-center" id="pie_basic"></div>
+
+							<span class="font-weight-semibold">Orders in June</span>
+							<div class="font-size-sm text-muted">+38% since 2016</div>
+						</div>
+						<!-- /basic animated pie -->
+
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+
+						<!-- Rounded progress -->
+						<div class="card card-body text-center">
+							<h6 class="font-weight-semibold mb-0 mt-1">Calories burned</h6>
+							<div class="font-size-sm text-muted mb-3">April 20th, 2017</div>
+
+							<div class="svg-center" id="rounded_progress_single"></div>
+						</div>
+						<!-- /rounded progress -->
+
+
+						<!-- Progress arc - single color -->
+						<div class="card card-body text-center">
+							<h6 class="font-weight-semibold mb-0 mt-1">Current RAM usage</h6>
+							<div class="font-size-sm text-muted mb-3">49% average</div>
+
+							<div class="svg-center" id="arc_single"></div>
+						</div>
+						<!-- /progress arc - single color -->
+
+
+						<!-- Pie with legend -->
+						<div class="card card-body text-center">
+							<h6 class="font-weight-semibold mb-0 mt-1">Orders in July</h6>
+							<div class="font-size-sm text-muted mb-3">+19% since 2016</div>
+
+							<div class="svg-center" id="pie_basic_legend"></div>									
+						</div>
+						<!-- /pie with legend -->
+
+					</div>
+				</div>
+				<!-- /other chart types -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +2231,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->

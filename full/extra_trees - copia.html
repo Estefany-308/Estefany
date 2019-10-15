@@ -23,17 +23,17 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/core.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/effects.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/cookie.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
 	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/trees/fancytree_all.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/trees/fancytree_childcounter.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/extra_trees.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -487,7 +487,7 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
@@ -495,7 +495,7 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -585,7 +585,7 @@
 								<li class="nav-item"><a href="content_grid.html" class="nav-link">Grid system</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-gift"></i> <span>Extra components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Extra components">
 								<li class="nav-item"><a href="extra_pnotify.html" class="nav-link">PNotify notifications</a></li>
@@ -594,7 +594,7 @@
 								<li class="nav-item-divider"></li>
 								<li class="nav-item"><a href="extra_sliders_noui.html" class="nav-link">NoUI sliders</a></li>
 								<li class="nav-item"><a href="extra_sliders_ion.html" class="nav-link">Ion range sliders</a></li>
-								<li class="nav-item"><a href="extra_trees.html" class="nav-link">Dynamic tree views</a></li>
+								<li class="nav-item"><a href="extra_trees.html" class="nav-link active">Dynamic tree views</a></li>
 								<li class="nav-item"><a href="extra_context_menu.html" class="nav-link">Context menu</a></li>
 								<li class="nav-item"><a href="extra_fab.html" class="nav-link">Floating action buttons</a></li>
 								<li class="nav-item"><a href="extra_session_timeout.html" class="nav-link">Session timeout</a></li>
@@ -1211,14 +1211,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Extra</span> - Dynamic Trees</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1232,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="extra_trees.html" class="breadcrumb-item">Extra</a>
+							<span class="breadcrumb-item active">Dynamic trees</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,568 +1270,580 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+				<!-- Initialization options -->
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Initialization options
+					</h6>
+					<span class="text-muted d-block">Data type and data source options</span>
+				</div>
 
-					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
+				<div class="row">
+					<div class="col-md-6">
 
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
+						<!-- Default unordered list markup -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Unordered list markup</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								<p class="mb-3">Current example demonstrates multi level file tree with default options, initialized from an <code>&lt;ul></code> element.</p>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
+								<div class="tree-default card card-body border-left-info border-left-2">
+									<ul class="d-none mb-0">
+										<li class="folder expanded">Expanded folder with children
+											<ul>
+												<li class="expanded">Expanded sub-item
+													<ul>
+														<li class="active focused">Active sub-item (active and focus on init)</li>
+														<li>Basic <i>menu item</i> with <strong class="font-weight-semibold">HTML support</strong></li>
+													</ul>
+												</li>
+												<li>Collapsed sub-item
+													<ul>
+														<li>Sub-item 2.2.1</li>
+														<li>Sub-item 2.2.2</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="has-tooltip" title="Look, a tool tip!">Menu item with key and tooltip</li>
+										<li class="folder">Collapsed folder
+											<ul>
+												<li>Sub-item 1.1</li>
+												<li>Sub-item 1.2</li>
+											</ul>
+										</li>
+										<li class="selected">This is a selected item</li>
+										<li class="expanded">Document with some children (expanded on init)
+											<ul>
+												<li>Document sub-item</li>
+												<li>Another document sub-item
+													<ul>
+														<li>Sub-item 2.1.1</li>
+														<li>Sub-item 2.1.2</li>
+													</ul>
+												</li>
+											</ul>
+										</li>	
+									</ul>
 								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
+							</div>
 						</div>
+						<!-- /default unordered list markup -->
+
+					</div>
+
+					<div class="col-md-6">
+
+						<!-- Load JSON data -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Load JSON data</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								<p class="mb-3">In this example multi level file tree initialized from <code>JSON</code> data type and attached to <code>&lt;div></code> block element.</p>
+
+								<div class="tree-ajax card card-body border-left-info border-left-2"></div>
+							</div>
+						</div>
+						<!-- /load JSON data -->
+
 					</div>
 				</div>
 
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
-						</div>
+				<div class="row">
+					<div class="col-md-6">
 
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
+						<!-- Embed JSON data -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Embed JSON data</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								<p class="mb-3">To embed JSON data in the markup, specify data type via <code>data-type</code> attribute and hide it using <code>.d-none</code> class.</p>
 
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
-							</a>
-
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
-								</a>
-
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+								<div class="tree-json card card-body border-left-info border-left-2" data-type="json">
+									<div class="d-none">
+										[
+											{"title": "Expanded folder with children", "expanded": true, "folder": true, "children": [
+												{"key": "1_2", "title": "Expanded sub-item", "expanded": true, "children": [
+													{"key": "1_2_1", "title": "Active sub-item (active and focus on init)", "active": true, "focused": true},
+													{"key": "1_2_2", "title": "Basic &lt;i>menu item&lt;/i> with &lt;strong class='font-weight-semibold'>HTML support&lt;/strong>"}
+												]},
+												{"key": "1_3", "title": "Expanded sub-item", "children": [
+													{"key": "1_3_1", "title": "Sub-item 2.2.1"},
+													{"key": "1_3_2", "title": "Sub-item 2.2.2"}
+												]}
+											]},
+											{"key": "2", "title": "Menu item with key and tooltip", "extraClasses": "has-tooltip", "tooltip": "Look, a tool tip!"},
+											{"key": "3", "title": "Collapsed folder", "folder": true, "children": [
+												{"key": "3_1", "title": "Sub-item 1.1"},
+												{"key": "3_1", "title": "Sub-item 1.2"}
+											]},
+											{"key": "4", "title": "This is a selected item", "selected": true},
+											{"key": "5", "title": "Document with some children (expanded on init)", "expanded": true, "children": [
+												{"key": "5_1", "title": "Document sub-item"},
+												{"key": "5_2", "title": "Another document sub-item", "children": [
+													{"key": "5_2_1", "title": "Sub-item 2.1.1"},
+													{"key": "5_2_2", "title": "Sub-item 2.1.2"}
+												]}
+											]}
+										]
+									</div>
 								</div>
 							</div>
 						</div>
+						<!-- /embed JSON data -->
+
+					</div>
+
+					<div class="col-md-6">
+
+						<!-- Tree with drag and drop support -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Drag and drop support</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								<p class="mb-3">Fancytree supports drag'n'drop of tree nodes and behave like a standard jQuery UI draggable and droppable.</p>
+
+								<div class="tree-drag card card-body border-left-info border-left-2"></div>
+							</div>
+						</div>
+						<!-- /tree with drag and drop support -->
+
 					</div>
 				</div>
-			</div>
-			<!-- /page header -->
+				<!-- /initialization options -->
 
 
-			<!-- Content area -->
-			<div class="content">
+				<!-- Selectable nodes -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Selectable nodes
+					</h6>
+					<span class="text-muted d-block">Single an multiple selections</span>
+				</div>
 
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+				<div class="row">
+					<div class="col-md-6">
+
+						<!-- Tree with checkbox -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Multiple select</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								<p class="mb-3">This tree has multi selection enabled: a single-click handler selects the node; a keydown handler selects on <kbd>space</kbd>.</p>
+
+								<div class="tree-checkbox card card-body border-left-danger border-left-2"></div>
+							</div>
+						</div>
+						<!-- /tree with checkbox -->
+
 					</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
-								</div>
+					<div class="col-md-6">
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
-								</div>
+						<!-- Tree checkbox options -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Disable selection</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
+							
+							<div class="card-body">
+								<p class="mb-3">You can turn off a node selection by adding <code>.hideCheckbox</code> class to it or disable it using <code>.unselectable</code> class.</p>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
-								</div>
+								<div class="tree-checkbox-options card card-body border-left-danger border-left-2">
+									<ul class="d-none mb-0">
+										<li class="folder expanded">Expanded folder with children
+											<ul>
+												<li class="expanded">Expanded sub-item
+													<ul>
+														<li class="active focused">Active sub-item (active and focus on init)</li>
+														<li class="hideCheckbox">Sub-item with hidden checkbox</li>
+													</ul>
+												</li>
+												<li>Collapsed sub-item
+													<ul>
+														<li>Sub-item 2.2.1</li>
+														<li>Sub-item 2.2.2</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										
+										<li class="hideCheckbox">Menu item with hidden checkbox</li>
+										<li class="folder hideCheckbox">Collapsed folder with hidden checkbox
+											<ul>
+												<li>Sub-item 1.1</li>
+												<li>Sub-item 1.2</li>
+											</ul>
+										</li>
+										<li class="unselectable"><strong>This is an unselectable checkbox</strong></li>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
+										<li class="expanded">Document with some children (expanded on init)
+											<ul>
+												<li class="unselectable selected">Checked unselectable document sub-item</li>
+												<li>Another document sub-item
+													<ul>
+														<li>Sub-item 2.1.1</li>
+														<li>Sub-item 2.1.2</li>
+													</ul>
+												</li>
+											</ul>
+										</li>	
+									</ul>
 								</div>
 							</div>
 						</div>
+						<!-- /tree checkbox options -->
+
 					</div>
 				</div>
-				<!-- /typeahead -->
 
+				<div class="row">
+					<div class="col-md-6">
 
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
+						<!-- Tree persistence -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Tree persistence</h6>
+								<div class="header-elements">
+									<button type="button" class="btn btn-danger btn-sm reset-cookies">Reset cookies</button>
+			                	</div>
 							</div>
+							
+							<div class="card-body">
+								<p class="mb-3">Store and restore tree status using cookies or local storage: click, expand or select nodes and reload the page.</p>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
-								</div>
+								<div class="tree-persistence card card-body border-left-danger border-left-2"></div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<!-- /elastic textarea -->
+						<!-- /tree persistence -->
 
-
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
 					</div>
 
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
+					<div class="col-md-6">
 
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /masked inputs -->
-
-
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
-
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /input formatter -->
-
-
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
+						<!-- Select all/deselect all checkboxes -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Toggle checkboxes state</h6>
+								<div class="header-elements">
+									<form action="#">
+										<div class="form-check form-check-right form-check-switchery">
+											<label class="form-check-label">
+												<input type="checkbox" class="form-input-switchery">
+												Select all
+											</label>
 										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
-								</div>
+									</form>
+			                	</div>
 							</div>
+							
+							<div class="card-body">
+								<p class="mb-3">Change checkboxes state programmatically using <code>setSelected()</code> parameter with <code>true</code> or <code>false</code> properties.</p>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
-								</div>
+								<div class="tree-checkbox-toggle card card-body border-left-danger border-left-2"></div>
 							</div>
+						</div>
+						<!-- /select all/deselect all checkboxes -->
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
+					</div>
+				</div>
 
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
-										</div>
-									</div>
+				<div class="row">
+					<div class="col-md-6">
 
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
+						<!-- Hierarchical select -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Hierarchical select</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								<p class="mb-3">Hierarchical multi selection example. A single-click handler selects the node; a keydown handler selects on <kbd>space</kbd>.</p>
+
+								<div class="tree-checkbox-hierarchical card card-body border-left-danger border-left-2">
+									<ul class="mb-0">
+										<li class="folder expanded">Expanded folder with children
+											<ul>
+												<li class="expanded">Expanded sub-item
+													<ul>
+														<li>Menu sub-item</li>
+														<li class="selected">This is a selected item</li>
+													</ul>
+												</li>
+												<li>Collapsed sub-item
+													<ul>
+														<li>Sub-item 2.2.1</li>
+														<li>Sub-item 2.2.2</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										
+										<li class="popup" title="Look, a tool tip!">Menu item with key and tooltip</li>
+										<li class="folder">Collapsed folder
+											<ul>
+												<li>Sub-item 1.1</li>
+												<li>Sub-item 1.2</li>
+											</ul>
+										</li>
+										<li>Basic <i>menu item</i> with <strong class="font-weight-semibold">HTML support</strong></li>
+
+										<li class="expanded">Document with some children (expanded on init)
+											<ul>
+												<li class="selected">Document sub-item</li>
+												<li class="selected">Another document sub-item</li>
+											</ul>
+										</li>	
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
+
+					<div class="col-md-6">
+
+						<!-- Single select -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Single select</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								<p class="mb-3">Single select example: a double-click handler selects a document node; a keydown handler selects on <kbd>space</kbd>.</p>
+
+								<div class="tree-radio fancytree-radio card card-body border-left-danger border-left-2"></div>
+							</div>
+						</div>
+						<!-- /single select -->
+
+					</div>
 				</div>
-				<!-- /password generator -->
+				<!-- /selectable nodes -->
 
 
-				<!-- Bootstrap maxlength -->
+				<!-- Various examples -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Various examples
+					</h6>
+					<span class="text-muted d-block">Fancytree examples with options</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+
+						<!-- Tree editable -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Editable nodes</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								<p class="mb-3">Node titles can be changed via inline editing using <code>dblclick</code>, <kbd>Shift + click [F2]</kbd> or <kbd>Enter</kbd> (on Mac only).</p>
+
+								<div class="tree-editable card card-body border-left-success border-left-2"></div>
+							</div>
+						</div>
+						<!-- /tree editable -->
+
+					</div>
+
+					<div class="col-md-6">
+
+						<!-- Tree with child counter -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Child counter</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates optional tiny badges that display count of children elements at parent node.</p>
+
+								<div class="tree-child-count card card-body border-left-success border-left-2"></div>
+							</div>
+						</div>
+						<!-- /tree with child counter -->
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+
+						<!-- Enable/disable tree -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Toggle state</h6>
+								<div class="header-elements">
+									<form action="#">
+										<div class="form-check form-check-right form-check-switchery">
+											<label class="form-check-label">
+												<input type="checkbox" id="tree-disabled">
+												Disable tree
+											</label>
+										</div>
+									</form>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								<p class="mb-3">This example demonstrates the usage of some Fancytree API functions, such as disabling and enabling file tree.</p>
+
+								<div class="tree-toggle card card-body border-left-success border-left-2"></div>
+							</div>
+						</div>
+						<!-- /enable/disable tree -->
+
+					</div>
+
+					<div class="col-md-6">
+
+						<!-- Tree sorting -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Tree sorting</h6>
+								<div class="header-elements">
+									<button type="button" class="btn btn-primary btn-sm sort-tree">Sort tree</button>
+									<button type="button" class="btn btn-success btn-sm sort-branch ml-3">Sort active</button>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								<p class="mb-3">This example demonstrates a <code>sorting</code> feature of child list by title in 2 ways: full tree and in active nodes only.</p>
+
+								<div class="tree-sorting card card-body border-left-success border-left-2">
+									<ul class="mb-0">
+										<li class="expanded">Document with some children (expanded on init)
+											<ul>
+												<li>Document sub-item</li>
+												<li>Another document sub-item
+													<ul>
+														<li>Sub-item 2.1.1</li>
+														<li>Sub-item 2.1.2</li>
+													</ul>
+												</li>
+											</ul>
+										</li>	
+										<li class="folder expanded active">Expanded folder with children
+											<ul>
+												<li title="node 1" class="expanded">Expanded sub-item
+													<ul>
+														<li>Active sub-item (active and focus on init)</li>
+														<li>Basic <i>menu item</i> with <strong class="font-weight-semibold">HTML support</strong></li>
+													</ul>
+												</li>
+												<li title="node 2">Collapsed sorting node
+													<ul>
+														<li>Sub-item 2.2.1</li>
+														<li>Sub-item 2.2.2</li>
+													</ul>
+												</li>
+												<li title="node 3" class="expanded">Another sortable node</li>
+											</ul>
+										</li>
+										<li class="selected">This is a selected item</li>
+										<li class="folder">Collapsed folder
+											<ul>
+												<li>Sub-item 1.1</li>
+												<li>Sub-item 1.2</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /tree sorting -->
+
+					</div>
+				</div>
+				<!-- /various examples -->
+
+
+				<!-- Table tree -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
+						<h6 class="card-title">Table tree</h6>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1845,50 +1854,33 @@
 					</div>
 
 					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
-								</div>
-							</div>
-						</div>
+						The following example demonstrates rendered tree as a table (aka tree grid) and support keyboard navigation in a grid with embedded input controls. Table functionality is based on Fancytree's <code>table.js</code> extension. The tree table extension takes care of rendering the node into one of the columns. Other columns have to be rendered in the <code>renderColumns</code> event.  
+					</div>
+					
+					<div class="table-responsive">
+						<table class="table table-bordered tree-table">
+							<thead>
+								<tr>
+									<th style="width: 46px;"></th>
+									<th style="width: 80px;">#</th>
+									<th>Items</th>
+									<th style="width: 80px;">Key</th>
+									<th style="width: 46px;">Like</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
-				<!-- /bootstrap maxlength -->
+				<!-- /table tree -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +1910,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->

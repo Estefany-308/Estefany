@@ -23,17 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/widgets.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/effects.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/jqueryui_components.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -487,7 +481,7 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
@@ -495,7 +489,7 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -926,12 +920,12 @@
 								<li class="nav-item"><a href="extension_dnd.html" class="nav-link">Drag and drop</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-popout"></i> <span>JQuery UI</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="jQuery UI">
 								<li class="nav-item"><a href="jqueryui_interactions.html" class="nav-link">Interactions</a></li>
 								<li class="nav-item"><a href="jqueryui_forms.html" class="nav-link">Forms</a></li>
-								<li class="nav-item"><a href="jqueryui_components.html" class="nav-link">Components</a></li>
+								<li class="nav-item"><a href="jqueryui_components.html" class="nav-link active">Components</a></li>
 								<li class="nav-item"><a href="jqueryui_sliders.html" class="nav-link">Sliders</a></li>
 								<li class="nav-item"><a href="jqueryui_navigation.html" class="nav-link">Navigation</a></li>
 							</ul>
@@ -1211,14 +1205,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">jQuery UI</span> - Components</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1226,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="jqueryui_components.html" class="breadcrumb-item">jQuery UI</a>
+							<span class="breadcrumb-item active">Components</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,10 +1264,244 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
+				<!-- Button types -->
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Button types
+					</h6>
+					<span class="text-muted d-block">Button, input and link types</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="mb-0 font-weight-semibold">Button element</h6>
+							<p class="mb-3 text-muted">Basic style of <code>&lt;button></code> element</p>
+
+							<div>
+								<button class="ui-button jui-button" data-fouc>A button element</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="mb-0 font-weight-semibold">Input element</h6>
+							<p class="mb-3 text-muted">Basic style of <code>&lt;input></code> element</p>
+
+							<div>
+								<input type="submit" class="ui-button jui-button" value="A submit button" data-fouc>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="mb-0 font-weight-semibold">Anchor element</h6>
+							<p class="mb-3 text-muted">Basic style of <code>&lt;a></code> element</p>
+
+							<div>
+								<a href="#" class="ui-button jui-button" data-fouc>An anchor</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /button types -->
+
+
+				<!-- Button styles -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Button styles
+					</h6>
+					<span class="text-muted d-block">Default and custom button styles</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="mb-0 font-weight-semibold">Default style</h6>
+							<p class="mb-3 text-muted">Default button element styling</p>
+
+							<div>
+								<button class="ui-button jui-button" data-fouc>Default color</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="mb-0 font-weight-semibold">Custom colors</h6>
+							<p class="mb-3 text-muted">Using <code>.bg-*</code> color helper classes</p>
+
+							<div>
+								<button class="ui-button jui-button bg-blue border-blue" data-fouc>Custom color</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="mb-0 font-weight-semibold">Transparent button</h6>
+							<p class="mb-3 text-muted">Using <code>.ui-button-link</code> class</p>
+
+							<div>
+								<button class="ui-button jui-button ui-button-link" data-fouc>Transparent color</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="mb-0 font-weight-semibold">Left icon position</h6>
+							<p class="mb-3 text-muted">Left position using <code>primary</code> option</p>
+
+							<div>
+								<button type="button" class="ui-button jui-button-icon-left" data-fouc>Left icon</button>
+							</div>
+						</div>
+
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="mb-0 font-weight-semibold">Checkbox control</h6>
+							<p class="mb-3 text-muted">Checkbox control as a single button</p>
+
+							<div>
+								<div class="jui-controlgroup">
+									<label for="transmission-standard" class="ui-button mb-0">Single checkbox control</label>
+									<input type="checkbox" class="d-none" name="transmission-standard" id="transmission-standard">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="mb-0 font-weight-semibold">Right icon position</h6>
+							<p class="mb-3 text-muted">Right position using <code>secondary</code> option</p>
+
+							<div>
+								<button type="button" class="ui-button jui-button-icon-right" data-fouc>Right icon</button>
+							</div>
+						</div>
+
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="mb-0 font-weight-semibold">Radio control</h6>
+							<p class="mb-3 text-muted">Radio control as a single button</p>
+
+							<div>
+								<div class="jui-controlgroup">
+									<label for="transmission-custom" class="ui-button mb-0">Single radio control</label>
+									<input type="radio" class="d-none" name="transmission-custom" id="transmission-custom">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="mb-0 font-weight-semibold">Icon without text</h6>
+							<p class="mb-3 text-muted">Display icon only without text</p>
+
+							<div>
+								<button type="button" class="ui-button jui-button-icon-only" data-fouc>
+									Button with icon only
+								</button>
+							</div>
+						</div>
+
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="mb-0 font-weight-semibold">Segmented buttons</h6>
+							<p class="mb-3 text-muted">Split buttons with dropdown menu</p>
+
+							<div>
+								<div class="ui-controlgroup">
+									<button class="ui-button jui-button-split" data-fouc>Run last action</button>
+									<select class="form-group jui-combo d-none">
+										<option>Open...</option>
+										<option>Save</option>
+										<option>Delete</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /button styles -->
+
+
+				<!-- Button sets -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Button sets
+					</h6>
+					<span class="text-muted d-block">Grouped button sets</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="mb-0 font-weight-semibold">Button group</h6>
+							<p class="mb-3 text-muted">Display buttons in a group</p>
+
+							<div>
+								<div class="jui-button-set">
+									<button type="button" class="ui-button" data-fouc>Button 1</button>
+									<button type="button" class="ui-button" data-fouc>Button 2</button>
+									<button type="button" class="ui-button" data-fouc>Button 3</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="mb-0 font-weight-semibold">Button checkboxes</h6>
+							<p class="mb-3 text-muted">Display checkboxes as a button set</p>
+
+							<div>
+								<div class="jui-button-set">
+									<label for="check1" class="ui-button mb-0" data-fouc>Toggle 1</label>
+									<input type="checkbox" id="check1" class="d-none">
+
+									<label for="check2" class="ui-button mb-0" data-fouc>Toggle 2</label>
+									<input type="checkbox" id="check2" class="d-none" checked>
+
+									<label for="check3" class="ui-button mb-0" data-fouc>Toggle 3</label>
+									<input type="checkbox" id="check3" class="d-none">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card card-body border-top-primary text-center">
+							<h6 class="mb-0 font-weight-semibold">Button radios</h6>
+							<p class="mb-3 text-muted">Display radios as a button set</p>
+
+							<div>
+								<div class="jui-button-set">
+									<label for="radio1" class="ui-button mb-0" data-fouc>Choice 1</label>
+									<input type="radio" class="d-none" id="radio1" name="radio">
+
+									<label for="radio2" class="ui-button mb-0" data-fouc>Choice 2</label>
+									<input type="radio" class="d-none" id="radio2" name="radio" checked>
+
+									<label for="radio3" class="ui-button mb-0" data-fouc>Choice 3</label>
+									<input type="radio" class="d-none" id="radio3" name="radio">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /button sets -->
+
+
+				<!-- Progress bars -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
+						<h5 class="card-title">Progress bars</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1287,608 +1512,442 @@
 					</div>
 
 					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
+						<p class="mb-3">A progress bar is a graphical control element used to visualize the progression of an extended computer operation, such as a download, file transfer, or installation. Sometimes, the graphic is accompanied by a textual representation of the progress in a percent format. Typically, progress bars use a linear function, such that the advancement of a progress bar is directly proportional to the amount of work that has been completed.</p>
 
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
-						</div>
-
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
-							</a>
-
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
-								</a>
-
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /page header -->
-
-
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /typeahead -->
-
-
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /elastic textarea -->
-
-
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /masked inputs -->
-
-
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
-
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /input formatter -->
-
-
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
 						<div class="row">
 							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
-
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /password generator -->
-
-
-				<!-- Bootstrap maxlength -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
 								<div class="mb-4">
 									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
+									<p class="mb-3">This example demonstrates default determinate progress bar. The value is specified in plugin's configuration using <code>value</code> option.</p>
+
+									<div class="ui-progressbar jui-progressbar" data-fouc></div>
 								</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
+								<div class="mb-4 mb-md-2">
+									<h6 class="font-weight-semibold">Maximum value</h6>
+									<p class="mb-3">Here progress bar is initialized with maximum value of <code>1000</code> and value is set to <code>400</code>, so progress width is calculated accordingly.</p>
+									
+									<div class="ui-progressbar jui-progressbar-max" data-fouc></div>
 								</div>
 							</div>
 
-							<div class="col-md-6">
+							<div class="col-md-4">
 								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
+									<h6 class="font-weight-semibold">Striped progress bar</h6>
+									<p class="mb-3">This example shows progress bar with progress stripes. To add stripes, use <code>.ui-progressbar-striped</code> class to the bar container</p>
+
+									<div class="ui-progressbar ui-progressbar-striped jui-progressbar" data-fouc></div>
 								</div>
 
+								<div class="mb-4 mb-md-2">
+									<h6 class="font-weight-semibold">Indeterminate progress</h6>
+									<p class="mb-3">This bar uses motion indicator to show that progress is taking place instead of the filled portion to show the total amount of progress</p>
+
+									<div class="ui-progressbar jui-progressbar-indeterminate" data-fouc></div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
 								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
+									<h6 class="font-weight-semibold">Animated stripes</h6>
+									<p class="mb-3">In this example progress bar uses animated stripes, that add a motion to the progress along with animated filled amount of progress</p>
+									
+									<div class="ui-progressbar ui-progressbar-striped ui-progressbar-active jui-progressbar" data-fouc></div>
 								</div>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
+								<div class="mb-4 mb-md-2">
+									<h6 class="font-weight-semibold">Custom label</h6>
+									<p class="mb-3">In this example the progress amount is visually represented with animated percentage values and success message - <strong>progress: <span class="ui-progress-label"></span></strong></p>
+									
+									<div class="ui-progressbar jui-progressbar-custom" data-fouc></div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /bootstrap maxlength -->
+				<!-- /progress bars -->
+
+
+				<!-- Dialogs -->
+				<div class="card" id="modal-append-target">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Modal dialogs</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						The basic dialog window is an overlay positioned within the viewport and is protected from page content (like select elements) shining through with an iframe. It has a title bar and a content area, and can be moved, resized and closed with the 'x' icon by default. Table below contains basic jQuery UI dialog examples. Click <code>Launch</code> button to run dialog examples. 
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr>
+									<th colspan="3" class="table-active">Basic examples</th>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Default modal dialog</td>
+									<td style="width: 20%;"><button type="button" class="btn btn-light" id="jui-dialog-basic-opener">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Basic modal dialog with <code>title</code> and <code>content</code> areas. Default examples displays: header - contains a title and a close button and body contains static or dynamic content</td>
+								</tr>
+								<tr>
+									<td>Dialog with overlay</td>
+									<td><button type="button" class="btn btn-light" id="jui-dialog-overlay-opener">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Display dialog as a modal using <code>modal</code> option. Modal dialogs create an overlay below the dialog but above other page elements</td>
+								</tr>
+								<tr>
+									<td>Animated dialog</td>
+									<td><button type="button" class="btn btn-light" id="jui-dialog-animated-opener">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Animate dialog using <code>show</code> and <code>hide</code> options and specify optional animation duration and animation effect</td>
+								</tr>
+								<tr>
+									<td>Dialog with buttons</td>
+									<td><button type="button" class="btn btn-light" id="jui-dialog-buttons-opener">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Specify which buttons should be displayed on the dialog. The context of the callback is the dialog element; if you need access to the button, it is available as the target of the event object</td>
+								</tr>
+								<tr>
+									<td>Buttons with icons</td>
+									<td><button type="button" class="btn btn-light" id="jui-dialog-buttons-icons-opener">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Dialog buttons support icons with the following options - before and after content, both or icon only. To use, add icon class to <code>icon</code> option</td>
+								</tr>
+								<tr>
+									<td>Disable resize</td>
+									<td><button type="button" class="btn btn-light" id="jui-dialog-resize-opener">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal dialogs are resizable by default. To turn off resizable feature, set <code>resizable</code> option to <code>false</code></td>
+								</tr>
+								<tr>
+									<td>Disable close on escape</td>
+									<td><button type="button" class="btn btn-light" id="jui-dialog-close-escape-opener">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Specify whether the dialog should close when it has focus and the user presses the escape (ESC) key by setting <code>closeOnEscape</code> option to <code>false</code></td>
+								</tr>
+								<tr>
+									<td>Disable drag</td>
+									<td><button type="button" class="btn btn-light" id="jui-dialog-drag-disabled-opener">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>By default, the dialog is draggable by the title bar. To disable draggins functionality, set <code>draggable</code> option to <code>false</code></td>
+								</tr>
+								<tr>
+									<td>Append to element</td>
+									<td><button type="button" class="btn btn-light" id="jui-dialog-append-opener">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Specify which element the dialog (and overlay, if modal) should be appended to. Here dialog is appended to the panel</td>
+								</tr>
+
+								<tr>
+									<th colspan="3" class="table-active">With forms</th>
+								</tr>
+								<tr>
+									<td>Vertical form</td>
+									<td><button type="button" class="btn btn-light" id="jui-dialog-form-vertical-opener">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of a dialog with default <strong>vertical</strong> form layout. For better appearance set desired width in the dialog configuration</td>
+								</tr>
+								<tr>
+									<td>Horizontal form</td>
+									<td><button type="button" class="btn btn-light" id="jui-dialog-form-horizontal-opener">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of a dialog with default <strong>horizontal</strong> form layout. For better appearance set desired width in the dialog configuration</td>
+								</tr>
+								<tr>
+									<td>Inline form</td>
+									<td><button type="button" class="btn btn-light" id="jui-dialog-form-inline-opener">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of a dialog with default <strong>inline</strong> form layout. Requires custom width depending on the form width</td>
+								</tr>
+
+								<tr>
+									<th colspan="3" class="table-active">Dialog widths</th>
+								</tr>
+								<tr>
+									<td>Default width</td>
+									<td><button type="button" class="btn btn-light" id="jui-dialog-width-default-opener">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>By default dialog has <code>300px</code> width, if width is not specified in configuration via <code>width</code> option</td>
+								</tr>
+								<tr>
+									<td>Custom pixel width</td>
+									<td><button type="button" class="btn btn-light" id="jui-dialog-width-pixel-opener">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Specify a custom dialog width in <strong>pixels</strong> using <code>width</code> option</td>
+								</tr>
+								<tr>
+									<td>Custom percentage width</td>
+									<td><button type="button" class="btn btn-light" id="jui-dialog-width-percentage-opener">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Specify a custom dialog width in <strong>percentages</strong> using <code>width</code> option</td>
+								</tr>
+								<tr>
+									<td>Full width dialog</td>
+									<td><button type="button" class="btn btn-light" id="jui-dialog-width-full-opener">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>To display dialog in a full width, set <code>96%</code> in <code>width</code> option, let's keep <code>2%</code> spacing in both sides</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- /dialogs -->
+
+
+				<!-- Basic dialog -->
+				<div id="jui-dialog-basic" title="Basic dialog">
+					<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+				</div>
+				<!-- /basic dialog -->
+
+
+				<!-- Dialog with overlay -->
+				<div id="jui-dialog-overlay" title="Dialog with overlay">
+					<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+				</div>
+				<!-- /Dialog with overlay -->
+
+
+				<!-- Animated dialog -->
+				<div id="jui-dialog-animated" title="Animated dialog">
+					<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+				</div>
+				<!-- /animated dialog -->
+
+
+				<!-- Dialog with buttons -->
+				<div id="jui-dialog-buttons" title="Dialog with buttons">
+					<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+				</div>
+				<!-- /dialog with buttons -->
+
+
+				<!-- Buttons with icons -->
+				<div id="jui-dialog-buttons-icons" title="Buttons with icons">
+					<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+				</div>
+				<!-- /buttons with icons -->
+
+
+				<!-- Disable resize -->
+				<div id="jui-dialog-resize" title="Disable resize">
+					<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+				</div>
+				<!-- /disable resize -->
+
+
+				<!-- Disable close on escape -->
+				<div id="jui-dialog-close-escape" title="Disable close on escape">
+					<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+				</div>
+				<!-- /disable close on escape -->
+
+
+				<!-- Disable drag -->
+				<div id="jui-dialog-drag-disabled" title="Disable drag">
+					<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+				</div>
+				<!-- /disable drag -->
+
+
+				<!-- Append to element -->
+				<div id="jui-dialog-append" title="Append to element">
+					<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+				</div>
+				<!-- /append to element -->
+
+
+
+				<!-- Vertical form -->
+				<div id="jui-dialog-form-vertical" title="Vertical form">
+					<form action="#">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">
+									<label>First name</label>
+									<input type="text" placeholder="Eugene" class="form-control">
+								</div>
+
+								<div class="col-md-6">
+									<label>Last name</label>
+									<input type="text" placeholder="Kopyov" class="form-control">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">
+									<label>Address line 1</label>
+									<input type="text" placeholder="Ring street 12" class="form-control">
+								</div>
+
+								<div class="col-md-6">
+									<label>Address line 2</label>
+									<input type="text" placeholder="building D, flat #67" class="form-control">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-4">
+									<label>City</label>
+									<input type="text" placeholder="Munich" class="form-control">
+								</div>
+
+								<div class="col-md-4">
+									<label>State/Province</label>
+									<input type="text" placeholder="Bayern" class="form-control">
+								</div>
+
+								<div class="col-md-4">
+									<label>ZIP code</label>
+									<input type="text" placeholder="1031" class="form-control">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">
+									<label>Email</label>
+									<input type="text" placeholder="eugene@kopyov.com" class="form-control">
+									<span class="form-text text-muted">name@domain.com</span>
+								</div>
+
+								<div class="col-md-6">
+									<label>Phone #</label>
+									<input type="text" placeholder="+99-99-9999-9999" data-mask="+99-99-9999-9999" class="form-control">
+									<span class="form-text text-muted">+99-99-9999-9999</span>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- /vertical form -->
+
+
+				<!-- Horizontal form -->
+				<div id="jui-dialog-form-horizontal" title="Horizontal form">
+					<form action="#">
+						<div class="form-group row">
+							<label class="col-form-label col-md-3">First name</label>
+							<div class="col-md-9">
+								<input type="text" placeholder="Eugene" class="form-control">
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-form-label col-md-3">Last name</label>
+							<div class="col-md-9">
+								<input type="text" placeholder="Kopyov" class="form-control">
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-form-label col-md-3">Email</label>
+							<div class="col-md-9">
+								<input type="text" placeholder="eugene@kopyov.com" class="form-control">
+								<span class="form-text text-muted">name@domain.com</span>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-form-label col-md-3">Phone #</label>
+							<div class="col-md-9">
+								<input type="text" placeholder="+99-99-9999-9999" data-mask="+99-99-9999-9999" class="form-control">
+								<span class="form-text text-muted">+99-99-9999-9999</span>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-form-label col-md-3">Address line 1</label>
+							<div class="col-md-9">
+								<input type="text" placeholder="Ring street 12, building D, flat #67" class="form-control">
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-form-label col-md-3">City</label>
+							<div class="col-md-9">
+								<input type="text" placeholder="Munich" class="form-control">
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-form-label col-md-3">State/Province</label>
+							<div class="col-md-9">
+								<input type="text" placeholder="Bayern" class="form-control">
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-form-label col-md-3">ZIP code</label>
+							<div class="col-md-9">
+								<input type="text" placeholder="1031" class="form-control">
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- /horizontal form -->
+
+
+				<!-- Inline form -->
+				<div id="jui-dialog-form-inline" title="Inline form">
+					<form action="#" class="form-inline text-center">
+						<div class="form-group form-group-feedback form-group-feedback-right">
+							<label class="mr-sm-2">Email:</label>
+							<input type="text" placeholder="Your email" class="form-control">
+							<div class="form-control-feedback">
+								<i class="icon-user text-muted"></i>
+							</div>
+						</div>
+
+						<div class="form-group form-group-feedback form-group-feedback-right">
+							<label class="mx-0 mr-sm-2 ml-sm-4">Password:</label>
+							<input type="password" placeholder="Your password" class="form-control">
+							<div class="form-control-feedback">
+								<i class="icon-lock text-muted"></i>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- /inline form -->
+
+
+
+				<!-- Default width dialog -->
+				<div id="jui-dialog-width-default" title="Default width">
+					<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+				</div>
+				<!-- /default width dialog -->
+
+
+				<!-- Pixel width dialog -->
+				<div id="jui-dialog-width-pixel" title="Pixel width">
+					<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+				</div>
+				<!-- /pixel width dialog -->
+
+
+				<!-- Percentage width dialog -->
+				<div id="jui-dialog-width-percentage" title="Percentage width">
+					<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+				</div>
+				<!-- /percentage width dialog -->
+
+
+				<!-- Full width dialog -->
+				<div id="jui-dialog-width-full" title="Full width">
+					<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+				</div>
+				<!-- /full width dialog -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +1977,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->

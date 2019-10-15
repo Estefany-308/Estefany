@@ -23,17 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/contextmenu.js"></script>
+	<script src="../../../../global_assets/js/plugins/ui/prism.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/extra_context_menu.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -487,7 +481,7 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
@@ -495,7 +489,7 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -585,7 +579,7 @@
 								<li class="nav-item"><a href="content_grid.html" class="nav-link">Grid system</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-gift"></i> <span>Extra components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Extra components">
 								<li class="nav-item"><a href="extra_pnotify.html" class="nav-link">PNotify notifications</a></li>
@@ -595,7 +589,7 @@
 								<li class="nav-item"><a href="extra_sliders_noui.html" class="nav-link">NoUI sliders</a></li>
 								<li class="nav-item"><a href="extra_sliders_ion.html" class="nav-link">Ion range sliders</a></li>
 								<li class="nav-item"><a href="extra_trees.html" class="nav-link">Dynamic tree views</a></li>
-								<li class="nav-item"><a href="extra_context_menu.html" class="nav-link">Context menu</a></li>
+								<li class="nav-item"><a href="extra_context_menu.html" class="nav-link active">Context menu</a></li>
 								<li class="nav-item"><a href="extra_fab.html" class="nav-link">Floating action buttons</a></li>
 								<li class="nav-item"><a href="extra_session_timeout.html" class="nav-link">Session timeout</a></li>
 								<li class="nav-item"><a href="extra_idle_timeout.html" class="nav-link">Idle timeout</a></li>
@@ -1211,14 +1205,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Extra</span> - Context Menu</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1226,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="extra_context_menu.html" class="breadcrumb-item">Extra</a>
+							<span class="breadcrumb-item active">Context menu</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,622 +1264,1005 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+				<!-- Basic usage -->
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Plugin initialization
+					</h6>
+					<span class="text-muted d-block">Context menu initialization options</span>
+				</div>
 
-					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
+				<div class="row">
+					<div class="col-md-6">
 
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
+						<!-- Initialize with data attributes -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Using data attributes</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body" data-toggle="context" data-target=".context-data-menu">
+								<p class="mb-3">Add <code>data-toggle="context"</code> to any element that needs a custom context menu. And point <code>data-target</code> attribute to your custom context menu.</p>
+								<pre class="language-markup"><code>&lt;div data-toggle="context" data-target=".context-menu">&lt;/div>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
+&lt;div class="context-menu">
+	&lt;div class="dropdown-menu">
+		&lt;a href="#" class="dropdown-item">Action&lt;/a>
+		&lt;a href="#" class="dropdown-item">Another action&lt;/a>
+		&lt;div class="dropdown-divider">&lt;/div>
+		&lt;a href="#" class="dropdown-item">Something else here&lt;/a>
+	&lt;/div>
+&lt;/div></code></pre>
+								<div class="context-data-menu">
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+										<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+										<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
 									</div>
 								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
+							</div>
 						</div>
+						<!-- /initialize with data attributes -->
+
+					</div>
+
+					<div class="col-md-6">
+
+						<!-- Initialize with js -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Using Javascript</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body context-js">
+								<p class="mb-3">Also content menu can be initialized via JavaScript call. In this case data attributes are not required, target can be set in plugin configuration.</p>
+								<pre class="language-javascript"><code>$('.context').contextmenu({
+	target:'#context-menu', 
+	before: function(e,context) {
+		// execute code before context menu if shown
+	},
+	onItem: function(context,e) {
+		// execute on menu item selection
+	},
+	scopes: 'tbody > tr'
+})</code></pre>
+								<div class="context-js-menu">
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+										<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+										<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /initialize with js -->
+
+					</div>
+				</div>
+				<!-- /basic usage -->
+
+
+				<!-- Content attachment -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Content attachment
+					</h6>
+					<span class="text-muted d-block">Card and content elements attachment</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+
+						<!-- Card attachment -->
+						<div class="card" data-toggle="context" data-target=".context-card-menu">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Card attachment</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								Current example demonstrates context menu attached to the whole card. Add <code>data-toggle="context"</code> to the card and point <code>data-target</code> attribute to the menu.
+
+								<div class="context-card-menu">
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+										<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+										<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /card attachment -->
+
+					</div>
+
+					<div class="col-md-6">
+
+						<!-- Element attachment -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title" data-toggle="context" data-target=".context-element-menu">Element attachment</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								Current example demonstrates context menu attached to some element <span class="font-weight-semibold">only</span> instead of full card. Right click on current <code>card title</code> to see it in action
+
+								<div class="context-element-menu">
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+										<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+										<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /element attachment -->
+
 					</div>
 				</div>
 
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
-						</div>
+				<div class="row">
+					<div class="col-md-6">
 
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+						<!-- Inline attachment -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Inline attachment</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								Also context menu can be attached to the <a href="#" data-toggle="context" data-target=".context-inline-menu">link</a> or any other <span class="font-weight-semibold" data-toggle="context" data-target=".context-inline-menu">content elements</span> like headings, paragraphs, span's, lists, labels, form components, buttons, button groups etc.
+
+								<div class="context-inline-menu">
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+										<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+										<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /inline attachment -->
+
 					</div>
 
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
-							</a>
+					<div class="col-md-6">
 
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
-								</a>
+						<!-- Exclude elements -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Exclude elements</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body context-deactivate">
+								Current example demonstrates context menu attached to the card content, excluding <code>&lt;code>...&lt;/code></code> phrase tag. Try to right click on the <code>code block</code>.
 
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
+								<div class="context-deactivate-menu">
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+										<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+										<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /exclude elements -->
+
+					</div>
+				</div>
+				<!-- /content attachment -->
+
+
+				<!-- Table attachment -->
+				<div class="row">
+					<div class="col-md-6">
+
+						<!-- Table attachment -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Table attachment</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Example with context menu attached to the whole table.
+							</div>
+
+							<div class="table-responsive">
+								<table class="table" data-toggle="context" data-target=".context-table">
+									<thead>
+										<tr>
+											<th style="width: 40px;">#</th>
+											<th>Description</th>
+											<th>Date</th>
+											<th class="text-center" style="width: 100px;">Actions</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td><a href="#">Cozy sphinx waves quart jug of bad milk.</a></td>
+											<td>July 13, 2014</td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-plus22"></i>
+							                		</a>
+
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-three-bars"></i>
+							                		</a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td><a href="#">Few quips galvanized the mock jury box.</a></td>
+											<td>July 14, 2014</td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-plus22"></i>
+							                		</a>
+
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-three-bars"></i>
+							                		</a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td><a href="#">Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph.</a></td>
+											<td>July 15, 2014</td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-plus22"></i>
+							                		</a>
+
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-three-bars"></i>
+							                		</a>
+							                	</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="context-table">
+								<div class="dropdown-menu">
+									<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+									<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+									<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
 									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+									<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /page header -->
+						<!-- /table attachment -->
 
-
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
 					</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
-								</div>
+					<div class="col-md-6">
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
-								</div>
+						<!-- Row attachment -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Row attachment</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /typeahead -->
-
-
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
+							<div class="card-body">
+								Example with context menu attached to the table row. Attached to the first row.
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th style="width: 40px;">#</th>
+											<th>Description</th>
+											<th>Date</th>
+											<th class="text-center" style="width: 100px;">Actions</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr data-toggle="context" data-target=".context-table-row">
+											<td>1</td>
+											<td><a href="#">Cozy sphinx waves quart jug of bad milk.</a></td>
+											<td>July 13, 2014</td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-plus22"></i>
+							                		</a>
 
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-three-bars"></i>
+							                		</a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td><a href="#">Few quips galvanized the mock jury box.</a></td>
+											<td>July 14, 2014</td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-plus22"></i>
+							                		</a>
 
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
-								</div>
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-three-bars"></i>
+							                		</a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td><a href="#">Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph.</a></td>
+											<td>July 15, 2014</td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-plus22"></i>
+							                		</a>
+
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-three-bars"></i>
+							                		</a>
+							                	</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
+							<div class="context-table-row">
+								<div class="dropdown-menu">
+									<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+									<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+									<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
+									<div class="dropdown-divider"></div>
+									<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
 								</div>
 							</div>
 						</div>
+						<!-- /row attachment -->
+
 					</div>
 				</div>
-				<!-- /elastic textarea -->
 
+				<div class="row">
+					<div class="col-md-6">
 
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+						<!-- Cell attachment -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Cell attachment</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Example with context menu attached to the table cell only. Attached to cells with links.
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th style="width: 40px;">#</th>
+											<th>Description</th>
+											<th>Date</th>
+											<th class="text-center" style="width: 100px;">Actions</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td data-toggle="context" data-target=".context-table-cell"><a href="#">Cozy sphinx waves quart jug of bad milk.</a></td>
+											<td>July 13, 2014</td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-plus22"></i>
+							                		</a>
+
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-three-bars"></i>
+							                		</a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td data-toggle="context" data-target=".context-table-cell"><a href="#">Few quips galvanized the mock jury box.</a></td>
+											<td>July 14, 2014</td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-plus22"></i>
+							                		</a>
+
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-three-bars"></i>
+							                		</a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td data-toggle="context" data-target=".context-table-cell"><a href="#">Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph.</a></td>
+											<td>July 15, 2014</td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-plus22"></i>
+							                		</a>
+
+							                		<a href="#" class="list-icons-item">
+							                			<i class="icon-three-bars"></i>
+							                		</a>
+							                	</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="context-table-cell">
+								<div class="dropdown-menu">
+									<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+									<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+									<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
+									<div class="dropdown-divider"></div>
+									<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
+								</div>
+							</div>
+						</div>
+						<!-- /cell attachment -->
+
 					</div>
 
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
+					<div class="col-md-6">
 
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
-								</div>
+						<!-- Table content attachment -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Table content attachment</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
 
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
-								</div>
+							<div class="card-body">
+								Example with context menu attached to the table content. Attached to action icons.
+							</div>
 
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th style="width: 40px;">#</th>
+											<th>Description</th>
+											<th>Date</th>
+											<th class="text-center" style="width: 100px;">Actions</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td><a href="#">Cozy sphinx waves quart jug of bad milk.</a></td>
+											<td>July 13, 2014</td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item" data-toggle="context" data-target=".context-table-content">
+							                			<i class="icon-plus22"></i>
+							                		</a>
 
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
+							                		<a href="#" class="list-icons-item" data-toggle="context" data-target=".context-table-content">
+							                			<i class="icon-three-bars"></i>
+							                		</a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td><a href="#">Few quips galvanized the mock jury box.</a></td>
+											<td>July 14, 2014</td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item" data-toggle="context" data-target=".context-table-content">
+							                			<i class="icon-plus22"></i>
+							                		</a>
 
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
+							                		<a href="#" class="list-icons-item" data-toggle="context" data-target=".context-table-content">
+							                			<i class="icon-three-bars"></i>
+							                		</a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td><a href="#">Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph.</a></td>
+											<td>July 15, 2014</td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item" data-toggle="context" data-target=".context-table-content">
+							                			<i class="icon-plus22"></i>
+							                		</a>
 
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
+							                		<a href="#" class="list-icons-item" data-toggle="context" data-target=".context-table-content">
+							                			<i class="icon-three-bars"></i>
+							                		</a>
+							                	</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
+							<div class="context-table-content">
+								<div class="dropdown-menu">
+									<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+									<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+									<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
+									<div class="dropdown-divider"></div>
+									<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
 								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /masked inputs -->
+							</div>
+						</div>
+						<!-- /table content attachment -->
 
-
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
 					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
-
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /input formatter -->
+				</div>
+				<!-- /table attachment -->
 
 
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+				<!-- Dropdown options -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Context menu options
+					</h6>
+					<span class="text-muted d-block">Dropdown menu options and colors</span>
+				</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
+				<div class="row">
+					<div class="col-md-6">
 
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
+						<!-- Dropdown submenu -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Dropdown submenu</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body context-submenu">
+								Context dropdown menu supports multi level menus as it uses default Bootstrap <code>dropdown-menu</code> markup. As well as left sub menu direction using <code>.dropdown-submenu-left</code> helper class.
+
+								<div class="context-sub-menu">
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Action</a>
+										<a href="#" class="dropdown-item">Another action</a>
+										<a href="#" class="dropdown-item">Something else here</a>
+										<div class="dropdown-divider"></div>
+										<div class="dropdown-submenu">
+											<a href="#" class="dropdown-item dropdown-toggle">More options</a>
+											<div class="dropdown-menu">
+												<a href="#" class="dropdown-item">Second level link</a>
+												<a href="#" class="dropdown-item">Second level link</a>
+												<a href="#" class="dropdown-item">Second level link</a>
+											</div>
 										</div>
 									</div>
-
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
-
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<!-- /password generator -->
+						<!-- /dropdown submenu -->
 
-
-				<!-- Bootstrap maxlength -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
 					</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
-								</div>
+					<div class="col-md-6">
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
-								</div>
+						<!-- Dropdown options -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Dropdown options</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
+							
+							<div class="card-body" data-toggle="context" data-target=".context-options-menu">
+								Since context dropdown menu supports default Bootstrap <code>dropdown-menu</code> markup, any existing menu options can be used: disabled items, icons, borders, dividers etc.
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
+								<div class="context-options-menu">
+									<div class="dropdown-menu border-left-danger">
+										<div class="dropdown-header">Dropdown heading</div>
+										<a href="#" class="dropdown-item">Another <span class="font-weight-semibold">semibold action</span></a>
+										<a href="#" class="dropdown-item"><span class="font-weight-light">Something</span> <span class="font-weight-semibold">else</span> <span class="font-italic">here</span></a>
+										<a href="#" class="dropdown-item disabled"><strong>One more</strong> <span class="font-weight-light">disabled line</span></a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item"><strong>Separated item</strong></a>
+									</div>
 								</div>
 							</div>
 						</div>
+						<!-- /dropdown options -->
+
 					</div>
 				</div>
-				<!-- /bootstrap maxlength -->
+
+				<div class="row">
+					<div class="col-md-6">
+
+						<!-- Dynamic replacement -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Dynamic replacement</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body context-dynamic">
+								Current example demonstrates context menu, which contains an item, modified dynamically using <code>before: function () {...}</code> plugin function.
+
+								<div class="context-dynamic-menu">
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+										<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+										<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /dynamic replacement -->
+
+					</div>
+
+					<div class="col-md-6">
+
+						<!-- Name on selection -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Name on selection</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body context-selection">
+								Current example demonstrates context menu with function that shows menu name on item selection using <code>onItem: function () {...}</code> plugin function.
+
+								<div class="context-selection-menu">
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+										<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+										<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /name on selection -->
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+
+						<!-- Menu sizing -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Menu sizing</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body" data-toggle="context" data-target=".context-color-menu">
+								Context menus support all optional styles available for dropdowns - colors, sizes, headers, dividers, icons, badges, checkboxes etc. To use, add single or multiple optional classes to dropdown elements.
+
+								<div class="context-color-menu">
+									<div class="dropdown-menu dropdown-menu-lg">
+										<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+										<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+										<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /menu sizing -->
+
+					</div>
+
+					<div class="col-md-6">
+
+						<!-- Solid dropdowns -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Solid color</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body" data-toggle="context" data-target=".context-solid-menu">
+								Besides custom state colors, context dropdown menu supports predefined and custom solid background colors. Just add <code>.bg-*</code> class to the existing context menu.
+
+								<div class="context-solid-menu">
+									<div class="dropdown-menu bg-pink-400">
+										<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+										<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+										<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /solid dropdowns -->
+
+					</div>
+				</div>
+				<!-- /dropdown options -->
+
+
+				<!-- Events -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Plugin events
+					</h6>
+					<span class="text-muted d-block">Context dropdown menu events</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+
+						<!-- onShow event -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">onShow event</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body" data-toggle="context" data-target=".context-show-menu">
+								<p class="mb-3">Current example demonstrates context menu with <code>show.bs.context</code>event. This event fires immediately when the context dropdown menu is opened.</p>
+								<pre class="language-javascript"><code>$('#myMenu').on('show.bs.context',function () {
+	// do something...
+});</code></pre>
+								<div class="context-show-menu">
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+										<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+										<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /onShow event -->
+
+
+						<!-- onShown event -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">onShown event</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body" data-toggle="context" data-target=".context-shown-menu">
+								<p class="mb-3">Current example demonstrates context menu with <code>shown.bs.context</code>event. This event is fired when the dropdown has been made visible to the user.</p>
+								<pre class="language-javascript"><code>$('#myMenu').on('shown.bs.context',function () {
+	// do something...
+});</code></pre>
+								<div class="context-shown-menu">
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+										<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+										<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /onShown event -->
+
+					</div>
+
+					<div class="col-md-6">
+
+						<!-- onHide event -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">onHide event</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body" data-toggle="context" data-target=".context-hide-menu">
+								<p class="mb-3">Current example demonstrates context menu with <code>hide.bs.context</code>event. This event is fired immediately when the hide instance method has been called.</p>
+								<pre class="language-javascript"><code>$('#myMenu').on('hide.bs.context',function () {
+	// do something...
+});</code></pre>
+								<div class="context-hide-menu">
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+										<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+										<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /onHide event -->
+
+
+						<!-- onHidden event -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">onHidden event</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body" data-toggle="context" data-target=".context-hidden-menu">
+								<p class="mb-3">Current example demonstrates context menu with <code>hidden.bs.context</code>event. This event is fired when the dropdown has finished being hidden from the user.</p>
+								<pre class="language-javascript"><code>$('#myMenu').on('hidden.bs.context',function () {
+	// do something...
+});</code></pre>
+								<div class="context-hidden-menu">
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item"><i class="icon-copy4"></i> Copy</a>
+										<a href="#" class="dropdown-item"><i class="icon-paste3"></i> Paste</a>
+										<a href="#" class="dropdown-item"><i class="icon-file-minus"></i> Remove</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Options</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /onHidden event -->
+
+					</div>
+				</div>
+				<!-- /events -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +2292,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->

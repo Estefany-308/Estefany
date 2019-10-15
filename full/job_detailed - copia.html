@@ -23,22 +23,15 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
 	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/job_list.js"></script>
 	<!-- /theme JS files -->
 
 </head>
 
-<body>
+<body class="sidebar-xs">
 
 	<!-- Main navbar -->
 	<div class="navbar navbar-expand-md navbar-dark">
@@ -55,6 +48,9 @@
 			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
 				<i class="icon-paragraph-justify3"></i>
 			</button>
+			<button class="navbar-toggler sidebar-mobile-component-toggle" type="button">
+				<i class="icon-unfold"></i>
+			</button>
 		</div>
 
 		<div class="collapse navbar-collapse" id="navbar-mobile">
@@ -62,6 +58,12 @@
 				<li class="nav-item">
 					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
 						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-component-toggle d-none d-md-block">
+						<i class="icon-drag-left"></i>
 					</a>
 				</li>
 
@@ -487,7 +489,7 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
@@ -495,7 +497,7 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -1125,7 +1127,7 @@
 								<li class="nav-item"><a href="user_pages_profile_cover.html" class="nav-link">Profile with cover</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-cube3"></i> <span>Application pages</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Application pages">
 								<li class="nav-item nav-item-submenu">
@@ -1157,12 +1159,12 @@
 										<li class="nav-item"><a href="search_videos.html" class="nav-link">Video search results</a></li>
 									</ul>
 								</li>
-								<li class="nav-item nav-item-submenu">
+								<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 									<a href="#" class="nav-link">Job search</a>
 									<ul class="nav nav-group-sub">
 										<li class="nav-item"><a href="job_list_cards.html" class="nav-link">Cards view</a></li>
 										<li class="nav-item"><a href="job_list_list.html" class="nav-link">List view</a></li>
-										<li class="nav-item"><a href="job_detailed.html" class="nav-link">Job detailed</a></li>
+										<li class="nav-item"><a href="job_detailed.html" class="nav-link active">Job detailed</a></li>
 										<li class="nav-item"><a href="job_apply.html" class="nav-link">Apply</a></li>
 									</ul>
 								</li>
@@ -1211,14 +1213,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Job Search</span> - Detailed</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1234,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="job_detailed.html" class="breadcrumb-item">Job search</a>
+							<span class="breadcrumb-item active">Detailed</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,622 +1272,927 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+				<!-- Inner container -->
+				<div class="d-md-flex align-items-md-start">
 
-					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
+					<!-- Left sidebar component -->
+					<div class="sidebar sidebar-light bg-transparent sidebar-component sidebar-component-left border-0 shadow-0 sidebar-expand-md">
 
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
+						<!-- Sidebar content -->
+						<div class="sidebar-content">
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
+							<!-- Filter -->
+							<div class="card">
+								<div class="card-header bg-transparent header-elements-inline">
+									<span class="text-uppercase font-size-sm font-weight-semibold">Filter</span>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+				                		</div>
+			                		</div>
 								</div>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
+								<div class="card-body">
+									<form action="#">
+										<div class="form-group form-group-feedback form-group-feedback-left">
+											<input type="search" class="form-control" placeholder="Job title or keywords">
+											<div class="form-control-feedback">
+												<i class="icon-reading text-muted"></i>
+											</div>
+										</div>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
+										<div class="form-group form-group-feedback form-group-feedback-left">
+											<input type="search" class="form-control" placeholder="Location">
+											<div class="form-control-feedback">
+												<i class="icon-pin-alt text-muted"></i>
+											</div>
+										</div>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
+										<div class="form-group">
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Full time
+												</label>
+											</div>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Part time
+												</label>
+											</div>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Remote
+												</label>
+											</div>
+										</div>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
-						</div>
-
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
-							</a>
-
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
-								</a>
-
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+										<button type="submit" class="btn bg-blue btn-block">
+											<i class="icon-search4 font-size-base mr-2"></i>
+											Find jobs
+										</button>
+									</form>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /page header -->
+							<!-- /filter -->
 
 
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
+							<!-- Location -->
+							<div class="card">
+								<div class="card-header bg-transparent header-elements-inline">
+									<span class="text-uppercase font-size-sm font-weight-semibold">Location</span>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+				                		</div>
+			                		</div>
 								</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
+								<form action="#">
+									<div class="card-body">
+										<div class="form-group">
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Amsterdam
+													<span class="d-block text-muted">North Holland, Netherlands</span>
+												</label>
+											</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Koog aan de Zaan
+													<span class="d-block text-muted">North Holland, Netherlands</span>
+												</label>
+											</div>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
-								</div>
-							</div>
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Amsterdam Binnenstad en Oostelijk Havengebied
+													<span class="d-block text-muted">North Holland, Netherlands</span>
+												</label>
+											</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
-								</div>
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Hoofddorp
+													<span class="d-block text-muted">North Holland, Netherlands</span>
+												</label>
+											</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /typeahead -->
-
-
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /elastic textarea -->
-
-
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /masked inputs -->
-
-
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
-
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /input formatter -->
-
-
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Alkmaar
+													<span class="d-block text-muted">North Holland, Netherlands</span>
+												</label>
+											</div>
 										</div>
 									</div>
 
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
-								</div>
+									<div class="card-footer text-center p-0">
+										<a href="#" class="d-block p-2">All locations</a>
+									</div>
+								</form>
 							</div>
+							<!-- /location -->
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
 
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
+							<!-- Job title -->
+							<div class="card">
+								<div class="card-header bg-transparent header-elements-inline">
+									<span class="text-uppercase font-size-sm font-weight-semibold">Job title</span>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+				                		</div>
+			                		</div>
+								</div>
+
+								<form action="#">
+									<div class="card-body">
+										<div class="form-group">
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Developer
+													<span class="text-muted font-size-sm ml-1">(38)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Front end designer
+													<span class="text-muted font-size-sm ml-1">(43)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													UX designer
+													<span class="text-muted font-size-sm ml-1">(74)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Software engineer
+													<span class="text-muted font-size-sm ml-1">(25)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Full stack designer
+													<span class="text-muted font-size-sm ml-1">(12)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Motion designer
+													<span class="text-muted font-size-sm ml-1">(53)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													PHP developer
+													<span class="text-muted font-size-sm ml-1">(19)</span>
+												</label>
+											</div>
 										</div>
 									</div>
 
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
-								</div>
+									<div class="card-footer text-center p-0">
+										<a href="#" class="d-block p-2">All job titles</a>
+									</div>
+								</form>
 							</div>
+							<!-- /job title -->
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
 
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
+							<!-- Industry -->
+							<div class="card">
+								<div class="card-header bg-transparent header-elements-inline">
+									<span class="text-uppercase font-size-sm font-weight-semibold">Industry</span>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+				                		</div>
+			                		</div>
+								</div>
+
+								<form action="#">
+									<div class="card-body">
+										<div class="form-group">
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Arts and design
+													<span class="text-muted font-size-sm ml-1">(32)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Engineering
+													<span class="text-muted font-size-sm ml-1">(65)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Computer Software
+													<span class="text-muted font-size-sm ml-1">(235)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Financial Services
+													<span class="text-muted font-size-sm ml-1">(26)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Service Industry
+													<span class="text-muted font-size-sm ml-1">(94)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Healthcare
+													<span class="text-muted font-size-sm ml-1">(35)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Law Enforcement
+													<span class="text-muted font-size-sm ml-1">(40)</span>
+												</label>
+											</div>
 										</div>
 									</div>
 
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
+									<div class="card-footer text-center p-0">
+										<a href="#" class="d-block p-2">All industries</a>
+									</div>
+								</form>
+							</div>
+							<!-- /industry -->
+
+
+							<!-- Company -->
+							<div class="card">
+								<div class="card-header bg-transparent header-elements-inline">
+									<span class="text-uppercase font-size-sm font-weight-semibold">Company</span>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+				                		</div>
+			                		</div>
+								</div>
+
+								<form action="#">
+									<div class="card-body">
+										<div class="form-group">
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled">
+													Amazon
+													<span class="text-muted font-size-sm ml-1">(43)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled">
+													The North Face
+													<span class="text-muted font-size-sm ml-1">(124)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled">
+													Transfer Wise
+													<span class="text-muted font-size-sm ml-1">(67)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled">
+													ING Bank
+													<span class="text-muted font-size-sm ml-1">(37)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled">
+													Facebook
+													<span class="text-muted font-size-sm ml-1">(28)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled">
+													Dell
+													<span class="text-muted font-size-sm ml-1">(67)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled">
+													Microsoft
+													<span class="text-muted font-size-sm ml-1">(57)</span>
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="card-footer text-center p-0">
+										<a href="#" class="d-block p-2">All companies</a>
+									</div>
+								</form>
+							</div>
+							<!-- /company -->
+
+
+							<!-- Specific skills -->
+							<div class="card">
+								<div class="card-header bg-transparent header-elements-inline">
+									<span class="text-uppercase font-size-sm font-weight-semibold">Specific skills</span>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+				                		</div>
+			                		</div>
+								</div>
+
+								<form action="#">
+									<div class="card-body">
+										<div class="form-group">
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													JavaScript
+													<span class="text-muted font-size-sm ml-1">(53)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													HTML5, SCSS/SASS
+													<span class="text-muted font-size-sm ml-1">(36)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Wireframing
+													<span class="text-muted font-size-sm ml-1">(21)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Scrum
+													<span class="text-muted font-size-sm ml-1">(8)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Grunt/gulp/bower
+													<span class="text-muted font-size-sm ml-1">(68)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													Node.js
+													<span class="text-muted font-size-sm ml-1">(32)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-input-styled" data-fouc>
+													AngularJS
+													<span class="text-muted font-size-sm ml-1">(94)</span>
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="card-footer text-center p-0">
+										<a href="#" class="d-block p-2">All skills</a>
+									</div>
+								</form>
+							</div>
+							<!-- /specific skills -->
+
+
+							<!-- Date posted -->
+							<div class="card">
+								<div class="card-header bg-transparent header-elements-inline">
+									<span class="text-uppercase font-size-sm font-weight-semibold">Date posted</span>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+				                		</div>
+			                		</div>
+								</div>
+
+								<div class="card-body">
+									<form action="#">
+										<div class="form-group">
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" name="when_posted" class="form-input-styled" data-fouc>
+													Today
+													<span class="text-muted font-size-sm ml-1">(632)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" name="when_posted" class="form-input-styled" data-fouc>
+													Yesterday
+													<span class="text-muted font-size-sm ml-1">(431)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" name="when_posted" class="form-input-styled" data-fouc>
+													Last week
+													<span class="text-muted font-size-sm ml-1">(31)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" name="when_posted" class="form-input-styled" data-fouc>
+													Last month
+													<span class="text-muted font-size-sm ml-1">(124)</span>
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" name="when_posted" class="form-input-styled" data-fouc>
+													Any time
+												</label>
+											</div>
+										</div>								
+									</form>
+								</div>
+							</div>
+							<!-- /date posted -->
+
+
+							<!-- Latest searches -->
+							<div class="card">
+								<div class="card-header bg-transparent header-elements-inline">
+									<span class="text-uppercase font-size-sm font-weight-semibold">Latest searches</span>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+				                		</div>
+			                		</div>
+								</div>
+
+								<div class="card-body p-0">
+									<div class="list-group list-group-flush">
+										<a href="#" class="list-group-item list-group-item-action">
+											<div>
+												Senior UI/UX designer
+												<div class="font-size-sm text-muted">Amsterdam</div>
+											</div>
+										</a>
+										<a href="#" class="list-group-item list-group-item-action">
+											<div>
+												Full stack web developer
+												<div class="font-size-sm text-muted">Zurich</div>
+											</div>
+										</a>
+										<a href="#" class="list-group-item list-group-item-action">
+											<div>
+												Business controller
+												<div class="font-size-sm text-muted">Budapest</div>
+											</div>
+										</a>
+										<a href="#" class="list-group-item list-group-item-action">
+											<div>
+												Python/Django developer
+												<div class="font-size-sm text-muted">Hamburg</div>
+											</div>
+										</a>
+										<a href="#" class="list-group-item list-group-item-action">
+											<div>
+												Senior PHP software engineer
+												<div class="font-size-sm text-muted">London</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- /latest searches -->
+
+						</div>
+						<!-- /sidebar content -->
+
+					</div>
+					<!-- /left sidebar component -->
+
+
+					<!-- Right content -->
+					<div class="flex-fill overflow-auto">
+
+						<!-- Details -->
+						<div class="card">
+							<div class="card-body">
+								<div class="media flex-column flex-md-row mb-4">
+									<a href="#" class="align-self-md-center mr-md-3 mb-2 mb-md-0">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded" width="44" height="44" alt="">
+									</a>
+
+									<div class="media-body">
+										<h5 class="media-title font-weight-semibold">Interaction UX/UI Industrial Designer</h5>
+										<ul class="list-inline list-inline-dotted text-muted mb-0">
+											<li class="list-inline-item">Utrecht, Netherlands</li>
+											<li class="list-inline-item">3 days ago</li>
+										</ul>
+									</div>
+
+									<div class="align-self-md-center ml-md-3 mt-2 mt-md-0">
+										<a href="#" class="btn bg-blue"><i class="icon-envelop2 mr-2"></i> Apply for this job</a>
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Job Description</h6>
+
+									<p>Named among Fortune’s 2016 World’s Most Admired Companies, Flex offers a world of innovation, learning opportunities, and a strong reputation as environmentally responsible citizens. We are a leading sketch-to-scale™ company that designs and builds intelligent products for a connected world. With more than 200,000 professionals across 30 countries, and a promise to help the world Live smarter™, Flex provides innovative design, engineering, manufacturing, real-time supply chain insight and logistics services to companies of all sizes in various industries and end-markets.</p>
+
+									<p>With more than 100,000 team members globally, we promote an environment that is rooted in the entrepreneurial spirit in which the company was founded. Dell ’ s team members are committed to serving our communities, regularly volunteering for over 1,500 non-profit organizations. The company has also received many accolades from employer of choice to energy conservation. Our team members follow an open approach to technology innovation and believe that technology is essential for human success.</p>
+
+									<p>We are looking for a <strong>Interaction UX/UI Industrial Designer</strong> for our <strong>Product Development</strong> team!</p>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Responsibilities:</h6>
+
+									<p class="mb-3">You will work closely with our product owners and the analytics team to help drive and ensure a best-in-class user experience on web, tablet and mobile platforms. With your knowledge and passion for keeping up-to-date with the latest advances in user interface design and web related technologies. You will be creating high quality designs with the goal of ensuring continual improvement of our sites. To realise this you will guide and set the standards and design principles for all of our brands to follow and work towards to enhance their online success.</p>
+
+									<ul class="list">
+										<li>Gather, analyze, record and report on current market information with regard to the latest transportation methods.</li>
+										<li>Work with the team to determine company and customer needs and make recommendations on cost effective transportation methods and assist in price negotiations if appropriate.</li>
+										<li>Ensures lowest cost transportation by analyzing company and customer needs, researching transportation methods and auditing carrier costs and performances.</li>
+										<li>Ensure laws, rules and regulations regarding shipping/transportation methods are adhered to and prepares applications for appropriate certifications and licenses.</li>
+										<li>Prepare application for import / export control certifications and licenses (control documents).</li>
+										<li>Maintain logs and compile information on routes, rates and services on various vendors.</li>
+										<li>Arranges shipping details such as packing, shipping, and routing of product.</li>
+										<li>Analyzes and recommends transportation and freight costs as well as appropriate routing and carriers to be used.</li>
+										<li>Plans, schedules, and routes inbound and outbound domestic and international shipments of freight, using knowledge of applicable laws, tariffs, and Flextronics policies.</li>
+										<li>Be familiar with compliance required for corporate, and facility policies and procedures and assist the team in ensuring the highest standards are adhered to in the process.</li>
+										<li>Ensure Traffic Metrics are maintained and updated on a daily/weekly/monthly basis.</li>
+										<li>Establish and maintain good relationships with agents / suppliers in order to achieve quality of service and consistent cost reduction.</li>
+										<li>May schedule company vehicles for service and normal maintenance checks and is responsible for ensuring that all are registered and have the proper insurance.</li>
+										<li>Support the team in terms of knowledge and experience in dealing with daily operational and transportation issues.</li>
+									</ul>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Requirements:</h6>
+									<ul class="list">
+										<li>Undergraduate Industrial Design/Graphic Design degree and 6-8 years relevant experience or Graduate degree in a related field, plus 4-6 years relevant experience</li>
+										<li>Strong skillset in digital design with an emphasis on Windows, mobile (iOS/Android), and web User Interfaces</li>
+										<li>Ability to distill complex problems into intuitive, clean, user friendly designs</li>
+										<li>Expert in User Experience concepts, Information Architecture, and software brand strategy</li>
+										<li>Experience with creating detailed workflow specifications and behaviors for development teams</li>
+										<li>Can process and integrate research studies, reports, trends, data, and information into plans, deliverables, and recommendations</li>
+									</ul>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Desired Skills and Experience:</h6>
+									<ul class="list">
+										<li>
+											<strong class="d-block">Strategic Thinking.</strong>
+											You will not only solve design issues but will proactively offer ideas and insights to improve the customer's experience and visual challenges.
+										</li>
+										<li>
+											<strong class="d-block">Creative Suite.</strong>
+											Primarily Photoshop and Illustrator with some InDesign. Experience with Adobe Muse is also helpful.
+										</li>
+										<li>
+											<strong class="d-block">Typography.</strong>
+											We need a designer who knows typography visual hierarchy and styles and how to use them properly. Your work will be for the whole EMEA region and be translated into dozens of languages. Any experience with Asian and Middle Eastern languages and fonts will be useful.
+										</li>
+										<li>
+											<strong class="d-block">Experimentation.</strong>
+											Experience optimizing designs based on A/B testing is a plus.
+										</li>
+										<li>
+											<strong class="d-block">Communication.</strong>
+											We need someone who can own their time but also knows how to ask the right questions to ensure the right message is communicated in the right way.
+										</li>
+										<li>
+											<strong class="d-block">Marketing.</strong>
+											You are familiar with and have previously worked on a marketing team.
+										</li>
+										<li>
+											<strong class="d-block">Asset Management.</strong>
+											Assist with development and maintenance of a digital asset management system.
+										</li>
+									</ul>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">What we offer:</h6>
+									<ul class="list">
+										<li>A learning prone environment where employee development and satisfaction lies at the heart of the organisation</li>
+										<li>You choose and change your workplace besides our open office in our café area, or your home</li>
+										<li>Life at Dell means collaborating with dedicated professionals with a passion for technology</li>
+										<li>When we see something that could be improved, we get to work inventing the solution</li>
+										<li>Our people demonstrate our winning culture through positive and meaningful relationship</li>
+										<li>We invest in our people and offer a series of programs that enables them to pursue a career that fulfills their potential</li>
+										<li>Our team members ’ health and wellness is our priority as well as rewarding them for their hard work</li>
+									</ul>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Interested?</h6>
+									<p>We look forward to hearing from you! Please apply directly using the apply button below or via our website. In case you have any further questions about the role, you are welcome to contact Elin Akerstrom, Recruitment Specialist on phone +3630 2984732.</p>
+								</div>
+
+								<div class="d-sm-flex">
+									<a href="#" class="btn bg-blue">
+										<i class="icon-envelop2 mr-2"></i>
+										Apply for this job
+									</a>
+
+									<div class="ml-sm-auto mt-2 mt-sm-0">
+										<a href="#" class="btn btn-light">
+											<i class="icon-checkmark3 mr-2"></i>
+											Save this job
+										</a>
+									</div>
+
+									<div class="ml-sm-3 mt-2 mt-sm-0">
+										<a href="#" class="btn btn-light">
+											<i class="icon-share4 mr-2"></i>
+											Share
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<!-- /password generator -->
+						<!-- /details -->
 
 
-				<!-- Bootstrap maxlength -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+						<!-- Company profile -->
+						<h6 class="font-weight-semibold pt-2 mb-2">Company profile</h6>
+						<div class="card">
+							<div class="card-body">
+								<div class="media mb-3">
+									<a href="#" class="mr-3 align-self-center">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded" width="44" height="44" alt="">
+									</a>
 
-					<div class="card-body">
+									<div class="media-body">
+										<h5 class="media-title font-weight-semibold">Microsoft</h5>
+										<ul class="list-inline list-inline-dotter text-muted mb-0">
+											<li class="list-inline-item">IT Services</li>
+										</ul>
+									</div>
+
+									<div class="ml-3 align-self-center">
+										<ul class="list-inline mb-0">
+											<li class="list-inline-item"><a href="#" class="btn bg-blue"><i class="icon-menu7 mr-2"></i> All positions</a></li>
+											<li class="list-inline-item"><a href="#" class="btn btn-light"><i class="icon-plus2 mr-2"></i> Follow</a></li>
+										</ul>											
+									</div>
+								</div>
+
+								<p>Across a Global footprint, we believe we’re at our best when you’re at yours. From our diverse workforce, our flexible working policies to our creative work spaces, we embrace a culture of learning and sharing to develop our next stage growth. It’s in our hearts to push forward, to create a better future, to never rest and find new ways that help people communicate.</p>
+
+								We are committed to developing the very best people by offering a flexible, motivating and inclusive workplace in which talent is truly recognised and rewarded. We respect, value and celebrate our people’s individual differences - we are not only multinational but multicultural too. That’s what we mean when we say Power to you.
+							</div>
+						</div>
+						<!-- /company profile -->
+
+
+						<!-- Similar jobs -->
+						<h6 class="font-weight-semibold pt-2 mb-2">Similar jobs</h6>
 						<div class="row">
 							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
+								<div class="card card-body">
+									<div class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded" width="44" height="44" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title font-weight-semibold">
+												<a href="#">Interaction UX/UI Industrial Designer</a>
+											</h6>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-2">
+												<li class="list-inline-item"><a href="#" class="text-muted">Dell</a></li>
+												<li class="list-inline-item">Amsterdam, Netherlands</li>
+											</ul>
+
+											Extended kindness trifling remember he confined outlived if. Assistance sentiments yet unpleasing say. Open they an busy they my such high. An active dinner wishes at unable hardly no talked on. Immediate him her resolving his favourite. Wished denote abroad at branch at. Mind what no by kept.
+										</div>
+
+										<div class="ml-3">
+											<span class="badge bg-blue">New</span>
+										</div>
+									</div>
 								</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
+								<div class="card card-body">
+									<div class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded" width="44" height="44" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title font-weight-semibold">
+												<a href="#">Front-End Designer / Developer</a>
+											</h6>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-2">
+												<li class="list-inline-item"><a href="#" class="text-muted">The North Face</a></li>
+												<li class="list-inline-item">The Hague, Netherlands</li>
+											</ul>
+
+											Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court fat. Her bachelor honoured perceive securing but desirous ham required. Questions deficient acuteness to engrossed as. Entirely led ten humoured greatest and yourself besides country.
+										</div>
+
+										<div class="ml-3">
+											<span class="badge bg-blue">New</span>
+										</div>
+									</div>
 								</div>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
+								<div class="card card-body">
+									<div class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded" width="44" height="44" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title font-weight-semibold">
+												<a href="#">UX Lead Designer</a>
+											</h6>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-2">
+												<li class="list-inline-item"><a href="#" class="text-muted">IBM</a></li>
+												<li class="list-inline-item">Lelystad, Netherlands</li>
+											</ul>
+
+											Contented get distrusts certainty nay are frankness concealed ham. On unaffected resolution on considered of. No thought me husband or colonel forming effects. End sitting shewing who saw besides son musical adapted. Contrasted interested eat alteration pianoforte sympathize was.
+										</div>
+
+										<div class="ml-3">
+											<span class="text-muted">3 days ago</span>
+										</div>
+									</div>
 								</div>
 							</div>
 
 							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
+								<div class="card card-body">
+									<div class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded" width="44" height="44" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title font-weight-semibold">
+												<a href="#">Designer, CRM</a>
+											</h6>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-2">
+												<li class="list-inline-item"><a href="#" class="text-muted">CNN</a></li>
+												<li class="list-inline-item">Rotterdam, Netherlands</li>
+											</ul>
+
+											At as in understood an remarkably solicitude. Mean them very seen she she. Use totally written the observe pressed justice. Instantly cordially far intention recommend estimable yet her his. Ladies stairs enough esteem add fat all enable. Needed its design number winter see. Oh be me sure wise.
+										</div>
+
+										<div class="ml-3">
+											<span class="text-muted">4 days ago</span>
+										</div>
+									</div>
 								</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
+								<div class="card card-body">
+									<div class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded" width="44" height="44" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title font-weight-semibold">
+												<a href="#">Senior UX Designer</a>
+											</h6>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-2">
+												<li class="list-inline-item"><a href="#" class="text-muted">Transfer Wise</a></li>
+												<li class="list-inline-item">Nijmegen, Netherlands</li>
+											</ul>
+
+											By an outlived insisted procured improved am. Paid hill fine ten now love even leaf. Supplied feelings mr of dissuade recurred no it offering honoured. Am of of in collecting devonshire favourable excellence. Her sixteen end ashamed cottage yet reached get hearing invited. Resources ourselves.
+										</div>
+
+										<div class="ml-3">
+											<span class="text-muted">5 days ago</span>
+										</div>
+									</div>
 								</div>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
+								<div class="card card-body">
+									<div class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded" width="44" height="44" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title font-weight-semibold">
+												<a href="#">UI Designer E-commerce</a>
+											</h6>
+
+											<ul class="list-inline list-inline-dotted text-muted mb-2">
+												<li class="list-inline-item"><a href="#" class="text-muted">Uber</a></li>
+												<li class="list-inline-item">Utrecht, Netherlands</li>
+											</ul>
+
+											Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor. Explained propriety off out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is. Was sister for few longer mrs sudden talent become.
+										</div>
+
+										<div class="ml-3">
+											<span class="text-muted">6 days ago</span>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+						<!-- /similar jobs -->
+
 					</div>
+					<!-- /right content -->
+
 				</div>
-				<!-- /bootstrap maxlength -->
+				<!-- /inner container -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +2222,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->

@@ -23,22 +23,16 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/rowlink.js"></script>
 	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/mail_list.js"></script>
 	<!-- /theme JS files -->
 
 </head>
 
-<body>
+<body class="sidebar-xs">
 
 	<!-- Main navbar -->
 	<div class="navbar navbar-expand-md navbar-dark">
@@ -55,6 +49,9 @@
 			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
 				<i class="icon-paragraph-justify3"></i>
 			</button>
+			<button class="navbar-toggler sidebar-mobile-secondary-toggle" type="button">
+				<i class="icon-more"></i>
+			</button>
 		</div>
 
 		<div class="collapse navbar-collapse" id="navbar-mobile">
@@ -62,6 +59,12 @@
 				<li class="nav-item">
 					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
 						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-secondary-toggle d-none d-md-block">
+						<i class="icon-transmission"></i>
 					</a>
 				</li>
 
@@ -82,7 +85,9 @@
 							<ul class="media-list">
 								<li class="media">
 									<div class="mr-3">
-										<a href="#" class="btn bg-transparent border-primary text-primary rounded-round border-2 btn-icon"><i class="icon-git-pull-request"></i></a>
+										<a href="#" class="btn bg-transparent border-primary text-primary rounded-round border-2 btn-icon">
+											<i class="icon-git-pull-request"></i>
+										</a>
 									</div>
 
 									<div class="media-body">
@@ -93,7 +98,9 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<a href="#" class="btn bg-transparent border-warning text-warning rounded-round border-2 btn-icon"><i class="icon-git-commit"></i></a>
+										<a href="#" class="btn bg-transparent border-warning text-warning rounded-round border-2 btn-icon">
+											<i class="icon-git-commit"></i>
+										</a>
 									</div>
 									
 									<div class="media-body">
@@ -104,7 +111,9 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<a href="#" class="btn bg-transparent border-info text-info rounded-round border-2 btn-icon"><i class="icon-git-branch"></i></a>
+										<a href="#" class="btn bg-transparent border-info text-info rounded-round border-2 btn-icon">
+											<i class="icon-git-branch"></i>
+										</a>
 									</div>
 									
 									<div class="media-body">
@@ -115,7 +124,9 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<a href="#" class="btn bg-transparent border-success text-success rounded-round border-2 btn-icon"><i class="icon-git-merge"></i></a>
+										<a href="#" class="btn bg-transparent border-success text-success rounded-round border-2 btn-icon">
+											<i class="icon-git-merge"></i>
+										</a>
 									</div>
 									
 									<div class="media-body">
@@ -126,7 +137,9 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<a href="#" class="btn bg-transparent border-primary text-primary rounded-round border-2 btn-icon"><i class="icon-git-pull-request"></i></a>
+										<a href="#" class="btn bg-transparent border-primary text-primary rounded-round border-2 btn-icon">
+											<i class="icon-git-pull-request"></i>
+										</a>
 									</div>
 									
 									<div class="media-body">
@@ -487,7 +500,7 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
@@ -495,7 +508,7 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -907,7 +920,7 @@
 										<li class="nav-item"><a href="maps_google_controls.html" class="nav-link">Controls</a></li>
 										<li class="nav-item"><a href="maps_google_markers.html" class="nav-link">Markers</a></li>
 										<li class="nav-item"><a href="maps_google_drawings.html" class="nav-link">Map drawings</a></li>
-										<li class="nav-item"><a href="maps_google_layers.html" class="nav-link ">Layers</a></li>
+										<li class="nav-item"><a href="maps_google_layers.html" class="nav-link">Layers</a></li>
 									</ul>
 								</li>
 								<li class="nav-item"><a href="maps_vector.html" class="nav-link">Vector maps</a></li>
@@ -1125,7 +1138,7 @@
 								<li class="nav-item"><a href="user_pages_profile_cover.html" class="nav-link">Profile with cover</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-cube3"></i> <span>Application pages</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Application pages">
 								<li class="nav-item nav-item-submenu">
@@ -1136,10 +1149,10 @@
 										<li class="nav-item"><a href="task_manager_detailed.html" class="nav-link">Task detailed</a></li>
 									</ul>
 								</li>
-								<li class="nav-item nav-item-submenu">
+								<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 									<a href="#" class="nav-link">Inbox</a>
 									<ul class="nav nav-group-sub">
-										<li class="nav-item"><a href="mail_list.html" class="nav-link">Mail list</a></li>
+										<li class="nav-item"><a href="mail_list.html" class="nav-link active">Mail list</a></li>
 										<li class="nav-item"><a href="mail_list_detached.html" class="nav-link">Mail list (detached)</a></li>
 										<li class="nav-item"><a href="mail_read.html" class="nav-link">Read mail</a></li>
 										<li class="nav-item"><a href="mail_write.html" class="nav-link">Write mail</a></li>
@@ -1208,185 +1221,468 @@
 		<!-- /main sidebar -->
 
 
+		<!-- Secondary sidebar -->
+		<div class="sidebar sidebar-light sidebar-secondary sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-secondary-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				<span class="font-weight-semibold">Secondary sidebar</span>
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+				<!-- Actions -->
+				<div class="card">
+					<div class="card-header bg-transparent header-elements-inline">
+						<span class="text-uppercase font-size-sm font-weight-semibold">Actions</span>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+	                		</div>
+                		</div>
+					</div>
+
+					<div class="card-body">
+						<a href="#" class="btn bg-indigo-400 btn-block">Compose mail</a>
+					</div>
+				</div>
+				<!-- /actions -->
+
+
+				<!-- Sub navigation -->
+				<div class="card">
+					<div class="card-header bg-transparent header-elements-inline">
+						<span class="text-uppercase font-size-sm font-weight-semibold">Navigation</span>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+	                		</div>
+                		</div>
+					</div>
+
+					<div class="card-body p-0">
+						<ul class="nav nav-sidebar" data-nav-type="accordion">
+							<li class="nav-item-header">Folders</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link active">
+									<i class="icon-drawer-in"></i>
+									Inbox
+									<span class="badge bg-success badge-pill ml-auto">32</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link"><i class="icon-drawer3"></i> Drafts</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link"><i class="icon-drawer-out"></i> Sent mail</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link"><i class="icon-stars"></i> Starred</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<i class="icon-spam"></i>
+									Spam
+									<span class="badge bg-danger badge-pill ml-auto">99+</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link"><i class="icon-bin"></i> Trash</a>
+							</li>
+							<li class="nav-item-header">Labels</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link"><span class="badge badge-mark border-primary align-self-center mr-3"></span> Facebook</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link"><span class="badge badge-mark border-success align-self-center mr-3"></span> Spotify</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link"><span class="badge badge-mark border-indigo-400 align-self-center mr-3"></span> Twitter</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link"><span class="badge badge-mark border-pink-400 align-self-center mr-3"></span> Dribbble</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /sub navigation -->
+
+
+				<!-- Start chat -->
+				<div class="card">
+					<div class="card-header bg-transparent header-elements-inline">
+						<span class="text-uppercase font-size-sm font-weight-semibold">Start chat</span>
+						<div class="header-elements">
+							<span class="badge bg-success badge-pill">+32</span>
+                		</div>
+					</div>
+
+					<ul class="media-list media-list-linked my-2">
+						<li class="media text-muted border-0 py-2">Office staff</li>
+
+						<li>
+							<a href="#" class="media">
+								<div class="mr-3">
+									<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="40" height="40" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-title font-weight-semibold">James Alexander</div>
+									<span class="text-muted font-size-sm">UI/UX expert</span>
+								</div>
+								<div class="align-self-center ml-3">
+									<span class="badge badge-mark bg-success border-success"></span>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" class="media">
+								<div class="mr-3">
+									<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="40" height="40" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-title font-weight-semibold">Jeremy Victorino</div>
+									<span class="text-muted font-size-sm">Senior designer</span>
+								</div>
+								<div class="align-self-center ml-3">
+									<span class="badge badge-mark bg-danger border-danger"></span>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" class="media">
+								<div class="mr-3">
+									<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="40" height="40" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-title"><span class="font-weight-semibold">Jordana Mills</span></div>
+									<span class="text-muted">Sales consultant</span>
+								</div>
+								<div class="align-self-center ml-3">
+									<span class="badge badge-mark bg-grey-300 border-grey-300"></span>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" class="media">
+								<div class="mr-3">
+									<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="40" height="40" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-title"><span class="font-weight-semibold">William Miles</span></div>
+									<span class="text-muted">SEO expert</span>
+								</div>
+								<div class="align-self-center ml-3">
+									<span class="badge badge-mark bg-success border-success"></span>
+								</div>
+							</a>
+						</li>
+
+						<li class="media text-muted border-0 py-2">Partners</li>
+
+						<li>
+							<a href="#" class="media">
+								<div class="mr-3">
+									<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="40" height="40" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-title font-weight-semibold">Margo Baker</div>
+									<span class="text-muted font-size-sm">Google</span>
+								</div>
+								<div class="align-self-center ml-3">
+									<span class="badge badge-mark bg-success border-success"></span>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" class="media">
+								<div class="mr-3">
+									<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="40" height="40" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-title font-weight-semibold">Beatrix Diaz</div>
+									<span class="text-muted font-size-sm">Facebook</span>
+								</div>
+								<div class="align-self-center ml-3">
+									<span class="badge badge-mark bg-warning-400 border-warning-400"></span>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" class="media">
+								<div class="mr-3">
+									<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="40" height="40" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-title font-weight-semibold">Richard Vango</div>
+									<span class="text-muted font-size-sm">Microsoft</span>
+								</div>
+								<div class="align-self-center ml-3">
+									<span class="badge badge-mark bg-grey-300 border-grey-300"></span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /start chat -->
+
+
+				<!-- Latest messages -->
+				<div class="card">
+					<div class="card-header bg-transparent header-elements-inline">
+						<span class="text-uppercase font-size-sm font-weight-semibold">Latest messages</span>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+	                		</div>
+                		</div>
+					</div>
+
+					<ul class="media-list media-list-linked my-2">
+						<li>
+							<a href="#" class="media">
+								<div class="mr-3">
+									<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-title font-weight-semibold">Will Samuel</div>
+									<span class="text-muted">And he looked over at the alarm clock, ticking..</span>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" class="media">
+								<div class="mr-3">
+									<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-title font-weight-semibold">Margo Baker</div>
+									<span class="text-muted">However hard he threw himself onto..</span>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" class="media">
+								<div class="mr-3">
+									<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-title font-weight-semibold">Monica Smith</div>
+									<span class="text-muted">Yes, but was it possible to quietly sleep through..</span>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" class="media">
+								<div class="mr-3">
+									<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-title font-weight-semibold">Jordana Mills</div>
+									<span class="text-muted">What should he do now? The next train went at..</span>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" class="media">
+								<div class="mr-3">
+									<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-title font-weight-semibold">John Craving</div>
+									<span class="text-muted">Gregor then turned to look out the window..</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /latest messages -->
+
+
+				<!-- Contacts -->
+				<div class="card">
+					<div class="card-header bg-transparent header-elements-inline">
+						<span class="text-uppercase font-size-sm font-weight-semibold">Contacts</span>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+	                		</div>
+                		</div>
+					</div>
+
+					<div class="card-body">
+						<ul class="media-list">
+							<li class="media">
+								<a href="#" class="mr-3 position-relative">
+									<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									<span class="badge badge-info badge-pill badge-float border-2 border-white">6</span>
+								</a>
+
+								<div class="media-body">
+									<div class="font-weight-semibold">Rebecca Jameson</div>
+									<span class="font-size-sm text-muted">Web developer</span>
+								</div>
+
+								<div class="ml-3 align-self-center">
+									<div class="dropdown">
+										<a href="#" class="text-default dropdown-toggle caret-0" data-toggle="dropdown" aria-expanded="false"><i class="icon-more2"></i></a>
+										<div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(-164px, 17px, 0px); top: 0px; left: 0px; will-change: transform;">
+											<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Start chat</a>
+											<a href="#" class="dropdown-item"><i class="icon-phone2"></i> Make a call</a>
+											<a href="#" class="dropdown-item"><i class="icon-mail5"></i> Send mail</a>
+											<div class="dropdown-divider"></div>
+											<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Statistics</a>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li class="media">
+								<a href="#" class="mr-3 position-relative">
+									<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									<span class="badge badge-info badge-pill badge-float border-2 border-white">9</span>
+								</a>
+
+								<div class="media-body">
+									<div class="font-weight-semibold">Walter Sommers</div>
+									<span class="font-size-sm text-muted">Lead developer</span>
+								</div>
+
+								<div class="ml-3 align-self-center">
+									<div class="dropdown">
+										<a href="#" class="text-default dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-more2"></i></a>
+										<div class="dropdown-menu dropdown-menu-right">
+											<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Start chat</a>
+											<a href="#" class="dropdown-item"><i class="icon-phone2"></i> Make a call</a>
+											<a href="#" class="dropdown-item"><i class="icon-mail5"></i> Send mail</a>
+											<div class="dropdown-divider"></div>
+											<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Statistics</a>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li class="media">
+								<a href="#" class="mr-3">
+									<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+								</a>
+
+								<div class="media-body">
+									<div class="font-weight-semibold">Otto Gerwald</div>
+									<span class="font-size-sm text-muted">Front end developer</span>
+								</div>
+
+								<div class="ml-3 align-self-center">
+									<div class="dropdown">
+										<a href="#" class="text-default dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-more2"></i></a>
+										<div class="dropdown-menu dropdown-menu-right">
+											<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Start chat</a>
+											<a href="#" class="dropdown-item"><i class="icon-phone2"></i> Make a call</a>
+											<a href="#" class="dropdown-item"><i class="icon-mail5"></i> Send mail</a>
+											<div class="dropdown-divider"></div>
+											<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Statistics</a>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li class="media">
+								<a href="#" class="mr-3">
+									<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+								</a>
+
+								<div class="media-body">
+									<div class="font-weight-semibold">Vince Satmann</div>
+									<span class="font-size-sm text-muted">UX expert</span>
+								</div>
+
+								<div class="ml-3 align-self-center">
+									<div class="dropdown">
+										<a href="#" class="text-default dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-more2"></i></a>
+										<div class="dropdown-menu dropdown-menu-right">
+											<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Start chat</a>
+											<a href="#" class="dropdown-item"><i class="icon-phone2"></i> Make a call</a>
+											<a href="#" class="dropdown-item"><i class="icon-mail5"></i> Send mail</a>
+											<div class="dropdown-divider"></div>
+											<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Statistics</a>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li class="media">
+								<a href="#" class="mr-3">
+									<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+								</a>
+
+								<div class="media-body">
+									<div class="font-weight-semibold">Jason Leroy</div>
+									<span class="font-size-sm text-muted">SEO specialist</span>
+								</div>
+
+								<div class="ml-3 align-self-center">
+									<div class="dropdown">
+										<a href="#" class="text-default dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-more2"></i></a>
+										<div class="dropdown-menu dropdown-menu-right">
+											<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Start chat</a>
+											<a href="#" class="dropdown-item"><i class="icon-phone2"></i> Make a call</a>
+											<a href="#" class="dropdown-item"><i class="icon-mail5"></i> Send mail</a>
+											<div class="dropdown-divider"></div>
+											<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Statistics</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /contacts -->
+
+			</div>
+			<!-- /sidebar content -->
+
+		</div>
+		<!-- /secondary sidebar -->
+
+
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Mailbox</span> - List</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
 					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
-						</div>
-
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
-							</a>
-
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
-								</a>
-
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /page header -->
-
-
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Form inputs -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
-
 						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
+							<div class="form-group form-group-feedback form-group-feedback-right">
+								<input type="search" class="form-control wmin-200" placeholder="Search messages">
+								<div class="form-control-feedback">
+									<i class="icon-search4 font-size-base text-muted"></i>
 								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-						</div>
+							</div>
+						</form>
 					</div>
 				</div>
 
@@ -1394,8 +1690,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
+							<a href="mail_list.html" class="breadcrumb-item">Mailbox</a>
+							<span class="breadcrumb-item active">List</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1432,463 +1728,1020 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Typeahead -->
+				<!-- Single line -->
 				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
+					<div class="card-header bg-transparent header-elements-inline">
+						<h6 class="card-title">My Inbox (single line)</h6>
+
 						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
+							<span class="badge bg-blue">259 new today</span>
 	                	</div>
 					</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
-								</div>
+					<!-- Action toolbar -->
+					<div class="bg-light">
+						<div class="navbar navbar-light bg-light navbar-expand-lg py-lg-2">
+							<div class="text-center d-lg-none w-100">
+								<button type="button" class="navbar-toggler w-100" data-toggle="collapse" data-target="#inbox-toolbar-toggle-single">
+									<i class="icon-circle-down2"></i>
+								</button>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
-								</div>
+							<div class="navbar-collapse text-center text-lg-left flex-wrap collapse" id="inbox-toolbar-toggle-single">
+								<div class="mt-3 mt-lg-0">
+									<div class="btn-group">
+										<button type="button" class="btn btn-light btn-icon btn-checkbox-all">
+											<input type="checkbox" class="form-input-styled" data-fouc>
+										</button>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /typeahead -->
-
-
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /elastic textarea -->
-
-
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /masked inputs -->
-
-
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
-
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /input formatter -->
-
-
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
+										<button type="button" class="btn btn-light btn-icon dropdown-toggle" data-toggle="dropdown"></button>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Select all</a>
+											<a href="#" class="dropdown-item">Select read</a>
+											<a href="#" class="dropdown-item">Select unread</a>
+											<div class="dropdown-divider"></div>
+											<a href="#" class="dropdown-item">Clear selection</a>
 										</div>
 									</div>
 
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
+									<div class="btn-group ml-3 mr-lg-3">
+										<button type="button" class="btn btn-light"><i class="icon-pencil7"></i> <span class="d-none d-lg-inline-block ml-2">Compose</span></button>
+										<button type="button" class="btn btn-light"><i class="icon-bin"></i> <span class="d-none d-lg-inline-block ml-2">Delete</span></button>
+				                    	<button type="button" class="btn btn-light"><i class="icon-spam"></i> <span class="d-none d-lg-inline-block ml-2">Spam</span></button>
+									</div>
 								</div>
-							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
+								<div class="navbar-text ml-lg-auto"><span class="font-weight-semibold">1-50</span> of <span class="font-weight-semibold">528</span></div>
 
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
-										</div>
+								<div class="ml-lg-3 mb-3 mb-lg-0">
+									<div class="btn-group">
+										<button type="button" class="btn btn-light btn-icon disabled"><i class="icon-arrow-left12"></i></button>
+				                    	<button type="button" class="btn btn-light btn-icon"><i class="icon-arrow-right13"></i></button>
 									</div>
 
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
-
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
+									<div class="btn-group ml-3">
+										<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"><i class="icon-cog3"></i></button>
+										<div class="dropdown-menu dropdown-menu-right">
+											<a href="#" class="dropdown-item">Action</a>
+											<a href="#" class="dropdown-item">Another action</a>
+											<a href="#" class="dropdown-item">Something else here</a>
+											<a href="#" class="dropdown-item">One more line</a>
 										</div>
 									</div>
-
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!-- /action toolbar -->
+
+
+					<!-- Table -->
+					<div class="table-responsive">
+						<table class="table table-inbox">
+							<tbody data-link="row" class="rowlink">
+								<tr class="unread">
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/brands/spotify.png" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Spotify</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<span class="table-inbox-subject">On Tower-hill, as you go down &nbsp;-&nbsp;</span>
+										<span class="text-muted font-weight-normal">To the London docks, you may have seen a crippled beggar (or KEDGER, as the sailors say) holding a painted board before him, representing the tragic scene in which he lost his leg</span>
+									</td>
+									<td class="table-inbox-attachment">
+										<i class="icon-attachment text-muted"></i>
+									</td>
+									<td class="table-inbox-time">
+										11:09 pm
+									</td>
+								</tr>
+
+								<tr class="unread">
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<span class="btn bg-warning-400 rounded-circle btn-icon btn-sm">
+											<span class="letter-icon"></span>
+										</span>
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">James Alexander</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<span class="table-inbox-subject"><span class="badge bg-success mr-2">Promo</span> There are three whales and three boats &nbsp;-&nbsp;</span>
+										<span class="text-muted font-weight-normal">And one of the boats (presumed to contain the missing leg in all its original integrity) is being crunched by the jaws of the foremost whale</span>
+									</td>
+									<td class="table-inbox-attachment">
+										<i class="icon-attachment text-muted"></i>
+									</td>
+									<td class="table-inbox-time">
+										10:21 pm
+									</td>
+								</tr>
+
+								<tr class="unread">
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-full2 text-warning-300"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Nathan Jacobson</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<span class="table-inbox-subject">Any time these ten years, they tell me, has that man held up &nbsp;-&nbsp;</span>
+										<span class="text-muted font-weight-normal">That picture, and exhibited that stump to an incredulous world. But the time of his justification has now come. His three whales are as good whales as were ever published in Wapping, at any rate; and his stump</span>
+									</td>
+									<td class="table-inbox-attachment"></td>
+									<td class="table-inbox-time">
+										8:37 pm
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-full2 text-warning-300"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<span class="btn bg-indigo-400 rounded-circle btn-icon btn-sm">
+											<span class="letter-icon"></span>
+										</span>
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Margo Baker</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<span class="table-inbox-subject">Throughout the Pacific, and also in Nantucket, and New Bedford &nbsp;-&nbsp;</span>
+										<span class="text-muted font-weight-normal">and Sag Harbor, you will come across lively sketches of whales and whaling-scenes, graven by the fishermen themselves on Sperm Whale-teeth, or ladies' busks wrought out of the Right Whale-bone</span>
+									</td>
+									<td class="table-inbox-attachment"></td>
+									<td class="table-inbox-time">
+										4:28 am
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/brands/dribbble.png" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Dribbble</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<span class="table-inbox-subject">The whalemen call the numerous little ingenious contrivances &nbsp;-&nbsp;</span>
+										<span class="text-muted font-weight-normal">They elaborately carve out of the rough material, in their hours of ocean leisure. Some of them have little boxes of dentistical-looking implements</span>
+									</td>
+									<td class="table-inbox-attachment"></td>
+									<td class="table-inbox-time">
+										Dec 5
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<span class="btn bg-brown-400 rounded-circle btn-icon btn-sm">
+											<span class="letter-icon"></span>
+										</span>
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Hanna Dorman</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<span class="table-inbox-subject">Some of them have little boxes of dentistical-looking implements &nbsp;-&nbsp;</span>
+										<span class="text-muted font-weight-normal">Specially intended for the skrimshandering business. But, in general, they toil with their jack-knives alone; and, with that almost omnipotent tool of the sailor</span>
+									</td>
+									<td class="table-inbox-attachment">
+										<i class="icon-attachment text-muted"></i>
+									</td>
+									<td class="table-inbox-time">
+										Dec 5
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/brands/twitter.png" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Twitter</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<span class="table-inbox-subject"><span class="badge bg-indigo-400 mr-2">Order</span> Long exile from Christendom &nbsp;-&nbsp;</span>
+										<span class="text-muted font-weight-normal">And civilization inevitably restores a man to that condition in which God placed him, i.e. what is called savagery</span>
+									</td>
+									<td class="table-inbox-attachment"></td>
+									<td class="table-inbox-time">
+										Dec 4
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-full2 text-warning-300"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<span class="btn bg-pink-400 rounded-circle btn-icon btn-sm">
+											<span class="letter-icon"></span>
+										</span>
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Vanessa Aurelius</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<span class="table-inbox-subject">Your true whale-hunter is as much a savage as an Iroquois &nbsp;-&nbsp;</span>
+										<span class="text-muted font-weight-normal">I myself am a savage, owning no allegiance but to the King of the Cannibals; and ready at any moment to rebel against him. Now, one of the peculiar characteristics of the savage in his domestic hours</span>
+									</td>
+									<td class="table-inbox-attachment">
+										<i class="icon-attachment text-muted"></i>
+									</td>
+									<td class="table-inbox-time">
+										Dec 4
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">William Brenson</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<span class="table-inbox-subject">An ancient Hawaiian war-club or spear-paddle &nbsp;-&nbsp;</span>
+										<span class="text-muted font-weight-normal">In its full multiplicity and elaboration of carving, is as great a trophy of human perseverance as a Latin lexicon. For, with but a bit of broken sea-shell or a shark's tooth</span>
+									</td>
+									<td class="table-inbox-attachment">
+										<i class="icon-attachment text-muted"></i>
+									</td>
+									<td class="table-inbox-time">
+										Dec 4
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/brands/facebook.png" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Facebook</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<span class="table-inbox-subject">As with the Hawaiian savage, so with the white sailor-savage &nbsp;-&nbsp;</span>
+										<span class="text-muted font-weight-normal">With the same marvellous patience, and with the same single shark's tooth, of his one poor jack-knife, he will carve you a bit of bone sculpture, not quite as workmanlike</span>
+									</td>
+									<td class="table-inbox-attachment"></td>
+									<td class="table-inbox-time">
+										Dec 3
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-full2 text-warning-300"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Vicky Barna</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<span class="table-inbox-subject"><span class="badge bg-pink-400 mr-2">Track</span> Achilles's shield &nbsp;-&nbsp;</span>
+										<span class="text-muted font-weight-normal">Wooden whales, or whales cut in profile out of the small dark slabs of the noble South Sea war-wood, are frequently met with in the forecastles of American whalers. Some of them are done with much accuracy</span>
+									</td>
+									<td class="table-inbox-attachment"></td>
+									<td class="table-inbox-time">
+										Dec 2
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/brands/youtube.png" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Youtube</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<span class="table-inbox-subject">At some old gable-roofed country houses &nbsp;-&nbsp;</span>
+										<span class="text-muted font-weight-normal">You will see brass whales hung by the tail for knockers to the road-side door. When the porter is sleepy, the anvil-headed whale would be best. But these knocking whales are seldom remarkable as faithful essays</span>
+									</td>
+									<td class="table-inbox-attachment">
+										<i class="icon-attachment text-muted"></i>
+									</td>
+									<td class="table-inbox-time">
+										Nov 30
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Tony Gurrano</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<span class="table-inbox-subject">On the spires of some old-fashioned churches &nbsp;-&nbsp;</span>
+										<span class="text-muted font-weight-normal">You will see sheet-iron whales placed there for weather-cocks; but they are so elevated, and besides that are to all intents and purposes so labelled with "HANDS OFF!" you cannot examine them</span>
+									</td>
+									<td class="table-inbox-attachment"></td>
+									<td class="table-inbox-time">
+										Nov 28
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<span class="btn bg-danger-400 rounded-circle btn-icon btn-sm">
+											<span class="letter-icon"></span>
+										</span>
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Barbara Walden</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<span class="table-inbox-subject">In bony, ribby regions of the earth &nbsp;-&nbsp;</span>
+										<span class="text-muted font-weight-normal">Where at the base of high broken cliffs masses of rock lie strewn in fantastic groupings upon the plain, you will often discover images as of the petrified forms</span>
+									</td>
+									<td class="table-inbox-attachment"></td>
+									<td class="table-inbox-time">
+										Nov 28
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-full2 text-warning-300"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/brands/amazon.png" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Amazon</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<span class="table-inbox-subject">Here and there from some lucky point of view &nbsp;-&nbsp;</span>
+										<span class="text-muted font-weight-normal">You will catch passing glimpses of the profiles of whales defined along the undulating ridges. But you must be a thorough whaleman, to see these sights; and not only that, but if you wish to return to such a sight again</span>
+									</td>
+									<td class="table-inbox-attachment">
+										<i class="icon-attachment text-muted"></i>
+									</td>
+									<td class="table-inbox-time">
+										Nov 27
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- /table -->
+
 				</div>
-				<!-- /password generator -->
+				<!-- /single line -->
 
 
-				<!-- Bootstrap maxlength -->
+				<!-- Multiple lines -->
 				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
+					<div class="card-header bg-transparent header-elements-inline">
+						<h6 class="card-title">My Inbox (multiple lines)</h6>
+
 						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
+							<span class="badge bg-blue">259 new today</span>
 	                	</div>
 					</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
-								</div>
+					<!-- Action toolbar -->
+					<div class="bg-light">
+						<div class="navbar navbar-light bg-light navbar-expand-lg py-lg-2">
+							<div class="text-center d-lg-none w-100">
+								<button type="button" class="navbar-toggler w-100" data-toggle="collapse" data-target="#inbox-toolbar-toggle-multiple">
+									<i class="icon-circle-down2"></i>
+								</button>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
+							<div class="navbar-collapse text-center text-lg-left flex-wrap collapse" id="inbox-toolbar-toggle-multiple">
+								<div class="mt-3 mt-lg-0">
+									<div class="btn-group">
+										<button type="button" class="btn btn-light btn-icon btn-checkbox-all">
+											<input type="checkbox" class="form-input-styled" data-fouc>
+										</button>
+
+										<button type="button" class="btn btn-light btn-icon dropdown-toggle" data-toggle="dropdown"></button>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Select all</a>
+											<a href="#" class="dropdown-item">Select read</a>
+											<a href="#" class="dropdown-item">Select unread</a>
+											<div class="dropdown-divider"></div>
+											<a href="#" class="dropdown-item">Clear selection</a>
+										</div>
+									</div>
+
+									<div class="btn-group ml-3 mr-lg-3">
+										<button type="button" class="btn btn-light"><i class="icon-pencil7"></i> <span class="d-none d-lg-inline-block ml-2">Compose</span></button>
+										<button type="button" class="btn btn-light"><i class="icon-bin"></i> <span class="d-none d-lg-inline-block ml-2">Delete</span></button>
+				                    	<button type="button" class="btn btn-light"><i class="icon-spam"></i> <span class="d-none d-lg-inline-block ml-2">Spam</span></button>
+									</div>
 								</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
-								</div>
+								<div class="navbar-text ml-lg-auto"><span class="font-weight-semibold">1-50</span> of <span class="font-weight-semibold">528</span></div>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
+								<div class="ml-lg-3 mb-3 mb-lg-0">
+									<div class="btn-group">
+										<button type="button" class="btn btn-light btn-icon disabled"><i class="icon-arrow-left12"></i></button>
+				                    	<button type="button" class="btn btn-light btn-icon"><i class="icon-arrow-right13"></i></button>
+									</div>
+
+									<div class="btn-group ml-3">
+										<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"><i class="icon-cog3"></i></button>
+										<div class="dropdown-menu dropdown-menu-right">
+											<a href="#" class="dropdown-item">Action</a>
+											<a href="#" class="dropdown-item">Another action</a>
+											<a href="#" class="dropdown-item">Something else here</a>
+											<a href="#" class="dropdown-item">One more line</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!-- /action toolbar -->
+
+
+					<!-- Table -->
+					<div class="table-responsive">
+						<table class="table table-inbox">
+							<tbody data-link="row" class="rowlink">
+								<tr class="unread">
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/brands/spotify.png" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Spotify</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<div class="table-inbox-subject">On Tower-hill, as you go down &nbsp;-&nbsp;</div>
+										<span class="text-muted font-weight-normal">To the London docks, you may have seen a crippled beggar (or KEDGER, as the sailors say) holding a painted board before him, representing the tragic scene in which he lost his leg</span>
+									</td>
+									<td class="table-inbox-attachment">
+										<i class="icon-attachment text-muted"></i>
+									</td>
+									<td class="table-inbox-time">
+										11:09 pm
+									</td>
+								</tr>
+
+								<tr class="unread">
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<span class="btn bg-warning-400 rounded-circle btn-icon btn-sm">
+											<span class="letter-icon"></span>
+										</span>
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">James Alexander</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<div class="table-inbox-subject"><span class="badge bg-success mr-2">Promo</span> There are three whales and three boats &nbsp;-&nbsp;</div>
+										<span class="text-muted font-weight-normal">And one of the boats (presumed to contain the missing leg in all its original integrity) is being crunched by the jaws of the foremost whale</span>
+									</td>
+									<td class="table-inbox-attachment">
+										<i class="icon-attachment text-muted"></i>
+									</td>
+									<td class="table-inbox-time">
+										10:21 pm
+									</td>
+								</tr>
+
+								<tr class="unread">
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-full2 text-warning-300"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Nathan Jacobson</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<div class="table-inbox-subject">Any time these ten years, they tell me, has that man held up &nbsp;-&nbsp;</div>
+										<span class="text-muted font-weight-normal">That picture, and exhibited that stump to an incredulous world. But the time of his justification has now come. His three whales are as good whales as were ever published in Wapping, at any rate; and his stump</span>
+									</td>
+									<td class="table-inbox-attachment"></td>
+									<td class="table-inbox-time">
+										8:37 pm
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-full2 text-warning-300"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<span class="btn bg-indigo-400 rounded-circle btn-icon btn-sm">
+											<span class="letter-icon"></span>
+										</span>
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Margo Baker</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<div class="table-inbox-subject">Throughout the Pacific, and also in Nantucket, and New Bedford &nbsp;-&nbsp;</div>
+										<span class="text-muted font-weight-normal">and Sag Harbor, you will come across lively sketches of whales and whaling-scenes, graven by the fishermen themselves on Sperm Whale-teeth, or ladies' busks wrought out of the Right Whale-bone</span>
+									</td>
+									<td class="table-inbox-attachment"></td>
+									<td class="table-inbox-time">
+										4:28 am
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/brands/dribbble.png" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Dribbble</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<div class="table-inbox-subject">The whalemen call the numerous little ingenious contrivances &nbsp;-&nbsp;</div>
+										<span class="text-muted font-weight-normal">They elaborately carve out of the rough material, in their hours of ocean leisure. Some of them have little boxes of dentistical-looking implements</span>
+									</td>
+									<td class="table-inbox-attachment"></td>
+									<td class="table-inbox-time">
+										Dec 5
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<span class="btn bg-brown-400 rounded-circle btn-icon btn-sm">
+											<span class="letter-icon"></span>
+										</span>
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Hanna Dorman</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<div class="table-inbox-subject">Some of them have little boxes of dentistical-looking implements &nbsp;-&nbsp;</div>
+										<span class="text-muted font-weight-normal">Specially intended for the skrimshandering business. But, in general, they toil with their jack-knives alone; and, with that almost omnipotent tool of the sailor</span>
+									</td>
+									<td class="table-inbox-attachment">
+										<i class="icon-attachment text-muted"></i>
+									</td>
+									<td class="table-inbox-time">
+										Dec 5
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/brands/twitter.png" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Twitter</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<div class="table-inbox-subject"><span class="badge bg-indigo-400 mr-2">Order</span> Long exile from Christendom &nbsp;-&nbsp;</div>
+										<span class="text-muted font-weight-normal">And civilization inevitably restores a man to that condition in which God placed him, i.e. what is called savagery</span>
+									</td>
+									<td class="table-inbox-attachment"></td>
+									<td class="table-inbox-time">
+										Dec 4
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-full2 text-warning-300"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<span class="btn bg-pink-400 rounded-circle btn-icon btn-sm">
+											<span class="letter-icon"></span>
+										</span>
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Vanessa Aurelius</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<div class="table-inbox-subject">Your true whale-hunter is as much a savage as an Iroquois &nbsp;-&nbsp;</div>
+										<span class="text-muted font-weight-normal">I myself am a savage, owning no allegiance but to the King of the Cannibals; and ready at any moment to rebel against him. Now, one of the peculiar characteristics of the savage in his domestic hours</span>
+									</td>
+									<td class="table-inbox-attachment">
+										<i class="icon-attachment text-muted"></i>
+									</td>
+									<td class="table-inbox-time">
+										Dec 4
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">William Brenson</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<div class="table-inbox-subject">An ancient Hawaiian war-club or spear-paddle &nbsp;-&nbsp;</div>
+										<span class="text-muted font-weight-normal">In its full multiplicity and elaboration of carving, is as great a trophy of human perseverance as a Latin lexicon. For, with but a bit of broken sea-shell or a shark's tooth</span>
+									</td>
+									<td class="table-inbox-attachment">
+										<i class="icon-attachment text-muted"></i>
+									</td>
+									<td class="table-inbox-time">
+										Dec 4
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/brands/facebook.png" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Facebook</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<div class="table-inbox-subject">As with the Hawaiian savage, so with the white sailor-savage &nbsp;-&nbsp;</div>
+										<span class="text-muted font-weight-normal">With the same marvellous patience, and with the same single shark's tooth, of his one poor jack-knife, he will carve you a bit of bone sculpture, not quite as workmanlike</span>
+									</td>
+									<td class="table-inbox-attachment"></td>
+									<td class="table-inbox-time">
+										Dec 3
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-full2 text-warning-300"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Vicky Barna</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<div class="table-inbox-subject"><span class="badge bg-pink-400 mr-2">Track</span> Achilles's shield &nbsp;-&nbsp;</div>
+										<span class="text-muted font-weight-normal">Wooden whales, or whales cut in profile out of the small dark slabs of the noble South Sea war-wood, are frequently met with in the forecastles of American whalers. Some of them are done with much accuracy</span>
+									</td>
+									<td class="table-inbox-attachment"></td>
+									<td class="table-inbox-time">
+										Dec 2
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/brands/youtube.png" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Youtube</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<div class="table-inbox-subject">At some old gable-roofed country houses &nbsp;-&nbsp;</div>
+										<span class="text-muted font-weight-normal">You will see brass whales hung by the tail for knockers to the road-side door. When the porter is sleepy, the anvil-headed whale would be best. But these knocking whales are seldom remarkable as faithful essays</span>
+									</td>
+									<td class="table-inbox-attachment">
+										<i class="icon-attachment text-muted"></i>
+									</td>
+									<td class="table-inbox-time">
+										Nov 30
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Tony Gurrano</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<div class="table-inbox-subject">On the spires of some old-fashioned churches &nbsp;-&nbsp;</div>
+										<span class="text-muted font-weight-normal">You will see sheet-iron whales placed there for weather-cocks; but they are so elevated, and besides that are to all intents and purposes so labelled with "HANDS OFF!" you cannot examine them</span>
+									</td>
+									<td class="table-inbox-attachment"></td>
+									<td class="table-inbox-time">
+										Nov 28
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-empty3 text-muted"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<span class="btn bg-danger-400 rounded-circle btn-icon btn-sm">
+											<span class="letter-icon"></span>
+										</span>
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Barbara Walden</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<div class="table-inbox-subject">In bony, ribby regions of the earth &nbsp;-&nbsp;</div>
+										<span class="text-muted font-weight-normal">Where at the base of high broken cliffs masses of rock lie strewn in fantastic groupings upon the plain, you will often discover images as of the petrified forms</span>
+									</td>
+									<td class="table-inbox-attachment"></td>
+									<td class="table-inbox-time">
+										Nov 28
+									</td>
+								</tr>
+
+								<tr>
+									<td class="table-inbox-checkbox rowlink-skip">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+									</td>
+									<td class="table-inbox-star rowlink-skip">
+										<a href="#">
+											<i class="icon-star-full2 text-warning-300"></i>
+										</a>
+									</td>
+									<td class="table-inbox-image">
+										<img src="../../../../global_assets/images/brands/amazon.png" class="rounded-circle" width="32" height="32" alt="">
+									</td>
+									<td class="table-inbox-name">
+										<a href="mail_read.html">
+											<div class="letter-icon-title text-default">Amazon</div>
+										</a>
+									</td>
+									<td class="table-inbox-message">
+										<div class="table-inbox-subject">Here and there from some lucky point of view &nbsp;-&nbsp;</div>
+										<span class="text-muted font-weight-normal">You will catch passing glimpses of the profiles of whales defined along the undulating ridges. But you must be a thorough whaleman, to see these sights; and not only that, but if you wish to return to such a sight again</span>
+									</td>
+									<td class="table-inbox-attachment">
+										<i class="icon-attachment text-muted"></i>
+									</td>
+									<td class="table-inbox-time">
+										Nov 27
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- /table -->
+
 				</div>
-				<!-- /bootstrap maxlength -->
+				<!-- /multiple lines -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +2771,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->

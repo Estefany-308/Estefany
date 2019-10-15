@@ -23,17 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/velocity/velocity.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/velocity/velocity.ui.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/animations_velocity_ui.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -487,7 +481,7 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
@@ -495,7 +489,7 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -623,15 +617,15 @@
 								<li class="nav-item"><a href="colors_slate.html" class="nav-link">Slate palette</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-spinner2 spinner"></i> <span>Animations</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Animations">
 								<li class="nav-item"><a href="animations_css3.html" class="nav-link">CSS3 animations</a></li>
-								<li class="nav-item nav-item-submenu">
+								<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 									<a href="#" class="nav-link">Velocity animations</a>
 									<ul class="nav nav-group-sub">
 										<li class="nav-item"><a href="animations_velocity_basic.html" class="nav-link">Basic usage</a></li>
-										<li class="nav-item"><a href="animations_velocity_ui.html" class="nav-link">UI pack effects</a></li>
+										<li class="nav-item"><a href="animations_velocity_ui.html" class="nav-link active">UI pack effects</a></li>
 										<li class="nav-item"><a href="animations_velocity_examples.html" class="nav-link">Advanced examples</a></li>
 									</ul>
 								</li>
@@ -1211,14 +1205,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Velocity</span> - UI Effects</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1226,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="animations_velocity_ui.html" class="breadcrumb-item">Velocity</a>
+							<span class="breadcrumb-item active">UI effects</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,622 +1264,926 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
-
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-						</div>
-					</div>
+				<!-- Basic callouts -->
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Velocity callouts
+					</h6>
+					<span class="text-muted d-block">Basic animations using <code>velocity</code> UI pack</span>
 				</div>
 
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
-						</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">Bounce</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-animation" data-animation="bounce"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
 
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+							<div class="card-body">
+								Bounce animation using <code>bounce</code> callout
+		                    </div>
+			            </div>
+
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">Swing</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-animation" data-animation="swing"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Swing animation using <code>swing</code> callout
+		                    </div>
+			            </div>
 					</div>
 
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
-							</a>
-
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
-								</a>
-
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
-								</div>
+					<div class="col-md-4">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">Shake</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-animation" data-animation="shake"><i class="icon-play3"></i></a>
+			                	</div>
 							</div>
-						</div>
+
+							<div class="card-body">
+								Shake animation using <code>shake</code> callout
+		                    </div>
+			            </div>
+
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">Tada</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-animation" data-animation="tada"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Tada animation using <code>tada</code> callout
+		                    </div>
+			            </div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">Flash</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-animation" data-animation="flash"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Flash animation using <code>flash</code> callout
+		                    </div>
+			            </div>
+
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">Pulse</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-animation" data-animation="pulse"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Pulse animation using <code>pulse</code> callout
+		                    </div>
+			            </div>
 					</div>
 				</div>
-			</div>
-			<!-- /page header -->
+				<!-- /basic callouts -->
 
 
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
-								</div>
-							</div>
-						</div>
-					</div>
+				<!-- Basic transitions -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Basic transitions
+					</h6>
+					<span class="text-muted d-block">Basic transitions of <code>velocity</code> UI pack</span>
 				</div>
-				<!-- /typeahead -->
 
-
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">FadeIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="fadeIn"><i class="icon-play3"></i></a>
+			                	</div>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
+							<div class="card-body">
+								Fade In animation using <code>fadeIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
 
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
-								</div>
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">FadeOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="fadeOut"><i class="icon-play3"></i></a>
+			                	</div>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
+							<div class="card-body">
+								Fade Out animation using <code>fadeOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
 
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
-								</div>
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SwoopIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="swoopIn"><i class="icon-play3"></i></a>
+			                	</div>
 							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /elastic textarea -->
 
+							<div class="card-body">
+								Swoop In animation using <code>swoopIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
 
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SwoopOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="swoopOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
 
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
+							<div class="card-body">
+								Swoop Out animation using <code>swoopOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
 	            </div>
-	            <!-- /masked inputs -->
 
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">WhirlIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="whirlIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
 
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+							<div class="card-body">
+								Whirl In animation using <code>whirlIn</code> transition
+		                    </div>
+			            </div>
 					</div>
 
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">WhirlOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="whirlOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
 
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
-								</div>
+							<div class="card-body">
+								Whirl Out animation using <code>whirlOut</code> transition
+		                    </div>
+			            </div>
+					</div>
 
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
-								</div>
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">ShrinkIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="shrinkIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
 
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
+							<div class="card-body">
+								Shrink In animation using <code>shrinkIn</code> transition
+		                    </div>
+			            </div>
+					</div>
 
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">ShrinkOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="shrinkOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
 
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
+							<div class="card-body">
+								Shrink Out animation using <code>shrinkOut</code> transition
+		                    </div>
+			            </div>
+					</div>
+				</div>
+				<!-- /basic transitions -->
 
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
 
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
+				<!-- Bounce transitions -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Bounce transitions
+					</h6>
+					<span class="text-muted d-block">Set of In and Out <code>bounce</code> transitions</span>
+				</div>
 
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">BounceIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="bounceIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Bounce In animation using <code>bounceIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">BounceOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="bounceOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Bounce Out animation using <code>bounceOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
 	            </div>
-	            <!-- /input formatter -->
 
-
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
-								</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">BounceUpIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="bounceUpIn"><i class="icon-play3"></i></a>
+			                	</div>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
+							<div class="card-body">
+								Bounce Up In animation using <code>bounceUpIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
 
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
-								</div>
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">BounceUpOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="bounceUpOut"><i class="icon-play3"></i></a>
+			                	</div>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
+							<div class="card-body">
+								Bounce Up Out animation using <code>bounceUpOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
 
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
-								</div>
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">BounceDownIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="bounceDownIn"><i class="icon-play3"></i></a>
+			                	</div>
 							</div>
-						</div>
-					</div>
+
+							<div class="card-body">
+								Bounce Down In animation using <code>bounceDownIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">BounceDownOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="bounceDownOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Bounce Down Out animation using <code>bounceDownOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+	            </div>
+
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">BounceLeftIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="bounceLeftIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Bounce Left In animation using <code>bounceLeftIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">BounceLeftOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="bounceLeftOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Bounce Left Out animation using <code>bounceLeftOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">BounceRightIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="bounceRightIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Bounce Right In animation using <code>bounceRightIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">BounceRightOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="bounceRightOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Bounce Right Out animation using <code>bounceRightOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+	            </div>
+	            <!-- /bounce transitions -->
+
+
+	            <!-- Slide transitions -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Slide transitions
+					</h6>
+					<span class="text-muted d-block">Set of In and Out <code>slide</code> transitions</span>
 				</div>
-				<!-- /password generator -->
 
-
-				<!-- Bootstrap maxlength -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
-								</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SlideUpIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="slideUpIn"><i class="icon-play3"></i></a>
+			                	</div>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
-								</div>
+							<div class="card-body">
+								Slide Up In animation using <code>slideUpIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
-								</div>
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SlideUpOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="slideUpOut"><i class="icon-play3"></i></a>
+			                	</div>
 							</div>
-						</div>
-					</div>
+
+							<div class="card-body">
+								Slide Up Out animation using <code>slideUpOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SlideUpBigIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="slideUpBigIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Slide Up Big In animation using <code>slideUpBigIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SlideUpBigOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="slideUpBigOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Slide Up Big Out animation using <code>slideUpBigOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+	            </div>
+
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SlideDownIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="slideDownIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Slide Down In animation using <code>slideDownIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SlideDownOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="slideDownOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Slide Down Out animation using <code>slideDownOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SlideDownBigIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="slideDownBigIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Slide Down Big In animation using <code>slideDownBigIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SlideDownBigOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="slideDownBigOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Slide Down Big Out animation using <code>slideDownBigOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+	            </div>
+
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SlideLeftIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="slideLeftIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Slide Left In animation using <code>slideLeftIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SlideLeftOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="slideLeftOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Slide Left Out animation using <code>slideLeftOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SlideLeftBigIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="slideLeftBigIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Slide Left Big In animation using <code>slideLeftBigIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SlideLeftBigOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="slideLeftBigOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Slide Left Big Out animation using <code>slideLeftBigOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+	            </div>
+
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SlideRightIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="slideRightIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Slide Right In animation using <code>slideRightIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SlideRightOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="slideRightOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Slide Right Out animation using <code>slideRightOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SlideRightBigIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="slideRightBigIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Slide Right Big In animation using <code>slideRightBigIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">SlideRightBigOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="slideRightBigOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Slide Right Big Out animation using <code>slideRightBigOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+	            </div>
+	            <!-- /slide transitions -->
+
+
+	            <!-- Perspective transitions -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Perspective transitions
+					</h6>
+					<span class="text-muted d-block">Set of In and Out <code>perspective</code> transitions</span>
 				</div>
-				<!-- /bootstrap maxlength -->
+
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">PerspectiveUpIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="perspectiveUpIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Perspective Up In animation using <code>perspectiveUpIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">PerspectiveUpOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="perspectiveUpOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Perspective Up Out animation using <code>perspectiveUpOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">PerspectiveDownIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="perspectiveDownIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Perspective Down In animation using <code>perspectiveDownIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">PerspectiveDownOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="perspectiveDownOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Perspective Down Out animation using <code>perspectiveDownOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+	            </div>
+
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">PerspectiveLeftIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="perspectiveLeftIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Perspective Left In animation using <code>perspectiveLeftIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">PerspectiveLeftOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="perspectiveLeftOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Perspective Left Out animation using <code>perspectiveLeftOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">PerspectiveRightIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="perspectiveRightIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Perspective Right In animation using <code>perspectiveRightIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">PerspectiveRightOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="perspectiveRightOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Perspective Right Out animation using <code>perspectiveRightOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+	            </div>
+	            <!-- /perspective transitions -->
+
+
+	            <!-- Flip transitions -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Flip transitions
+					</h6>
+					<span class="text-muted d-block">Set of In and Out <code>flip</code> transitions</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">FlipXIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="flipXIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Flip X In animation using <code>flipXIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">FlipXOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="flipXOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Flip X Out animation using <code>flipXOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">FlipYIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="flipYIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Flip Y In animation using <code>flipYIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">FlipYOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="flipYOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Flip Y Out animation using <code>flipYOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+	            </div>
+
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">FlipBounceXIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="flipBounceXIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Flip Bounce X In animation using <code>flipBounceXIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">FlipBounceXOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="flipBounceXOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Flip Bounce X Out animation using <code>flipBounceXOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">FlipBounceYIn</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="flipBounceYIn"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Flip Bounce Y In animation using <code>flipBounceYIn</code> transition
+		                    </div>
+			            </div>
+		            </div>
+
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">FlipBounceYOut</h6>
+								<div class="header-elements">
+									<a href="#" class="text-default velocity-transition" data-transition="flipBounceYOut"><i class="icon-play3"></i></a>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Flip Bounce Y Out animation using <code>flipBounceYOut</code> transition
+		                    </div>
+			            </div>
+		            </div>
+	            </div>
+	            <!-- /flip transitions -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +2213,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->

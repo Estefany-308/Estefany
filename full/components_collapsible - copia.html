@@ -23,17 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/touch.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/components_collapsible.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -487,7 +481,7 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
@@ -495,7 +489,7 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -544,14 +538,14 @@
 
 						<!-- Components -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
 								<li class="nav-item"><a href="components_modals.html" class="nav-link">Modals</a></li>
 								<li class="nav-item"><a href="components_dropdowns.html" class="nav-link">Dropdown menus</a></li>
 								<li class="nav-item"><a href="components_tabs.html" class="nav-link">Tabs component</a></li>
 								<li class="nav-item"><a href="components_pills.html" class="nav-link">Pills component</a></li>
-								<li class="nav-item"><a href="components_collapsible.html" class="nav-link">Collapsible</a></li>
+								<li class="nav-item"><a href="components_collapsible.html" class="nav-link active">Collapsible</a></li>
 								<li class="nav-item"><a href="components_navs.html" class="nav-link">Navs</a></li>
 								<li class="nav-item"><a href="components_buttons.html" class="nav-link">Buttons</a></li>
 								<li class="nav-item"><a href="components_popups.html" class="nav-link">Tooltips and popovers</a></li>
@@ -1211,14 +1205,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Components</span> - Collapsible</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1226,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="components_collapsible.html" class="breadcrumb-item">Components</a>
+							<span class="breadcrumb-item active">Collapsible</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,622 +1264,1101 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
-
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-						</div>
-					</div>
+				<!-- Collapsible options -->
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Collapsible options
+					</h6>
+					<span class="text-muted d-block">Examples of elements and states</span>
 				</div>
 
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
-						</div>
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Inline or block element</h6>
+								<p class="mb-3 text-muted">Example of inline text toggler</p>
 
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+								<span class="font-weight-semibold cursor-pointer" data-toggle="collapse" data-target="#collapse-text">
+									Toggle content
+								</span>
+							</div>
+
+							<div class="collapse" id="collapse-text">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+								</div>
+							</div>
+						</div>
 					</div>
 
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
-							</a>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Text and other links</h6>
+								<p class="mb-3 text-muted">Example of a simple <code>&lt;a></code> element</p>
 
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
+								<a href="#collapse-link" class="font-weight-semibold" data-toggle="collapse">
+									Toggle content
 								</a>
+							</div>
 
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+							<div class="collapse" id="collapse-link">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Simgle or multiple icons</h6>
+								<p class="mb-3 text-muted">Icons in block or inline elements</p>
+
+								<a href="#collapse-icon" class="text-default" data-toggle="collapse">
+									<i class="icon-circle-down2"></i>
+								</a>
+							</div>
+
+							<div class="collapse" id="collapse-icon">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- /page header -->
 
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Link with href</h6>
+								<p class="mb-3 text-muted">Specify target in <code>href</code> attribute</p>
 
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
-								</div>
+								<a class="btn btn-primary" data-toggle="collapse" href="#collapse-link-collapsed">
+									Toggle content
+								</a>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
+							<div class="collapse" id="collapse-link-collapsed">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
 								</div>
+							</div>
+						</div>
+					</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Button with data attribute</h6>
+								<p class="mb-3 text-muted">Specify target in <code>data-target</code> attribute</p>
+
+								<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapse-button-collapsed">
+									Toggle content
+								</button>
+							</div>
+
+							<div class="collapse" id="collapse-button-collapsed">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
 								</div>
+							</div>
+						</div>
+					</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
-									</div>
-								</div>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Input with data attribute</h6>
+								<p class="mb-3 text-muted">Specify target in <code>data-target</code> attribute</p>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
+								<input type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapse-input-collapsed" value="Toggle content">
+							</div>
+
+							<div class="collapse" id="collapse-input-collapsed">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /typeahead -->
 
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Link with href</h6>
+								<p class="mb-3 text-muted">Expand content by default</p>
 
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+								<a class="btn btn-primary" data-toggle="collapse" href="#collapse-link-expanded">
+									Toggle content
+								</a>
+							</div>
+
+							<div class="collapse show" id="collapse-link-expanded">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+								</div>
+							</div>
+						</div>
 					</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Button with data attribute</h6>
+								<p class="mb-3 text-muted">Expand content by default</p>
 
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
+								<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapse-button-expanded">
+									Toggle content
+								</button>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
+							<div class="collapse show" id="collapse-button-expanded">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
 								</div>
 							</div>
+						</div>
+					</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Input with data attribute</h6>
+								<p class="mb-3 text-muted">Expand content by default</p>
 
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
+								<input type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapse-input-expanded" value="Toggle content">
+							</div>
 
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
+							<div class="collapse show" id="collapse-input-expanded">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /elastic textarea -->
+				<!-- /collapsible options -->
 
 
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+				<!-- Accordion and collapsible -->
+				<div class="row">
+					<div class="col-lg-6">
 
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
+						<!-- Basic accordion -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Basic accordion
+							</h6>
+							<span class="text-muted d-block">Basic accordion functionality</span>
+						</div>
+
+						<div id="accordion-default">
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#accordion-item-default1">Accordion Item #1</a>
+									</h6>
 								</div>
 
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
+								<div id="accordion-item-default1" class="collapse show" data-parent="#accordion-default">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-item-default2">Accordion Item #2</a>
+									</h6>
 								</div>
 
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
+								<div id="accordion-item-default2" class="collapse" data-parent="#accordion-default">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-item-default3">Accordion Item #3</a>
+									</h6>
 								</div>
 
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
+								<div id="accordion-item-default3" class="collapse" data-parent="#accordion-default">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
 								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /masked inputs -->
+							</div>
+						</div>
+						<!-- /basic accordion -->
 
 
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+						<!-- Accordion group -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Accordion group
+							</h6>
+							<span class="text-muted d-block">Display cards as card group</span>
+						</div>
 
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
+						<div id="accordion-group">
+							<div class="card mb-0 rounded-bottom-0">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#accordion-item-group1">Accordion Item #1</a>
+									</h6>
 								</div>
 
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
+								<div id="accordion-item-group1" class="collapse show" data-parent="#accordion-group">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-0 rounded-0 border-y-0">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-item-group2">Accordion Item #2</a>
+									</h6>
 								</div>
 
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
+								<div id="accordion-item-group2" class="collapse" data-parent="#accordion-group">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card rounded-top-0">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-item-group3">Accordion Item #3</a>
+									</h6>
 								</div>
 
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
+								<div id="accordion-item-group3" class="collapse" data-parent="#accordion-group">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
 								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
-
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /input formatter -->
+							</div>
+						</div>
+						<!-- /accordion group -->
 
 
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+						<!-- Accordion with controls -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Accordion with controls
+							</h6>
+							<span class="text-muted d-block">Using card controls, except <code>collapse</code></span>
+						</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
+						<div class="accordion-sortable" id="accordion-controls">
+							<div class="card">
+								<div class="card-header header-elements-inline">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#accordion-controls-group1">Accordion Item #1</a>
+									</h6>
 
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="reload"></a>
+					                		<a class="list-icons-item" data-action="move"></a>
+					                		<a class="list-icons-item" data-action="fullscreen"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+				                	</div>
+								</div>
+
+								<div id="accordion-controls-group1" class="collapse show" data-parent="#accordion-controls">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header header-elements-inline">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-controls-group2">Accordion Item #2</a>
+									</h6>
+
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="reload"></a>
+					                		<a class="list-icons-item" data-action="move"></a>
+					                		<a class="list-icons-item" data-action="fullscreen"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+				                	</div>
+								</div>
+
+								<div id="accordion-controls-group2" class="collapse" data-parent="#accordion-controls">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header header-elements-inline">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-controls-group3">Accordion Item #3</a>
+									</h6>
+
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="reload"></a>
+					                		<a class="list-icons-item" data-action="move"></a>
+					                		<a class="list-icons-item" data-action="fullscreen"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+				                	</div>
+								</div>
+
+								<div id="accordion-controls-group3" class="collapse" data-parent="#accordion-controls">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /accordion with controls -->
+
+
+						<!-- Accordion with left control button -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Left control icon
+							</h6>
+							<span class="text-muted d-block">Using <code>left</code> aligned control icon</span>
+						</div>
+
+						<div class="card-group-control card-group-control-left" id="accordion-control">
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#accordion-control-group1">Accordion Item #1</a>
+									</h6>
+								</div>
+
+								<div id="accordion-control-group1" class="collapse show" data-parent="#accordion-control">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-control-group2">Accordion Item #2</a>
+									</h6>
+								</div>
+
+								<div id="accordion-control-group2" class="collapse" data-parent="#accordion-control">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-control-group3">Accordion Item #3</a>
+									</h6>
+								</div>
+
+								<div id="accordion-control-group3" class="collapse" data-parent="#accordion-control">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /accordion with left control button -->
+
+
+						<!-- Accordion with right control button -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Right control icon
+							</h6>
+							<span class="text-muted d-block">Using <code>right</code> aligned control icon</span>
+						</div>
+
+						<div class="card-group-control card-group-control-right" id="accordion-control-right">
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#accordion-control-right-group1">Accordion Item #1</a>
+									</h6>
+								</div>
+
+								<div id="accordion-control-right-group1" class="collapse show" data-parent="#accordion-control-right">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-control-right-group2">Accordion Item #2</a>
+									</h6>
+								</div>
+
+								<div id="accordion-control-right-group2" class="collapse" data-parent="#accordion-control-right">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-control-right-group3">Accordion Item #3</a>
+									</h6>
+								</div>
+
+								<div id="accordion-control-right-group3" class="collapse" data-parent="#accordion-control-right">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /accordion with right control button -->
+
+
+						<!-- Nested accordions -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Nested accordions
+							</h6>
+							<span class="text-muted d-block">Multiple accordion levels</span>
+						</div>
+
+						<div id="accordion-parent">
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#accordion-item-nested-parent1">Parent accordion item #1</a>
+									</h6>
+								</div>
+
+								<div id="accordion-item-nested-parent1" class="collapse show" data-parent="#accordion-parent">
+									<div class="card-body">
+
+										<!-- Child level -->
+										<div id="accordion-child1">
+											<div class="card">
+												<div class="card-header bg-dark">
+													<h6 class="card-title">
+														<a data-toggle="collapse" class="text-white" href="#accordion-item-nested-child1">Child accordion item #1</a>
+													</h6>
+												</div>
+
+												<div id="accordion-item-nested-child1" class="collapse show" data-parent="#accordion-child1">
+													<div class="card-body">
+														Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+													</div>
+												</div>
+											</div>
+
+											<div class="card mb-0">
+												<div class="card-header bg-dark">
+													<h6 class="card-title">
+														<a class="collapsed text-white" data-toggle="collapse" href="#accordion-item-nested-child2">Child accordion item #2</a>
+													</h6>
+												</div>
+
+												<div id="accordion-item-nested-child2" class="collapse" data-parent="#accordion-child1">
+													<div class="card-body">
+														Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
+										<!-- /child level -->
 
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
+									</div>
 								</div>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-item-nested-parent2">Parent accordion item #2</a>
+									</h6>
 								</div>
-							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
+								<div id="accordion-item-nested-parent2" class="collapse" data-parent="#accordion-parent">
+									<div class="card-body">
 
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
+										<!-- Child level -->
+										<div id="accordion-child2">
+											<div class="card">
+												<div class="card-header bg-dark">
+													<h6 class="card-title">
+														<a data-toggle="collapse" class="text-white" href="#accordion-item-nested-child3">Child accordion item #1</a>
+													</h6>
+												</div>
+
+												<div id="accordion-item-nested-child3" class="collapse show" data-parent="#accordion-child2">
+													<div class="card-body">
+														Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+													</div>
+												</div>
+											</div>
+
+											<div class="card mb-0">
+												<div class="card-header bg-dark">
+													<h6 class="card-title">
+														<a class="collapsed text-white" data-toggle="collapse" href="#accordion-item-nested-child4">Child accordion item #2</a>
+													</h6>
+												</div>
+
+												<div id="accordion-item-nested-child4" class="collapse" data-parent="#accordion-child2">
+													<div class="card-body">
+														Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
+										<!-- /child level -->
 
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<!-- /password generator -->
+						<!-- /nested accordions -->
 
 
-				<!-- Bootstrap maxlength -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+						<!-- Accordion with different card styling -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Cards styling
+							</h6>
+							<span class="text-muted d-block">Using different card styles</span>
+						</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
+						<div id="accordion-styled">
+							<div class="card">
+								<div class="card-header bg-danger">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-white" href="#accordion-styled-group1">Accordion Item #1</a>
+									</h6>
 								</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
+								<div id="accordion-styled-group1" class="collapse show" data-parent="#accordion-styled">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
 								</div>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
+							<div class="card">
+								<div class="card-header bg-teal">
+									<h6 class="card-title">
+										<a class="collapsed text-white" data-toggle="collapse" href="#accordion-styled-group2">Accordion Item #2</a>
+									</h6>
 								</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
+								<div id="accordion-styled-group2" class="collapse" data-parent="#accordion-styled">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header bg-primary">
+									<h6 class="card-title">
+										<a class="collapsed text-white" data-toggle="collapse" href="#accordion-styled-group3">Accordion Item #3</a>
+									</h6>
 								</div>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
+								<div id="accordion-styled-group3" class="collapse" data-parent="#accordion-styled">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
 								</div>
 							</div>
 						</div>
+						<!-- /accordion with different card styling -->
+
+					</div>
+
+					<div class="col-lg-6">
+
+						<!-- Basic collapsible -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Basic collapsible
+							</h6>
+							<span class="text-muted d-block">Basic collapsible functionality</span>
+						</div>
+
+						<div>
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#collapse-item-default1">Collapsible Item #1</a>
+									</h6>
+								</div>
+
+								<div id="collapse-item-default1" class="collapse show">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapse-item-default2">Collapsible Item #2</a>
+									</h6>
+								</div>
+
+								<div id="collapse-item-default2" class="collapse">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapse-item-default3">Collapsible Item #3</a>
+									</h6>
+								</div>
+
+								<div id="collapse-item-default3" class="collapse">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /basic collapsible -->
+
+
+						<!-- Collapsible group -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Collapsible group
+							</h6>
+							<span class="text-muted d-block">Display cards as card group</span>
+						</div>
+
+						<div>
+							<div class="card mb-0 rounded-bottom-0">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#collapsible-item-group1">Collapsible Item #1</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-item-group1" class="collapse show">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-0 rounded-0 border-y-0">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-item-group2">Collapsible Item #2</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-item-group2" class="collapse">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card rounded-top-0">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-item-group3">Collapsible Item #3</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-item-group3" class="collapse">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /collapsible group -->
+
+
+						<!-- Collapsible with controls -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Collapsible with controls
+							</h6>
+							<span class="text-muted d-block">Using all card controls, except <code>collapse</code></span>
+						</div>
+
+						<div class="collapsible-sortable">
+							<div class="card">
+								<div class="card-header header-elements-inline">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#collapsible-controls-group1">Collapsible Item #1</a>
+									</h6>
+
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="reload"></a>
+					                		<a class="list-icons-item" data-action="move"></a>
+					                		<a class="list-icons-item" data-action="fullscreen"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+				                	</div>
+								</div>
+
+								<div id="collapsible-controls-group1" class="collapse show">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header header-elements-inline">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-controls-group2">Collapsible Item #2</a>
+									</h6>
+
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="reload"></a>
+					                		<a class="list-icons-item" data-action="move"></a>
+					                		<a class="list-icons-item" data-action="fullscreen"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+				                	</div>
+								</div>
+
+								<div id="collapsible-controls-group2" class="collapse">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header header-elements-inline">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-controls-group3">Collapsible Item #3</a>
+									</h6>
+
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="reload"></a>
+					                		<a class="list-icons-item" data-action="move"></a>
+					                		<a class="list-icons-item" data-action="fullscreen"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+				                	</div>
+								</div>
+
+								<div id="collapsible-controls-group3" class="collapse">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /collapsible with controls -->
+
+
+						<!-- Collapsible with left control button -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Left control icon
+							</h6>
+							<span class="text-muted d-block">Using <code>left</code> aligned control icon</span>
+						</div>
+
+						<div class="card-group-control card-group-control-left">
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#collapsible-control-group1">Collapsible Item #1</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-control-group1" class="collapse show">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-control-group2">Collapsible Item #2</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-control-group2" class="collapse">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-control-group3">Collapsible Item #3</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-control-group3" class="collapse">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /collapsible with left control button -->
+
+
+						<!-- Collapsible with right control button -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Right control icon
+							</h6>
+							<span class="text-muted d-block">Using <code>right</code> aligned control icon</span>
+						</div>
+
+						<div class="card-group-control card-group-control-right">
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#collapsible-control-right-group1">Collapsible Item #1</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-control-right-group1" class="collapse show">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-control-right-group2">Collapsible Item #2</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-control-right-group2" class="collapse">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-control-right-group3">Collapsible Item #3</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-control-right-group3" class="collapse">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /collapsible with right control button -->
+
+
+						<!-- Nested collapsibles -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Nested collapsibles
+							</h6>
+							<span class="text-muted d-block">Multiple collapsible levels</span>
+						</div>
+
+						<div>
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#collapsible-item-nested-parent1">Parent collapsible item #1</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-item-nested-parent1" class="collapse show">
+									<div class="card-body">
+
+										<!-- Child level -->
+										<div class="card">
+											<div class="card-header bg-dark">
+												<h6 class="card-title">
+													<a data-toggle="collapse" class="text-white" href="#collapsible-item-nested-child1">Child collapsible item #1</a>
+												</h6>
+											</div>
+
+											<div id="collapsible-item-nested-child1" class="collapse show">
+												<div class="card-body">
+													Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+												</div>
+											</div>
+										</div>
+
+										<div class="card mb-0">
+											<div class="card-header bg-dark">
+												<h6 class="card-title">
+													<a class="collapsed text-white" data-toggle="collapse" href="#collapsible-item-nested-child2">Child collapsible item #2</a>
+												</h6>
+											</div>
+
+											<div id="collapsible-item-nested-child2" class="collapse">
+												<div class="card-body">
+													Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+												</div>
+											</div>
+										</div>
+										<!-- /child level -->
+
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-item-nested-parent2">Parent collapsible item #2</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-item-nested-parent2" class="collapse">
+									<div class="card-body">
+
+										<!-- Child level -->
+										<div class="card">
+											<div class="card-header bg-dark">
+												<h6 class="card-title">
+													<a data-toggle="collapse" class="text-white" href="#collapsible-item-nested-child3">Child collapsible item #1</a>
+												</h6>
+											</div>
+
+											<div id="collapsible-item-nested-child3" class="collapse show">
+												<div class="card-body">
+													Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+												</div>
+											</div>
+										</div>
+
+										<div class="card mb-0">
+											<div class="card-header bg-dark">
+												<h6 class="card-title">
+													<a class="collapsed text-white" data-toggle="collapse" href="#collapsible-item-nested-child4">Child collapsible item #2</a>
+												</h6>
+											</div>
+
+											<div id="collapsible-item-nested-child4" class="collapse">
+												<div class="card-body">
+													Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+												</div>
+											</div>
+										</div>
+										<!-- /child level -->
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /nested collapsibles -->
+
+
+						<!-- Collapsible with different card styling -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Cards styling
+							</h6>
+							<span class="text-muted d-block">Using different card styles</span>
+						</div>
+
+						<div>
+							<div class="card">
+								<div class="card-header bg-info">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-white" href="#collapsible-styled-group1">Collapsible Item #1</a>
+									</h6>
+								</div>
+								<div id="collapsible-styled-group1" class="collapse show">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header bg-slate">
+									<h6 class="card-title">
+										<a class="collapsed text-white" data-toggle="collapse" href="#collapsible-styled-group2">Collapsible Item #2</a>
+									</h6>
+								</div>
+								<div id="collapsible-styled-group2" class="collapse">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header bg-purple">
+									<h6 class="card-title">
+										<a class="collapsed text-white" data-toggle="collapse" href="#collapsible-styled-group3">Collapsible Item #3</a>
+									</h6>
+								</div>
+								<div id="collapsible-styled-group3" class="collapse">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /collapsible with different card styling -->
+
 					</div>
 				</div>
-				<!-- /bootstrap maxlength -->
+				<!-- /accordion and collapsible -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +2388,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->

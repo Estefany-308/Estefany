@@ -22,18 +22,8 @@
 	<script src="../../../../global_assets/js/plugins/loaders/blockui.min.js"></script>
 	<!-- /core JS files -->
 
-	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
-
+	<!-- Theme JS files -->	
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -487,7 +477,7 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
@@ -495,7 +485,7 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -564,7 +554,7 @@
 								<li class="nav-item"><a href="components_scrollspy.html" class="nav-link">Scrollspy</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>Content styling</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
 								<li class="nav-item"><a href="content_page_header.html" class="nav-link">Page header</a></li>
@@ -580,7 +570,7 @@
 								<li class="nav-item"><a href="content_text_styling.html" class="nav-link">Text styling</a></li>
 								<li class="nav-item"><a href="content_typography.html" class="nav-link">Typography</a></li>
 								<li class="nav-item"><a href="content_helpers.html" class="nav-link">Helper classes</a></li>
-								<li class="nav-item"><a href="content_helpers_flex.html" class="nav-link">Flex utilities</a></li>
+								<li class="nav-item"><a href="content_helpers_flex.html" class="nav-link active">Flex utilities</a></li>
 								<li class="nav-item"><a href="content_syntax_highlighter.html" class="nav-link">Syntax highlighter</a></li>
 								<li class="nav-item"><a href="content_grid.html" class="nav-link">Grid system</a></li>
 							</ul>
@@ -1211,14 +1201,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Content</span> - Flex Utilities</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1222,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="content_helpers_flex.html" class="breadcrumb-item">Content</a>
+							<span class="breadcrumb-item active">Flex utilities</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,10 +1260,10 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
+				<!-- Enable flex behaviors -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
+						<h5 class="card-title">Enable flex behaviors</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1287,386 +1274,68 @@
 					</div>
 
 					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
+						Apply <code>display</code> utilities to create a flexbox container and transform <strong>direct children elements</strong> into flex items. Flex containers and items are able to be modified further with additional flex properties. The <code>.d-flex</code> class makes the flex container a block-level element. The <code>.d-inline-flex</code> class makes the flex container an atomic inline-level element. <strong>Please note:</strong> an anonymous flex item that contains only white space is not rendered, as if it were designated <code>display: none</code>. Also <code>clear</code> and <code>vertical-align</code> properties have no effect on flex items, and <code>float</code> causes the <code>display</code> property of the element to compute to <code>block</code>.
 
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
-						</div>
-
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
-							</a>
-
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
-								</a>
-
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /page header -->
-
-
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
 						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
-								</div>
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Flexbox container</p>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
+									<div class="bg-light border rounded p-2">
+										<div class="d-flex bg-slate py-2 px-3 rounded">
+											I'm a flexbox container!
+										</div>
+									</div>
 								</div>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
-								</div>
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Inline flexbox container</p>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
+									<div class="d-flex bg-light border rounded p-2">
+										<div class="d-inline-flex bg-slate py-2 px-3 rounded">
+											I'm an inline flexbox container!
+										</div>
 									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- /typeahead -->
 
-
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr class="table-border-double table-active">
+									<td colspan="2"><span class="font-weight-semibold">Display classes</span></td>
+								</tr>
+								<tr>
+									<td><code>.d-flex</code></td>
+									<td>Displays an element as a <strong>block-level</strong> flex container</td>
+								</tr>
+								<tr>
+									<td><code>.d-[breakpoint]-flex</code></td>
+									<td>Responsive variations of <code>.d-flex</code> class. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>lg</code> screen sizes</td>
+								</tr>
+								<tr>
+									<td><code>.d-inline-flex</code></td>
+									<td>Displays an element as an <strong>inline-level</strong> flex container</td>
+								</tr>
+								<tr>
+									<td><code>.d-[breakpoint]-inline-flex</code></td>
+									<td>Responsive variations of <code>.d-inline-flex</code> class. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>lg</code> screen sizes</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /elastic textarea -->
-
-
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
 	            </div>
-	            <!-- /masked inputs -->
+	            <!-- /enable flex behaviors -->
 
 
-	        	<!-- Input formatter -->
-	            <div class="card">
+	            <!-- Flex direction -->
+				<div class="card">
 					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
+						<h5 class="card-title">Flex direction</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1676,95 +1345,151 @@
 	                	</div>
 					</div>
 
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
+					<div class="card-body">
+						<p class="mb-3">Set the direction of flex items in a flex container with direction utilities. In most cases you can omit the horizontal class here as the browser default is <code>row</code>. However, you may encounter situations where you needed to explicitly set this value (like responsive layouts). Use <code>.flex-row</code> to set a horizontal direction (the browser default), or <code>.flex-row-reverse</code> to start the horizontal direction from the opposite side. Use <code>.flex-column</code> to set a vertical direction, or <code>.flex-column-reverse</code> to start the vertical direction from the opposite side.</p>
 
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
-								</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="mb-3">
+									<p class="font-weight-semibold">Row direction</p>
 
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
+									<div class="d-flex flex-row bg-light border rounded p-2">
+										<div class="bg-slate py-2 px-3 rounded-left">
+											Flex item 1
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3">
+											Flex item 2
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3">
+											Flex item 3
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-right">
+											Flex item 4
+										</div>
+									</div>
 								</div>
+							</div>
 
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
+							<div class="col-md-6">
+								<div class="mb-3">
+									<p class="font-weight-semibold">Reverse row direction</p>
 
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
+									<div class="d-flex flex-row-reverse bg-light border rounded p-2">
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-right">
+											Flex item 1
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3">
+											Flex item 2
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3">
+											Flex item 3
+										</div>
+										<div class="bg-slate py-2 px-3 rounded-left">
+											Flex item 4
+										</div>
+									</div>
 								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
+							</div>
+						</div>
 
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="mb-3">
+									<p class="font-weight-semibold">Column direction</p>
 
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
+									<div class="d-flex flex-column bg-light border rounded p-2">
+										<div class="bg-slate py-2 px-3 rounded-top">
+											Flex item 1
+										</div>
+										<div class="bg-slate border-top-1 border-white py-2 px-3">
+											Flex item 2
+										</div>
+										<div class="bg-slate border-top-1 border-white py-2 px-3">
+											Flex item 3
+										</div>
+										<div class="bg-slate border-top-1 border-white py-2 px-3 rounded-bottom">
+											Flex item 4
+										</div>
+									</div>
 								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
+							</div>
 
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
+							<div class="col-md-6">
+								<div class="mb-3">
+									<p class="font-weight-semibold">Reverse column direction</p>
 
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
+									<div class="d-flex flex-column-reverse bg-light border rounded p-2">
+										<div class="bg-slate border-top-1 py-2 px-3 rounded-bottom">
+											Flex item 1
+										</div>
+										<div class="bg-slate border-top-1 border-white py-2 px-3">
+											Flex item 2
+										</div>
+										<div class="bg-slate border-top-1 border-white py-2 px-3">
+											Flex item 3
+										</div>
+										<div class="bg-slate border-white py-2 px-3 rounded-top">
+											Flex item 4
+										</div>
+									</div>
 								</div>
-	                		</div>
-	                	</div>	
-	                </div>
+							</div>
+						</div>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr class="table-border-double table-active">
+									<td colspan="2"><span class="font-weight-semibold">Flex row classes</span></td>
+								</tr>
+								<tr>
+									<td><code>.flex-row</code></td>
+									<td>Default value. The flexible items are displayed horizontally, as a row</td>
+								</tr>
+								<tr>
+									<td><code>.flex-[breakpoint]-row</code></td>
+									<td>Responsive variations of <code>.flex-row</code> class. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>lg</code> screen sizes</td>
+								</tr>
+								<tr>
+									<td><code>.flex-row-reverse</code></td>
+									<td>Same as row, but in reverse order</td>
+								</tr>
+								<tr>
+									<td><code>.flex-[breakpoint]-row-reverse</code></td>
+									<td>Responsive variations of <code>.flex-row-reverse</code> class. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>lg</code> screen sizes</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<td colspan="3"><span class="font-weight-semibold">Flex column classes</span></td>
+								</tr>
+								<tr>
+									<td><code>.flex-column</code></td>
+									<td>The flexible items are displayed vertically, as a column</td>
+								</tr>
+								<tr>
+									<td><code>.flex-[breakpoint]-column</code></td>
+									<td>Responsive variations of <code>.flex-column</code> class. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>lg</code> screen sizes</td>
+								</tr>
+								<tr>
+									<td><code>.flex-column-reverse</code></td>
+									<td>Same as column, but in reverse order</td>
+								</tr>
+								<tr>
+									<td><code>.flex-[breakpoint]-column-reverse</code></td>
+									<td>Responsive variations of <code>.flex-column-reverse</code> class. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>lg</code> screen sizes</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 	            </div>
-	            <!-- /input formatter -->
+	            <!-- /flex direction -->
 
 
-				<!-- Password generator -->
+	            <!-- Justify content -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
+						<h5 class="card-title">Justify content</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1775,66 +1500,128 @@
 					</div>
 
 					<div class="card-body">
+						Use <code>justify-content</code> utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start, y-axis if <code>flex-direction: column</code>). Choose from <code>start</code> (browser default), <code>end</code>, <code>center</code>, <code>between</code>, or <code>around</code> values. The alignment is done after the lengths and auto margins are applied, meaning that, if in a Flexbox layout there is at least one flexible element, with <code>flex-grow</code> different from <code>0</code>, it will have no effect as there won't be any available space.
+
 						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
+							<div class="col-xl-4">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Beginning (start) of the container</p>
 
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
+									<div class="d-flex justify-content-start bg-light border rounded p-2">
+										<div class="bg-slate py-2 px-3 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3">
+											Flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-right">
+											Flex item
 										</div>
 									</div>
-
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
 								</div>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
+							<div class="col-xl-4">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Center of the container</p>
 
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
+									<div class="d-flex justify-content-center bg-light border rounded p-2">
+										<div class="bg-slate py-2 px-3 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3">
+											Flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-right">
+											Flex item
 										</div>
 									</div>
-
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
 								</div>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
+							<div class="col-xl-4">
+								<div class="mt-3">
+									<p class="font-weight-semibold">End of the container</p>
 
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
+									<div class="d-flex justify-content-end bg-light border rounded p-2">
+										<div class="bg-slate py-2 px-3 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3">
+											Flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-right">
+											Flex item
 										</div>
 									</div>
+								</div>
+							</div>
+						</div>
 
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">With space between the lines</p>
+
+									<div class="d-flex justify-content-between bg-light border rounded p-2">
+										<div class="bg-slate py-2 px-3 rounded">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 rounded">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 rounded">
+											Flex item
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">With space before, between, and after the lines</p>
+
+									<div class="d-flex justify-content-around bg-light border rounded p-2">
+										<div class="bg-slate py-2 px-3 rounded">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 rounded">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 rounded">
+											Flex item
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- /password generator -->
+
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr class="table-border-double table-active">
+									<td colspan="2"><span class="font-weight-semibold">Justify content classes</span></td>
+								</tr>
+								<tr>
+									<td><code>.justify-content-[value]</code></td>
+									<td>Aligns the flex container's items when the items don't use all available space on the main-axis (horizontally). Available options for <strong>[value]</strong>: <code>start</code> (browser default), <code>end</code>, <code>center</code>, <code>between</code>, or <code>around</code>.</td>
+								</tr>
+								<tr>
+									<td><code>.justify-content-[breakpoint]-[value]</code></td>
+									<td>Responsive variations of <code>.justify-content-[value]</code> classes. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> screen sizes</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+	            </div>
+	            <!-- /justify content -->
 
 
-				<!-- Bootstrap maxlength -->
+	            <!-- Align items -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
+						<h5 class="card-title">Align items</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1845,50 +1632,937 @@
 					</div>
 
 					<div class="card-body">
+						Use <code>align-items</code> utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if <code>flex-direction: column</code>). Choose from <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code> (browser default). Basically it works like <code>justify-content</code>, but in the perpendicular direction. <strong>Tip:</strong> use the <code>align-self</code> property of each item to override the <code>align-items</code> property.
+
 						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
-								</div>
+							<div class="col-xl-4">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Beginning (start) of the container</p>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
+									<div class="d-flex align-items-start justify-content-center bg-light border rounded p-2" style="height: 120px;">
+										<div class="bg-slate py-2 px-3 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3">
+											Flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-right">
+											Flex item
+										</div>
+									</div>
 								</div>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
-								</div>
+							<div class="col-xl-4">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Center of the container</p>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
+									<div class="d-flex align-items-center justify-content-center bg-light border rounded p-2" style="height: 120px;">
+										<div class="bg-slate py-2 px-3 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3">
+											Flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-right">
+											Flex item
+										</div>
+									</div>
 								</div>
+							</div>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
+							<div class="col-xl-4">
+								<div class="mt-3">
+									<p class="font-weight-semibold">End of the container</p>
+
+									<div class="d-flex align-items-end justify-content-center bg-light border rounded p-2" style="height: 120px;">
+										<div class="bg-slate py-2 px-3 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3">
+											Flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-right">
+											Flex item
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">WBaseline of the container</p>
+
+									<div class="d-flex align-items-baseline justify-content-center bg-light border rounded p-2" style="height: 120px;">
+										<div class="bg-slate py-2 px-3 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3">
+											Flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-right">
+											Flex item
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Fit the container</p>
+
+									<div class="d-flex align-items-stretch justify-content-center bg-light border rounded p-2" style="height: 120px;">
+										<div class="bg-slate py-2 px-3 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3">
+											Flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-right">
+											Flex item
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- /bootstrap maxlength -->
+
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr class="table-border-double table-active">
+									<td colspan="2"><span class="font-weight-semibold">Align items classes</span></td>
+								</tr>
+								<tr>
+									<td><code>.align-items-[value]</code></td>
+									<td>Alignment of items inside flex container. Options for <strong>[value]</strong>: <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code> (browser default).</td>
+								</tr>
+								<tr>
+									<td><code>.align-items-[breakpoint]-[value]</code></td>
+									<td>Responsive variations of <code>.align-items-[value]</code> classes. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> screen sizes</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+	            </div>
+	            <!-- /align items -->
+
+
+	            <!-- Align self -->
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Align self</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						Use <code>align-self</code> utilities on flexbox items to individually change their alignment on the cross axis (the y-axis to start, x-axis if <code>flex-direction: column</code>). Choose from the same options as align-items: <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code> (browser default). The property doesn't apply to block-level boxes, or to table cells.
+
+						<div class="row">
+							<div class="col-xl-4">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Beginning (start) of the container</p>
+
+									<div class="d-flex justify-content-center bg-light border rounded p-2" style="height: 120px;">
+										<div class="bg-slate py-2 px-3 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate align-self-start border-left-1 border-white py-2 px-3">
+											Aligned flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-right">
+											Flex item
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-4">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Center of the container</p>
+
+									<div class="d-flex justify-content-center bg-light border rounded p-2" style="height: 120px;">
+										<div class="bg-slate py-2 px-3 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate align-self-center border-left-1 border-white py-2 px-3">
+											Aligned flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-right">
+											Flex item
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-4">
+								<div class="mt-3">
+									<p class="font-weight-semibold">End of the container</p>
+
+									<div class="d-flex justify-content-center bg-light border rounded p-2" style="height: 120px;">
+										<div class="bg-slate py-2 px-3 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate align-self-end border-left-1 border-white py-2 px-3">
+											Aligned flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-right">
+											Flex item
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Baseline of the container</p>
+
+									<div class="d-flex justify-content-center bg-light border rounded p-2" style="height: 120px;">
+										<div class="bg-slate py-2 px-3 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate align-self-baseline border-left-1 border-white py-2 px-3">
+											Aligned flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-right">
+											Flex item
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Fit the container</p>
+
+									<div class="d-flex justify-content-center bg-light border rounded p-2" style="height: 120px;">
+										<div class="bg-slate py-2 px-3 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate align-self-stretch border-left-1 border-white py-2 px-3">
+											Aligned flex item
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-right">
+											Flex item
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr class="table-border-double table-active">
+									<td colspan="2"><span class="font-weight-semibold">Align self classes</span></td>
+								</tr>
+								<tr>
+									<td><code>.align-self-[value]</code></td>
+									<td>Alignment of the selected item inside flex container. Options for <strong>[value]</strong>: <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code> (browser default).</td>
+								</tr>
+								<tr>
+									<td><code>.align-self-[breakpoint]-[value]</code></td>
+									<td>Responsive variations of <code>.align-self-[value]</code> classes. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> screen sizes.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+	            </div>
+	            <!-- /align self -->
+
+
+	            <!-- Auto margins -->
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Auto margins</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						Flexbox can do some pretty awesome things when you mix flex alignments with auto margins. Shown below are three examples of controlling flex items via auto margins: default (no auto margin), pushing two items to the right (<code>.mr-auto</code>), and pushing two items to the left (<code>.ml-auto</code>). Unfortunately, IE10 and IE11 do not properly support auto margins on flex items whose parent has a non-default <code>justify-content</code> value.
+
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Right auto margin</p>
+
+									<div class="d-flex bg-light border rounded p-2">
+										<div class="bg-slate py-2 px-3 rounded mr-auto">
+											Flex item 1
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-left">
+											Flex item 2
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-right">
+											Flex item 3
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Left auto margin</p>
+
+									<div class="d-flex bg-light border rounded p-2">
+										<div class="bg-slate py-2 px-3 rounded-left">
+											Flex item 1
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 rounded-right">
+											Flex item 2
+										</div>
+										<div class="bg-slate border-left-1 border-white py-2 px-3 ml-auto rounded">
+											Flex item 3
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Bottom auto margin</p>
+
+									<div class="d-flex flex-column bg-light border rounded p-2" style="height: 180px;">
+										<div class="bg-slate py-2 px-3 rounded mb-auto">
+											Flex item 1
+										</div>
+										<div class="bg-slate py-2 px-3 rounded-top">
+											Flex item 2
+										</div>
+										<div class="bg-slate border-top-1 border-white py-2 px-3 rounded-bottom">
+											Flex item 3
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Top auto margin</p>
+
+									<div class="d-flex flex-column bg-light border rounded p-2" style="height: 180px;">
+										<div class="bg-slate py-2 px-3 rounded-top">
+											Flex item 1
+										</div>
+										<div class="bg-slate border-top-1 border-white py-2 px-3 rounded-bottom">
+											Flex item 2
+										</div>
+										<div class="bg-slate py-2 px-3 rounded mt-auto">
+											Flex item 3
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr class="table-border-double table-active">
+									<td colspan="2"><span class="font-weight-semibold">Auto margin classes</span></td>
+								</tr>
+								<tr>
+									<td><code>.m[t,b,l,r]-auto</code></td>
+									<td>Pushes flex items to specified side, where "l" is left, "r" is right, "t" is top and "b" is bottom.</td>
+								</tr>
+								<tr>
+									<td><code>.m[t,b,l,r]-[breakpoint]-auto</code></td>
+									<td>Responsive variations of <code>.m[t,b,l,r]-auto</code> classes. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> screen sizes</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+	            </div>
+	            <!-- /auto margins -->
+
+
+	            <!-- Flex wrap -->
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Flex wrap</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						The <code>flex-wrap</code> classes specify whether flex items are forced into a single line or can be wrapped onto multiple lines. If wrapping is allowed, this property also enables you to control the direction in which lines are stacked. <strong>Note:</strong> if the elements are not flexible items, the <code>flex-wrap</code> property has no effect. Supports 2 directions: default and reversed.
+
+						<div class="mt-3">
+							<p class="font-weight-semibold">No wrap</p>
+
+							<div class="d-flex justify-content-center flex-nowrap bg-light border rounded p-2">
+								<div class="bg-slate py-2 px-3 d-flex rounded-left" style="flex-grow: 1;">
+									Flex item
+								</div>
+								<div class="bg-slate py-2 px-3 d-flex border-left-1 border-white" style="flex-grow: 1;">
+									Flex item
+								</div>
+								<div class="bg-slate py-2 px-3 d-flex border-left-1 border-white" style="flex-grow: 1;">
+									Flex item
+								</div>
+								<div class="bg-slate py-2 px-3 d-flex border-left-1 border-white rounded-right" style="flex-grow: 1;">
+									Flex item
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Wrap - default direction</p>
+
+									<div class="d-flex flex-wrap bg-light border rounded p-2">
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0 rounded-right">
+											Flex item
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Wrap - reversed direction</p>
+
+									<div class="d-flex flex-wrap-reverse bg-light border rounded p-2">
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0 rounded-right">
+											Flex item
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr class="table-border-double table-active">
+									<td colspan="2"><span class="font-weight-semibold">Flex wrap classes</span></td>
+								</tr>
+								<tr>
+									<td><code>.flex-nowrap</code></td>
+									<td>The flex items are laid out in a single line - may cause the flex container to overflow</td>
+								</tr>
+								<tr>
+									<td><code>.flex-[breakpoint]-nowrap</code></td>
+									<td>Responsive variations of <code>.flex-nowrap</code> class. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> screen sizes</td>
+								</tr>
+								<tr>
+									<td><code>.flex-wrap</code></td>
+									<td>The flex items break into multiple lines</td>
+								</tr>
+								<tr>
+									<td><code>.flex-[breakpoint]-wrap</code></td>
+									<td>Responsive variations of <code>.flex-wrap</code> class. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> screen sizes</td>
+								</tr>
+								<tr>
+									<td><code>.flex-wrap-reverse</code></td>
+									<td>Behaves the same as <code>.flex-wrap</code>, but in reverse order</td>
+								</tr>
+								<tr>
+									<td><code>.flex-[breakpoint]-wrap-reverse</code></td>
+									<td>Responsive variations of <code>.flex-wrap-reverse</code> class. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> screen sizes</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+	            </div>
+	            <!-- /flex wrap -->
+
+
+	            <!-- Flex order -->
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Flex order</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						Change the <span class="font-italic">visual</span> order of specific flex items with a handful of <code>order</code> utilities. We only provide options for making an item first or last, as well as a reset to use the DOM order. As order takes any integer value (e.g., 5), add custom CSS for any additional values needed. Elements with the same order value are laid out in the order in which they appear in the source code. <strong>Note:</strong> If the element is not a flexible item, the order property has no effect.
+
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Default order</p>
+
+									<div class="d-flex justify-content-center bg-light border rounded p-2">
+										<div class="bg-slate py-2 px-3 rounded">
+											Flex item 1
+										</div>
+										<div class="bg-slate py-2 px-3 mx-2 rounded">
+											Flex item 2
+										</div>
+										<div class="bg-slate py-2 px-3 rounded">
+											Flex item 3
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Custom order</p>
+
+									<div class="d-flex justify-content-center bg-light border rounded p-2">
+										<div class="bg-slate py-2 px-3 mx-2 rounded order-2">
+											Flex item 1
+										</div>
+										<div class="bg-slate py-2 px-3 rounded order-3">
+											Flex item 2
+										</div>
+										<div class="bg-slate py-2 px-3 rounded order-1">
+											Flex item 3
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Default order</p>
+
+									<div class="d-flex justify-content-center flex-column bg-light border rounded p-2">
+										<div class="bg-slate py-2 px-3 rounded">
+											Flex item 1
+										</div>
+										<div class="bg-slate py-2 px-3 my-2 rounded">
+											Flex item 2
+										</div>
+										<div class="bg-slate py-2 px-3 rounded">
+											Flex item 3
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Custom order</p>
+
+									<div class="d-flex justify-content-center flex-column bg-light border rounded p-2">
+										<div class="bg-slate py-2 px-3 my-2 rounded order-2">
+											Flex item 1
+										</div>
+										<div class="bg-slate py-2 px-3 rounded order-3">
+											Flex item 2
+										</div>
+										<div class="bg-slate py-2 px-3 rounded order-1">
+											Flex item 3
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr class="table-border-double table-active">
+									<td colspan="2"><span class="font-weight-semibold">Flex order classes</span></td>
+								</tr>
+								<tr>
+									<td><code>.order-[value]</code></td>
+									<td>Specify the order used to lay out flex items in their flex container. Values for <strong>[value]</strong>: <code>1</code>, <code>2</code>, ... <code>12</code>.</td>
+								</tr>
+								<tr>
+									<td><code>.order-[breakpoint]-[value]</code></td>
+									<td>Responsive variations of <code>.order-[value]</code> classes. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> screen sizes</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+	            </div>
+	            <!-- /flex order -->
+
+
+	            <!-- Align content -->
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Align content</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						Use <code>align-content</code> utilities on flexbox containers to align flex items together on the cross axis. Choose from <code>start</code> (browser default), <code>end</code>, <code>center</code>, <code>between</code>, <code>around</code>, or <code>stretch</code>. To demonstrate these utilities, we’ve enforced <code>flex-wrap: wrap</code> and increased the number of flex items. <strong>Note:</strong> this property has no effect on single rows of flex items.
+
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Start of the flex container</p>
+
+									<div class="d-flex flex-wrap align-content-start bg-light border rounded p-2" style="min-height: 160px;">
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0 rounded-right">
+											Flex item
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">End of the flex container</p>
+
+									<div class="d-flex flex-wrap align-content-end bg-light border rounded p-2" style="min-height: 160px;">
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0 rounded-right">
+											Flex item
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Center of the flex container</p>
+
+									<div class="d-flex flex-wrap align-content-center bg-light border rounded p-2" style="min-height: 160px;">
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0 rounded-right">
+											Flex item
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Evenly in the flex container</p>
+
+									<div class="d-flex flex-wrap align-content-between bg-light border rounded p-2" style="min-height: 160px;">
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0 rounded-right">
+											Flex item
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Evenly with half-size spaces on either end</p>
+
+									<div class="d-flex flex-wrap align-content-around bg-light border rounded p-2" style="min-height: 160px;">
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0 rounded-right">
+											Flex item
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-6">
+								<div class="mt-3">
+									<p class="font-weight-semibold">Stretch to take up the remaining space</p>
+
+									<div class="d-flex flex-wrap align-content-stretch bg-light border rounded p-2" style="min-height: 160px;">
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0 rounded-left">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0">
+											Flex item
+										</div>
+										<div class="bg-slate py-2 px-3 border-1 border-white border-right-0 border-top-0 rounded-right">
+											Flex item
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr class="table-border-double table-active">
+									<td colspan="2"><span class="font-weight-semibold">Align content classes</span></td>
+								</tr>
+								<tr>
+									<td><code>.align-content-[value]</code></td>
+									<td>Similar to align-items, but instead of aligning flex items, it aligns flex lines. Options for <strong>[value]</strong> are similar to <code>.justify-content-[value]</code> classes</td>
+								</tr>
+								<tr>
+									<td><code>.align-content-[breakpoint]-[value]</code></td>
+									<td>Responsive variations of <code>.align-content-[value]</code> classes. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> screen sizes</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+	            </div>
+	            <!-- /align content -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +2592,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->

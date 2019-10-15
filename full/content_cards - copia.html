@@ -23,17 +23,7 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
-
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -487,7 +477,7 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
@@ -495,7 +485,7 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -564,13 +554,13 @@
 								<li class="nav-item"><a href="components_scrollspy.html" class="nav-link">Scrollspy</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>Content styling</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
 								<li class="nav-item"><a href="content_page_header.html" class="nav-link">Page header</a></li>
 								<li class="nav-item"><a href="content_page_footer.html" class="nav-link disabled">Page footer <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="content_cards.html" class="nav-link">Cards</a></li>
+								<li class="nav-item"><a href="content_cards.html" class="nav-link active">Cards</a></li>
 								<li class="nav-item"><a href="content_cards_content.html" class="nav-link">Card content</a></li>
 								<li class="nav-item"><a href="content_cards_layouts.html" class="nav-link">Card layouts</a></li>
 								<li class="nav-item"><a href="content_cards_header.html" class="nav-link">Card header elements</a></li>
@@ -1211,14 +1201,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Content</span> - Cards</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1222,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="content_cards.html" class="breadcrumb-item">Content</a>
+							<span class="breadcrumb-item active">Cards</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,622 +1260,1260 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
-
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-						</div>
-					</div>
+				<!-- Card titles and subtitles -->
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Card titles and subtitles
+					</h6>
+					<span class="text-muted d-block">Titles, subtitles and header elements</span>
 				</div>
 
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Card title</h6>
+							</div>
+							
+							<div class="card-body">
+								Basic card example without header elements
+							</div>
 						</div>
 
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Card title <span class="font-size-base ml-2">With inline subtitle</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Basic card with inline header subtitle
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">
+									Card title
+									<span class="d-block font-size-base">With block subtitle</span>
+								</h6>
+							</div>
+							
+							<div class="card-body">
+								Basic card with block header subtitle
+							</div>
+						</div>
 					</div>
 
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
-							</a>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Card controls</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								Basic card with card controls
+							</div>
+						</div>
 
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
-								</a>
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Card controls <span class="font-size-base ml-2">and inline subtitle</span></h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+		                	</div>
 
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
-								</div>
+							<div class="card-body">
+								Card with inline header subtitle and card controls
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">
+									Card controls
+									<span class="d-block font-size-base">and block subtitle</span>
+								</h6>
+
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								Card with block header subtitle and card controls
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- /page header -->
+				<!-- /card titles and subtitles -->
 
 
-			<!-- Content area -->
-			<div class="content">
+				<!-- Card titles -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card title options
+					</h6>
+					<span class="text-muted d-block">Card heading font options for titles</span>
+				</div>
 
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Regular <span class="font-weight-semibold">Semibold</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing regular text with semibold
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold">Semibold</span> Regular</h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing semibold text with regular
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Regular <span class="text-thin">Thin</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing regular text with thin
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title"><span class="text-thin">Thin</span> Regular</h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing thin text with regular
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Regular <span class="font-weight-bold">Bold</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing regular text with bold
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-bold">Bold</span> Regular</h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing bold text with regular
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold text-uppercase">Uppercase</span> Regular</h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing semibold uppercase text with regular
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Regular <span class="font-weight-semibold font-italic">Italic</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing regular text with italic
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title"><span class="text-thin">Thin</span> <span class="font-weight-semibold text-uppercase">Uppercase</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing thin text with semibold uppercase
+							</div>
+						</div>
 					</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
-								</div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Regular <small>Small tag</small></h6>
 							</div>
+							
+							<div class="card-body">
+								Regular text with subtitle
+							</div>
+						</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
-								</div>
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold text-uppercase">Uppercase</span> <small>Small tag</small></h6>
+							</div>
+							
+							<div class="card-body">
+								Semibold uppercase text with subtitle
+							</div>
+						</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
-								</div>
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Default <span class="text-muted">Muted</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing default color with muted color
+							</div>
+						</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
-									</div>
-								</div>
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Default <span class="text-primary">Primary</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing default color with primary color
+							</div>
+						</div>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
-								</div>
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Default <span class="text-danger">Danger</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing default color with danger color
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Default <span class="text-success">Success</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing default color with success color
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Default <span class="text-warning">Warning</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing default color with warning color
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Default <span class="text-info">Info</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing default color with info color
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h6 class="card-title">Default <span class="text-teal">Teal</span></h6>
+							</div>
+							
+							<div class="card-body">
+								Mixing default color with custom color
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /typeahead -->
+				<!-- /card titles -->
 
 
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+				<!-- Card title sizes -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card title sizing
+					</h6>
+					<span class="text-muted d-block">Card title font colors using standard html headings</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h1 class="card-title">H1 title</h1>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								H1 title heading using <code>&lt;h1 class="card-title"></code> markup
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h3 class="card-title">H3 title</h3>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								H3 title heading using <code>&lt;h3 class="card-title"></code> markup
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">H5 title</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								H5 title heading using <code>&lt;h5 class="card-title"></code> markup
+							</div>
+						</div>
 					</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h2 class="card-title">H2 title</h2>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
-								</div>
+							
+							<div class="card-body">
+								H2 title heading using <code>&lt;h2 class="card-title"></code> markup
 							</div>
+						</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h4 class="card-title">H4 title</h4>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								H4 title heading using <code>&lt;h4 class="card-title"></code> markup
+							</div>
+						</div>
 
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
-								</div>
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">H6 title</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+							
+							<div class="card-body">
+								H6 title heading using <code>&lt;h6 class="card-title"></code> markup
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /elastic textarea -->
+				<!-- /card title sizes -->
 
 
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+				<!-- Header options -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card header options
+					</h6>
+					<span class="text-muted d-block">Background, text and border colors</span>
+				</div>
 
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /masked inputs -->
-
-
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
-
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /input formatter -->
-
-
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
-								</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Condensed header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
+							<div class="card-body">
+								Default flat card style using <code>.card</code> class
+							</div>
+						</div>
+					</div>
 
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
-								</div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">White header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
-
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
-								</div>
+							<div class="card-body">
+								Card with white header color - add <code>.bg-white</code> class to card header container
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /password generator -->
 
-
-				<!-- Bootstrap maxlength -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
-								</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-light header-elements-inline">
+								<h6 class="card-title">Light header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
-								</div>
+							<div class="card-body">
+								Card with light header color - add <code>.bg-light</code> class to card header container
+							</div>
+						</div>
+					</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
-								</div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-dark text-white header-elements-inline">
+								<h6 class="card-title">Dark header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
-								</div>
+							<div class="card-body">
+								Card with dark header color - add <code>.bg-dark</code> class to card header container
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /bootstrap maxlength -->
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-primary text-white header-elements-inline">
+								<h6 class="card-title">Primary header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with primary header color - add <code>.bg-primary</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-secondary text-white header-elements-inline">
+								<h6 class="card-title">Secondary header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with secondary header color - add <code>.bg-secondary</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-success text-white header-elements-inline">
+								<h6 class="card-title">Green (success) header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with green (success context) header - add <code>.bg-success</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-warning text-white header-elements-inline">
+								<h6 class="card-title">Orange (warning) header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with orange (warning context) header - add <code>.bg-warning</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-danger text-white header-elements-inline">
+								<h6 class="card-title">Red (danger) header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with red (danger context) header - add <code>.bg-danger</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-info text-white header-elements-inline">
+								<h6 class="card-title">Blue (info) header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with blue (info context) header - add <code>.bg-info</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header alpha-success text-success-800 header-elements-inline">
+								<h6 class="card-title">Custom light color</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card header with custom light colors - add <code>.alpha-*</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header bg-teal-400 text-white header-elements-inline">
+								<h6 class="card-title">Custom dark color</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card header with custom dark colors - add <code>.bg-*</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /header options -->
+
+
+				<!-- Bordered cards title -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Bordered cards
+					</h6>
+					<span class="text-muted d-block">Available card styles and colors</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card border-primary">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Condensed header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Default flat card style using <code>.card</code> class
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card border-grey-300">
+							<div class="card-header bg-white header-elements-inline">
+								<h6 class="card-title">White header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with white header color - add <code>.bg-white</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card border-grey-300">
+							<div class="card-header bg-light border-grey-300 header-elements-inline">
+								<h6 class="card-title">Light header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with light header color - add <code>.bg-light</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card border-dark">
+							<div class="card-header bg-dark text-white header-elements-inline">
+								<h6 class="card-title">Dark header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with dark header color - add <code>.bg-dark</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card border-primary">
+							<div class="card-header bg-primary text-white header-elements-inline">
+								<h6 class="card-title">Primary header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with primary header color - add <code>.bg-primary</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card border-secondary">
+							<div class="card-header bg-secondary text-white header-elements-inline">
+								<h6 class="card-title">Secondary header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with secondary header color - add <code>.bg-secondary</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card border-success">
+							<div class="card-header bg-success text-white header-elements-inline">
+								<h6 class="card-title">Green (success) header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with green (success context) header - add <code>.bg-success</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card border-warning">
+							<div class="card-header bg-warning text-white header-elements-inline">
+								<h6 class="card-title">Orange (warning) header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with orange (warning context) header - add <code>.bg-warning</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card border-danger">
+							<div class="card-header bg-danger text-white header-elements-inline">
+								<h6 class="card-title">Red (danger) header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with red (danger context) header - add <code>.bg-danger</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card border-info">
+							<div class="card-header bg-info text-white header-elements-inline">
+								<h6 class="card-title">Blue (info) header</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with blue (info context) header - add <code>.bg-info</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card border-success">
+							<div class="card-header alpha-success text-success-800 border-bottom-success header-elements-inline">
+								<h6 class="card-title">Custom light color</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card header with custom light colors - add <code>.alpha-*</code> class to card header container
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card border-teal-400">
+							<div class="card-header bg-teal-400 text-white header-elements-inline">
+								<h6 class="card-title">Custom dark color</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card header with custom dark colors - add <code>.bg-*</code> class to card header container
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /bordered cards -->
+
+
+				<!-- Card borders -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card borders
+					</h6>
+					<span class="text-muted d-block">Custom 4 side borders for content cards</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card border-top-success rounded-top-0">
+							<div class="card-header">
+								<h6 class="card-title">Top custom border</h6>
+							</div>
+							
+							<div class="card-body">
+								Custom color of the <strong>top</strong> border. Use optional <code>.rounded-top-0</code> class to remove rounded top corners
+							</div>
+						</div>
+
+						<div class="card border-left-danger rounded-left-0">
+							<div class="card-header">
+								<h6 class="card-title">Left custom border</h6>
+							</div>
+							
+							<div class="card-body">
+								Custom color of the <strong>left</strong> border. Use optional <code>.rounded-left-0</code> class to remove rounded left corners
+							</div>
+						</div>
+
+						<div class="card border-top-info border-bottom-info rounded-0">
+							<div class="card-header">
+								<h6 class="card-title">Top and bottom borders</h6>
+							</div>
+							
+							<div class="card-body">
+								Custom color of the <strong>top</strong> and <strong>bottom</strong> borders. Use optional <code>.rounded-0</code> class to remove rounded corners
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card border-bottom-success rounded-bottom-0">
+							<div class="card-header">
+								<h6 class="card-title">Bottom custom border</h6>
+							</div>
+							
+							<div class="card-body">
+								Custom color of the <strong>bottom</strong> border. Use optional <code>.rounded-bottom-0</code> class to remove rounded bottom corners
+							</div>
+						</div>
+
+						<div class="card border-right-danger rounded-right-0">
+							<div class="card-header">
+								<h6 class="card-title">Right custom border</h6>
+							</div>
+							
+							<div class="card-body">
+								Custom color of the <strong>right</strong> border. Use optional <code>.rounded-right-0</code> class to remove rounded right corners
+							</div>
+						</div>
+
+						<div class="card border-left-info border-right-info rounded-0">
+							<div class="card-header">
+								<h6 class="card-title">Left and right borders</h6>
+							</div>
+							
+							<div class="card-body">
+								Custom color of the <strong>left</strong> and <strong>right</strong> borders. Use optional <code>.rounded-0</code> class to remove rounded corners
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /card borders -->
+
+
+				<!-- Bordered cards border width -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Border sizing
+					</h6>
+					<span class="text-muted d-block">Available in 1 default and 2 optional sizes</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card border-top-warning border-bottom-warning rounded-0">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold">Basic</span> size</h6>
+							</div>
+							
+							<div class="card-body">
+								Basic border size of the element, defined in core variables. Any card border can be highlighted with proper class name
+							</div>
+						</div>
+
+						<div class="card border-top-2 border-top-slate border-bottom-2 border-bottom-slate rounded-0">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold">Double</span> size</h6>
+							</div>
+							
+							<div class="card-body">
+								Double border size using <code>.border-*-2</code> class, where "*" is border direction. Use <code>.border-2</code> class to make all borders thicker
+							</div>
+						</div>
+
+						<div class="card border-top-3 border-top-success border-bottom-3 border-bottom-success rounded-0">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold">Tripple</span> size</h6>
+							</div>
+							
+							<div class="card-body">
+								Tripple border size using <code>.border-*-3</code> class, where "*" is border direction. Use <code>.border-3</code> class to make all borders thicker
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card border-left-blue border-right-blue rounded-0">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold">Basic</span> size</h6>
+							</div>
+							
+							<div class="card-body">
+								Basic border size of the element, defined in core variables. Any card border can be highlighted with proper class name
+							</div>
+						</div>
+
+						<div class="card border-left-2 border-left-indigo-400 border-right-2 border-right-indigo-400 rounded-0">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold">Double</span> size</h6>
+							</div>
+							
+							<div class="card-body">
+								Double border size using <code>.border-*-2</code> class, where "*" is border direction. Use <code>.border-2</code> class to make all borders thicker
+							</div>
+						</div>
+
+						<div class="card border-left-3 border-left-pink-400 border-right-3 border-right-pink-400 rounded-0">
+							<div class="card-header">
+								<h6 class="card-title"><span class="font-weight-semibold">Tripple</span> size</h6>
+							</div>
+							
+							<div class="card-body">
+								Tripple border size using <code>.border-*-3</code> class, where "*" is border direction. Use <code>.border-3</code> class to make all borders thicker
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /bordered cards border width -->
+
+
+				<!-- Card backgrounds -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card backgrounds
+					</h6>
+					<span class="text-muted d-block">Optional default and custom background colors</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card bg-light">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Light background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with light background color using <code>.bg-light</code> class
+							</div>
+						</div>
+
+						<div class="card bg-primary text-white">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Primary background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with primary background color using <code>.bg-primary</code> class
+							</div>
+						</div>
+
+						<div class="card bg-danger text-white">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Red (danger) background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with red (danger) background color using <code>.bg-danger</code> class
+							</div>
+						</div>
+
+						<div class="card bg-success text-white">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Green (success) background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with green (success) background color using <code>.bg-success</code> class
+							</div>
+						</div>
+
+						<div class="card alpha-success border-success">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Alpha backgrounds</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with custom light background color using <code>.alpha-*</code> class
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card bg-dark text-white">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Dark background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with dark background color using <code>.bg-dark</code> class
+							</div>
+						</div>
+
+						<div class="card bg-secondary text-white">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Secondary background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with secondary background color using <code>.bg-secondary</code> class
+							</div>
+						</div>
+
+						<div class="card bg-warning text-white">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Orange (warning) background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with orange (warning) background color using <code>.bg-warning</code> class
+							</div>
+						</div>
+
+						<div class="card bg-info text-white">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Blue (info) background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with blue (info) background color using <code>.bg-info</code> class
+							</div>
+						</div>
+
+						<div class="card bg-purple-300 text-white">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Custom background</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Card with custom background color using <code>.bg-*</code> classes
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /card backgrounds -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +2543,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->

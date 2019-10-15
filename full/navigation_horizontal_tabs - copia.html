@@ -23,22 +23,14 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/ui/prism.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
 	<!-- /theme JS files -->
 
 </head>
 
-<body>
+<body class="sidebar-xs">
 
 	<!-- Main navbar -->
 	<div class="navbar navbar-expand-md navbar-dark">
@@ -487,7 +479,7 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
@@ -495,7 +487,7 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -778,13 +770,13 @@
 								<li class="nav-item"><a href="navigation_vertical_disabled.html" class="nav-link">Disabled items</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-transmission"></i> <span>Horizontal navigation</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Horizontal navigation">
 								<li class="nav-item"><a href="navigation_horizontal_click.html" class="nav-link">Submenu on click</a></li>
 								<li class="nav-item"><a href="navigation_horizontal_hover.html" class="nav-link">Submenu on hover</a></li>
 								<li class="nav-item"><a href="navigation_horizontal_elements.html" class="nav-link">With custom elements</a></li>
-								<li class="nav-item"><a href="navigation_horizontal_tabs.html" class="nav-link">Tabbed navigation</a></li>
+								<li class="nav-item"><a href="navigation_horizontal_tabs.html" class="nav-link active">Tabbed navigation</a></li>
 								<li class="nav-item"><a href="navigation_horizontal_disabled.html" class="nav-link">Disabled navigation links</a></li>
 								<li class="nav-item"><a href="navigation_horizontal_mega.html" class="nav-link">Horizontal mega menu</a></li>
 							</ul>
@@ -907,7 +899,7 @@
 										<li class="nav-item"><a href="maps_google_controls.html" class="nav-link">Controls</a></li>
 										<li class="nav-item"><a href="maps_google_markers.html" class="nav-link">Markers</a></li>
 										<li class="nav-item"><a href="maps_google_drawings.html" class="nav-link">Map drawings</a></li>
-										<li class="nav-item"><a href="maps_google_layers.html" class="nav-link ">Layers</a></li>
+										<li class="nav-item"><a href="maps_google_layers.html" class="nav-link">Layers</a></li>
 									</ul>
 								</li>
 								<li class="nav-item"><a href="maps_vector.html" class="nav-link">Vector maps</a></li>
@@ -1211,14 +1203,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Horizontal Nav</span> - Tabs</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1224,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="navigation_horizontal_tabs.html" class="breadcrumb-item">Horizontal nav</a>
+							<span class="breadcrumb-item active">Tabs</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,10 +1262,10 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
+				<!-- Tabbed nav -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
+						<h5 class="card-title">Tabbed nav</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1287,554 +1276,228 @@
 					</div>
 
 					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
+						<p class="mb-3">Sometimes the layout can be quite complex and part of your content can be hidden by default, but still be present on the same page. In such cases you can convert static navigation links to tabbed navigation that basically switches between containers without page reloading. Just add <code>.nav</code> class to <code>.navbar-nav</code> container and add <code>data-toggle="tab"</code> to your <code>&lt;a></code> elements. You can also add tabbed links to your dropdown items. Since it's default <a href="components_tabs.html">Tabs component</a>, tabbed navbar links support all styling and config options of the component.</p>
 
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
+						<div class="pb-1">
+							<p class="font-weight-semibold">Light navbar tabs:</p>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
+							<div class="navbar navbar-expand-xl navbar-light navbar-component rounded-top mb-0">
+								<div class="navbar-brand">
+									<a href="index.html" class="d-inline-block">
+										<img src="../../../../global_assets/images/logo_dark.png" alt="">
+									</a>
 								</div>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
+								<div class="d-xl-none">
+									<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-demo-light">
+										<i class="icon-menu"></i>
+									</button>
 								</div>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
+								<div class="navbar-collapse collapse" id="navbar-demo-light">
+									<ul class="nav navbar-nav">
+										<li class="nav-item dropdown">
+											<a href="#tab-light-1" class="navbar-nav-link active" data-toggle="tab">
+												<i class="icon-cube3 mr-2"></i>
+												Active tab
+											</a>
+										</li>
+
+										<li class="nav-item dropdown">
+											<a href="#tab-light-2" class="navbar-nav-link" data-toggle="tab">
+												<i class="icon-puzzle4 mr-2"></i>
+												Inactive tab
+											</a>
+										</li>
+
+										<li class="nav-item dropdown">
+											<a href="#tab-light-3" class="navbar-nav-link disabled" data-toggle="tab">
+												<i class="icon-strategy mr-2"></i>
+												Disabled tab
+											</a>
+										</li>
+
+										<li class="nav-item dropdown">
+											<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+												<i class="icon-make-group mr-2"></i>
+												Menu with tabs
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#tab-light-4" class="dropdown-item" data-toggle="tab"><i class="icon-train2"></i> Train tickets</a>
+												<a href="#tab-light-5" class="dropdown-item" data-toggle="tab"><i class="icon-bus"></i> Bus tickets</a>
+												<a href="#tab-light-6" class="dropdown-item" data-toggle="tab"><i class="icon-car"></i> Car rental</a>
+											</div>
+										</li>
+									</ul>
+
+									<ul class="nav navbar-nav ml-xl-auto">
+										<li class="nav-item dropdown">
+											<a href="#" class="navbar-nav-link">
+												<i class="icon-bell2"></i>
+												<span class="d-xl-none ml-2">Notifications</span>
+												<span class="badge badge-mark border-pink ml-auto ml-xl-0"></span>
+											</a>
+										</li>
+
+										<li class="nav-item dropdown dropdown-user">
+											<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle mr-2" height="34" alt="">
+												<span>Victoria</span>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
+												<a href="#" class="dropdown-item"><i class="icon-coins"></i> My balance</a>
+												<a href="#" class="dropdown-item">
+													<i class="icon-comment-discussion"></i>
+													Messages
+													<span class="badge badge-pill bg-blue ml-auto">58</span>
+												</a>
+												<div class="dropdown-divider"></div>
+												<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
+												<a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
+											</div>
+										</li>
+									</ul>
 								</div>
+							</div>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
+							<div class="card card-body border-top-0 rounded-0 rounded-bottom tab-content">
+								<div class="tab-pane fade active show" id="tab-light-1">
+									Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid laeggin.
 								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
+								<div class="tab-pane fade" id="tab-light-2">
+									DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg whatever.
 								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
+								<div class="tab-pane fade" id="tab-light-3">
+									Aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthet.
 								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
+								<div class="tab-pane fade" id="tab-light-4">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
 								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
+								<div class="tab-pane fade" id="tab-light-5">
+									Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor sunt.
 								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
+								<div class="tab-pane fade" id="tab-light-6">
+									Me smallness is existence attending he enjoyment favourite affection. Feebly do engage of narrow.
 								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
+							</div>
 						</div>
 
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
-							</a>
-
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
+						<p class="font-weight-semibold">Dark navbar tabs:</p>
+						<div class="navbar navbar-expand-xl navbar-dark bg-indigo-400 navbar-component rounded-top mb-0">
+							<div class="navbar-brand">
+								<a href="index.html" class="d-inline-block">
+									<img src="../../../../global_assets/images/logo_light.png" alt="">
 								</a>
-
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /page header -->
-
-
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
-								</div>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /typeahead -->
-
-
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
+							<div class="d-xl-none">
+								<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-demo-dark">
+									<i class="icon-menu"></i>
+								</button>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
+							<div class="navbar-collapse collapse" id="navbar-demo-dark">
+								<ul class="nav navbar-nav">
+									<li class="nav-item dropdown">
+										<a href="#tab-dark-1" class="navbar-nav-link active" data-toggle="tab">
+											<i class="icon-cube3 mr-2"></i>
+											Active tab
+										</a>
+									</li>
 
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
+									<li class="nav-item dropdown">
+										<a href="#tab-dark-2" class="navbar-nav-link" data-toggle="tab">
+											<i class="icon-puzzle4 mr-2"></i>
+											Inactive tab
+										</a>
+									</li>
 
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
-								</div>
-							</div>
+									<li class="nav-item dropdown">
+										<a href="#tab-dark-3" class="navbar-nav-link disabled" data-toggle="tab">
+											<i class="icon-strategy mr-2"></i>
+											Disabled tab
+										</a>
+									</li>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
+									<li class="nav-item dropdown">
+										<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+											<i class="icon-make-group mr-2"></i>
+											Menu with tabs
+										</a>
 
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /elastic textarea -->
-
-
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /masked inputs -->
-
-
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
-
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /input formatter -->
-
-
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
+										<div class="dropdown-menu dropdown-menu-right">
+											<a href="#tab-dark-4" class="dropdown-item" data-toggle="tab"><i class="icon-train2"></i> Train tickets</a>
+											<a href="#tab-dark-5" class="dropdown-item" data-toggle="tab"><i class="icon-bus"></i> Bus tickets</a>
+											<a href="#tab-dark-6" class="dropdown-item" data-toggle="tab"><i class="icon-car"></i> Car rental</a>
 										</div>
-									</div>
+									</li>
+								</ul>
 
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
-								</div>
-							</div>
+								<ul class="nav navbar-nav ml-xl-auto">
+									<li class="nav-item dropdown">
+										<a href="#" class="navbar-nav-link">
+											<i class="icon-bell2"></i>
+											<span class="d-xl-none ml-2">Notifications</span>
+											<span class="badge badge-mark border-white ml-auto ml-xl-0"></span>
+										</a>
+									</li>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
+									<li class="nav-item dropdown dropdown-user">
+										<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle mr-2" height="34" alt="">
+											<span>Victoria</span>
+										</a>
 
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
+										<div class="dropdown-menu dropdown-menu-right">
+											<a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
+											<a href="#" class="dropdown-item"><i class="icon-coins"></i> My balance</a>
+											<a href="#" class="dropdown-item">
+												<i class="icon-comment-discussion"></i>
+												Messages
+												<span class="badge badge-pill bg-blue ml-auto">58</span>
+											</a>
+											<div class="dropdown-divider"></div>
+											<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
+											<a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
 										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
-								</div>
+									</li>
+								</ul>
 							</div>
+						</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
-
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
-								</div>
+						<div class="card card-body border-top-0 rounded-0 rounded-bottom tab-content mb-0">
+							<div class="tab-pane fade active show" id="tab-dark-1">
+								Me smallness is existence attending he enjoyment favourite affection. Feebly do engage of narrow.
+							</div>
+							<div class="tab-pane fade" id="tab-dark-2">
+								Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor sunt.
+							</div>
+							<div class="tab-pane fade" id="tab-dark-3">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+							</div>
+							<div class="tab-pane fade" id="tab-dark-4">
+								Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid laeggin.
+							</div>
+							<div class="tab-pane fade" id="tab-dark-5">
+								DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg whatever.
+							</div>
+							<div class="tab-pane fade" id="tab-dark-6">
+								Aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthet.
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /password generator -->
+				<!-- /tabbed nav -->
 
 
-				<!-- Bootstrap maxlength -->
+				<!-- Navigation classes -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
+						<h5 class="card-title">Navigation classes</h5>
+
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1845,50 +1508,288 @@
 					</div>
 
 					<div class="card-body">
+						This table contains all classes related to the horizontal navbar navigation. Navbar navigation links build on default <code>.nav</code> options with their own modifier class and require the use of toggler classes for proper responsive styling. Navigation in navbars will also grow to occupy as much horizontal space as possible to keep your navbar contents securely aligned. Dropdown menus require a wrapping element for positioning, so be sure to use separate and nested elements for <code>.nav-item</code> and <code>.nav-link</code>.
+					</div>
+
+					<div class="table-responsive">
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th style="width: 20%;">Class</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th colspan="3" class="table-active">Navigation elements</th>
+								</tr>
+								<tr>
+									<td><code>.nav</code></td>
+									<td>Global wrapper for navigation list. It uses default Bootstrap's styles of <code>.nav</code> component and similar markup options.</td>
+								</tr>
+								<tr>
+									<td><code>.navbar-nav</code></td>
+									<td>for a full-height and lightweight navigation (including support for dropdowns).</td>
+								</tr>
+								<tr>
+									<td><code>.nav-item</code></td>
+									<td>This class is required in an immediate nav link parent element in any <code>.nav</code> container: sidebar, navbar, nav groups, tabs, pills etc.</td>
+								</tr>
+								<tr>
+									<td><code>.nav-item.dropdown</code></td>
+									<td>Combination of these classes is required for items with dropdown menu - nav item with <code>.dropdown</code> class is a dropdown toggle and menu wrapper that declares <code>position: relative;</code>.</td>
+								</tr>
+								<tr>
+									<td><code>.nav-item.dropup</code></td>
+									<td>Same as <code>.dropdown</code>, but this class is required in bottom navbars, because it triggers dropdown menus above elements in navbar. Dropdown caret direction in bottom navbar also depends on this class.</td>
+								</tr>
+								<tr>
+									<td><code>.navbar-nav-link</code></td>
+									<td>A custom class, unlike Bootstrap's default <code>.nav-link</code> class it doesn't affect navs in dropdowns. This class is responsible for navigation link styling and is also required as a part of nav list element structure. It's also a target for <code>.active</code> and <code>.disabled</code> classes.</td>
+								</tr>
+
+								<tr class="table-border-double">
+									<th colspan="3" class="table-active">Dropdowns</th>
+								</tr>
+								<tr>
+									<td><code>.dropdown-user</code></td>
+									<td>This class is used in menu with user pic - image size is calculated dynamically in SASS and <code>.dropdown-user</code> is needed to target the container where these calculations need to run.</td>
+								</tr>
+								<tr>
+									<td><code>.dropdown-content</code></td>
+									<td>If you need to prevent dropdown from closing when you interact with it, add <code>.dropdown-content</code> to default <code>.dropdown-menu</code> container. This doesn't disable click event outside the dropdown though.</td>
+								</tr>
+								<tr>
+									<td><code>.dropdown-content-header</code></td>
+									<td>Class for the <strong>header</strong> within <code>.dropdown-content</code> - custom element with padding that mathches custom dropdown body and footer padding. Can contain multiple components on both sides.</td>
+								</tr>
+								<tr>
+									<td><code>.dropdown-content-body</code></td>
+									<td>Class for the <strong>body</strong> within <code>.dropdown-content</code> - element with custom padding, by default is similar to <code>.card-body</code>, but can be changed in SASS variables if you want to increase or decrease custom dropdown spacing.</td>
+								</tr>
+								<tr>
+									<td><code>.dropdown-content-footer</code></td>
+									<td>Class for the <strong>footer</strong> within <code>.dropdown-content</code> - custom element with padding that mathches custom dropdown body and header padding. Can contain multiple components on both sides.</td>
+								</tr>
+								<tr>
+									<td><code>.dropdown-scrollable</code></td>
+									<td>This class sets <code>max-height</code> to the dropdown body and adds vertical scrollbar. Can be added to <code>.dropdown-content-body</code> container to make only body scrollable or to the entire <code>.dropdown-menu</code>. Default max-height value is <code>340px</code>.</td>
+								</tr>
+								<tr>
+									<td><code>.mega-menu-[alignment]</code></td>
+									<td>These classes control the percent-based width of the menu. Options for <strong>[alignment]</strong>: <strong>full</strong> - sets 100% width, <strong>left</strong> - aligns menu to the left, <strong>right</strong> - aligns menu to the right. Note - make sure you don't use <code>.dropdown</code> and <code>.dropup</code> classes in <code>.nav-item</code> container.</td>
+								</tr>
+								<tr>
+									<td><code>.w-[breakpoint]-[value]</code></td>
+									<td>Set of responsive utility classes that set <code>min-width</code> property to the <code>.dropdown-menu</code> container. Very useful in dropdowns with long content. Available options for <strong>[value]</strong> (in pixels): 200, 250, 300, 350, 400, 450, 500, 550, 600.</td>
+								</tr>
+
+								<tr class="table-border-double">
+									<th colspan="3" class="table-active">Misc</th>
+								</tr>
+								<tr>
+									<td><code>.caret-0</code></td>
+									<td>Add this class to any <code>.navbar-nav-link.dropdown-toggle</code> if you want to hide caret (directional arrow). Useful in nav links with single icon, without text and badge.</td>
+								</tr>
+								<tr>
+									<td><code>[data-hover="dropdown"]</code></td>
+									<td>Data attribute that triggers dropdown toggling on <code>hover</code> <strong>and</strong> <code>click</code>. It also affects all submenus within this menu, so needs to be added to <code>[data-toggle="dropdown"]</code> only on top level.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- /navigation classes -->
+
+
+				<!-- Navigation markup -->
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Navigation markup</h5>
+
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						<h6 class="font-weight-semibold">Navigation alignment</h6>
+						<p class="mb-3">Navigation in the navbar can be aligned to the <strong>left</strong>, <strong>right</strong> or <strong>center</strong>. By default it's aligned to the left (right in RTL direction). Since parent container is flexible, you need to use <a href="content_helpers_flex.html">flex utility classes</a> to change default alignment: add <code>.justify-content-[breakpoint]-[property]</code> to <code>.navbar-collapse</code> container and/or responsive <code>spacing</code> utilities to push content to the right and horizontal spacing between navigation containers. On mobiles all navigation items are stackable by default. Make sure you use same breakpoint in all navbar elements. Examples below demonstrate <strong>left</strong> (default) and <strong>right</strong> nav container alignments.</p>
+
 						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
-								</div>
+							<div class="col-lg-6">
+								<p class="font-weight-semibold">Left navigation alignment:</p>
+								<pre class="language-markup mb-3 mb-lg-4" data-line="5"><code>&lt;!-- Navbar collapse container -->
+&lt;div class="collapse navbar-collapse" id="navbar-mobile">
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
+	&lt;!-- Left aligned navigation -->
+	&lt;ul class="navbar-nav">
+		&lt;li class="nav-item">&lt;a href="#" class="navbar-nav-link">Link&lt;/a>&lt;/li>
+		&lt;li class="nav-item">&lt;a href="#" class="navbar-nav-link">Link&lt;/a>&lt;/li>
+		&lt;li class="nav-item dropdown">
+			&lt;a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+				Dropdown
+			&lt;/a>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
-								</div>
+			&lt;div class="dropdown-menu">
+				&lt;a href="#" class="dropdown-item">Action&lt;/a>
+				&lt;a href="#" class="dropdown-item">Another action&lt;/a>
+				&lt;a href="#" class="dropdown-item">One more action&lt;/a>
+			&lt;/div>
+		&lt;/li>
+	&lt;/ul>
+	&lt;!-- /left aligned navigation -->
+
+	[...]
+
+&lt;/div>
+&lt;!-- /navbar collapse container -->
+</code></pre>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
-								</div>
+							<div class="col-lg-6">
+								<p class="font-weight-semibold">Right navigation alignment:</p>
+								<pre class="language-markup mb-3 mb-lg-4" data-line="7"><code>&lt;!-- Navbar collapse container -->
+&lt;div class="collapse navbar-collapse" id="navbar-mobile">
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
-								</div>
+	[...]
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
-								</div>
+	&lt;!-- Right aligned navigation -->
+	&lt;ul class="navbar-nav ml-auto">
+		&lt;li class="nav-item">&lt;a href="#" class="navbar-nav-link">Link&lt;/a>&lt;/li>
+		&lt;li class="nav-item">&lt;a href="#" class="navbar-nav-link">Link&lt;/a>&lt;/li>
+		&lt;li class="nav-item dropdown">
+			&lt;a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+				Dropdown
+			&lt;/a>
+
+			&lt;div class="dropdown-menu">
+				&lt;a href="#" class="dropdown-item">Action&lt;/a>
+				&lt;a href="#" class="dropdown-item">Another action&lt;/a>
+				&lt;a href="#" class="dropdown-item">One more action&lt;/a>
+			&lt;/div>
+		&lt;/li>
+	&lt;/ul>
+	&lt;!-- /right aligned navigation -->
+
+&lt;/div>
+&lt;!-- /navbar collapse container -->
+</code></pre>
+							</div>
+						</div>
+
+
+						<h6 class="font-weight-semibold">Navigation dropdown trigger</h6>
+						<p class="mb-3">By default, all dropdown menus are toggled by clicking, this is an <a href="http://markdotto.com/2012/02/27/bootstrap-explained-dropdowns/">intentional design decision</a>. Another reason - browsers on mobile devices don't fully support hover/focus states, so if dropdown menu appearance is controlled by toggling <code>display: none;</code> on hover/focus, they won't be triggered on touch devices. However, there's a solution - toggle <code>.show</code> class on hover AND click. Limitless includes custom <code>dropdown_hover.js</code> extension that allows you to enable this behaviour on all dropdown levels and disable hover/focus triggering on mobiles. To use, just add <code>data-hover="dropdown"</code> to the dropdown link. Note - this enables hover trigger on <strong>all</strong> dropdown levels.</p>
+
+						<div class="row">
+							<div class="col-lg-6">
+								<p class="font-weight-semibold">Trigger on click:</p>
+								<pre class="language-markup mb-3 mb-lg-4" data-line="6,7"><code>&lt;!-- Trigger on click -->
+&lt;ul class="navbar-nav">
+	&lt;li class="nav-item">&lt;a href="#" class="navbar-nav-link">Link&lt;/a>&lt;/li>
+	&lt;li class="nav-item">&lt;a href="#" class="navbar-nav-link">Link&lt;/a>&lt;/li>
+	&lt;li class="nav-item dropdown">
+		&lt;a href="#" class="navbar-nav-link dropdown-toggle"
+			data-toggle="dropdown">
+			Dropdown
+		&lt;/a>
+
+		&lt;div class="dropdown-menu">
+			&lt;a href="#" class="dropdown-item">Action&lt;/a>
+			&lt;a href="#" class="dropdown-item">Another action&lt;/a>
+			&lt;div class="dropdown-divider">&lt;/div>
+			&lt;a href="#" class="dropdown-item">One more action&lt;/a>
+		&lt;/div>
+	&lt;/li>
+&lt;/ul>
+&lt;!-- /trigger on click -->
+</code></pre>
+							</div>
+
+							<div class="col-lg-6">
+								<p class="font-weight-semibold">Trigger on hover:</p>
+								<pre class="language-markup mb-3 mb-lg-4" data-line="6-8"><code>&lt;!-- Trigger on hover -->
+&lt;ul class="navbar-nav">
+	&lt;li class="nav-item">&lt;a href="#" class="navbar-nav-link">Link&lt;/a>&lt;/li>
+	&lt;li class="nav-item">&lt;a href="#" class="navbar-nav-link">Link&lt;/a>&lt;/li>
+	&lt;li class="nav-item dropdown">
+		&lt;a href="#" class="navbar-nav-link dropdown-toggle"
+			data-toggle="dropdown"
+			data-hover="dropdown">
+			Dropdown
+		&lt;/a>
+
+		&lt;div class="dropdown-menu">
+			&lt;a href="#" class="dropdown-item">Action&lt;/a>
+			&lt;a href="#" class="dropdown-item">Another action&lt;/a>
+			&lt;a href="#" class="dropdown-item">One more action&lt;/a>
+		&lt;/div>
+	&lt;/li>
+&lt;/ul>
+&lt;!-- /trigger on hover -->
+</code></pre>
+							</div>
+						</div>
+
+
+						<h6 class="font-weight-semibold">Navigation item states</h6>
+						<p class="mb-3">Navbar navigation items support 2 states: <code>active</code> and <code>disabled</code>. In <code>active</code> state nav links appear pressed, with a darker background and stronger text. Please note: <code>.active</code> class doesn't open dropdown menu, it just highlights links. If navigation link has class <code>.disabled</code>, JS blocks user interaction (basically disabled click event) and CSS mutes the link down. If this class is added to the <code>.dropdown-toggle</code> navigation element, dropdown menu won't be toggled. Examples below demonstrate active/disabled states markup.</p>
+
+						<div class="row">
+							<div class="col-lg-6">
+								<p class="font-weight-semibold">Active item/dropdown state:</p>
+								<pre class="language-markup mb-3 mb-lg-0" data-line="3, 6, 11"><code>&lt;!-- Active state -->
+&lt;ul class="navbar-nav">
+	&lt;li>&lt;a href="#" class="navbar-nav-link active">Active link&lt;/a>&lt;/li>
+	&lt;li class="nav-item">&lt;a href="#" class="navbar-nav-link">Link&lt;/a>&lt;/li>
+	&lt;li class="nav-item dropdown">
+		&lt;a href="#" class="navbar-nav-link dropdown-toggle active" data-toggle="dropdown">
+			Active dropdown
+		&lt;/a>
+
+		&lt;div class="dropdown-menu">
+			&lt;a href="#" class="dropdown-item active">Active action&lt;/a>
+			&lt;a href="#" class="dropdown-item">Another action&lt;/a>
+			&lt;div class="dropdown-divider">&lt;/div>
+			&lt;a href="#" class="dropdown-item">One more action&lt;/a>
+		&lt;/div>
+	&lt;/li>
+&lt;/ul>
+&lt;!-- /active state -->
+</code></pre>
+							</div>
+
+							<div class="col-lg-6">
+								<p class="font-weight-semibold">Disabled item/dropdown state:</p>
+								<pre class="language-markup mb-3 mb-lg-0" data-line="3, 6, 11"><code>&lt;!-- Disabled state -->
+&lt;ul class="navbar-nav">
+	&lt;li>&lt;a href="#" class="navbar-nav-link disabled">Disabled link&lt;/a>&lt;/li>
+	&lt;li class="nav-item">&lt;a href="#" class="navbar-nav-link">Link&lt;/a>&lt;/li>
+	&lt;li class="nav-item dropdown">
+		&lt;a href="#" class="navbar-nav-link dropdown-toggle disabled" data-toggle="dropdown">
+			Disabled dropdown
+		&lt;/a>
+
+		&lt;div class="dropdown-menu">
+			&lt;a href="#" class="dropdown-item disabled">Disabled action&lt;/a>
+			&lt;a href="#" class="dropdown-item">Another action&lt;/a>
+			&lt;div class="dropdown-divider">&lt;/div>
+			&lt;a href="#" class="dropdown-item">One more action&lt;/a>
+		&lt;/div>
+	&lt;/li>
+&lt;/ul>
+&lt;!-- /disabled state -->
+</code></pre>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /bootstrap maxlength -->
+				<!-- /navigation markup -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +1819,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->

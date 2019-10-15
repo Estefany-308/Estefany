@@ -23,17 +23,19 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
 	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/touchspin.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/uploaders/fileinput/plugins/purify.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/uploaders/fileinput/plugins/sortable.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/uploaders/fileinput/fileinput.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/contextmenu.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/table_elements.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -487,7 +489,7 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
@@ -495,7 +497,7 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -966,14 +968,14 @@
 
 						<!-- Tables -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tables</div> <i class="icon-menu" title="Tables"></i></li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-table2"></i> <span>Basic tables</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic tables">
 								<li class="nav-item"><a href="table_basic.html" class="nav-link">Basic examples</a></li>
 								<li class="nav-item"><a href="table_sizing.html" class="nav-link">Table sizing</a></li>
 								<li class="nav-item"><a href="table_borders.html" class="nav-link">Table borders</a></li>
 								<li class="nav-item"><a href="table_styling.html" class="nav-link">Table styling</a></li>
-								<li class="nav-item"><a href="table_elements.html" class="nav-link">Table elements</a></li>
+								<li class="nav-item"><a href="table_elements.html" class="nav-link active">Table elements</a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -1211,14 +1213,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Tables</span> - Elements</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1234,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="table_elements.html" class="breadcrumb-item">Tables</a>
+							<span class="breadcrumb-item active">Elements</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,10 +1272,10 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
+				<!-- Table components -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
+						<h5 class="card-title">Table components</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1287,608 +1286,799 @@
 					</div>
 
 					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
-
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+						Table below contains different examples of components that can be used in the table: form components, interface components, buttons, list of actions etc. All of them are adapted for different cases, such as multiple elements in the same table cell. These components support all available sizes and styles. Charts are also supported, but in certain sizes.
 					</div>
 
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-						</div>
-					</div>
-				</div>
+					<div class="table-responsive">
+						<table class="table table-bordered table-lg">
+							<tbody>
+								<tr class="table-active">
+									<th colspan="3">Control buttons and icons</th>
+								</tr>
+								<tr>
+									<td class="wmin-md-300">Control links</td>
+									<td class="wmin-md-350">
+										<div class="list-icons">
+					                		<a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+					                		<a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+					                		<a href="#" class="list-icons-item"><i class="icon-cog6"></i></a>
+					                	</div>
+									</td>
+									<td>Basic table row control buttons. These links appear as a list of links with icons</td>
+								</tr>
+								<tr>
+									<td>Colored links</td>
+									<td>
+										<div class="list-icons">
+					                		<a href="#" class="list-icons-item text-primary-600"><i class="icon-pencil7"></i></a>
+					                		<a href="#" class="list-icons-item text-danger-600"><i class="icon-trash"></i></a>
+					                		<a href="#" class="list-icons-item text-teal-600"><i class="icon-cog6"></i></a>
+					                	</div>
+									</td>
+									<td>Control links support different colors: default Bootstrap contextual colors and custom text colors from the custom color system. To use these colors add <code>.text-*</code> class to the parent <code>&lt;li></code> element</td>
+								</tr>
+								<tr>
+									<td>Links with tooltip</td>
+									<td>
+										<div class="list-icons">
+					                		<a href="#" class="list-icons-item" data-popup="tooltip" title="Edit" data-container="body">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-popup="tooltip" title="Remove" data-container="body">
+					                			<i class="icon-trash"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-popup="tooltip" title="Options" data-container="body">
+					                			<i class="icon-cog6"></i>
+				                			</a>
+					                	</div>
+									</td>
+									<td>Table row control links with default Bootstrap tooltip triggered on <code>hover</code></td>
+								</tr>
+								<tr>
+									<td>Links with modals</td>
+									<td>
+										<div class="list-icons">
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                			<i class="icon-trash"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#options_modal">
+					                			<i class="icon-cog6"></i>
+				                			</a>
+					                	</div>
+									</td>
+									<td>These control links launch <code>modals</code> with table row options. Click each icon to see it in action</td>
+								</tr>
+								<tr>
+									<td>Links with dropdown</td>
+									<td>
+										<div class="list-icons">
+					                		<a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+					                		<a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+					                		<div class="dropdown">
+						                		<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-cog6"></i></a>
 
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
-						</div>
+												<div class="dropdown-menu">
+													<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to PDF</a>
+													<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to CSV</a>
+													<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to DOC</a>
+												</div>
+				                			</div>
+					                	</div>
+									</td>
+									<td>Control links with optional <code>dropdown</code> menu appended to one of the links</td>
+								</tr>
+								<tr>
+									<td>Options dropdown</td>
+									<td>
+										<div class="list-icons">
+											<div class="dropdown">
+						                		<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-cog6"></i></a>
 
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
+												<div class="dropdown-menu">
+													<div class="dropdown-header">Options</div>
+													<a href="#" class="dropdown-item"><i class="icon-pencil7"></i>Edit entry</a>
+													<a href="#" class="dropdown-item"><i class="icon-bin"></i>Remove entry</a>
+													<div class="dropdown-header">Export</div>
+													<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+													<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+													<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+												</div>
+					                		</div>
+					                	</div>
+									</td>
+									<td>Here all table row controls are moved to one <code>general dropdown</code> menu, that is appended to 1 link</td>
+								</tr>
+								<tr>
+									<td>Links with text</td>
+									<td>
+										<ul class="list-inline mb-0">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle text-default" data-toggle="dropdown">Options</a>
 
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
-							</a>
+												<ul class="dropdown-menu">
+													<div class="dropdown-header">Options</div>
+													<a href="#" class="dropdown-item"><i class="icon-pencil7"></i>Edit entry</a>
+													<a href="#" class="dropdown-item"><i class="icon-bin"></i>Remove entry</a>
+													<div class="dropdown-header">Export</div>
+													<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+													<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+													<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+												</ul>
+											</li>
+					                	</ul>
+									</td>
+									<td>Control link with text and icon. Text can be placed <code>before</code> icon or <code>after</code> it. Optional <code>.mr-2</code> class adds extra right margin to the icon</td>
+								</tr>
 
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
-								</a>
+								<tr class="table-border-double table-active">
+									<th colspan="3">Badges</th>
+								</tr>
+								<tr>
+									<td>Badge</td>
+									<td>
+										<span class="badge badge-danger">In progress</span>
+										<span class="badge badge-flat border-success text-success-600 ml-2">Done</span>
+									</td>
+									<td>Basic Bootstrap <code>badge</code>. Supports default contextual colors and custom colors from the color system</td>
+								</tr>
+								<tr>
+									<td>Badge pill</td>
+									<td>
+										<span class="badge badge-primary badge-pill">92</span>
+										<span class="badge badge-flat border-danger text-danger-600 badge-pill ml-2">190</span>
+									</td>
+									<td>Basic Bootstrap <code>badge pill</code> - badges with rounded corners</td>
+								</tr>
+								<tr>
+									<td>Linked badge</td>
+									<td>
+										<a href="#" class="badge badge-warning">Click me</a>
+									</td>
+									<td>Liked badge. To use label as a link, add <code>.badge</code> class to the link element</td>
+								</tr>
+								<tr>
+									<td>Linked badge pill</td>
+									<td>
+										<a href="#" class="badge bg-dark badge-pill">59</a>
+									</td>
+									<td>Liked badge pill. To use badge as a link, add <code>.badge-pill</code> class to the link element</td>
+								</tr>
+								<tr>
+									<td>Badge with dropdown</td>
+									<td>
+										<div class="dropdown">
+											<a href="#" class="badge bg-teal dropdown-toggle" data-toggle="dropdown">Priority</a>
 
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /page header -->
-
-
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /typeahead -->
-
-
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /elastic textarea -->
-
-
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /masked inputs -->
-
-
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
-
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /input formatter -->
-
-
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item">
+													<span class="badge badge-mark bg-danger border-danger align-self-center mr-2"></span>
+													High priority
+												</a>
+												<a href="#" class="dropdown-item">
+													<span class="badge badge-mark bg-info border-info align-self-center mr-2"></span>
+													Normal priority
+												</a>
+												<a href="#" class="dropdown-item">
+													<span class="badge badge-mark bg-primary border-primary align-self-center mr-2"></span>
+													Low priority
+												</a>
+											</ul>
 										</div>
-									</div>
+									</td>
+									<td>Badge with dropdown menu</td>
+								</tr>
+								<tr>
+									<td>Badge pill with dropdown</td>
+									<td>
+										<div class="dropdown">
+											<a href="#" class="badge bg-indigo-400 badge-pill dropdown-toggle" data-toggle="dropdown">50%</a>
 
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
+											<div class="dropdown-menu">
+												<a href="#" class="dropdown-item"><i class="icon-arrow-up12 text-success"></i> Increase to 100%</a>
+												<a href="#" class="dropdown-item"><i class="icon-arrow-up12 text-success"></i> Increase to 90%</a>
+												<a href="#" class="dropdown-item"><i class="icon-arrow-up12 text-success"></i> Increase to 70%</a>
+												<a href="#" class="dropdown-item"><i class="icon-arrow-down12 text-danger"></i> Decrease to 30%</a>
+												<a href="#" class="dropdown-item"><i class="icon-arrow-down12 text-danger"></i> Decrease to 10%</a>
+												<a href="#" class="dropdown-item"><i class="icon-arrow-down12 text-danger"></i> Decrease to 0%</a>
+											</div>
 										</div>
-									</div>
+									</td>
+									<td>Badge pill with dropdown menu</td>
+								</tr>
 
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
-								</div>
-							</div>
+								<tr class="table-border-double table-active">
+									<th colspan="3">Styled checkboxes</th>
+								</tr>
+								<tr>
+									<td>Styled checkbox</td>
+									<td>
+										<input type="checkbox" class="form-input-styled" checked data-fouc>
+									</td>
+									<td>Single styled checkbox without label. Does not require <code>.form-check</code> wrapper</td>
+								</tr>
+								<tr>
+									<td>Left position</td>
+									<td>
+										<div class="form-check form-check-inline">
+											<label class="form-check-label">
+												<input type="checkbox" class="form-input-styled" checked data-fouc>
+												Left styled checkbox
+											</label>
+										</div>
+									</td>
+									<td>Styled checkbox with label, <code>left</code> position</td>
+								</tr>
+								<tr>
+									<td>Right position</td>
+									<td>
+										<div class="form-check form-check-inline form-check-right">
+											<label class="form-check-label">
+												Right styled checkbox
+												<input type="checkbox" class="form-input-styled" checked data-fouc>
+											</label>
+										</div>
+									</td>
+									<td>Styled checkbox with label, <code>right</code> position</td>
+								</tr>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
+								<tr class="table-border-double table-active">
+									<th colspan="3">Styled radios</th>
+								</tr>
+								<tr>
+									<td>Styled radio</td>
+									<td>
+										<input type="radio" class="form-input-styled" checked data-fouc>
+									</td>
+									<td>Single styled radio without label. Does not require <code>.form-check</code> wrapper</td>
+								</tr>
+								<tr>
+									<td>Left position</td>
+									<td>
+										<div class="form-check form-check-inline">
+											<label class="form-check-label">
+												<input type="radio" name="radio-styled" class="form-input-styled" checked data-fouc>
+												Left styled radio
+											</label>
+										</div>
+									</td>
+									<td>Styled radio with label, <code>left</code> position</td>
+								</tr>
+								<tr>
+									<td>Right position</td>
+									<td>
+										<div class="form-check form-check-inline form-check-right">
+											<label class="form-check-label">
+												Right styled radio
+												<input type="radio" name="radio-styled" class="form-input-styled" data-fouc>
+											</label>
+										</div>
+									</td>
+									<td>Styled radio with label, <code>right</code> position</td>
+								</tr>
 
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
+								<tr class="table-border-double table-active">
+									<th colspan="3">Default checkboxes</th>
+								</tr>
+								<tr>
+									<td>Default checkbox</td>
+									<td>
+										<div class="form-check">
+											<input type="checkbox" class="form-check-input position-static" checked>
+										</div>
+									</td>
+									<td>Single default checkbox without label. Requires <code>.position-static</code> class</td>
+								</tr>
+								<tr>
+									<td>Left position</td>
+									<td>
+										<div class="form-check form-check-inline">
+											<label class="form-check-label">
+												<input type="checkbox" class="form-check-input" checked>
+												Left default checkbox
+											</label>
+										</div>
+									</td>
+									<td>Default checkbox with label, <code>left</code> position</td>
+								</tr>
+								<tr>
+									<td>Right position</td>
+									<td>
+										<div class="form-check form-check-inline form-check-right">
+											<label class="form-check-label">
+												Right default checkbox
+												<input type="checkbox" class="form-check-input" checked>
+											</label>
+										</div>
+									</td>
+									<td>Default checkbox with label, <code>right</code> position</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">Default radios</th>
+								</tr>
+								<tr>
+									<td>Default radio</td>
+									<td>
+										<div class="form-check">
+											<input type="radio" class="form-check-input position-static" checked>
+										</div>
+									</td>
+									<td>Single default radio without label. Requires <code>.position-static</code> element</td>
+								</tr>
+								<tr>
+									<td>Left position</td>
+									<td>
+										<div class="form-check form-check-inline">
+											<label class="form-check-label">
+												<input type="radio" class="form-check-input" name="radio-default" checked>
+												Left default radio
+											</label>
+										</div>
+									</td>
+									<td>Default radio with label, <code>left</code> position</td>
+								</tr>
+								<tr>
+									<td>Right position</td>
+									<td>
+										<div class="form-check form-check-inline form-check-right">
+											<label class="form-check-label">
+												Right default radio
+												<input type="radio" class="form-check-input" name="radio-default">
+											</label>
+										</div>
+									</td>
+									<td>Default radio with label, <code>right</code> position</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">Switchery toggles</th>
+								</tr>
+								<tr>
+									<td>Switchery toggle</td>
+									<td>
+										<input type="checkbox" class="form-input-switchery" checked data-fouc>
+									</td>
+									<td>Single switchery checkbox</td>
+								</tr>
+								<tr>
+									<td>Left position</td>
+									<td>
+										<div class="form-check form-check-inline form-check-switchery">
+											<label class="form-check-label">
+												<input type="checkbox" class="form-input-switchery" checked data-fouc>
+												Left switch
+											</label>
+										</div>
+									</td>
+									<td>Switchery checkbox with label, <code>left</code> position</td>
+								</tr>
+								<tr>
+									<td>Right position</td>
+									<td>
+										<div class="form-check form-check-inline form-check-right form-check-switchery">
+										<label class="form-check-label">
+											Right switch
+											<input type="checkbox" class="form-input-switchery" checked data-fouc>
+										</label>
+										</div>
+									</td>
+									<td>Switchery checkbox with label, <code>right</code> position</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">File uploaders</th>
+								</tr>
+								<tr>
+									<td>Default upload</td>
+									<td>
+										<input type="file" class="form-control h-auto">
+									</td>
+									<td>Default single file uploader</td>
+								</tr>
+								<tr>
+									<td>Styled uploader</td>
+									<td>
+										<input type="file" class="form-input-styled" data-fouc>
+									</td>
+									<td>Single file uploader, styled with <code>uniform.js</code> plugin</td>
+								</tr>
+								<tr>
+									<td>Multiple uploader</td>
+									<td>
+										<input type="file" class="bootstrap-uploader" data-fouc>
+									</td>
+									<td>Multiple file uploader, using <code>file_input.js</code> plugin</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">Inputs and selects</th>
+								</tr>
+								<tr>
+									<td>Input field</td>
+									<td>
+										<input type="text" class="form-control" placeholder="Text input">
+									</td>
+									<td>Basic input field with <code>.form-control</code> class. Supports all available sizes</td>
+								</tr>
+								<tr>
+									<td>Input group</td>
+									<td>
+										<div class="input-group">
+											<span class="input-group-prepend">
+												<span class="input-group-text">
+													<i class="icon-menu6"></i>
+												</span>
 											</span>
+											<input type="text" class="form-control" placeholder="Input group">
+											<div class="input-group-append">
+												<button type="button" class="btn btn-light dropdown-toggle btn-icon" data-toggle="dropdown"><i class="icon-menu7"></i></button>
+				                                <div class="dropdown-menu dropdown-menu-right">
+													<a href="#" class="dropdown-item">Action</a>
+													<a href="#" class="dropdown-item">Another action</a>
+													<a href="#" class="dropdown-item">Something else here</a>
+													<a href="#" class="dropdown-item">One more line</a>
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>Extended form controls with appended and prepended text of buttons</td>
+								</tr>
+								<tr>
+									<td>Spinner</td>
+									<td>
+										<input type="text" value="20" class="form-control form-control-touchspin">
+									</td>
+									<td>Basic implementation of spinners based on <code>bootspin.js</code> library</td>
+								</tr>
+								<tr>
+									<td>Default select</td>
+									<td>
+										<select name="select" class="form-control">
+		                                    <option value="opt1">Basic select box</option>
+		                                    <option value="opt2">Option 2</option>
+		                                    <option value="opt3">Option 3</option>
+		                                    <option value="opt4">Option 4</option>
+		                                    <option value="opt5">Option 5</option>
+		                                    <option value="opt6">Option 6</option>
+		                                    <option value="opt7">Option 7</option>
+		                                    <option value="opt8">Option 8</option>
+		                                </select>
+									</td>
+									<td>Default simple selects with <code>.form-control</code> class. Supports all available sizes</td>
+								</tr>
+								<tr>
+									<td>Styled select</td>
+									<td>
+										<select name="select" class="form-control form-input-styled" data-fouc>
+		                                    <option value="opt1">Styled select box</option>
+		                                    <option value="opt2">Option 2</option>
+		                                    <option value="opt3">Option 3</option>
+		                                    <option value="opt4">Option 4</option>
+		                                    <option value="opt5">Option 5</option>
+		                                    <option value="opt6">Option 6</option>
+		                                    <option value="opt7">Option 7</option>
+		                                    <option value="opt8">Option 8</option>
+		                                </select>
+									</td>
+									<td>Single styled select based on <code>uniform.js</code> library</td>
+								</tr>
+								<tr>
+									<td>Select2 single</td>
+									<td>
+										<select name="select" class="form-control form-control-select2" data-fouc>
+		                                    <option value="opt1">Select2 select</option>
+		                                    <option value="opt2">Option 2</option>
+		                                    <option value="opt3">Option 3</option>
+		                                    <option value="opt4">Option 4</option>
+		                                    <option value="opt5">Option 5</option>
+		                                    <option value="opt6">Option 6</option>
+		                                    <option value="opt7">Option 7</option>
+		                                    <option value="opt8">Option 8</option>
+		                                </select>
+									</td>
+									<td>Single select based on <code>select2.js</code> library</td>
+								</tr>
+								<tr>
+									<td>Select2 multiple</td>
+									<td>
+										<select name="select" multiple="multiple" class="form-control form-control-select2" data-fouc>
+		                                    <option value="opt1" selected>Option 1</option>
+		                                    <option value="opt2" selected>Option 2</option>
+		                                    <option value="opt3">Option 3</option>
+		                                    <option value="opt4">Option 4</option>
+		                                    <option value="opt5">Option 5</option>
+		                                    <option value="opt6">Option 6</option>
+		                                    <option value="opt7">Option 7</option>
+		                                    <option value="opt8">Option 8</option>
+		                                </select>
+									</td>
+									<td>Multiple select based on <code>select2.js</code> library</td>
+								</tr>
+								<tr>
+									<td>Multiselect</td>
+									<td>
+										<select class="form-control form-control-multiselect" multiple="multiple" data-fouc>
+		                                    <option value="opt1">Option 1</option>
+		                                    <option value="opt2">Option 2</option>
+		                                    <option value="opt3">Option 3</option>
+		                                    <option value="opt4">Option 4</option>
+		                                    <option value="opt5">Option 5</option>
+		                                    <option value="opt6">Option 6</option>
+		                                    <option value="opt7">Option 7</option>
+		                                    <option value="opt8">Option 8</option>
+		                                </select>
+									</td>
+									<td>Multiple select with checkboxes based on <code>multiselect.js</code> library</td>
+								</tr>
+
+								<tr class="table-border-double table-active">
+									<th colspan="3">UI components</th>
+								</tr>
+								<tr>
+									<td>Context menu</td>
+									<td data-toggle="context" data-target=".context-data-menu">
+										Right click on this cell
+
+										<div class="context-data-menu">
+											<div class="dropdown-menu">
+												<div class="dropdown-header">Options</div>
+												<a href="#" class="dropdown-item"><i class="icon-pencil7"></i>Edit entry</a>
+												<a href="#" class="dropdown-item"><i class="icon-bin"></i>Remove entry</a>
+												<div class="dropdown-header">Export</div>
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</td>
+									<td>Basic implementation of a <code>context menu</code> attached to the table cell</td>
+								</tr>
+								<tr>
+									<td>Button</td>
+									<td>
+										<button type="button" class="btn btn-success">Basic button</button>
+									</td>
+									<td>Simple button, supports all sizes and colors</td>
+								</tr>
+								<tr>
+									<td>Buttons with icon</td>
+									<td>
+										<button type="button" class="btn btn-danger btn-icon"><i class="icon-menu7"></i></button>
+
+										<div class="btn-group ml-2">
+											<button type="button" class="btn btn-info btn-icon dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></button>
+
+											<div class="dropdown-menu">
+												<a href="#" class="dropdown-item">Action</a>
+												<a href="#" class="dropdown-item">Another action</a>
+												<a href="#" class="dropdown-item">Something else here</a>
+												<a href="#" class="dropdown-item">One more line</a>
+											</div>
+										</div>
+									</td>
+									<td>Simple button and button dropdowns with icon only, require <code>.btn-icon</code> class for padding correction</td>
+								</tr>
+								<tr>
+									<td>Button dropdown</td>
+									<td>
+										<div class="btn-group">
+											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Button dropdown</button>
+
+											<div class="dropdown-menu">
+												<a href="#" class="dropdown-item">Action</a>
+												<a href="#" class="dropdown-item">Another action</a>
+												<a href="#" class="dropdown-item">Something else here</a>
+												<a href="#" class="dropdown-item">One more line</a>
+											</div>
+										</div>
+									</td>
+									<td>Button dropdown. Also supports segmented buttons and button toggles</td>
+								</tr>
+								<tr>
+									<td>Progress bar</td>
+									<td>
+										<div class="progress">
+											<div class="progress-bar progress-bar-striped progress-bar-animated bg-pink-400" style="width: 54%">
+												<span class="sr-only">54% Complete</span>
+											</div>
+										</div>
+									</td>
+									<td>Progress bar, supports all available color and sizing options</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- /table components -->
+
+
+	            <!-- Edit modal -->
+				<div id="edit_modal" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header bg-transparent">
+								<h5 class="modal-title">Edit table</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>First Name</th>
+											<th>Last Name</th>
+											<th>Username</th>
+											<th class="col-xs-1">Action</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" class="form-control" value="Mark"></td>
+											<td><input type="text" class="form-control" value="Otto"></td>
+											<td><input type="text" class="form-control" value="@mdo"></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="text" class="form-control" value="Jacob"></td>
+											<td><input type="text" class="form-control" value="Thornton"></td>
+											<td><input type="text" class="form-control" value="@fat"></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="text" class="form-control" value="Larry"></td>
+											<td><input type="text" class="form-control" value="the Bird"></td>
+											<td><input type="text" class="form-control" value="@twitter"></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="modal-footer bg-transparent">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /edit modal -->
+
+
+	            <!-- Remove modal -->
+				<div id="remove_modal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Confirm action</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								You are about to remove this row. Are you sure?
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Yes, remove</button>
+								<button type="button" class="btn btn-light" data-dismiss="modal">No, thanks</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /remove modal -->
+
+
+	            <!-- Options modal -->
+				<div id="options_modal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Row options</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<form action="">
+									<div class="form-group row">
+										<label class="font-weight-semibold col-form-label col-sm-3">Allow select:</label>
+										<div class="col-sm-9">
+											<select class="form-control form-control-select2" data-fouc>
+												<option value="single" selected>Single</option>
+												<option value="multiple">Multiple</option>
+												<option value="disabled">Disabled</option>
+											</select>
 										</div>
 									</div>
 
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
-								</div>
+									<div class="form-group row">
+										<label class="font-weight-semibold col-form-label col-sm-3">Allow edit:</label>
+										<div class="col-sm-9">
+											<select class="form-control form-control-select2" data-fouc>
+												<option value="inline">Edit inline</option>
+												<option value="modal" selected>Edit in modal</option>
+												<option value="popover">Edit in popover</option>
+												<option value="disabled">Disabled</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="font-weight-semibold col-form-label col-sm-3">Add status:</label>
+										<div class="col-sm-9">
+											<select class="form-control form-control-select2" data-fouc>
+												<option value="completed" selected>Completed</option>
+												<option value="progress">In progress</option>
+												<option value="assigned">Assigned</option>
+												<option value="created">Created</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="font-weight-semibold col-form-label col-sm-3">Set priority:</label>
+										<div class="col-sm-9">
+											<select class="form-control form-control-select2-actions" data-fouc>
+												<option value="urgent" data-icon="radio-checked text-danger" selected>Urgent</option>
+												<option value="high" data-icon="radio-checked text-primary">High</option>
+												<option value="normal" data-icon="radio-checked text-success">Normal</option>
+												<option value="low" data-icon="radio-checked text-info">Low</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="font-weight-semibold col-form-label col-sm-3" for="enable-controls">Enable controls:</label>
+										<div class="col-sm-9">
+											<div class="form-check form-check-switchery">
+												<input type="checkbox" class="form-input-switchery-controls" id="enable_controls" checked data-fouc>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="font-weight-semibold col-form-label col-sm-3">Controls:</label>
+										<div class="col-sm-9">
+											<select class="form-control form-control-select2-actions" id="available_controls" multiple="multiple">
+												<option value="edit" data-icon="pencil7" selected>Edit</option>
+												<option value="remove" data-icon="trash" selected>Remove</option>
+												<option value="options" data-icon="cog4" selected>Options</option>
+												<option value="add" data-icon="plus22">Add</option>
+												<option value="add" data-icon="versions">Copy</option>
+												<option value="select" data-icon="check">Select</option>
+												<option value="mark" data-icon="file-download">Export</option>
+												<option value="mark" data-icon="file-upload">Import</option>
+												<option value="mark" data-icon="printer">Print</option>
+											</select>
+										</div>
+									</div>
+								</form>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Save settings</button>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /password generator -->
-
-
-				<!-- Bootstrap maxlength -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /bootstrap maxlength -->
+				<!-- /options modal -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +2108,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->

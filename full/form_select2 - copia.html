@@ -23,17 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/form_select2.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -492,10 +486,10 @@
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
 								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Checkboxes &amp; radios</a></li>
-								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
+								<li class="nav-item"><a href="form_select2.html" class="nav-link active">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -1211,14 +1205,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Select2 Selects</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1226,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="form_select2.html" class="breadcrumb-item">Forms</a>
+							<span class="breadcrumb-item active">Select2 selects</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,622 +1264,1009 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
-
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-						</div>
-					</div>
+				<!-- Select2 selects -->
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Basic setup
+					</h6>
+					<span class="text-muted d-block">Examples with basic options</span>
 				</div>
 
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
-						</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Single select</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
 
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
+							<div class="card-body">
+								<div class="form-group">
+									<label>Basic select</label>
+									<select class="form-control select" data-fouc>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="AR">Arkansas</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
+								</div>
 
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
-							</a>
+								<div class="form-group">
+									<label class="d-block">Fixed select width</label>
+									<select class="form-control select-fixed-single" data-fouc>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="AR">Arkansas</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
+								</div>
 
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
-								</a>
+								<div class="form-group">
+									<label>Select with search</label>
+									<select class="form-control select-search" data-fouc>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
+								</div>
 
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+								<div class="form-group">
+									<label>Select with placeholder</label>
+									<select data-placeholder="Select a State..." class="form-control select" data-fouc>
+										<option></option>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label>Select with icons</label>
+									<select data-placeholder="Select a state..." class="form-control select-icons" data-fouc>
+										<optgroup label="Services">
+											<option value="wordpress2" data-icon="wordpress2">Wordpress</option>
+											<option value="tumblr2" data-icon="tumblr2">Tumblr</option>
+											<option value="stumbleupon" data-icon="stumbleupon">Stumble upon</option>
+											<option value="pinterest2" data-icon="pinterest2">Pinterest</option>
+											<option value="lastfm2" data-icon="lastfm2">Lastfm</option>
+										</optgroup>
+										<optgroup label="File types">
+											<option value="pdf" data-icon="file-pdf">PDF</option>
+											<option value="word" data-icon="file-word">Word</option>
+											<option value="excel" data-icon="file-excel">Excel</option>
+											<option value="openoffice" data-icon="file-openoffice">Open office</option>
+										</optgroup>
+										<optgroup label="Browsers">
+											<option value="chrome" data-icon="chrome" selected>Chrome</option>
+											<option value="firefox" data-icon="firefox">Firefox</option>
+											<option value="safari" data-icon="safari">Safari</option>
+											<option value="opera" data-icon="opera">Opera</option>
+											<option value="IE" data-icon="IE">IE</option>
+										</optgroup>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label>Disable items</label>
+									<select class="form-control select" data-fouc>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ" disabled>Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID" disabled>Idaho</option>
+											<option value="WY" disabled>Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="AR" disabled>Arkansas</option>
+											<option value="KS">Kansas</option>
+											<option value="KY" disabled>Kentucky</option>
+										</optgroup>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label>Disabled select</label>
+									<select class="form-control select" disabled data-fouc>
+										<option value="AZ">Arizona</option>
+										<option value="CO">Colorado</option>
+										<option value="ID">Idaho</option>
+										<option value="WY">Wyoming</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label>Select background color</label>
+									<select class="form-control select" data-container-css-class="bg-teal-400" data-fouc>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label>Menu background color</label>
+									<select class="form-control select" data-dropdown-css-class="bg-teal-400" data-fouc>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label>Custom color</label>
+									<select class="form-control select" data-container-css-class="bg-indigo-400" data-dropdown-css-class="bg-indigo-400" data-fouc>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label>Custom border and text color</label>
+									<select class="form-control select" data-container-css-class="border-primary text-primary-700" data-dropdown-css-class="border-primary" data-fouc>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<!-- /page header -->
 
-
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
-								</div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Multiple select</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /typeahead -->
-
-
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /elastic textarea -->
-
-
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
+							<div class="card-body">
 								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
+									<label>Multiple select</label>
+									<select multiple="multiple" class="form-control select" data-fouc>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ" selected>Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="IA" selected>Iowa</option>
+											<option value="KS" selected>Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
 								</div>
 
 								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
+									<label class="d-block">Fixed width select</label>
+									<select multiple="multiple" class="form-control select-fixed-multiple" data-fouc>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ" selected>Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS" selected>Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
 								</div>
 
 								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
+									<label>With placeholder</label>
+									<select data-placeholder="Select a State..." multiple="multiple" class="form-control select" data-fouc>
+										<option></option>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
 								</div>
 
 								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
+									<label>With icons</label>
+									<select multiple="multiple" data-placeholder="Select a state..." class="form-control select-icons" data-fouc>
+										<optgroup label="Services">
+											<option value="wordpress2" data-icon="wordpress2">Wordpress</option>
+											<option value="tumblr2" data-icon="tumblr2">Tumblr</option>
+											<option value="stumbleupon" data-icon="stumbleupon">Stumble upon</option>
+											<option value="pinterest2" data-icon="pinterest2">Pinterest</option>
+											<option value="lastfm2" data-icon="lastfm2">Lastfm</option>
+										</optgroup>
+										<optgroup label="File types">
+											<option value="pdf" data-icon="file-pdf">PDF</option>
+											<option value="word" data-icon="file-word">Word</option>
+											<option value="excel" data-icon="file-excel">Excel</option>
+											<option value="openoffice" data-icon="file-openoffice">Open office</option>
+										</optgroup>
+										<optgroup label="Browsers">
+											<option value="chrome" data-icon="chrome" selected>Chrome</option>
+											<option value="firefox" data-icon="firefox" selected>Firefox</option>
+											<option value="safari" data-icon="safari" selected>Safari</option>
+											<option value="opera" data-icon="opera">Opera</option>
+											<option value="IE" data-icon="IE">IE</option>
+										</optgroup>
+									</select>
 								</div>
 
 								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /masked inputs -->
-
-
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
+									<label>Drag and drop sorting</label>
+									<select class="form-control select-multiple-drag" multiple="multiple" data-fouc>
+										<option value="AZ" selected>Arizona</option>
+										<option value="CO">Colorado</option>
+										<option value="ID">Idaho</option>
+										<option value="WY">Wyoming</option>
+										<option value="IL" selected>Illinois</option>
+										<option value="IA">Iowa</option>
+										<option value="KS">Kansas</option>
+										<option value="KY">Kentucky</option>
+									</select>
 								</div>
 
 								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
+									<label>Disable menu items</label>
+									<select multiple="multiple" class="form-control select" data-fouc>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ" disabled>Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID" disabled>Idaho</option>
+											<option value="WY" selected>Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="AR" selected>Arkansas</option>
+											<option value="KS">Kansas</option>
+											<option value="KY" disabled>Kentucky</option>
+										</optgroup>
+									</select>
 								</div>
 
 								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
+									<label>Disabled select</label>
+									<select multiple="multiple" class="form-control select" disabled data-fouc>
+										<option value="AZ" selected>Arizona</option>
+										<option value="CO">Colorado</option>
+										<option value="ID" selected>Idaho</option>
+										<option value="WY" selected>Wyoming</option>
+									</select>
 								</div>
 
 								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
+									<label>Results background color</label>
+									<select multiple="multiple" class="form-control select" data-container-css-class="bg-teal-400" data-fouc>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ" selected>Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="IL" selected>Illinois</option>
+											<option value="IA">Iowa</option>
+											<option value="KS" selected>Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
 								</div>
 
 								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
+									<label>Menu background color</label>
+									<select multiple="multiple" class="form-control select" data-dropdown-css-class="bg-slate-700" data-fouc>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ" selected>Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="IL" selected>Illinois</option>
+											<option value="IA">Iowa</option>
+											<option value="KS" selected>Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
 								</div>
 
 								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
+									<label>Custom colors</label>
+									<select multiple="multiple" class="form-control select" data-container-css-class="bg-indigo-400" data-dropdown-css-class="bg-indigo-400" data-fouc>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ" selected>Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="IL" selected>Illinois</option>
+											<option value="IA">Iowa</option>
+											<option value="KS" selected>Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
 								</div>
 
 								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /input formatter -->
-
-
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
-
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
+									<label>Custom border color</label>
+									<select multiple="multiple" class="form-control select" data-container-css-class="border-primary text-primary-700" data-dropdown-css-class="border-primary" data-fouc>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ" selected>Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="IL" selected>Illinois</option>
+											<option value="IA">Iowa</option>
+											<option value="KS" selected>Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /password generator -->
+				<!-- /select2 selects -->
 
 
-				<!-- Bootstrap maxlength -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+				<!-- Select2 sizing -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Select sizing
+					</h6>
+					<span class="text-muted d-block">Single and multiple selects sizing</span>
+				</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
-								</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Single select sizing</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
+							<div class="card-body">
+								<div class="form-group">
+									<label>Large select</label>
+									<select data-placeholder="Select a State..." class="form-control form-control-lg select" data-container-css-class="select-lg" data-fouc>
+										<option></option>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
 								</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
+								<div class="form-group">
+									<label>Default select</label>
+									<select data-placeholder="Select a State..." class="form-control select" data-fouc>
+										<option></option>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
 								</div>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
+								<div class="form-group">
+									<label>Small select</label>
+									<select data-placeholder="Select a State..." class="form-control form-control-sm select" data-container-css-class="select-sm" data-fouc>
+										<option></option>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Multiple select sizing</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<div class="form-group">
+									<label>Large select</label>
+									<select multiple="multiple" data-placeholder="Select a State..." class="form-control form-control-lg select" data-container-css-class="select-lg" data-fouc>
+										<option></option>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID" selected>Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="IA" selected>Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label>Default select</label>
+									<select multiple="multiple" data-placeholder="Select a State..." class="form-control select" data-fouc>
+										<option></option>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ" selected>Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL" selected>Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label>Small select</label>
+									<select multiple="multiple" data-placeholder="Select a State..." class="form-control form-control-sm select" data-container-css-class="select-sm" data-fouc>
+										<option></option>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY" selected>Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY" selected>Kentucky</option>
+										</optgroup>
+									</select>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /bootstrap maxlength -->
+				<!-- /select2 sizing -->
+
+
+				<!-- Select2 advanced -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Advanced usage
+					</h6>
+					<span class="text-muted d-block">More complex configurations</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Advanced single selects</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Minimum input</h6>
+									<p class="mb-2">Select2 supports a minimum input setting which is useful for large remote datasets where short search terms are not very useful. Simply specify a number of input characters using <code>minimumInputLength</code> option:</p>
+
+									<select data-placeholder="Enter 'as'" class="form-control select-minimum" data-fouc>
+										<option></option>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Customizing how results are matched</h6>
+									<p class="mb-2">Example of how matched results can be customized. Unlike other dropdowns on this page, this one matches options only if the term appears in the beginning of the string as opposed to anywhere.</p>
+
+									<select class="form-control select-matched-customize" data-fouc>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Loading array data</h6>
+									<p class="mb-2">Select2 provides a way to load the data from a local array. You can provide initial selections with array data by providing the option tag for the selected values, similar to how it would be done for a standard select.</p>
+
+									<div class="mb-3">
+										<p>1. Example below loads array:</p>
+										<select class="form-control select-data-array" data-fouc></select>
+									</div>
+
+									<div class="mb-3">
+										<p>2. Example below loads array with selected option:</p>
+										<select class="form-control select-data-array" data-fouc>
+											<option value="2" selected>duplicate</option>
+										</select>
+									</div>	
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Loading remote data</h6>
+									<p class="mb-2">Select2 comes with AJAX support built in, using jQuery's AJAX methods. In this example, we can search for repositories using GitHub's API. Example also includes infinite scrolling feature:</p>
+
+									<select class="form-control select-remote-data" data-fouc>
+										<option value="3620194" selected>select2/select2</option>
+									</select>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Diacritics support in single select</h6>
+									<p class="mb-2">Select2's default matcher will ignore diacritics, making it easier for users to filter results in international selects. Type <strong>"aero"</strong> into the select below:</p>
+
+									<select data-placeholder="Type 'aero'" class="form-control select-search" data-fouc>
+										<option>Aeróbics</option>
+										<option>Aeróbics en Agua</option>
+										<option>Aerografía</option>
+										<option>Aeromodelaje</option>
+										<option>Águilas</option>
+										<option>Ajedrez</option>
+										<option>Ala Delta</option>
+										<option>Álbumes de Música</option>
+										<option>Alusivos</option>
+										<option>Análisis de Escritura a Mano</option>
+									</select>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Clearing results</h6>
+									<p class="mb-2">Whether or not a clear button is displayed when the select box has a selection. The button, when clicked, resets the value of the select box back to the placeholder.</p>
+
+									<select data-placeholder="Select a state" class="form-control select-clear" data-fouc>
+										<option></option>
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL" selected>Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
+								</div>
+
+								<div class="mb-3">
+									<h6 class="font-weight-semibold">Programmatic access</h6>
+									<p class="mb-2">Select2 supports methods that allow programmatic control of the component: you can set and get single or multiple values, control menu visibility by opening and closing it, make the menu enabled or disabled.</p>
+
+									<div class="mb-3">
+										<p>1. Set and get value:</p>
+										<p class="mb-2">
+											<select data-placeholder="Select something" class="form-control select-access-value" data-fouc>
+												<option></option>
+												<option value="CA">California</option>
+												<option value="AZ">Arizona</option>
+												<option value="CO">Colorado</option>
+												<option value="ID">Idaho</option>
+												<option value="WY">Wyoming</option>
+												<option value="CT">Connecticut</option>
+											</select>
+										</p>
+
+										<button type="button" class="btn bg-blue access-set">Set to California</button>
+										<button type="button" class="btn bg-blue access-get">Alert selected value</button>
+									</div>
+
+									<div class="mb-3">
+										<p>2. Enable and disable menu:</p>
+										<p class="mb-2">
+											<select data-placeholder="Select something" class="form-control select-access-enable" data-fouc>
+												<option></option>
+												<option value="CA">California</option>
+												<option value="AZ">Arizona</option>
+												<option value="CO">Colorado</option>
+												<option value="ID">Idaho</option>
+												<option value="WY">Wyoming</option>
+												<option value="CT">Connecticut</option>
+											</select>
+										</p>
+
+										<button type="button" class="btn bg-danger-400 access-disable">Disable</button>
+										<button type="button" class="btn bg-danger-400 access-enable">Enable</button>
+									</div>
+
+									<div class="mb-3">
+										<p>3. Destroy and create menu:</p>
+										<p class="mb-2">
+											<select data-placeholder="Select something" class="form-control select-access-create" data-fouc>
+												<option></option>
+												<option value="CA">California</option>
+												<option value="AZ">Arizona</option>
+												<option value="CO">Colorado</option>
+												<option value="ID">Idaho</option>
+												<option value="WY">Wyoming</option>
+												<option value="CT">Connecticut</option>
+											</select>
+										</p>
+
+										<button type="button" class="btn bg-indigo-300 access-destroy">Destroy</button>
+										<button type="button" class="btn bg-indigo-300 access-create">Create</button>
+									</div>
+
+									<div>
+										<p>4. Open and close menu:</p>
+										<p class="mb-2">
+											<select data-placeholder="Select something" class="form-control select-access-open" data-fouc>
+												<option></option>
+												<option value="CA">California</option>
+												<option value="AZ">Arizona</option>
+												<option value="CO">Colorado</option>
+												<option value="ID">Idaho</option>
+												<option value="WY">Wyoming</option>
+												<option value="CT">Connecticut</option>
+											</select>
+										</p>
+
+										<button type="button" class="btn bg-teal-400 access-open">Open</button>
+										<button type="button" class="btn bg-teal-400 access-close">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Advanced multiple selects</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Tagging support</h6>
+									<p class="mb-2">Select2 can be used to quickly set up fields used for tagging. When tagging is enabled the user can select from pre-existing tags or create a new tag by picking the first choice.</p>
+
+									<select class="form-control select-multiple-tags" multiple="multiple" data-fouc>
+										<option value="AZ">Arizona</option>
+										<option value="CO" selected>Colorado</option>
+										<option value="ID">Idaho</option>
+										<option value="WY">Wyoming</option>
+										<option value="AL" selected>Alabama</option>
+										<option value="IA">Iowa</option>
+										<option value="KS">Kansas</option>
+										<option value="KY">Kentucky</option>
+									</select>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Maximum input length</h6>
+									<p class="mb-2">Select2 can be set a limit on the number of characters that can be entered per tag. You would not be able to enter any input of more than 5 characters long.</p>
+
+									<select class="form-control select-multiple-maximum-length" multiple="multiple" data-fouc>
+										<option value="AZ">Arizona</option>
+										<option value="CO" selected>Colorado</option>
+										<option value="ID">Idaho</option>
+										<option value="WY">Wyoming</option>
+										<option value="AL" selected>Alabama</option>
+										<option value="IA">Iowa</option>
+										<option value="KS">Kansas</option>
+										<option value="KY">Kentucky</option>
+									</select>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Auto tokenization</h6>
+									<p class="mb-2">Select2 supports ability to add choices automatically as the user is typing into the search field. Try typing in the search field below and entering a space or a comma.</p>
+
+									<select class="form-control select-multiple-tokenization" multiple="multiple" data-fouc>
+										<option value="AZ">Arizona</option>
+										<option value="CO">Colorado</option>
+										<option value="ID">Idaho</option>
+										<option value="WY">Wyoming</option>
+										<option value="AL" selected>Alabama</option>
+										<option value="IA">Iowa</option>
+										<option value="KS">Kansas</option>
+										<option value="KY">Kentucky</option>
+									</select>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Limiting the number of selections</h6>
+									<p class="mb-2">Select2 multi-value select boxes can set restrictions regarding the maximum number of options selected. The select below is declared with <code>maximumSelectionLength</code> option.</p>
+
+									<select class="form-control select-multiple-limited" multiple="multiple" data-fouc>
+										<option value="AZ">Arizona</option>
+										<option value="CO">Colorado</option>
+										<option value="ID">Idaho</option>
+										<option value="WY">Wyoming</option>
+										<option value="AL">Alabama</option>
+										<option value="IA">Iowa</option>
+										<option value="KS">Kansas</option>
+										<option value="KY" selected>Kentucky</option>
+									</select>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Diacritics support in multiple select</h6>
+									<p class="mb-2">Select2's default matcher will ignore diacritics, making it easier for users to filter results in international selects. Type <strong>"aero"</strong> into the select below:</p>
+
+									<select data-placeholder="Type 'aero'" multiple="multiple" class="form-control select" data-fouc>
+										<option>Aeróbics</option>
+										<option>Aeróbics en Agua</option>
+										<option>Aerografía</option>
+										<option>Aeromodelaje</option>
+										<option>Águilas</option>
+										<option>Ajedrez</option>
+										<option>Ala Delta</option>
+										<option>Álbumes de Música</option>
+										<option>Alusivos</option>
+										<option>Análisis de Escritura a Mano</option>
+									</select>
+								</div>
+
+								<div class="mb-3">
+									<h6 class="font-weight-semibold">Programmatic access</h6>
+									<p class="mb-2">Select2 supports methods that allow programmatic control of the component: you can set and get single or multiple values, control menu visibility by opening and closing it, make the menu enabled or disabled.</p>
+
+									<div class="mb-3">
+										<p>1. Reacting to external value changes:</p>
+										<p class="mb-2">
+											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-value" data-fouc>
+												<option value="AK">Alaska</option>
+												<option value="CA">California</option>
+												<option value="AZ" selected>Arizona</option>
+												<option value="CO">Colorado</option>
+												<option value="ID">Idaho</option>
+												<option value="WY" selected>Wyoming</option>
+												<option value="CT">Connecticut</option>
+											</select>
+										</p>
+
+										<button type="button" class="btn bg-blue change-to-ca">Select California</button>
+										<button type="button" class="btn bg-blue change-to-ak-co">Select Alaska and Colorado</button>
+									</div>
+
+									<div class="mb-3">
+										<p>2. Enable and disable menu:</p>
+										<p class="mb-2">
+											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-enable" data-fouc>
+												<option value="AK">Alaska</option>
+												<option value="CA">California</option>
+												<option value="AZ" selected>Arizona</option>
+												<option value="CO">Colorado</option>
+												<option value="ID">Idaho</option>
+												<option value="WY" selected>Wyoming</option>
+												<option value="CT">Connecticut</option>
+											</select>
+										</p>
+
+										<button type="button" class="btn bg-danger-400 access-multiple-disable">Disable</button>
+										<button type="button" class="btn bg-danger-400 access-multiple-enable">Enable</button>
+									</div>
+
+									<div class="mb-3">
+										<p>3. Destroy and create menu:</p>
+										<p class="mb-2">
+											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-create" data-fouc>
+												<option value="AK">Alaska</option>
+												<option value="CA">California</option>
+												<option value="AZ" selected>Arizona</option>
+												<option value="CO">Colorado</option>
+												<option value="ID">Idaho</option>
+												<option value="WY" selected>Wyoming</option>
+												<option value="CT">Connecticut</option>
+											</select>
+										</p>
+
+										<button type="button" class="btn bg-indigo-300 access-multiple-destroy">Destroy</button>
+										<button type="button" class="btn bg-indigo-300 access-multiple-create">Create</button>
+									</div>
+
+									<div class="mb-3">
+										<p>4. Clear selection:</p>
+										<p class="mb-2">
+											<select data-placeholder="Select states" multiple="multiple" class="form-control select-access-multiple-clear" data-fouc>
+												<option value="AK">Alaska</option>
+												<option value="CA">California</option>
+												<option value="AZ" selected>Arizona</option>
+												<option value="CO">Colorado</option>
+												<option value="ID">Idaho</option>
+												<option value="WY" selected>Wyoming</option>
+												<option value="CT">Connecticut</option>
+											</select>
+										</p>
+
+										<button type="button" class="btn bg-brown-400 access-multiple-clear">Clear selection</button>
+									</div>
+
+									<div>
+										<p>5. Open and close menu:</p>
+										<p class="mb-2">
+											<select data-placeholder="Select something" multiple="multiple" class="form-control select-access-multiple-open" data-fouc>
+												<option value="AK">Alaska</option>
+												<option value="CA">California</option>
+												<option value="AZ" selected>Arizona</option>
+												<option value="CO">Colorado</option>
+												<option value="ID">Idaho</option>
+												<option value="WY" selected>Wyoming</option>
+												<option value="CT">Connecticut</option>
+											</select>
+										</p>
+
+										<button type="button" class="btn bg-teal-400 access-multiple-open">Open</button>
+										<button type="button" class="btn bg-teal-400 access-multiple-close">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /select2 advanced -->          
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +2296,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->

@@ -23,17 +23,13 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/tags/tagsinput.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/tags/tokenfield.min.js"></script>
 	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/ui/prism.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/form_tags_input.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -495,9 +491,9 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
-								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
+								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link active">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
 								<li class="nav-item"><a href="form_validation.html" class="nav-link">Validation</a></li>
 								<li class="nav-item"><a href="form_wizard.html" class="nav-link">Form wizard</a></li>
@@ -1211,14 +1207,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Tag Inputs</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1228,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="form_tag_inputs.html" class="breadcrumb-item">Forms</a>
+							<span class="breadcrumb-item active">Tag inputs</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,622 +1266,711 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
-
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-						</div>
-					</div>
+				<!-- Tokenfield title -->
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Tokenfield for Bootstrap
+					</h6>
+					<span class="text-muted d-block">Advanced tagging/tokenizing plugin</span>
 				</div>
+				<!-- /tokenfield title -->
 
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
-						</div>
 
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
+				<!-- Tokenfield basic -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Basic usage</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
 
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
-							</a>
+							<div class="card-body">
 
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
-								</a>
-
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+								<!-- Basic example -->
+								<div class="form-group">
+									<label>Basic example</label>
+									<input type="text" class="form-control tokenfield" value="These,are,tokens" data-fouc>
 								</div>
+								<!-- /basic example -->
+
+
+								<!-- Limit tokens number -->
+								<div class="form-group">
+									<label>Limit tokens number</label>
+									<input type="text" class="form-control tokenfield" data-limit="5" value="Maximum,five,tokens" data-fouc>
+								</div>
+								<!-- /limit tokens number -->
+
+
+								<!-- Disabled field -->
+								<div class="form-group">
+									<label>Disabled field</label>
+									<input type="text" class="form-control tokenfield" disabled value="This,is,disabled,field" data-fouc>
+								</div>
+								<!-- disabled field -->
+
+
+								<!-- Readonly field -->
+								<div class="form-group">
+									<label>Readonly field</label>
+									<input type="text" class="form-control tokenfield" readonly value="This,is,readonly,field" data-fouc>
+								</div>
+								<!-- readonly field -->
+
+
+								<!-- Using typeahead -->
+								<div class="form-group">
+									<label>Using Twitter Typeahead</label>
+									<input type="text" class="form-control tokenfield-typeahead" value="Enter,color,names" data-fouc>
+								</div>
+								<!-- /using typeahead -->
+
+
+								<!-- Keyboard support -->
+								<div class="form-group">
+									<label>Keyboard support</label>
+									<input type="text" class="form-control tokenfield" value="Try,pressing,backspace" data-fouc>
+								</div>
+								<!-- /keyboard support -->
+
+
+								<!-- Copy paste support -->
+								<div class="form-group">
+									<label>Copy and paste support</label>
+									<input type="text" class="form-control tokenfield" value="Copy,and,paste" data-fouc>
+								</div>
+								<!-- /copy paste support -->
+
+
+								<!-- Create token on blur -->
+								<div class="form-group">
+									<label>Create token on blur</label>
+									<input type="text" class="form-control tokenfield-blur" value="Type,and,focus,out" data-fouc>
+								</div>
+								<!-- /create token on blur -->
+
+
+								<!-- Custom delimiter -->
+								<div class="form-group">
+									<label>Custom delimiter</label>
+									<input type="text" class="form-control tokenfield-delimiter" value="Semicolon;as;delimiter" data-fouc>
+								</div>
+								<!-- /custom delimiter -->
+
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<!-- /page header -->
 
-
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
-								</div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Advanced examples</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
-								</div>
+							<div class="card-body">
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
+								<!-- Show placeholder -->
+								<div class="form-group">
+									<label>Show placeholder</label>
+									<input type="text" class="form-control tokenfield" placeholder="Add tag" value="Copy,and,paste" data-fouc>
 								</div>
+								<!-- /show placeholder -->
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
+
+								<!-- Inside form group with addon -->
+								<div class="form-group">
+									<label>Input group with addon</label>
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-price-tags"></i></span>
+										</span>
+										<input type="text" class="form-control tokenfield" value="cool,nice,great" data-fouc>
 									</div>
 								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /typeahead -->
+								<!-- /inside form group with addon -->
 
 
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /elastic textarea -->
-
-
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
+								<!-- Inside form group with button -->
 								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
+									<label>Input group with button</label>
+									<div class="input-group">
+										<input type="text" class="form-control tokenfield" value="Cool,nice,great" data-fouc>
 
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /masked inputs -->
-
-
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
-
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /input formatter -->
-
-
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light btn-icon dropdown-toggle" data-toggle="dropdown"><i class="icon-cog5"></i></button>
+			                                <div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item">Action</a>
+												<a href="#" class="dropdown-item">Another action</a>
+												<a href="#" class="dropdown-item">Something else here</a>
+												<a href="#" class="dropdown-item">One more line</a>
+											</div>
 										</div>
 									</div>
-
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
 								</div>
-							</div>
+								<!-- /inside form group with button -->
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
 
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
+								<!-- Set tokens method -->
+								<div class="form-group">
+									<label>Set tokens method</label>
+									<div class="input-group">
+										<input type="text" class="form-control tokenfield" id="set-tokens-field" value="Click,Set,button" data-fouc>
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light" id="set-tokens">Set tokens</button>
 										</div>
 									</div>
-
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
 								</div>
-							</div>
+								<!-- /set tokens method -->
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
 
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
+								<!-- Get tokens method -->
+								<div class="form-group">
+									<label>Get tokens method</label>
+									<div class="input-group">
+										<input type="text" class="form-control tokenfield" id="get-tokens-field" value="Click,Get,button" data-fouc>
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light" id="get-tokens">Get tokens</button>
 										</div>
 									</div>
-
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
 								</div>
+								<!-- /get tokens method -->
+
+
+								<!-- Create token method -->
+								<div class="form-group">
+									<label>Create token method</label>
+									<div class="input-group">
+										<input type="text" class="form-control tokenfield" id="create-token-field" value="Create,token" data-fouc>
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light" id="create-token">Create token</button>
+										</div>
+									</div>
+								</div>
+								<!-- /create token method -->
+
+
+								<!-- Disable/enable methods -->
+								<div class="form-group">
+									<label>Disable / enable methods</label>
+									<div class="input-group">
+										<input type="text" class="form-control tokenfield-disable" value="Disable,and,enable" data-fouc>
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light" id="disable">Disable</button>
+											<button type="button" class="btn bg-info" id="enable">Enable</button>
+										</div>
+									</div>
+								</div>
+								<!-- /disable/enable methods -->
+
+
+								<!-- Readonly/writeable methods -->
+								<div class="form-group">
+									<label>Readonly / writable methods</label>
+									<div class="input-group">
+										<input type="text" class="form-control tokenfield-readonly" value="Readonly,and,writeable" data-fouc>
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light" id="readonly">Readonly</button>
+											<button type="button" class="btn bg-info" id="writeable">Writeable</button>
+										</div>
+									</div>
+								</div>
+								<!-- /readonly/writeable methods -->
+
+
+								<!-- Destroy method -->
+								<div class="form-group">
+									<label>Destroy</label>
+									<div class="input-group">
+										<input type="text" class="form-control tokenfield-destroy" value="Destroy,and,create" data-fouc>
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light" id="destroy">Destroy</button>
+											<button type="button" class="btn bg-info" id="create">Create</button>
+										</div>
+									</div>
+								</div>
+								<!-- /destroy method -->
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- /tokenfield basic -->
+
+
+				<!-- Tokenfield inputs sizing -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Input sizing</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+
+								<!-- Large input size -->
+								<div class="form-group">
+									<label>Large input size</label>
+									<input type="text" class="form-control tokenfield form-control-lg" value="Red,blue,green" data-fouc>
+								</div>
+								<!-- /large input size -->
+
+
+								<!-- Default input size -->
+								<div class="form-group">
+									<label>Default input size</label>
+									<input type="text" class="form-control tokenfield" value="Red,blue,green" data-fouc>
+								</div>
+								<!-- /default input size -->
+
+
+								<!-- Small input size -->
+								<div class="form-group">
+									<label>Small input size</label>
+									<input type="text" class="form-control tokenfield form-control-sm" value="Red,blue,green" data-fouc>
+								</div>
+								<!-- /small input size -->
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Input group sizing</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+
+								<!-- Large input group size -->
+								<div class="form-group">
+									<label>Large input group size</label>
+									<div class="input-group input-group-lg">
+										<div class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-menu7"></i></span>
+										</div>
+										<input type="text" class="form-control tokenfield" value="Red,blue,green" data-fouc>
+									</div>
+								</div>
+								<!-- /large input group size -->
+
+
+								<!-- Default input group size -->
+								<div class="form-group">
+									<label>Default input group size</label>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-cash3"></i></span>
+										</div>
+										<input type="text" class="form-control tokenfield" value="Red,blue,green" data-fouc>
+									</div>
+								</div>
+								<!-- /default input group size -->
+
+
+								<!-- Small input group size -->
+								<div class="form-group">
+									<label>Small input group size</label>
+									<div class="input-group input-group-sm">
+										<div class="input-group-prepend">
+											<span class="input-group-text"><i class="icon-lifebuoy"></i></span>
+										</div>
+										<input type="text" class="form-control tokenfield" value="Red,blue,green" data-fouc>
+									</div>
+								</div>
+								<!-- /small input group size -->
+
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /password generator -->
+				<!-- /tokenfield inputs sizing -->
 
 
-				<!-- Bootstrap maxlength -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
-								</div>
+				<!-- Tokenfield styling -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Validation states</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
-								</div>
+							<div class="card-body">
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
+								<!-- Error validation state -->
+								<div class="form-group">
+									<label class="font-weight-semibold text-danger">Invalid state</label>
+									<div class="form-group-feedback form-group-feedback-right">
+										<input type="text" class="form-control tokenfield-danger" value="Red,blue,green" data-fouc>
+										<div class="form-control-feedback text-danger">
+											<i class="icon-cancel-circle2"></i>
+										</div>
+									</div>
 								</div>
+								<!-- /error validation state -->
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
+
+								<!-- Success validation state -->
+								<div class="form-group">
+									<label class="font-weight-semibold text-success">Valid state</label>
+									<div class="form-group-feedback form-group-feedback-right">
+										<input type="text" class="form-control tokenfield-success" value="Red,blue,green" data-fouc>
+										<div class="form-control-feedback text-success">
+											<i class="icon-checkmark-circle"></i>
+										</div>
+									</div>
 								</div>
+								<!-- /success validation state -->
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Custom colors</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+
+								<!-- Custom blue color -->
+								<div class="form-group">
+									<label>Custom blue color</label>
+									<input type="text" class="form-control tokenfield-primary" value="Red,blue,green" data-fouc>
+								</div>
+								<!-- /custom blue color -->
+
+
+								<!-- Custom green color -->
+								<div class="form-group">
+									<label>Custom green color</label>
+									<input type="text" class="form-control tokenfield-teal" value="Red,blue,green" data-fouc>
+								</div>
+								<!-- /custom green color -->
+
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /bootstrap maxlength -->
+				<!-- /tokenfield basic -->
+
+
+
+				<!-- Bootstrap tags input -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Bootstrap Tags Input
+					</h6>
+					<span class="text-muted d-block">User interface for managing tags</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Initialization</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+
+								<!-- Default usage -->
+								<div class="mb-3">
+									<h6 class="font-weight-semibold">Default usage</h6>
+									<p class="mb-3">Tags input is a simple and flexible extension with plenty of useful features and support of Twitter Typeahead library. To initialize tags input, you can use both javascript and data attributes.</p>
+
+									<div class="mb-3">
+										<input type="text" value="Amsterdam,Washington,Sydney,Beijing" class="form-control tags-input" data-fouc>
+									</div>
+
+									<div class="mb-3">
+										<div class="mb-1">Returned values</div>
+										<pre class="val"><code class="language-javascript">"Amsterdam,Washington,Sydney,Beijing"</code></pre>
+									</div>
+
+									<div class="mb-4">
+										<div class="mb-1">Returned items</div>
+										<pre class="items"><code class="language-javascript">["Amsterdam","Washington","Sydney","Beijing"]</code></pre>
+									</div>
+								</div>
+								<!-- /default usage -->
+
+
+								<!-- Using data attributes -->
+								<div class="mb-3">
+									<h6 class="font-weight-semibold">Using data attributes</h6>
+									<p class="mb-3">Just add <code>data-role="tagsinput"</code> to your input field to automatically change it to a tags input field. <span class="font-weight-semibold">Note:</span> currently tags input supports only default options if intinalized via data attributes.</p>
+
+									<div class="mb-3">
+										<input type="text" value="Amsterdam,Washington,Sydney" class="form-control" data-role="tagsinput" data-fouc>
+									</div>
+
+									<div class="mb-3">
+										<div class="mb-1">Returned values</div>
+										<pre class="val"><code class="language-javascript">&nbsp;</code></pre>
+									</div>
+
+									<div class="mb-3">
+										<div class="mb-1">Returned items</div>
+										<pre class="items"><code class="language-javascript">&nbsp;</code></pre>
+									</div>
+								</div>
+								<!-- /using data attributes -->
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Basic options</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+
+								<!-- Maximum tags -->
+								<div class="mb-3">
+									<h6 class="font-weight-semibold">Maximum tags allowed</h6>
+									<p class="mb-3">When set, no more than the given number of tags are allowed to add (default: undefined). When maxTags is reached, a class 'bootstrap-tagsinput-max' is placed on the tagsinput element.</p>
+
+									<div class="mb-3">
+										<input type="text" value="Amsterdam,Washington,Sydney" class="form-control tagsinput-max-tags" data-fouc>
+									</div>
+
+									<div class="mb-3">
+										<div class="mb-1">Returned values</div>
+										<pre class="val"><code class="language-javascript">"Amsterdam,Washington,Sydney"</code></pre>
+									</div>
+
+									<div class="mb-4">
+										<div class="mb-1">Returned items</div>
+										<pre class="items"><code class="language-javascript">["Amsterdam","Washington","Sydney"]</code></pre>
+									</div>
+								</div>
+								<!-- /maximum tags -->
+
+
+								<!-- Custom tag class -->
+								<div class="mb-3">
+									<h6 class="font-weight-semibold">Custom tags class</h6>
+									<p class="mb-3">Tag element uses basic <code>.badge</code> element markup and supports all color options available for it. Default color alternative is <code>info</code>, to use another color add proper class to <code>tagClass</code> option.</p>
+
+									<div class="mb-3">
+										<input type="text" value="Amsterdam,Washington,Sydney" class="form-control tagsinput-custom-tag-class" data-fouc>
+									</div>
+
+									<div class="mb-3">
+										<div class="mb-1">Returned values</div>
+										<pre class="val"><code class="language-javascript">"Amsterdam,Washington,Sydney"</code></pre>
+									</div>
+
+									<div class="mb-3">
+										<div class="mb-1">Returned items</div>
+										<pre class="items"><code class="language-javascript">["Amsterdam","Washington","Sydney"]</code></pre>
+									</div>
+								</div>
+								<!-- /maximum tags -->
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /bootstrap tags input -->
+
+
+				<!-- Tags input options -->
+				<div class="row">
+					<div class="col-md-6">
+
+						<!-- Advanced examples -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Advanced examples</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+
+								<!-- Typeahead support -->
+								<div class="form-group">
+									<label>Typeahead support</label>
+									<input type="text" value="Washington,Alaska" data-role="tagsinput" class="form-control tagsinput-typeahead" data-fouc>
+								</div>
+								<!-- /typeahead support -->
+
+
+								<!-- Categorizing tags -->
+								<div class="form-group">
+									<label>Categorizing tags</label>
+									<input type="text" class="form-control tagsinput-tag-categorizing" data-fouc>
+								</div>
+								<!-- /categorizing tags -->
+
+
+								<!-- Objects as tags -->
+								<div class="form-group">
+									<label>Objects as tags</label>
+									<input type="text" class="form-control tagsinput-tag-objects" data-fouc>
+								</div>
+								<!-- /objects as tags -->
+
+
+								<!-- Allow dublicates -->
+								<div class="form-group">
+									<label>Allow dublicates</label>
+									<select multiple="multiple" class="form-control tags-input-dublicates" data-fouc>
+										<option value="Amsterdam" selected>Amsterdam</option>
+										<option value="Washington" selected>Washington</option>
+										<option value="Washington" selected>Washington</option>
+									</select>
+								</div>
+								<!-- /allow dublicates -->
+
+							</div>
+						</div>
+						<!-- /advanced examples -->
+
+					</div>
+
+					<div class="col-md-6">
+
+						<!-- Tags input methods -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Tags input methods</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+
+								<!-- Add tag -->
+								<div class="form-group">
+									<label>Add one tag</label>
+									<div class="input-group">
+										<input type="text" value="Washington,Alaska" class="form-control tagsinput-add-tag" data-fouc>
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light add-tag-button">Add Beijing</button>
+										</div>
+									</div>
+								</div>
+								<!-- /add tag -->
+
+
+								<!-- Remove tag -->
+								<div class="form-group">
+									<label>Remove one tag</label>
+									<div class="input-group">
+										<input type="text" value="Washington,Alaska" class="form-control tagsinput-remove-tag" data-fouc>
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light remove-tag-button">Remove Sydney</button>
+										</div>
+									</div>
+								</div>
+								<!-- /remove tag -->
+
+
+								<!-- Remove all tags -->
+								<div class="form-group">
+									<label>Remove all tags</label>
+									<div class="input-group">
+										<input type="text" value="Washington,Alaska" class="form-control tagsinput-remove-tags" data-fouc>
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light remove-all-tags-button">Remove all</button>
+										</div>
+									</div>
+								</div>
+								<!-- /remove all tags -->
+
+
+								<!-- Destroy tags input -->
+								<div class="form-group">
+									<label>Destroy Tagsinput</label>
+									<div class="input-group">
+										<input type="text" value="Washington,Alaska" class="form-control tagsinput-destroy" data-fouc>
+										<div class="input-group-append">
+											<button type="button" class="btn btn-light destroy-tagsinput-button">Destroy</button>
+										</div>
+									</div>
+								</div>
+								<!-- /destroy tags input -->
+
+							</div>
+						</div>
+						<!-- /tags input methods -->
+
+					</div>
+				</div>
+				<!-- /tags input options -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +2000,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->

@@ -486,16 +486,15 @@
 						<!-- Forms -->
 						<!--<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>/-->
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Empleados</span></a>
+							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Menu</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Editar</a></li>
-								<!--<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Checkboxes &amp; radios</a></li>
-								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
+								<<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Checkboxes &amp; radios</a></li>
+								<li class="nav-item"><a href="form_select2.html" class="nav-link">Transpais</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>/-->
-					<li class="nav-item nav-item-menu">
-						<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Lista de empleados</a></li>
-								<!--<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
-								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
+						<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Lista de empleados</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Transpais</a></li>
+								<!--<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
 								<li class="nav-item"><a href="form_validation.html" class="nav-link">Validation</a></li>
@@ -916,7 +915,7 @@
 						<!-- /data visualization -->
 
 						<!-- Extensions -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Empresa</div> <i class="icon-menu" title="Extensions"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">E</div> <i class="icon-menu" title="Extensions"></i></li>
 						<li class="nav-item nav-item-submenu">
 								<li class="nav-item"><a href="extension_image_cropper.html" class="nav-link">Agregar y enlistar</a></li>
 								<!--<li class="nav-item"><a href="extension_blockui.html" class="nav-link">Block UI</a></li>
@@ -1268,8 +1267,8 @@
 			
 
 				<!-- Main charts -->
-				<div class="row">
-					<div class="col-xl-7">
+				<!--<div class="row">
+					<div class="col-xl-7">/-->
 
 						<!-- Traffic sources -->
 						<!--<div class="card">
@@ -1329,15 +1328,54 @@
 							</div>
 
 							<div class="chart position-relative" id="traffic-sources"></div>
-						</div>
+						</div>-->						
 						<!-- /traffic sources -->
 
-					</div>
+					<!--</div>
 
-					<div class="col-xl-5">
+					<div class="col-xl-5">/-->
+						<!-- Navigation widget -->
+						<div class="card">
+							<div class="card-header header-elements-inline pb-0">
+								<h6 class="card-title">Navegador</h6>
+
+								<div class="header-elements">
+									<div class="list-icons">
+										<a href="#" class="list-icons-item"><i class="icon-wrench3"></i></a>
+									</div>
+			                	</div>
+							</div>
+
+							<div class="list-group list-group-flush">
+								<a href="#" class="list-group-item list-group-item-action">
+									<i class="icon-user mr-3"></i>
+									Mi perfil
+								</a>
+								<a href="#" class="list-group-item list-group-item-action">
+									<i class="icon-cash3 mr-3"></i>
+									Pago
+								</a>
+								<a href="#" class="list-group-item list-group-item-action">
+									<i class="icon-tree7 mr-3"></i>
+									Mensajes
+									<span class="badge bg-danger badge-pill ml-auto">1</span>
+								</a>
+								<div class="list-group-item list-group-divider"></div>
+								<a href="#" class="list-group-item list-group-item-action">
+									<i class="icon-calendar3 mr-3"></i>
+									Eventos
+									<span class="badge bg-teal-400 badge-pill ml-auto">48</span>
+								</a>
+								<a href="#" class="list-group-item list-group-item-action">
+									<i class="icon-cog3 mr-3"></i>
+									Account settings
+								</a>
+							</div>
+						</div>
+						<!-- /navigation widget -->
 
 						<!-- Sales stats -->
-						<div class="card">
+						<!--<div class="card">
 							<div class="card-header header-elements-inline">
 								<h6 class="card-title">Sales statistics</h6>
 								<div class="header-elements">
@@ -1377,12 +1415,21 @@
 
 							<div class="chart mb-2" id="app_sales"></div>
 							<div class="chart" id="monthly-sales-stats"></div>
-						</div>
+						</div>/-->
 						<!-- /sales stats -->
 
+                          <!-- Rounded progress - multiple -->
+						<div class="card card-body text-center">
+							<h6 class="font-weight-semibold mb-0 mt-1">Fecha</h6>
+							<div class="font-size-sm text-muted mb-3">Octubre 15th, 2019</div>
+
+							<div class="svg-center" id="rounded_progress_multiple"></div>
+						</div>
+						<!-- /rounded progress - multiple -->
 					</div>
 				</div>
 				<!-- /main charts -->
+
 
 
 				<!-- Dashboard content -->
@@ -1390,7 +1437,7 @@
 					<div class="col-xl-8">
 
 						<!-- Marketing campaigns -->
-						<div class="card">
+						<!--<div class="card">
 							<div class="card-header header-elements-sm-inline">
 								<h6 class="card-title">Marketing campaigns</h6>
 								<div class="header-elements">
@@ -1713,7 +1760,7 @@
 									</tbody>
 								</table>
 							</div>
-						</div>
+						</div>/-->
 						<!-- /marketing campaigns -->
 
 
@@ -1805,7 +1852,7 @@
 						<!-- Support tickets -->
 						<div class="card">
 							<div class="card-header header-elements-sm-inline">
-								<h6 class="card-title">Support tickets</h6>
+								<h6 class="card-title">Vacaciones</h6>
 								<div class="header-elements">
 									<a class="text-default daterange-ranges font-weight-semibold cursor-pointer dropdown-toggle">
 										<i class="icon-calendar3 mr-2"></i>
@@ -1819,7 +1866,7 @@
 									<div id="tickets-status"></div>
 									<div class="ml-3">
 										<h5 class="font-weight-semibold mb-0">14,327 <span class="text-success font-size-sm font-weight-normal"><i class="icon-arrow-up12"></i> (+2.9%)</span></h5>
-										<span class="badge badge-mark border-success mr-1"></span> <span class="text-muted">Jun 16, 10:00 am</span>
+										<span class="badge badge-mark border-success mr-1"></span> <span class="text-muted">Octubre 2019, 10:00 am</span>
 									</div>
 								</div>
 
@@ -1838,13 +1885,13 @@
 										<i class="icon-spinner11"></i>
 									</a>
 									<div class="ml-3">
-										<h5 class="font-weight-semibold mb-0">06:25:00</h5>
-										<span class="text-muted">response time</span>
+										<h5 class="font-weight-semibold mb-0">15:10:2019</h5>
+										<span class="text-muted">Fecha</span>
 									</div>
 								</div>
 
 								<div>
-									<a href="#" class="btn bg-teal-400"><i class="icon-statistics mr-2"></i> Report</a>
+									<a href="#" class="btn bg-teal-400"><i class="icon-statistics mr-2"></i> Reporte</a>
 								</div>
 							</div>
 
@@ -1854,13 +1901,13 @@
 										<tr>
 											<th style="width: 50px">Due</th>
 											<th style="width: 300px;">User</th>
-											<th>Description</th>
+											<th>Descripcion</th>
 											<th class="text-center" style="width: 20px;"><i class="icon-arrow-down12"></i></th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr class="table-active table-border-double">
-											<td colspan="3">Active tickets</td>
+											<td colspan="3">Activacion de Vacaciones</td>
 											<td class="text-right">
 												<span class="badge bg-blue badge-pill">24</span>
 											</td>
@@ -1869,7 +1916,7 @@
 										<tr>
 											<td class="text-center">
 												<h6 class="mb-0">12</h6>
-												<div class="font-size-sm text-muted line-height-1">hours</div>
+												<div class="font-size-sm text-muted line-height-1">Dias</div>
 											</td>
 											<td>
 												<div class="d-flex align-items-center">
@@ -1886,8 +1933,8 @@
 											</td>
 											<td>
 												<a href="#" class="text-default">
-													<div class="font-weight-semibold">[#1183] Workaround for OS X selects printing bug</div>
-													<span class="text-muted">Chrome fixed the bug several versions ago, thus rendering this...</span>
+													<div class="font-weight-semibold">[#1183] Solicitud de vacaciones pagadas</div>
+													<span class="text-muted">Causas por ...</span>
 												</a>
 											</td>
 											<td class="text-center">
@@ -1909,7 +1956,7 @@
 										<tr>
 											<td class="text-center">
 												<h6 class="mb-0">16</h6>
-												<div class="font-size-sm text-muted line-height-1">hours</div>
+												<div class="font-size-sm text-muted line-height-1">Dias</div>
 											</td>
 											<td>
 												<div class="d-flex align-items-center">
@@ -1920,14 +1967,14 @@
 													</div>
 													<div>
 														<a href="#" class="text-default font-weight-semibold">Chris Macintyre</a>
-														<div class="text-muted font-size-sm"><span class="badge badge-mark border-blue mr-1"></span> Active</div>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-blue mr-1"></span> Activado</div>
 													</div>
 												</div>
 											</td>
 											<td>
 												<a href="#" class="text-default">
-													<div class="font-weight-semibold">[#1249] Vertically center carousel controls</div>
-													<span class="text-muted">Try any carousel control and reduce the screen width below...</span>
+													<div class="font-weight-semibold">[#1249] Verificar si se acepto las vacaciones</div>
+													<span class="text-muted">vacaciones por ...</span>
 												</a>
 											</td>
 											<td class="text-center">
@@ -1949,7 +1996,7 @@
 										<tr>
 											<td class="text-center">
 												<h6 class="mb-0">20</h6>
-												<div class="font-size-sm text-muted line-height-1">hours</div>
+												<div class="font-size-sm text-muted line-height-1">Dias</div>
 											</td>
 											<td>
 												<div class="d-flex align-items-center">
@@ -1988,8 +2035,8 @@
 
 										<tr>
 											<td class="text-center">
-												<h6 class="mb-0">40</h6>
-												<div class="font-size-sm text-muted line-height-1">hours</div>
+												<h6 class="mb-0">4</h6>
+												<div class="font-size-sm text-muted line-height-1">dias</div>
 											</td>
 											<td>
 												<div class="d-flex align-items-center">
@@ -2006,8 +2053,8 @@
 											</td>
 											<td>
 												<a href="#" class="text-default">
-													<div class="font-weight-semibold">[#1184] Round grid column gutter operations</div>
-													<span class="text-muted">Left rounds up, right rounds down. should keep everything...</span>
+													<div class="font-weight-semibold">[#1184] Vacaciones por paternidad</div>
+													<span class="text-muted">vacaciones...</span>
 												</a>
 											</td>
 											<td class="text-center">
@@ -2027,7 +2074,7 @@
 										</tr>
 
 										<tr class="table-active table-border-double">
-											<td colspan="3">Resolved tickets</td>
+											<td colspan="3">Aceptacion de Vacaciones</td>
 											<td class="text-right">
 												<span class="badge bg-success badge-pill">42</span>
 											</td>
@@ -2052,7 +2099,7 @@
 											</td>
 											<td>
 												<a href="#" class="text-default">
-													<div>[#1046] Avoid some unnecessary HTML string</div>
+													<div>[#1046] Vacaciones por paternidad</div>
 													<span class="text-muted">Rather than building a string of HTML and then parsing it...</span>
 												</a>
 											</td>
@@ -2091,7 +2138,7 @@
 											</td>
 											<td>
 												<a href="#" class="text-default">
-													<div>[#1038] Update json configuration</div>
+													<div>[#1038] Vacaciones por enfermedad</div>
 													<span class="text-muted">The <code>files</code> property is necessary to override the files property...</span>
 												</a>
 											</td>
@@ -2130,7 +2177,7 @@
 											</td>
 											<td>
 												<a href="#" class="text-default">
-													<div>[#1034] Tooltip multiple event</div>
+													<div>[#1034] Vacaciones por maternidad</div>
 													<span class="text-muted">Fix behavior when using tooltips and popovers that are...</span>
 												</a>
 											</td>
@@ -2151,7 +2198,7 @@
 										</tr>
 
 										<tr class="table-active table-border-double">
-											<td colspan="3">Closed tickets</td>
+											<td colspan="3">Cancelacion de Vacaciones</td>
 											<td class="text-right">
 												<span class="badge bg-danger badge-pill">37</span>
 											</td>
@@ -2176,7 +2223,7 @@
 											</td>
 											<td>
 												<a href="#" class="text-default">
-													<div>[#1040] Account for static form controls in form group</div>
+													<div>[#1040] Se cancelo estas vacaciones ya que no se encontro lo suficientes porpositos...</div>
 													<span class="text-muted">Resizes control label's font-size and account for the standard...</span>
 												</a>
 											</td>
@@ -2215,7 +2262,7 @@
 											</td>
 											<td>
 												<a href="#" class="text-default">
-													<div>[#1038] Proper sizing of form control feedback</div>
+													<div>[#1038] Se cancelo por motivos del propietario</div>
 													<span class="text-muted">Feedback icon sizing inside a larger/smaller form-group...</span>
 												</a>
 											</td>
@@ -2268,11 +2315,11 @@
 											</div>
 
 				        					<div class="media-body">
-												<h6 class="media-title"><a href="#">Up unpacked friendly</a></h6>
+												<h6 class="media-title"><a href="#">Solicitar vacaciones</a></h6>
 					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
-					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Video tutorials</li>
+					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Video tutorial</li>
 					                    		</ul>
-												The him father parish looked has sooner. Attachment frequently terminated son hello...
+												Hola, si no sabes como solicitar una temporada de vacaciones deberias de dar click aqui y solicitar una...
 											</div>
 										</div>
 
@@ -2608,7 +2655,7 @@
 
 
 							<!-- Tabs content -->
-							<div class="tab-content card-body">
+							<!--<div class="tab-content card-body">
 								<div class="tab-pane active fade show" id="messages-tue">
 									<ul class="media-list">
 										<li class="media">
@@ -2991,3 +3038,164 @@
 
 </body>
 </html>
+
+<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header page-header-light">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none">
+						<div class="d-flex justify-content-center">
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+					<div class="d-flex">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
+							<span class="breadcrumb-item active">Añadir</span>
+						</div>
+
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none">
+						<div class="breadcrumb justify-content-center">
+							<a href="#" class="breadcrumb-elements-item">
+								<i class="icon-comment-discussion mr-2"></i>
+								Support
+							</a>
+
+							<div class="breadcrumb-elements-item dropdown p-0">
+								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
+									<i class="icon-gear mr-2"></i>
+									Settings
+								</a>
+
+								<div class="dropdown-menu dropdown-menu-right">
+									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
+									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
+									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
+									<div class="dropdown-divider"></div>
+									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+
+
+			<!-- Content area -->
+			<div class="content">
+
+				<!-- Form inputs -->
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Agregar</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
+
+						<form action="#">
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Nombre</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Clave</label>
+									<div class="col-lg-10">
+										<input type="password" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Edad</label>
+									<div class="col-lg-10">
+										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Direccion</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" >
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Apellido</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" disabled value="disabled">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Pagina web</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" value="http://">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Codigo Postal</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Maximum value</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Static text</label>
+									<div class="col-lg-10">
+										<div class="form-control-plaintext">This is a static text</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Textarea</label>
+									<div class="col-lg-10">
+										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
+									</div>
+								</div>
+							</fieldset>
+

@@ -23,17 +23,10 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/media/fancybox.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/content_cards_content.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -487,7 +480,7 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
@@ -495,7 +488,7 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -564,14 +557,14 @@
 								<li class="nav-item"><a href="components_scrollspy.html" class="nav-link">Scrollspy</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>Content styling</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
 								<li class="nav-item"><a href="content_page_header.html" class="nav-link">Page header</a></li>
 								<li class="nav-item"><a href="content_page_footer.html" class="nav-link disabled">Page footer <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item-divider"></li>
 								<li class="nav-item"><a href="content_cards.html" class="nav-link">Cards</a></li>
-								<li class="nav-item"><a href="content_cards_content.html" class="nav-link">Card content</a></li>
+								<li class="nav-item"><a href="content_cards_content.html" class="nav-link active">Card content</a></li>
 								<li class="nav-item"><a href="content_cards_layouts.html" class="nav-link">Card layouts</a></li>
 								<li class="nav-item"><a href="content_cards_header.html" class="nav-link">Card header elements</a></li>
 								<li class="nav-item"><a href="content_cards_footer.html" class="nav-link">Card footer elements</a></li>
@@ -1211,14 +1204,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Content</span> - Card Content</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1225,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="content_cards_content.html" class="breadcrumb-item">Content</a>
+							<span class="breadcrumb-item active">Card content</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,622 +1263,1252 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
-
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
-
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-						</div>
-					</div>
+				<!-- Card image placement -->
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Card image placement
+					</h6>
+					<span class="text-muted d-block">Top, middle and bottom placements</span>
 				</div>
 
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
-						</div>
+				<div class="row">
+					<div class="col-md-4">
 
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+						<!-- Top placement -->
+						<div class="card">
+							<div class="card-img-actions">
+								<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay card-img-top">
+									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<h5 class="card-title">Top placement</h5>
+								<p class="card-text">Default <code>top</code> placement - image always comes first in the card with text or other content below. Use <code>.card-img-top</code> image class to round top image corners.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between">
+								<span class="text-muted">Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-half font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(12)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /top placement -->
+
+
+						<!-- Below card header -->
+						<div class="card">
+							<div class="card-header bg-transparent header-elements-inline">
+								<h6 class="card-title">Below card header</h6>
+								<div class="header-elements">
+									<span class="badge bg-danger">Paid</span>
+			                	</div>
+							</div>
+
+							<div class="card-img-actions">
+								<img class="img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay">
+									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<p class="card-text">Example of the card image, placed right after card header and before card content body. Image requires <code>.img-fluid</code> class for proper sizing.</p>
+							</div>
+
+							<div class="card-footer">
+								<div class="input-group">
+									<input type="text" class="form-control border-right-0" placeholder="Add comment...">
+
+									<span class="input-group-append">
+										<button class="btn bg-blue" type="button"><i class="icon-paperplane"></i></button>
+									</span>
+								</div>
+							</div>
+						</div>
+						<!-- /below card header -->
+
 					</div>
 
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
+					<div class="col-md-4">
+
+						<!-- Middle placement -->
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Middle placement</h5>
+								<p class="card-text">Example of <code>middle</code> placement - image placed between card content containers (card header, card body and card footer). Image requires <code>.img-fluid</code> class for proper sizing.</p>
+							</div>
+
+							<div class="card-img-actions">
+								<img class="img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay">
+									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Nov 12, 11:25 am</span>
+								<span class="font-size-sm text-uppercase text-success font-weight-semibold">Due in 12 days</span>
+							</div>
+						</div>
+						<!-- /middle placement -->
+
+
+						<!-- Multiple titles -->
+						<div class="card">
+							<div class="card-header bg-light d-flex justify-content-between">
+								<span><i class="icon-user-check mr-2"></i> <a href="#">Eugene Kopyov</a></span>
+								<span class="text-muted">Added 2 hours ago</span>
+							</div>
+
+							<div class="card-img-actions">
+								<img class="img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay">
+									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title font-weight-semibold">Multiple titles</h6>
+								<p class="card-text">Another example of middle image placement - after header, before body that includes card title. Image also requires <code>.img-fluid</code> class.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pt-0">
+								<ul class="list-inline mb-0 mr-2">
+									<li class="list-inline-item">
+										<a href="#" class="text-pink-400"><i class="icon-heart5"></i></a>
+									</li>
+									<li class="list-inline-item">
+										<a href="#" class="text-default"><i class="icon-bubble2"></i></a>
+									</li>
+								</ul>
+
+								<ul class="list-inline mb-0">
+									<li class="list-inline-item"><a href="#">Edit</a></li>
+									<li class="list-inline-item"><a href="#">Delete</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /multiple titles -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Bottom placement -->
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Bottom placement</h5>
+								<p class="card-text">Example of <code>bottom</code> placement - image always comes last in the card with text or other content above. Use <code>.card-img-bottom</code> image class to round bottom image corners.</p>
+							</div>
+
+							<div class="card-footer bg-white d-flex justify-content-between align-items-center">
+								<div class="text-muted"><i class="icon-spinner2 spinner mr-2"></i> Processing...</div>
+
+								<div class="progress w-100 w-sm-auto wmin-sm-200 mt-2 mt-sm-0" style="height: 0.375rem;">
+									<div class="progress-bar bg-indigo-400 progress-bar-striped progress-bar-animated" style="width: 60%;">
+										<span class="sr-only">60% Complete</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-img-actions">
+								<img class="img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay">
+									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- /bottom placement -->
+
+
+						<!-- Multiple footers -->
+						<div class="card">
+							<div class="card-img-actions">
+								<img class="img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay">
+									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pb-0">
+								<span class="text-muted">23 430 followers</span>
+
+								<ul class="list-inline list-inline-condensed mb-0">
+									<li class="list-inline-item">
+										<a href="#" class="text-indigo-400"><i class="icon-thumbs-up2"></i></a>
+									</li>
+									<li class="list-inline-item">
+										<a href="#" class="text-danger"><i class="icon-thumbs-down2"></i></a>
+									</li>
+									<li class="list-inline-item ml-3">
+										<a href="#" class="text-muted"><i class="icon-flag4"></i></a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title font-weight-semibold">Multiple footers</h6>
+								<p class="card-text">In this example card image is on top, but content has multiple containers - use spacing utility classes to control vertical spacing of card content.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<a href="#" class="text-default"><i class="icon-bubble2 mr-2"></i> Comment</a>
+								<span class="text-muted"><i class="icon-eye mr-2"></i> 673</span>
+							</div>
+						</div>
+						<!-- /multiple footers -->
+
+					</div>
+				</div>
+				<!-- /card image placement -->
+
+
+				<!-- Card image overlays -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card image overlays
+					</h6>
+					<span class="text-muted d-block">Link, zoom and overlay with actions</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- Linked image -->
+						<div class="card">
+							<a href="#">
+								<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
 							</a>
 
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
+							<div class="card-body">
+								<h5 class="card-title">Linked image</h5>
+								<p class="card-text">By default, cards are designed to showcase linked images with minimal required markup, including default class for rounded corners.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-half font-size-base text-warning"></i>
+									<i class="icon-star-empty3 font-size-base text-warning"></i>
+									<span class="text-muted ml-2">(43)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /linked image -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Zooming -->
+						<div class="card">
+							<div class="card-img-actions">
+								<a href="../../../../global_assets/images/placeholders/placeholder.jpg" data-popup="lightbox">
+									<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+									<span class="card-img-actions-overlay card-img-top">
+										<i class="icon-plus3 icon-2x"></i>
+									</span>
 								</a>
+							</div>
 
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+							<div class="card-body">
+								<h5 class="card-title">Zooming</h5>
+								<p class="card-text">Extend card image with simple zoomable lightbox. The icon is inserted directly in HTML and can be easily changed.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Last updated 2 hours ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-empty3 font-size-base text-warning"></i>
+									<span class="text-muted ml-2">(86)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /zooming -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Overlay buttons -->
+						<div class="card">
+							<div class="card-img-actions">
+								<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay card-img-top">
+									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<h5 class="card-title">Overlay buttons</h5>
+								<p class="card-text">Add as many buttons or links as you want, all of them will be vertically and horizontally centered. Supports all available styles.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Last updated yesterday</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<span class="text-muted ml-2">(79)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /overlay buttons -->
+
+					</div>
+				</div>
+				<!-- /card image overlays -->
+
+
+				<!-- Card video placement -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card video options
+					</h6>
+					<span class="text-muted d-block">Video container placements</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- Top placement -->
+						<div class="card">
+							<div class="embed-responsive embed-responsive-16by9 card-img-top">
+								<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/173541384?title=0&byline=0&portrait=0" allowfullscreen frameborder="0" mozallowfullscreen></iframe>
+							</div>
+
+							<div class="card-body">
+								<h5 class="card-title">Top placement</h5>
+								<p class="card-text">Default <code>top</code> placement - video always comes first in the card with text or other content below. Use <code>.card-img-top</code> helper class to round top video container corners.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between">
+								<span class="text-muted">Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-half font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(12)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /top placement -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Middle placement -->
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Middle placement</h5>
+								<p class="card-text">Example of <code>middle</code> placement - video placed between card content containers (header, body and footer). Middle option doesn't require any additional video container classes.</p>
+							</div>
+
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/173652088?title=0&byline=0&portrait=0" allowfullscreen frameborder="0" mozallowfullscreen></iframe>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Nov 12, 11:25 am</span>
+								<span class="font-size-sm text-uppercase text-success font-weight-semibold">Due in 12 days</span>
+							</div>
+						</div>
+						<!-- /middle placement -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Bottom placement -->
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Bottom placement</h5>
+								<p class="card-text">Example of <code>bottom</code> placement - video always comes last in the card with text or other content above. Use <code>.card-img-bottom</code> helper class to round bottom video container corners.</p>
+							</div>
+
+							<div class="card-footer bg-white d-flex justify-content-between align-items-center">
+								<div class="text-muted"><i class="icon-spinner2 spinner mr-2"></i> Uploading...</div>
+
+								<div class="progress w-100 w-sm-auto wmin-sm-200 mt-2 mt-sm-0" style="height: 0.375rem;">
+									<div class="progress-bar bg-success-400 progress-bar-striped progress-bar-animated" style="width: 60%;">
+										<span class="sr-only">60% Complete</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="embed-responsive embed-responsive-16by9 card-img-bottom">
+								<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/127423845?title=0&byline=0&portrait=0" allowfullscreen frameborder="0" mozallowfullscreen></iframe>
+							</div>
+						</div>
+						<!-- /bottom placement -->
+
+					</div>
+				</div>
+				<!-- /card video placement -->
+
+
+				<!-- Card text options -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card text options
+					</h6>
+					<span class="text-muted d-block">Various text placement variations</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- White header and footer -->
+						<div class="card">
+							<div class="card-header bg-white d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Invoice <a href="#">#4323</a></span>
+								<span class="font-size-sm text-uppercase text-success font-weight-semibold">Due in 4 days</span>
+							</div>
+							<div class="card-body">
+								<h6 class="card-title">White header and footer</h6>
+								<p class="card-text">This example demonstrates how header and footer can handle multiple text containers. Both containers have white background color.</p>
+							</div>
+
+							<div class="card-footer bg-white d-flex justify-content-between">
+								<span class="text-muted">Issued 23.12.2017</span>
+
+								<ul class="list-inline mb-0">
+									<li class="list-inline-item"><a href="#">Edit</a></li>
+									<li class="list-inline-item"><a href="#">Delete</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /white header and footer -->
+
+
+						<!-- Dark header, transparent footer -->
+						<div class="card">
+							<div class="card-header bg-dark text-white d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Nov 12, 11:25am</span>
+								<span class="font-size-sm text-uppercase font-weight-semibold">Due in 12 days</span>
+							</div>
+							<div class="card-body">
+								<h6 class="card-title">Dark header, transparent footer</h6>
+								<p class="card-text">You can easily mix header and footer styles on the fly just by adding utility classes to the footer and header containers.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pt-0">
+								<span class="text-muted">Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-half font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(12)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /dark header, transparent footer -->
+
+
+						<!-- Transparent header, white footer -->
+						<div class="card">
+							<div class="card-header d-sm-flex justify-content-sm-between align-items-sm-center">
+								<div>
+									<i class="icon-reading mr-2"></i> Hi, <strong>Eugene</strong>
+								</div>
+								<div class="mt-1 mt-sm-0">You have <a href="#">3 new messages</a></div>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title">Transparent header, white footer</h6>
+								<p class="card-text">This combination can be useful when your main content and actions need to be separated, but visually be a part of the card.</p>
+							</div>
+
+							<div class="card-footer bg-white d-flex justify-content-between">
+								<div class="input-group">
+									<input type="text" class="form-control border-right-0" placeholder="What's new?">
+
+									<span class="input-group-append">
+										<button class="btn bg-blue" type="button"><i class="icon-paperplane"></i></button>
+									</span>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /page header -->
+						<!-- /transparent header, white footer -->
 
-
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
 					</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
-								</div>
+					<div class="col-md-4">
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
-								</div>
+						<!-- Grey header and footer -->
+						<div class="card">
+							<div class="card-header bg-light d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Invoice <a href="#">#5490</a></span>
+								<span class="font-size-sm text-uppercase text-success font-weight-semibold">Due in 3 days</span>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
-								</div>
+							<div class="card-body">
+								<h6 class="card-title">Grey header and footer</h6>
+								<p class="card-text">In this example header and footer have light grey background color. Grey color is default for the footer, but header requires <code>.bg-light</code> class.</p>
+							</div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
-								</div>
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Issued 26.12.2017</span>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
-									</div>
-								</div>
+								<ul class="list-inline mb-0">
+									<li class="list-inline-item"><a href="#">Edit</a></li>
+									<li class="list-inline-item"><a href="#">Delete</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /grey header and footer -->
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
+
+						<!-- Transparent header, dark footer -->
+						<div class="card">
+							<div class="card-header d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase text-muted">Dec 28, 03:49am</span>
+								<span class="font-size-sm text-uppercase text-danger font-weight-semibold">Overdue</span>
+							</div>
+							<div class="card-body">
+								<h6 class="card-title">Transparent header, dark footer</h6>
+								<p class="card-text">This example demonstrates transparent card header and dark card footer. Card title is placed inside card body content.</p>
+							</div>
+
+							<div class="card-footer bg-dark text-white d-flex justify-content-between">
+								<span>Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-orange-300"></i>
+									<i class="icon-star-full2 font-size-base text-orange-300"></i>
+									<i class="icon-star-full2 font-size-base text-orange-300"></i>
+									<i class="icon-star-full2 font-size-base text-orange-300"></i>
+									<i class="icon-star-empty3 font-size-base text-orange-300"></i>
+									<span class="opacity-75 ml-2">(53)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /transparent header, dark footer -->
+
+
+						<!-- Transparent header and footer -->
+						<div class="card">
+							<div class="card-header d-sm-flex justify-content-sm-between align-items-sm-center">
+								<div>
+									<i class="icon-reading mr-2"></i> Hi, <strong>Eugene</strong>
+								</div>
+								<div class="mt-1 mt-sm-0">You have <a href="#">3 new messages</a></div>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title">Transparent header and footer</h6>
+								<p class="card-text">If you need to extend the card with 2 extra areas with context info without separation, this combination might be very useful.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pt-0">
+								<div class="input-group">
+									<input type="text" class="form-control border-right-0" placeholder="What's new?">
+
+									<span class="input-group-append">
+										<button class="btn bg-blue" type="button"><i class="icon-paperplane"></i></button>
+									</span>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<!-- /typeahead -->
+						<!-- /transparent header and footer -->
 
-
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
 					</div>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
+					<div class="col-md-4">
 
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
+						<!-- Custom header and footer colors -->
+						<div class="card">
+							<div class="card-header bg-dark d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Invoice <a href="#" class="text-white">#2490</a></span>
+								<span class="font-size-sm text-uppercase font-weight-semibold">Due in 2 days</span>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
-								</div>
+							<div class="card-body">
+								<h6 class="card-title">Custom header and footer color</h6>
+								<p class="card-text">You can easily mix footer and header colors - just add color helper class to both containers and optional <code>.text-white</code> class to links.</p>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
+							<div class="card-footer bg-dark d-flex justify-content-between">
+								<span class="opacity-75">Issued 26.12.2017</span>
 
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
+								<ul class="list-inline mb-0">
+									<li class="list-inline-item"><a href="#" class="text-white">Edit</a></li>
+									<li class="list-inline-item"><a href="#" class="text-white">Delete</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /custom header and footer colors -->
 
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
+
+						<!-- Custom border color -->
+						<div class="card border-success">
+							<div class="card-header alpha-success border-success d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Jan 3, 02:50am</span>
+								<span class="font-size-sm text-uppercase text-success-700 font-weight-semibold">Due in 5 days</span>
+							</div>
+							<div class="card-body">
+								<h6 class="card-title">Custom border color</h6>
+								<p class="card-text">If you want to highlight cards or content areas, add color helper classes to the card and/or card footer and header.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pt-0">
+								<span class="text-muted">Uploaded 4 days ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(452)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /custom border class -->
+
+
+						<!-- Grey header, transparent footer -->
+						<div class="card">
+							<div class="card-header bg-light d-sm-flex justify-content-sm-between align-items-sm-center">
+								<div>
+									<i class="icon-reading mr-2"></i> Hi, <strong>Eugene</strong>
+								</div>
+								<div class="mt-1 mt-sm-0">You have <a href="#">3 new messages</a></div>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title">Grey header, transparent footer</h6>
+								<p class="card-text">And this combination is a perfect solution for displaying header with alternate content that is not really important, but nice to have.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pt-0">
+								<div class="input-group">
+									<input type="text" class="form-control border-right-0" placeholder="What's new?">
+
+									<span class="input-group-append">
+										<button class="btn bg-blue" type="button"><i class="icon-paperplane"></i></button>
+									</span>
 								</div>
 							</div>
 						</div>
+						<!-- /grey header, transparent footer -->
+
 					</div>
 				</div>
-				<!-- /elastic textarea -->
+				<!-- /card text options -->
 
 
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+				<!-- Card content alignment -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card content alignment
+					</h6>
+					<span class="text-muted d-block">Horizontal and vertical content alignment</span>
+				</div>
 
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
+				<div class="row">
+					<div class="col-md-4">
 
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
-								</div>
+						<!-- Left alignment -->
+						<div class="card">
+							<div class="card-body">
+								<i class="icon-checkmark3 icon-2x text-success border-success border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Left alignment</h5>
+								<p class="mb-3">Left content alignment is the default option in left-to-right direction that doesn't require any extra utility classes.</p>
 
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /masked inputs -->
-
-
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
-
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /input formatter -->
-
-
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
-
-									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
-
-									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
-										</div>
-									</div>
-
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
-								</div>
+								<a href="#" class="btn bg-success">Read more <i class="icon-arrow-right14 ml-2"></i></a>
 							</div>
 						</div>
-					</div>
-				</div>
-				<!-- /password generator -->
+						<!-- /left alignment -->
 
 
-				<!-- Bootstrap maxlength -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+						<!-- Top alignment -->
+						<div class="card text-center" style="min-height: 350px;">
+							<div class="card-body">
+								<i class="icon-checkmark3 icon-2x text-success border-success border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Top alignment</h5>
+								<p class="mb-3">Top content alignment is also the default option in LTR layout. Other vertical alignment options require flex utility classes.</p>
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
-								</div>
+								<a href="#" class="btn bg-success">Read more <i class="icon-arrow-right14 ml-2"></i></a>
 							</div>
 						</div>
+						<!-- /top alignment -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Center alignment -->
+						<div class="card text-center">
+							<div class="card-body">
+								<i class="icon-cross2 icon-2x text-danger border-danger border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Center alignment</h5>
+								<p class="mb-3">Use <code>.text-center</code> alignment utility class to center content horizontally. Responsive options are also available</p>
+
+								<a href="#" class="btn bg-danger-400">Read more <i class="icon-arrow-right14 ml-2"></i></a>
+							</div>
+						</div>
+						<!-- /center alignment -->
+
+
+						<!-- Middle alignment -->
+						<div class="card card-body justify-content-center text-center" style="min-height: 350px;">
+							<div>
+								<i class="icon-cross2 icon-2x text-danger border-danger border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Middle alignment</h5>
+								<p class="mb-3">Use <code>.justify-content-center</code> class to center content vertically. Add optional breakpoints to enable responsiveness</p>
+
+								<a href="#" class="btn bg-danger-400">Read more <i class="icon-arrow-right14 ml-2"></i></a>
+							</div>
+						</div>
+						<!-- /middle alignment -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Right alignment -->
+						<div class="card text-right">
+							<div class="card-body">
+								<i class="icon-question7 icon-2x text-blue border-blue border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Right alignment</h5>
+								<p class="mb-3">Use <code>.text-right</code> alignment utility class to center content horizontally. Add optional breakpoints to enable responsiveness</p>
+
+								<a href="#" class="btn bg-blue">Read more <i class="icon-arrow-right14 ml-2"></i></a>
+							</div>
+						</div>
+						<!-- /right alignment -->
+
+
+						<!-- Bottom alignment -->
+						<div class="card card-body justify-content-end text-center" style="min-height: 350px;">
+							<div>
+								<i class="icon-question7 icon-2x text-blue border-blue border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Bottom alignment</h5>
+								<p class="mb-3">Use <code>.justify-content-end</code> class to stick content to the bottom. Add optional breakpoints to enable responsiveness</p>
+
+								<a href="#" class="btn bg-blue">Read more <i class="icon-arrow-right14 ml-2"></i></a>
+							</div>
+						</div>
+						<!-- /bottom alignment -->
+
 					</div>
 				</div>
-				<!-- /bootstrap maxlength -->
+				<!-- /card content alignment -->
+
+
+				<!-- Card table options -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card table options
+					</h6>
+					<span class="text-muted d-block">Various table placement options</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+
+						<!-- Card body + table -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Card body + table</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								Simple example of the table that comes right after card body container (default placement). Doesn't require any additional classes since default table style doesn't include horizontal borders.
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>First Name</th>
+											<th>Last Name</th>
+											<th>Username</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Eugene</td>
+											<td>Kopyov</td>
+											<td>@Kopyov</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Victoria</td>
+											<td>Baker</td>
+											<td>@Vicky</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>James</td>
+											<td>Alexander</td>
+											<td>@Alex</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Franklin</td>
+											<td>Morrison</td>
+											<td>@Frank</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="card-footer bg-light d-flex justify-content-between">
+								<div>
+									<div class="list-icons">
+				                		<a href="#" class="list-icons-item"><i class="icon-file-eye"></i></a>
+				                		<a href="#" class="list-icons-item ml-1"><i class="icon-file-pdf"></i></a>
+				                		<a href="#" class="list-icons-item ml-1"><i class="icon-file-excel"></i></a>
+				                	</div>
+			                	</div>
+
+								<ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
+									<li class="list-inline-item"><a href="#">Download</a></li>
+									<li class="list-inline-item"><a href="#">Upload</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /card body + table -->
+
+
+						<!-- Table + card body -->
+						<div class="card">
+							<div class="card-header bg-transparent header-elements-inline">
+								<h5 class="card-title">Table + card body</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>First Name</th>
+											<th>Last Name</th>
+											<th>Username</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Eugene</td>
+											<td>Kopyov</td>
+											<td>@Kopyov</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Victoria</td>
+											<td>Baker</td>
+											<td>@Vicky</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>James</td>
+											<td>Alexander</td>
+											<td>@Alex</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Franklin</td>
+											<td>Morrison</td>
+											<td>@Frank</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="card-body">
+								In this example card body container comes after table - by default all table cells have top border, in this specific case card body includes top border for better visual content separation.
+							</div>
+
+							<div class="card-footer bg-light d-sm-flex justify-content-sm-between align-items-sm-center text-center text-sm-left py-sm-2">
+								<div>3290 entries found</div>
+
+								<ul class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between mt-2 mt-sm-0">
+									<li class="page-item disabled"><a href="#" class="page-link">← Older</a></li>
+									<li class="page-item"><a href="#" class="page-link">Newer →</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /table + card body -->
+
+					</div>
+
+					<div class="col-md-6">
+
+						<!-- Combined table styles -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Combined table styles</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								In this example table combines all default table styles: stripes, borders and row highlight. As always, all tables require base <code>.table</code> class for proper styling that matches Limitless theme.
+							</div>
+
+							<div class="table-responsive">
+								<table class="table table-striped table-bordered table-hover">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>First Name</th>
+											<th>Last Name</th>
+											<th>Username</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Eugene</td>
+											<td>Kopyov</td>
+											<td>@Kopyov</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Victoria</td>
+											<td>Baker</td>
+											<td>@Vicky</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>James</td>
+											<td>Alexander</td>
+											<td>@Alex</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Franklin</td>
+											<td>Morrison</td>
+											<td>@Frank</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="card-footer bg-white d-flex justify-content-between">
+								<div>
+									<div class="list-icons">
+				                		<a href="#" class="list-icons-item"><i class="icon-file-eye"></i></a>
+				                		<a href="#" class="list-icons-item ml-1"><i class="icon-file-pdf"></i></a>
+				                		<a href="#" class="list-icons-item ml-1"><i class="icon-file-excel"></i></a>
+				                	</div>
+			                	</div>
+
+								<ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
+									<li class="list-inline-item"><a href="#">Download</a></li>
+									<li class="list-inline-item"><a href="#">Upload</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /combined table styles -->
+
+
+						<!-- Table at the bottom -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Table at the bottom</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								This element's order can be handy if you need to show the table at the very bottom of the card, below all other content containers - header, body and footer. You can of course add other content below.
+							</div>
+
+							<div class="card-footer bg-light d-sm-flex justify-content-sm-between align-items-sm-center text-center text-sm-left py-sm-2">
+								<div>5332 entries found</div>
+
+								<ul class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between mt-2 mt-sm-0">
+									<li class="page-item disabled"><a href="#" class="page-link">← Older</a></li>
+									<li class="page-item"><a href="#" class="page-link">Newer →</a></li>
+								</ul>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>First Name</th>
+											<th>Last Name</th>
+											<th>Username</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Eugene</td>
+											<td>Kopyov</td>
+											<td>@Kopyov</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Victoria</td>
+											<td>Baker</td>
+											<td>@Vicky</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>James</td>
+											<td>Alexander</td>
+											<td>@Alex</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Franklin</td>
+											<td>Morrison</td>
+											<td>@Frank</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- /table at the bottom -->
+
+					</div>
+				</div>
+				<!-- /card table options -->
+
+
+				<!-- Card navigation options -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card navigation options
+					</h6>
+					<span class="text-muted d-block">Adapted navigation list for cards</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- Text list group -->
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Text list group</h5>
+								<p class="card-text">Create lists of content in a card with a flush list group. Use <code>.list-group-flush</code> class to remove borders and rounded corners.</p>
+							</div>
+
+							<ul class="list-group list-group-flush border-top">
+								<li class="list-group-item">
+									Sheared coasted so concurrent
+									<span class="badge badge-dark ml-auto">New</span>
+								</li>
+								<li class="list-group-item">
+									Goodness instead gull vulture
+									<span class="badge bg-pink-400 badge-pill ml-auto">38</span>
+								</li>
+								<li class="list-group-item">
+									Devilish yellow unsafe jerkily
+									<span class="badge bg-indigo-400 ml-auto">Fixed</span>
+								</li>
+								<li class="list-group-item">
+									Relentless ouch essentially
+									<span class="badge bg-success badge-pill ml-auto">40</span>
+								</li>
+							</ul>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-half font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(12)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /text list group -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Linked list group -->
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Linked list group</h5>
+								<p class="card-text">Actionable list group items with hover, disabled, and active states. Use flex utility classes if your list items contain badges, text etc.</p>
+							</div>
+
+							<ul class="list-group list-group-flush border-top">
+								<a href="#" class="list-group-item list-group-item-action">
+									<span class="font-weight-semibold">
+										<i class="icon-grid mr-2"></i>
+										Basic components
+									</span>
+									<span class="badge bg-success ml-auto">New</span>
+								</a>
+								<a href="#" class="list-group-item list-group-item-action active">
+									<span class="font-weight-semibold">
+										<i class="icon-alignment-unalign mr-2"></i>
+										Data tables extensions
+									</span>
+									<span class="badge bg-indigo-400 badge-pill ml-auto">38</span>
+								</a>
+								<a href="#" class="list-group-item list-group-item-action">
+									<span class="font-weight-semibold">
+										<i class="icon-cube3 mr-2"></i>
+										Application pages
+									</span>
+									<span class="badge bg-pink-400 ml-auto">Fixed</span>
+								</a>
+								<a href="#" class="list-group-item list-group-item-action disabled">
+									<span class="font-weight-semibold">
+										<i class="icon-transmission mr-2"></i>
+										Horizontal navigation
+									</span>
+									<span class="badge bg-dark badge-pill ml-auto">40</span>
+								</a>
+							</ul>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Updated 2 hours ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-empty3 font-size-base text-warning"></i>
+									<span class="text-muted ml-2">(86)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /linked list group -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Multi column -->
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Multi column</h5>
+								<p class="card-text">Simple example of list nav with multiple columns. Use a set of responsive flex and spacing utility classes for proper positioning and spacing.</p>
+							</div>
+
+							<ul class="list-group list-group-flush border-top">
+								<li class="list-group-item">
+									<span class="font-weight-semibold">Full name:</span>
+									<div class="ml-auto">Victoria Anna Davidson</div>
+								</li>
+								<li class="list-group-item">
+									<span class="font-weight-semibold">Phone number:</span>
+									<div class="ml-auto">+31 641 266545</div>
+								</li>
+								<li class="list-group-item">
+									<span class="font-weight-semibold">Corporate email:</span>
+									<div class="ml-auto"><a href="#">corporate@domain.com</a></div>
+								</li>
+								<li class="list-group-item">
+									<span class="font-weight-semibold">Personal email:</span>
+									<div class="ml-auto"><a href="#">personal@domain.com</a></div>
+								</li>
+							</ul>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Updated yesterday</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<span class="text-muted ml-2">(79)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /multi column -->
+
+					</div>
+				</div>
+				<!-- /card navigation options -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +2538,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->

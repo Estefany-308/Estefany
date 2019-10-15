@@ -3,8 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+    <br>
+
+    <a href="containert" class="btn btn-icon btn-float
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -23,17 +27,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/autosize.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/passy.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js"></script>
-
+	<script src="../../../../global_assets/js/plugins/notifications/bootbox.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_controls_extended.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/components_modals.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -487,7 +485,7 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
@@ -495,7 +493,7 @@
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
 								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
-								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link active">Extended controls</a></li>
+								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
 								<li class="nav-item"><a href="form_tag_inputs.html" class="nav-link">Tag inputs</a></li>
 								<li class="nav-item"><a href="form_dual_listboxes.html" class="nav-link">Dual Listboxes</a></li>
@@ -544,10 +542,10 @@
 
 						<!-- Components -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
-								<li class="nav-item"><a href="components_modals.html" class="nav-link">Modals</a></li>
+								<li class="nav-item"><a href="components_modals.html" class="nav-link active">Modals</a></li>
 								<li class="nav-item"><a href="components_dropdowns.html" class="nav-link">Dropdown menus</a></li>
 								<li class="nav-item"><a href="components_tabs.html" class="nav-link">Tabs component</a></li>
 								<li class="nav-item"><a href="components_pills.html" class="nav-link">Pills component</a></li>
@@ -1211,14 +1209,11 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Main content -->
-		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Datos basicos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Components</span> - Opciones</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1235,8 +1230,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_inputs.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Añadir</span>
+							<a href="components_modals.html" class="breadcrumb-item">Components</a>
+							<span class="breadcrumb-item active">opciones en chiquito</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1273,10 +1268,10 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
+				<!-- Basic modals -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar</h5>
+						<h5 class="card-title">Opciones</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1287,608 +1282,1316 @@
 					</div>
 
 					<div class="card-body">
-						<p class="mb-4">Agregar datos de forma especifica. Se guardara la informacion.</p>
-
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Clave</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="Enter" class="form-control" placeholder="Enter your Edad...">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Direccion</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" >
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="disabled">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Pagina web</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="http://">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Codigo Postal</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Maximum value</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Static text</label>
-									<div class="col-lg-10">
-										<div class="form-control-plaintext">This is a static text</div>
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Textarea</label>
-									<div class="col-lg-10">
-										<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-									</div>
-								</div>
-							</fieldset>
-
-
-
-			<!-- Page header -->
-			<div class="page-header page-header-light">
-				<div class="page-header-content header-elements-md-inline">
-					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Extended Controls</h4>
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+						Lee detenidamente cada una de las opciones para que puedas tener la accion que quieres.
 					</div>
 
-					<div class="header-elements d-none">
-						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-						</div>
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr>
+									<th colspan="3" class="table-active">Selecciona</th>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Agregar datos</td>
+									<td style="width: 20%;"><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_default">Aceptar <i class="icon-play3 ml-2"></i></button></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>¿deseas eliminar todos los datos?</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_iconified">Aceptar<i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal with icons added to the specified elements: heading title, footer control buttons and text inside modal body</td>
+								</tr>
+								<tr>
+									<!--<td>Disable backdrop</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_backdrop">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Disabled backdrop. Disable backdrop element using <code>data-backdrop="false"</code> or alternatively, specify <code>static</code> for a backdrop which doesn't close the modal on click</td>
+								</tr>
+								<tr>
+									<td>Disable keyboard interaction</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_keyboard">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Disabled keyboard interaction. If <code>keyboard</code> option is set to <code>true</code> (default), the modal can be closed when escape key is pressed</td>
+								</tr>
+								<tr>
+									<td>Disable animation</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_animation">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Disabled animation. For modals that simply appear rather than fade in to view, remove the <code>.fade</code> class from your modal markup</td>
+								</tr>
+								<tr>
+									<td>Scrollable modal</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_scrollable">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Scrollable modal that allows scroll the modal body by adding <code>.modal-dialog-scrollable</code> to <code>.modal-dialog</code></td>
+								</tr>
+								<tr>
+									<td>Remote source</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Default Bootstrap's remote source option replacement using jquery <code>.load()</code>. As suggested by Bootstrap dev team</td>
+								</tr>
+
+								<tr class="table-border-double">
+									<th colspan="3" class="table-active">Modal sizing</th>
+								</tr>
+								<tr>
+									<td>Mini size modal</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_mini">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal in mini size. Mini modal width is <code>300px</code>. To use, add <code>modal-xs</code> class to <code>.modal-dialog</code> container</td>
+								</tr>
+								<tr>
+									<td>Small size modal</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_small">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal in small size. Small modal width is <code>400px</code>. To use, add <code>modal-sm</code> class to <code>.modal-dialog</code> container</td>
+								</tr>
+								<tr>
+									<td>Default size modal</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_default">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal in default size. Default modal width is <code>600px</code>. Since this is a default size, modal markup doesn't require any additional sizing classes</td>
+								</tr>
+								<tr>
+									<td>Large size modal</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_large">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal in large size. Large modal width is <code>900px</code>. To use, add <code>modal-lg</code> class to <code>.modal-dialog</code> container</td>
+								</tr>
+								<tr>
+									<td>Full size modal</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_full">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal in full width size. This modal has <code>94%</code> width of the window. To use, add <code>modal-full</code> class to <code>.modal-dialog</code> container</td>
+								</tr>
+								<tr class="table-border-double">
+									<th colspan="3" class="table-active">Optional modal colors</th>
+								</tr>
+								<tr>
+									<td>Default modal theme</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_default">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Default color theme. All areas of this modal dialog have <code>white</code> background color. Doesn't require any additional contextual classes</td>
+								</tr>
+								<tr>
+									<td>Primary modal header</td>
+									<td><button type="button" class="btn bg-primary" data-toggle="modal" data-target="#modal_theme_primary">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Primary modal. To use, add <code>.bg-primary</code> class to the <code>.modal-header</code> container</td>
+								</tr>
+								<tr>
+									<td>Danger modal header</td>
+									<td><button type="button" class="btn bg-danger" data-toggle="modal" data-target="#modal_theme_danger">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Danger modal. To use, add <code>.bg-danger</code> class to the <code>.modal-header</code> container</td>
+								</tr>
+								<tr>
+									<td>Success modal header</td>
+									<td><button type="button" class="btn bg-success" data-toggle="modal" data-target="#modal_theme_success">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Success modal. To use, add <code>.bg-success</code> class to the <code>.modal-header</code> container</td>
+								</tr>
+								<tr>
+									<td>Warning modal header</td>
+									<td><button type="button" class="btn bg-warning" data-toggle="modal" data-target="#modal_theme_warning">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Warning modal. To use, add <code>.bg-warning</code> class to the <code>.modal-header</code> container</td>
+								</tr>
+								<tr>
+									<td>Info modal header</td>
+									<td><button type="button" class="btn bg-info" data-toggle="modal" data-target="#modal_theme_info">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Info modal. To use, add <code>.bg-info</code> class to the <code>.modal-header</code> container</td>
+								</tr>
+								<tr>
+									<td>Custom modal header color</td>
+									<td><button type="button" class="btn bg-brown" data-toggle="modal" data-target="#modal_theme_custom">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal with <code>custom</code> color added to the modal header. To use, add any <a href="colors_primary.html">color class</a> from the color system to the <code>.modal-header</code> container</td>
+								</tr>
+								<tr>
+									<td>Custom modal background color</td>
+									<td><button type="button" class="btn bg-teal-300" data-toggle="modal" data-target="#modal_theme_bg_custom">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal dialog with <code>solid</code> custom background color. To use, add any <a href="colors_primary.html">color class</a> from the color system to the <code>.modal-content</code> container. Additionaly, you can also add a custom background color to the modal header</td>
+								</tr>
+
+								<tr class="table-border-double">
+									<th colspan="3" class="table-active">Form components</th>
+								</tr>
+								<tr>
+									<td>Vertical form</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_form_vertical">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal with default vertical form layout and responsive grid. Forms must be placed outside of <code>.modal-body</code> container to prevent extra horizontal padding</td>
+								</tr>
+								<tr>
+									<td>Horizontal form</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal with horizontal form layout. It does also support responsive grid, but in this case it will look best in wider modals</td>
+								</tr>
+								<tr>
+									<td>Inline form</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_form_inline">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal with with a simple <code>inline</code> form layout</td>
+								</tr>
+
+								<tr class="table-border-double">
+									<th colspan="3" class="table-active">Heading options</th>
+								</tr>
+								<tr>
+									<td>Modal with H1 heading</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_h1">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal title in <code>H1</code> size. In all heading sizes, vertical position of a <code>close</code> button will be automatically adjusted to the middle of the modal header</td>
+								</tr>
+								<tr>
+									<td>Modal with H2 heading</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_h2">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal title in <code>H2</code> size</td>
+								</tr>
+								<tr>
+									<td>Modal with H3 heading</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_h3">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal title in <code>H3</code> size</td>
+								</tr>
+								<tr>
+									<td>Modal with H4 heading</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_h4">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal title in <code>H4</code> size</td>
+								</tr>
+								<tr>
+									<td>Modal with H5 heading</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_h5">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal title in <code>H5</code> size</td>
+								</tr>
+								<tr>
+									<td>Modal with H6 heading</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_h6">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal title in <code>H6</code> size</td>
+								</tr>
+								<tr>
+									<td>Modal with basic title</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_title_basic">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal title could be either a standard heading or any other component, but make sure you have included <code>.modal-title</code> class to it</td>
+								</tr>
+								<tr>
+									<td>Modal with subtitle</td>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_subtitle">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Modal title <code>subtitle</code>. This can be either inline or block. To display a subtitle in one line with the title, remove <code>.d-block</code> class from it</td>
+								</tr>
+
+								<tr class="table-border-double">
+									<th colspan="3" class="table-active">Modal events</th>
+								</tr>
+								<tr>
+									<td>onShow event</td>
+									<td><button type="button" class="btn bg-teal" data-toggle="modal" data-target="#modal_onshow">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>This event fires immediately when the <code>show</code> instance method is called. If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event</td>
+								</tr>
+								<tr>
+									<td>onShown event</td>
+									<td><button type="button" class="btn bg-teal" data-toggle="modal" data-target="#modal_onshown">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event</td>
+								</tr>
+								<tr>
+									<td>onHide event</td>
+									<td><button type="button" class="btn bg-teal" data-toggle="modal" data-target="#modal_onhide">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>This event is fired immediately when the <code>hide</code> instance method has been called</td>
+								</tr>
+								<tr>
+									<td>onHidden event</td>
+									<td><button type="button" class="btn bg-teal" data-toggle="modal" data-target="#modal_onhidden">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete)</td>
+								</tr>
+
+								<tr class="table-border-double">
+									<th colspan="3" class="table-active">Programmatic dialog boxes</th>
+								</tr>
+								<tr>
+									<td>Alert dialog</td>
+									<td><button type="button" class="btn bg-primary" id="alert">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of an <code>alert</code> dialog replacement with default Bootstrap modals</td>
+								</tr>
+								<tr>
+									<td>Confirm dialog</td>
+									<td><button type="button" class="btn bg-primary" id="confirm">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of a <code>confirmation</code> dialog replacement with default Bootstrap modals including callback</td>
+								</tr>
+								<tr>
+									<td>Prompt dialog</td>
+									<td><button type="button" class="btn bg-primary" id="prompt">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of a <code>prompt</code> dialog replacement with default Bootstrap modals including callback</td>
+								</tr>
+								<tr>
+									<td>Prompt with default value</td>
+									<td><button type="button" class="btn bg-primary" id="prompt_value">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of a <code>prompt</code> dialog replacement with default value</td>
+								</tr>
+								<tr>
+									<td>Custom bootbox dialog</td>
+									<td><button type="button" class="btn bg-primary" id="bootbox_custom">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of a custom bootbox dialog with multiple buttons and callbacks</td>
+								</tr>
+								<tr>
+									<td>Dialog with form</td>
+									<td><button type="button" class="btn bg-primary" id="bootbox_form">Launch <i class="icon-play3 ml-2"></i></button></td>
+									<td>Example of a custom bootbox dialog with simple form and callbacks</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-				</div>
+				</div>/-->
+				<!-- /basic modals -->
 
-				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_controls_extended.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Extended controls</span>
-						</div>
 
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-					</div>
+	            <!-- Basic modal -->
+				<div id="modal_default" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Datos</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
 
-					<div class="header-elements d-none">
-						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item">
-								<i class="icon-comment-discussion mr-2"></i>
-								Support
-							</a>
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">¿Deseas agregar adtos?</h6>
+								<p>Si quieres agregar los datos presina el boton de abajo.</p>
 
-							<div class="breadcrumb-elements-item dropdown p-0">
-								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-gear mr-2"></i>
-									Settings
-								</a>
+								<hr>
 
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
-								</div>
+								<h6 class="font-weight-semibold">Otra seccion de texto</h6>
+								<p>Por que estoy estudiando esta carrera?.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar y dejar de estudiar</button>
+								<button type="button" class="btn bg-primary">Guardar cambios y seguir estudiando</button>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- /page header -->
+				<!-- /basic modal -->
 
 
-			<!-- Content area -->
-			<div class="content">
-
-				<!-- Typeahead -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Twitter typeahead</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic usage</h6>
-									<p class="mb-2">When initializing a typeahead, you pass the plugin method one or more datasets. The source of a dataset is responsible for computing a set of suggestions for a given query.</p>
-									<input type="text" class="form-control typeahead-basic" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Bloodhound engine</h6>
-									<p class="mb-2">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine.</p>
-									<input type="text" class="form-control typeahead-bloodhound" placeholder="States of USA">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Prefetched data</h6>
-									<p class="mb-2">Prefetched data is fetched and processed on initialization. If the browser supports local storage, the processed data will be cached there to prevent additional network requests on subsequent page loads.</p>
-									<input type="text" class="form-control typeahead-prefetched" placeholder="Countries">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Remote data</h6>
-									<p class="mb-2">Remote data is only used when the data provided by local and prefetch is insufficient. In order to prevent an obscene number of requests being made to the remote endpoint, requests are rate-limited.</p>
-									<input type="text" class="form-control typeahead-remote" placeholder="Oscar winners for Best Picture">
-								</div>
+	            <!-- Iconified modal -->
+				<div id="modal_iconified" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title"><i class="icon-menu7 mr-2"></i> &nbsp;Modal with icons</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom templates</h6>
-									<p class="mb-2">Custom templates give you full control over how suggestions get rendered making it easy to customize the look and feel of your typeahead. Requires <code>Handlebars.js</code> extension for compilation.</p>
-									<input type="text" class="form-control typeahead-custom-templates" placeholder="Oscar winners for Best Picture">
-								</div>
+							<div class="modal-body">
+								<div class="alert alert-info alert-dismissible alert-styled-left border-top-0 border-bottom-0 border-right-0">
+					                <span class="font-weight-semibold">Here we go!</span> Example of an alert inside modal.
+					                <button type="button" class="close" data-dismiss="alert">×</button>
+					            </div>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Multiple datasets</h6>
-									<p class="mb-2">Multiple datasets give you visually separated sets of data inside Dropdown menu with custom titles, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup></code> titles in selects.</p>
-									<input type="text" class="form-control typeahead-multiple-datasets" placeholder="NBA and NHL teams">
-								</div>
+								<h6 class="font-weight-semibold"><i class="icon-law mr-2"></i> Sample heading with icon</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Dropdown height</h6>
-									<p class="mb-2">To change the height of your dropdown menu, just wrap your input in some div with custom css styles and change necessary css properties or change it in css directly.</p>
-									<div class="typeahead-scrollable">
-										<input type="text" class="form-control typeahead-scrollable-menu" placeholder="Countries">
-									</div>
-								</div>
+								<hr>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">RTL support</h6>
-									<p class="mb-2">Twitter Typeahead supports <code>RTL</code> direction. Wrap your input in any div with <code>text-align: right;</code> property and add <code>dir="rtl"</code> to your input, now your dropdown menu is right aligned.</p>
-									<input type="text" class="form-control typeahead-rtl-support" dir="rtl" placeholder="نعم">
-								</div>
+								<p><i class="icon-mention mr-2"></i> Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button class="btn btn-link" data-dismiss="modal"><i class="icon-cross2 font-size-base mr-1"></i> Close</button>
+								<button class="btn bg-primary"><i class="icon-checkmark3 font-size-base mr-1"></i> Save</button>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /typeahead -->
+				<!-- /iconified modal -->
 
 
-				<!-- Elastic textarea -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Elastic textarea</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-3">Drop Autosize into any existing website and it should Just Work™. The source is short and well commented if you are curious to how it works.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic" placeholder="Textarea"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary">Submit form</button>
-								</div>
+	            <!-- Disabled backdrop -->
+				<div id="modal_backdrop" class="modal fade" data-backdrop="false" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Disable backdrop</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Manual triggering</h6>
-									<p class="mb-3">When the value of a textarea has been changed through JavaScript, trigger the <code>autosize.resize</code> event immediately after to update the height.</p>
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-manual" placeholder="Press 'Trigger Manually' button"></textarea>
-									</div>
+								<hr>
 
-									<button type="button" class="btn btn-primary elastic-manual-trigger">Trigger manually</button>
-								</div>
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 							</div>
 
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Removing autosize</h6>
-									<p class="mb-3">Trigger the <code>autosize.destroy</code> event to remove autosize from a textarea element. Once <code>destroy</code> button clicked, autosize will be removed.</p>
-
-									<div class="form-group">
-										<textarea rows="4" cols="4" class="form-control elastic elastic-destroy" placeholder="Press 'Destroy' button to remove autosize"></textarea>
-									</div>
-
-									<button type="button" class="btn btn-primary elastic-destroy-trigger">Destroy Autosize</button>
-								</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /elastic textarea -->
+				<!-- /disabled backdrop -->
 
 
-	        	<!-- Masked inputs -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Masked inputs</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+	            <!-- Disabled keyboard interaction -->
+				<div id="modal_keyboard" class="modal fade" data-keyboard="false" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Disable keyboard interaction</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
 					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" data-mask="99/99/9999" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" data-mask="(999) 999-9999 / x99999" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">(999) 999-9999 / x99999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" data-mask="$999" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" data-mask="+39 999 999 999" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" data-mask="99-9999999" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99-9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-9999" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999-99-9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" data-mask="9999-9999-9999-9999" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999-9999-9999-9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" data-mask="a*-999-a999" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a*-999-a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Purchase order: </label>
-		                        	<input type="text" class="form-control" data-mask="aaa-999-***" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa-999-***</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Percentage: </label>
-		                        	<input type="text" class="form-control" data-mask="99%" placeholder="Enter value in %">
-		                        	<span class="form-text text-muted">99%</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999-99-999-9999-9</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /masked inputs -->
+				</div>
+				<!-- /disabled keyboard interaction -->
 
 
-	        	<!-- Input formatter -->
-	            <div class="card">
-					<div class="card-header header-elements-inline">
-		                <h5 class="card-title">Input formatter</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+	            <!-- Disabled animation -->
+				<div id="modal_animation" class="modal" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Disable animation</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
 					</div>
-
-	                <div class="card-body">
-	                	<div class="row">
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Date: </label>
-		                        	<input type="text" class="form-control" name="format-date" placeholder="Enter starting date">
-		                        	<span class="form-text text-muted">99/99/9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone number: </label>
-		                        	<input type="text" class="form-control format-phone-number" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Phone + Ext: </label>
-		                        	<input type="text" class="form-control" name="format-phone-ext" placeholder="Enter your phone number">
-		                        	<span class="form-text text-muted">(999) 999-9999 / a999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Currency: </label>
-		                        	<input type="text" class="form-control" name="format-currency" placeholder="Enter amount in USD">
-		                        	<span class="form-text text-muted">$999.99</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>International format: </label>
-		                        	<input type="text" class="form-control" name="format-international-phone" placeholder="Enter your phone in international format">
-		                        	<span class="form-text text-muted">+39 999 999 999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Tax ID: </label>
-		                        	<input type="text" class="form-control" name="format-tax-id" placeholder="Enter your tax id">
-		                        	<span class="form-text text-muted">99 - 9999999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>SSN: </label>
-		                        	<input type="text" class="form-control" name="format-ssn" placeholder="Enter your social security number">
-		                        	<span class="form-text text-muted">999 - 99 - 9999</span>
-								</div>
-
-								<div class="form-group">
-									<label>Credit card: </label>
-		                        	<input type="text" class="form-control" name="format-credit-card" placeholder="Enter your credit card number">
-		                        	<span class="form-text text-muted">9999 - 9999 - 9999 - 9999</span>
-								</div>
-	                		</div>
-
-	                		<div class="col-md-4">
-								<div class="form-group">
-									<label>Product key: </label>
-		                        	<input type="text" class="form-control" name="format-product-key" placeholder="Enter your product key">
-		                        	<span class="form-text text-muted">a* - 999 - a999</span>
-								</div>
-			                    
-								<div class="form-group">
-									<label>Order number: </label>
-		                        	<input type="text" class="form-control" name="format-order-number" placeholder="Enter your order #">
-		                        	<span class="form-text text-muted">aaa - 999 - ***</span>
-								</div>
-
-								<div class="form-group">
-									<label>ISBN: </label>
-		                        	<input type="text" class="form-control" name="format-isbn" placeholder="Enter your ISBN">
-		                        	<span class="form-text text-muted">999 - 99 - 999 - 9999 - 9</span>
-								</div>
-
-								<div class="form-group">
-									<label>Visible formatted characters: </label>
-		                        	<input type="text" class="form-control" name="format-persistent" placeholder="Enter your phone #">
-		                        	<span class="form-text text-muted">+3 (999) 999-99-99</span>
-								</div>
-	                		</div>
-	                	</div>	
-	                </div>
-	            </div>
-	            <!-- /input formatter -->
+				</div>
+				<!-- /disabled animation -->
 
 
-				<!-- Password generator -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Password generator</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+	            <!-- Scrollable modal -->
+				<div id="modal_scrollable" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-dialog-scrollable">
+						<div class="modal-content">
+							<div class="modal-header pb-3">
+								<h5 class="modal-title">Scrollable modal</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body py-0">
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+							</div>
+
+							<div class="modal-footer pt-3">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
 					</div>
+				</div>
+				<!-- /scrollable modal -->
 
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Checker inside badge</h6>
-									<p class="mb-3">Password checker is attached to the badge, which appears below the input field. Empty badge is hidden, if you add any text inside badge, it'll stay visible.</p>
 
+	            <!-- Remote source -->
+				<div id="modal_remote" class="modal" tabindex="-1">
+					<div class="modal-dialog modal-full">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Remote source</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body"></div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+								<button type="button" class="btn bg-primary">Guardar cambios</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /remote source -->
+
+
+
+	            <!-- Mini modal -->
+				<div id="modal_mini" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-xs">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Mini modal</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /mini modal -->
+
+
+	            <!-- Small modal -->
+				<div id="modal_small" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Small modal</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /small modal -->
+
+
+	            <!-- Large modal -->
+				<div id="modal_large" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Large modal</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /large modal -->
+
+
+	            <!-- Full width modal -->
+				<div id="modal_full" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-full">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Full width modal</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /full width modal -->
+
+
+
+	            <!-- Primary modal -->
+				<div id="modal_theme_primary" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header bg-primary">
+								<h6 class="modal-title">Primary header</h6>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /primary modal -->
+
+
+	            <!-- Danger modal -->
+				<div id="modal_theme_danger" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header bg-danger">
+								<h6 class="modal-title">Danger header</h6>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-danger">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /default modal -->
+
+
+	            <!-- Success modal -->
+				<div id="modal_theme_success" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header bg-success">
+								<h6 class="modal-title">Success header</h6>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-success">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /success modal -->
+
+
+	            <!-- Warning modal -->
+				<div id="modal_theme_warning" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header bg-warning">
+								<h6 class="modal-title">Warning header</h6>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-warning">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /warning modal -->
+
+
+	            <!-- Info modal -->
+				<div id="modal_theme_info" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header bg-info">
+								<h6 class="modal-title">Info header</h6>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-info">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /info modal -->
+
+
+	            <!-- Custom header color -->
+				<div id="modal_theme_custom" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header bg-brown">
+								<h6 class="modal-title">Custom header color</h6>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-brown">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /custom header color -->
+
+
+	            <!-- Custom background color -->
+				<div id="modal_theme_bg_custom" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content bg-teal-300">
+							<div class="modal-header">
+								<h5 class="modal-title">Custom background color</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link text-white" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-teal-600">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /custom background color -->
+
+
+
+	            <!-- Vertical form modal -->
+				<div id="modal_form_vertical" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Vertical form</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<form action="#">
+								<div class="modal-body">
 									<div class="form-group">
-										<div class="badge-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge form-text password-indicator-badge"></span>
+										<div class="row">
+											<div class="col-sm-6">
+												<label>First name</label>
+												<input type="text" placeholder="Eugene" class="form-control">
+											</div>
+
+											<div class="col-sm-6">
+												<label>Last name</label>
+												<input type="text" placeholder="Kopyov" class="form-control">
+											</div>
 										</div>
 									</div>
 
-									<button type="button" class="btn btn-info generate-badge">Generate 12 characters password</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside input</h6>
-									<p class="mb-3">Rules are the same as for password checker inside badge, but this one has absolute position and placed inside <code>form-group</code>. Empty badge is also hidden.</p>
-
 									<div class="form-group">
-										<div class="badge-indicator-absolute">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="badge password-indicator-badge-absolute"></span>
+										<div class="row">
+											<div class="col-sm-6">
+												<label>Address line 1</label>
+												<input type="text" placeholder="Ring street 12" class="form-control">
+											</div>
+
+											<div class="col-sm-6">
+												<label>Address line 2</label>
+												<input type="text" placeholder="building D, flat #67" class="form-control">
+											</div>
 										</div>
 									</div>
 
-									<button type="button" class="btn btn-info generate-badge-absolute">Generate 10 characters password</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Label inside addon</h6>
-									<p class="mb-3">In this example password checker appears as input group <code>text addon</code>. Can be left and/or right aligned, supports all input group styles. Styles can be adjusted in JS config.</p>
-
 									<div class="form-group">
-										<div class="input-group group-indicator">
-											<input type="text" class="form-control" placeholder="Enter your password">
-											<span class="input-group-append">
-												<span class="input-group-text">No password</span>
-											</span>
+										<div class="row">
+											<div class="col-sm-4">
+												<label>City</label>
+												<input type="text" placeholder="Munich" class="form-control">
+											</div>
+
+											<div class="col-sm-4">
+												<label>State/Province</label>
+												<input type="text" placeholder="Bayern" class="form-control">
+											</div>
+
+											<div class="col-sm-4">
+												<label>ZIP code</label>
+												<input type="text" placeholder="1031" class="form-control">
+											</div>
 										</div>
 									</div>
 
-									<button type="button" class="btn btn-info generate-group">Generate 8 characters password</button>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6">
+												<label>Email</label>
+												<input type="text" placeholder="eugene@kopyov.com" class="form-control">
+												<span class="form-text text-muted">name@domain.com</span>
+											</div>
+
+											<div class="col-sm-6">
+												<label>Phone #</label>
+												<input type="text" placeholder="+99-99-9999-9999" data-mask="+99-99-9999-9999" class="form-control">
+												<span class="form-text text-muted">+99-99-9999-9999</span>
+											</div>
+										</div>
+									</div>
 								</div>
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+									<button type="submit" class="btn bg-primary">Submit form</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- /vertical form modal -->
+
+
+	            <!-- Horizontal form modal -->
+				<div id="modal_form_horizontal" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Horizontal form</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<form action="#" class="form-horizontal">
+								<div class="modal-body">
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">First name</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="Eugene" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Last name</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="Kopyov" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Email</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="eugene@kopyov.com" class="form-control">
+											<span class="form-text text-muted">name@domain.com</span>
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Phone #</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="+99-99-9999-9999" data-mask="+99-99-9999-9999" class="form-control">
+											<span class="form-text text-muted">+99-99-9999-9999</span>
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Address line 1</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="Ring street 12, building D, flat #67" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">City</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="Munich" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">State/Province</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="Bayern" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">ZIP code</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="1031" class="form-control">
+										</div>
+									</div>
+								</div>
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+									<button type="submit" class="btn bg-primary">Submit form</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- /horizontal form modal -->
+
+
+	            <!-- Inline form modal -->
+				<div id="modal_form_inline" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Inline form</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<form action="#" class="modal-body form-inline justify-content-center">
+								<label>Username:</label>
+								<input type="text" placeholder="Your username" class="form-control mb-2 mr-sm-2 ml-sm-2 mb-sm-0">
+
+								<label class="ml-sm-2">Password:</label>
+								<input type="password" placeholder="Your password" class="form-control mb-2 mr-sm-2 ml-sm-2 mb-sm-0">
+
+								<button type="submit" class="btn bg-primary ml-sm-2 mb-sm-0">Sign me in <i class="icon-plus22"></i></button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- /inline form modal -->
+
+
+
+	            <!-- Modal with h1 -->
+				<div id="modal_h1" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title">H1 heading title</h1>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /password generator -->
+				<!-- /modal with h1 -->
 
 
-				<!-- Bootstrap maxlength -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Bootstrap maxlength</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Basic example</h6>
-									<p class="mb-2">Basic example of maxlength plugin. The badge will show up right below the input by default when the remaining chars are 10 or less. This is a default value and position.</p>
-									<input type="text" class="form-control maxlength" maxlength="20" placeholder="Type 10 characters...">
-								</div>
-
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Label position</h6>
-									<p class="mb-2">The field counter can be positioned at the top, bottom, left or right via <code>placement</code> option. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.</p>
-									<input type="text" class="form-control maxlength-badge-position" maxlength="20" placeholder="Centered right position">
-								</div>
-
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Full featured</h6>
-									<p class="mb-2">This is a complete example where all the options configured for the bootstrap-maxlength counter are setted. <strong>Please note:</strong> if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-									<input type="text" class="form-control maxlength-options" maxlength="20" placeholder="Always visible with custom text">
-								</div>
+	            <!-- Modal with h2 -->
+				<div id="modal_h2" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h2 class="modal-title">H2 heading title</h2>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 
-							<div class="col-md-6">
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Change the threshold value</h6>
-									<p class="mb-2">Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option. In this example badge appears when the remaining chars are <code>15</code> or less.</p>
-									<input type="text" class="form-control maxlength-threshold" maxlength="20" placeholder="Type 5 characters...">
-								</div>
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Custom options</h6>
-									<p class="mb-2">Example with custom options. All options can be mixed: here badge will show up after entering 10 characters, badge has different color and shows up after the limit is reached.</p>
-									<input type="text" class="form-control maxlength-custom" maxlength="20" placeholder="With Primary and Danger badges">
-								</div>
+								<hr>
 
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Textarea example</h6>
-									<p class="mb-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE. Maxlength, attached to the textarea supports all available options and settings by default.</p>
-									<textarea rows="3" cols="3" maxlength="225" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 225 chars."></textarea>
-								</div>
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /bootstrap maxlength -->
+				<!-- /modal with h2 -->
+
+
+	            <!-- Modal with h3 -->
+				<div id="modal_h3" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h3 class="modal-title">H3 heading title</h3>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /modal with h3 -->
+
+
+	            <!-- Modal with h4 -->
+				<div id="modal_h4" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">H4 heading title</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /modal with h4 -->
+
+
+	            <!-- Modal with h5 -->
+				<div id="modal_h5" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">H5 heading title</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /modal with h5 -->
+
+
+	            <!-- Modal with h6 -->
+				<div id="modal_h6" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h6 class="modal-title">H6 heading title</h6>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /modal with h6 -->
+
+
+	            <!-- Modal with basic title -->
+				<div id="modal_title_basic" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<span class="font-weight-semibold modal-title">Basic heading title</span>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /modal with basic title -->
+
+
+	            <!-- Modal with subtitle -->
+				<div id="modal_subtitle" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">This is a modal title <small class="d-block text-muted">And this is a subtitle</small></h5>
+								
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h6 class="font-weight-semibold">Text in a modal</h6>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+								<hr>
+
+								<h6 class="font-weight-semibold">Another paragraph</h6>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /modal with subtitle -->
+
+
+
+	            <!-- onShow callback modal -->
+				<div id="modal_onshow" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">onShow event demo</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								onShow event has been fired.
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-dismiss="modal">Cool</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /onShow callback modal -->
+
+
+	            <!-- onShown callback modal -->
+				<div id="modal_onshown" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">onShown event demo</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								onShown event has been fired.
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-dismiss="modal">Cool</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /onShown callback modal -->
+
+
+	            <!-- onHide callback modal -->
+				<div id="modal_onhide" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">onHide event demo</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								onHide event has been fired.
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-dismiss="modal">Cool</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /onHide callback modal -->
+
+
+	            <!-- onHidden callback modal -->
+				<div id="modal_onhidden" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">onHidden event demo</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								onHidden event has been fired.
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-dismiss="modal">Cool</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /onHidden callback modal -->
 
 			</div>
 			<!-- /content area -->
@@ -1918,7 +2621,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /content wrapper -->
+		<!-- /main content -->
 
 	</div>
 	<!-- /page content -->
